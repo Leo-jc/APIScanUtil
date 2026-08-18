@@ -1,0 +1,64 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "ApiChange test demo entry module"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "ApiChange test demo ability"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "ApiChangeTestDemo"
+    },
+    {
+      "name": "nav_main",
+      "value": "API 变更测试"
+    },
+    {
+      "name": "nav_sub",
+      "value": "apichange-extract 驱动"
+    },
+    {
+      "name": "menu_source",
+      "value": "版本来源"
+    },
+    {
+      "name": "dest_main",
+      "value": "NavDestination 详情"
+    },
+    {
+      "name": "dest_sub",
+      "value": "Resource 标题与菜单"
+    },
+    {
+      "name": "dest_menu",
+      "value": "操作"
+    },
+    {
+      "name": "clock_format",
+      "value": "HH:mm:ss"
+    },
+    {
+      "name": "tab_input",
+      "value": "输入与展示"
+    },
+    {
+      "name": "tab_layout",
+      "value": "列表与布局"
+    },
+    {
+      "name": "tab_dialog",
+      "value": "弹窗与提示"
+    },
+    {
+      "name": "tab_style",
+      "value": "绘制与样式"
+    },
+    {
+      "name": "tab_gesture",
+      "value": "交互与手势"
+    }
+  ]
+}

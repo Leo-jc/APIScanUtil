@@ -1,0 +1,501 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Leak scan 03-source-review result",
+  "type": "object",
+  "required": [
+    "$schema",
+    "schema_version",
+    "scanner",
+    "phase",
+    "status",
+    "summary",
+    "input_scope",
+    "outputs",
+    "zero_results",
+    "excluded",
+    "failure_reason",
+    "checklist_gate",
+    "read_audit",
+    "candidates"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "scanner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "phase": {
+      "const": "03-source-review"
+    },
+    "status": {
+      "enum": [
+        "completed",
+        "partial",
+        "failed",
+        "zero"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_scope": {
+      "type": [
+        "object",
+        "array",
+        "string"
+      ]
+    },
+    "outputs": {
+      "type": [
+        "object",
+        "array"
+      ]
+    },
+    "zero_results": {
+      "type": "array"
+    },
+    "excluded": {
+      "type": "array"
+    },
+    "failure_reason": {
+      "type": "array"
+    },
+    "checklist_gate": {
+      "$ref": "#/$defs/checklist_gate"
+    },
+    "read_audit": {
+      "$ref": "#/$defs/read_audit"
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/candidate"
+      }
+    }
+  },
+  "$defs": {
+    "location": {
+      "type": "object",
+      "required": [
+        "file",
+        "start_line"
+      ],
+      "properties": {
+        "file": {
+          "type": "string",
+          "minLength": 1
+        },
+        "start_line": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "end_line": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "snippet": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "checklist_gate": {
+      "type": "object",
+      "required": [
+        "reference_path",
+        "status",
+        "item_count",
+        "item_results"
+      ],
+      "properties": {
+        "reference_path": {
+          "const": "ohos-scan-leak/references/checklist.md"
+        },
+        "status": {
+          "const": "passed"
+        },
+        "item_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "item_results": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/checklist_item"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "read_audit": {
+      "type": "object",
+      "required": [
+        "read_files",
+        "unread_files",
+        "read_calls",
+        "notes"
+      ],
+      "properties": {
+        "read_files": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "unread_files": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "read_calls": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "checklist_item": {
+      "type": "object",
+      "required": [
+        "item_id",
+        "result",
+        "reviewed_files",
+        "evidence",
+        "review_notes"
+      ],
+      "properties": {
+        "item_id": {
+          "type": "string",
+          "pattern": "^[A-Z][0-9]+$"
+        },
+        "result": {
+          "enum": ["no_finding", "candidate_found", "not_applicable"]
+        },
+        "reviewed_files": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/location"}
+        },
+        "review_notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "candidate": {
+      "type": "object",
+      "required": [
+        "candidate_id",
+        "scanner",
+        "classification",
+        "title",
+        "summary",
+        "location",
+        "reachability",
+        "behavior",
+        "root_cause",
+        "evidence",
+        "provenance"
+      ],
+      "properties": {
+        "candidate_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scanner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "classification": {
+          "type": "object",
+          "required": [
+            "check_item",
+            "check_direction",
+            "severity",
+            "error_type",
+            "phenomenon",
+            "mechanism",
+            "origin",
+            "confidence"
+          ],
+          "properties": {
+            "check_item": {
+              "type": "string",
+              "minLength": 1
+            },
+            "check_direction": {
+              "type": "string",
+              "minLength": 1
+            },
+            "severity": {
+              "enum": [
+                "critical",
+                "high",
+                "medium",
+                "low",
+                "info"
+              ]
+            },
+            "error_type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "phenomenon": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mechanism": {
+              "type": "string",
+              "minLength": 1
+            },
+            "origin": {
+              "type": "string"
+            },
+            "confidence": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          "additionalProperties": true
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location": {
+          "$ref": "#/$defs/location"
+        },
+        "related_locations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/location"
+          }
+        },
+        "reachability": {
+          "type": "object",
+          "required": [
+            "public_entry",
+            "prerequisites",
+            "trigger_sequence",
+            "state_requirements",
+            "normal_usage_reason",
+            "call_chain"
+          ],
+          "properties": {
+            "public_entry": {
+              "type": "string",
+              "minLength": 1
+            },
+            "prerequisites": {
+              "type": "array"
+            },
+            "trigger_sequence": {
+              "type": "array"
+            },
+            "state_requirements": {
+              "type": "array"
+            },
+            "normal_usage_reason": {
+              "type": "string",
+              "minLength": 1
+            },
+            "call_chain": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/location"
+              }
+            }
+          },
+          "additionalProperties": true
+        },
+        "behavior": {
+          "type": "object",
+          "required": [
+            "expected",
+            "actual",
+            "impact"
+          ],
+          "properties": {
+            "expected": {
+              "type": "string"
+            },
+            "actual": {
+              "type": "string",
+              "minLength": 1
+            },
+            "impact": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": true
+        },
+        "root_cause": {
+          "type": "object",
+          "required": [
+            "explanation",
+            "data_flow",
+            "guards_checked",
+            "fault_point"
+          ],
+          "properties": {
+            "explanation": {
+              "type": "string",
+              "minLength": 1
+            },
+            "data_flow": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/data_flow_step"
+              }
+            },
+            "guards_checked": {
+              "type": "array"
+            },
+            "fault_point": {
+              "$ref": "#/$defs/location"
+            }
+          },
+          "additionalProperties": true
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/location"
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "required": [
+            "discovered_by_source_review",
+            "merged_candidate_ids",
+            "merge_reason"
+          ],
+          "properties": {
+            "discovered_by_source_review": {
+              "type": "boolean"
+            },
+            "merged_candidate_ids": {
+              "type": "array"
+            },
+            "merge_reason": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "data_flow_step": {
+      "type": "object",
+      "required": [
+        "sequence",
+        "variable",
+        "operation",
+        "location",
+        "before",
+        "after",
+        "effect"
+      ],
+      "properties": {
+        "sequence": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "variable": {
+          "type": "string",
+          "minLength": 1
+        },
+        "operation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location": {
+          "$ref": "#/$defs/location"
+        },
+        "before": {
+          "type": "string"
+        },
+        "after": {
+          "type": "string"
+        },
+        "effect": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "zero"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "zero_results": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "enum": [
+              "partial",
+              "failed"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "failure_reason": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

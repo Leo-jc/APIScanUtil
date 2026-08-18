@@ -1,0 +1,12 @@
+{
+  "float": [
+    {
+      "name": "dot_default_size",
+      "value": "5vp"
+    },
+    {
+      "name": "dot_default_margin",
+      "value": "5vp"
+    }
+  ]
+}

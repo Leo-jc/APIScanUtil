@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "flex_tags",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

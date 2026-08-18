@@ -1,0 +1,9 @@
+{
+  "name": "checkerboarddrawable",
+  "version": "1.0.2",
+  "description": "A custom drawable to use as background which embody \"transparent\", AKA checkerboard grid.",
+  "main": "Index.ets",
+  "author": "duanhong169",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}

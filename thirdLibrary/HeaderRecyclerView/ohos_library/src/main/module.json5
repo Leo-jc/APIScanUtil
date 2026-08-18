@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "header_recycler_view",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "phone",
+      "tablet"
+    ]
+  }
+}

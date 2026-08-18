@@ -1,0 +1,10 @@
+{
+  "app": {
+    "bundleName": "com.qintong.library.insloadinganimation.lib",
+    "vendor": "qintong",
+    "versionCode": 1000000,
+    "versionName": "1.1.0",
+    "icon": "$media:layered_image",
+    "label": "$string:app_name"
+  }
+}

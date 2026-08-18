@@ -1,0 +1,1920 @@
+{
+  "title": "HarmonyOS API 调用图谱",
+  "summary": {
+    "filesAnalyzed": 12,
+    "systemApis": 16,
+    "systemApiCallSites": 90
+  },
+  "files": [
+    {
+      "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "AbilityConstant",
+            "ConfigurationConstant",
+            "UIAbility",
+            "Want"
+          ],
+          "source": "@kit.AbilityKit",
+          "kit": "AbilityKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 3,
+          "names": [
+            "window"
+          ],
+          "source": "@kit.ArkUI",
+          "kit": "ArkUI",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onCreate",
+        "onDestroy",
+        "onWindowStageCreate",
+        "onWindowStageDestroy",
+        "onForeground",
+        "onBackground"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 10,
+          "qualified": "this.context.getApplicationContext",
+          "base": "this",
+          "name": "getApplicationContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 12,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 14,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 18,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onDestroy"
+        },
+        {
+          "line": 23,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 27,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 30,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 36,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageDestroy"
+        },
+        {
+          "line": 41,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onForeground"
+        },
+        {
+          "line": 46,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackground"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "BackupExtensionAbility",
+            "BundleVersion"
+          ],
+          "source": "@kit.CoreFileKit",
+          "kit": "CoreFileKit",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onBackup",
+        "onRestore"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 8,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackup"
+        },
+        {
+          "line": 13,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onRestore"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "router"
+          ],
+          "source": "@kit.ArkUI",
+          "kit": "ArkUI",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "SectionedDataSource",
+            "SectionedList",
+            "SectionEntry",
+            "SectionEntryKind",
+            "SectionedDefaultHeader",
+            "SimpleSectionedModel"
+          ],
+          "source": "sectionedrecyclerview",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "getSectionCount",
+        "getItemCountForSection",
+        "getSectionHeaderTitle",
+        "aboutToAppear",
+        "appendLog",
+        "formatTime",
+        "pad2",
+        "formatArray",
+        "getAgendaItemCount",
+        "getDisplayPositionWithinSection",
+        "resolveAgendaText",
+        "renderHeader",
+        "renderItem",
+        "onReload",
+        "onChangeItem00",
+        "onAddItemToday",
+        "onLogPositions",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 133,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "renderItem"
+        },
+        {
+          "line": 135,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "renderItem"
+        },
+        {
+          "line": 142,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "renderItem"
+        },
+        {
+          "line": 199,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 201,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 202,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 206,
+          "qualified": "router.back",
+          "base": "router",
+          "name": "back",
+          "kind": "system",
+          "kit": "ArkUI",
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 208,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 221,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 222,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 223,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 231,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 239,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 247,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 277,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 278,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 284,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 289,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 290,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 291,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 292,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "router"
+          ],
+          "source": "@kit.ArkUI",
+          "kit": "ArkUI",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "SectionedDataSource",
+            "SectionedGrid",
+            "SectionedModel",
+            "SectionEntry",
+            "SectionEntryKind",
+            "TYPE_ITEM"
+          ],
+          "source": "sectionedrecyclerview",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "getSectionCount",
+        "getItemCountForSection",
+        "hasFooterInSection",
+        "getSectionItemViewType",
+        "aboutToAppear",
+        "syncModelState",
+        "appendLog",
+        "formatTime",
+        "pad2",
+        "resolveItemText",
+        "resolveHeaderText",
+        "resolveFooterText",
+        "renderHeader",
+        "renderItem",
+        "renderFooter",
+        "onAddSection",
+        "onRemoveSection",
+        "onToggleFooter",
+        "onToggleMultiViewType",
+        "onChangeItemS2P0",
+        "getDisplayPositionWithinSection",
+        "onLogPositions",
+        "onChangeHeaderS0",
+        "onChangeFooterS1",
+        "onSetModel",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 143,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "renderHeader"
+        },
+        {
+          "line": 144,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "renderHeader"
+        },
+        {
+          "line": 159,
+          "qualified": "Stack",
+          "base": "Stack",
+          "name": "Stack",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "renderItem"
+        },
+        {
+          "line": 160,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "renderItem"
+        },
+        {
+          "line": 173,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "renderFooter"
+        },
+        {
+          "line": 174,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "renderFooter"
+        },
+        {
+          "line": 284,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 286,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 287,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 291,
+          "qualified": "router.back",
+          "base": "router",
+          "name": "back",
+          "kind": "system",
+          "kit": "ArkUI",
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 293,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 306,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 307,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 308,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 316,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 324,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 332,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 340,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 348,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 356,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 364,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 372,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 408,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 409,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 415,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 420,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 421,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 422,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 423,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "router"
+          ],
+          "source": "@kit.ArkUI",
+          "kit": "ArkUI",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 7,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 9,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 10,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 21,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 22,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 23,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 30,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 31,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 36,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 41,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 42,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 52,
+          "qualified": "router.pushUrl",
+          "base": "router",
+          "name": "pushUrl",
+          "kind": "system",
+          "kit": "ArkUI",
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 63,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 64,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 69,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 74,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 75,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 85,
+          "qualified": "router.pushUrl",
+          "base": "router",
+          "name": "pushUrl",
+          "kind": "system",
+          "kit": "ArkUI",
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\components\\SectionedGrid.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "SectionedDataSource"
+          ],
+          "source": "../sectionedrecyclerview/SectionedDataSource",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 2,
+          "names": [
+            "SectionEntry",
+            "SectionEntryKind"
+          ],
+          "source": "../sectionedrecyclerview/Types",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "emptyFooterBuilder",
+        "build",
+        "buildColumnsTemplate"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 42,
+          "qualified": "Grid",
+          "base": "Grid",
+          "name": "Grid",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 45,
+          "qualified": "GridItem",
+          "base": "GridItem",
+          "name": "GridItem",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 51,
+          "qualified": "GridItem",
+          "base": "GridItem",
+          "name": "GridItem",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 55,
+          "qualified": "GridItem",
+          "base": "GridItem",
+          "name": "GridItem",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\components\\SectionedList.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "SectionedDataSource"
+          ],
+          "source": "../sectionedrecyclerview/SectionedDataSource",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 2,
+          "names": [
+            "SectionEntry",
+            "SectionEntryKind"
+          ],
+          "source": "../sectionedrecyclerview/Types",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "emptyFooterBuilder",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 40,
+          "qualified": "List",
+          "base": "List",
+          "name": "List",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 43,
+          "qualified": "ListItem",
+          "base": "ListItem",
+          "name": "ListItem",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 47,
+          "qualified": "ListItem",
+          "base": "ListItem",
+          "name": "ListItem",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 51,
+          "qualified": "ListItem",
+          "base": "ListItem",
+          "name": "ListItem",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\sectionedrecyclerview\\DefaultSectionHeader.ets",
+      "imports": [],
+      "functions": [
+        "SectionedDefaultHeader"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 17,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "SectionedDefaultHeader"
+        },
+        {
+          "line": 18,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "SectionedDefaultHeader"
+        }
+      ]
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\sectionedrecyclerview\\SectionedDataSource.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "SectionedModel"
+          ],
+          "source": "./SectionedModel",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 2,
+          "names": [
+            "SectionEntry",
+            "SectionEntryKind",
+            "TYPE_ITEM",
+            "TYPE_SECTION_FOOTER",
+            "TYPE_SECTION_HEADER"
+          ],
+          "source": "./Types",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "getSectionCount",
+        "getItemCountForSection",
+        "hasFooterInSection",
+        "constructor",
+        "getModel",
+        "setModel",
+        "totalCount",
+        "getData",
+        "registerDataChangeListener",
+        "unregisterDataChangeListener",
+        "isSectionHeaderPosition",
+        "isSectionFooterPosition",
+        "getSectionForPosition",
+        "getPositionWithinSection",
+        "notifySectionReloaded",
+        "notifySectionHeaderChanged",
+        "notifySectionItemChanged",
+        "notifySectionFooterChanged",
+        "setupIndices",
+        "computeEntries",
+        "findEntryIndex",
+        "refreshEntry"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\sectionedrecyclerview\\SectionedModel.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "TYPE_ITEM",
+            "TYPE_SECTION_FOOTER",
+            "TYPE_SECTION_HEADER"
+          ],
+          "source": "./Types",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "getSectionHeaderViewType",
+        "getSectionFooterViewType",
+        "getSectionItemViewType"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\sectionedrecyclerview\\SimpleSectionedModel.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "SectionedModel"
+          ],
+          "source": "./SectionedModel",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "hasFooterInSection"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\sectionedrecyclerview\\Types.ets",
+      "imports": [],
+      "functions": [
+        "constructor"
+      ],
+      "systemApiCalls": []
+    }
+  ],
+  "apiGraph": [
+    {
+      "api": "Button",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 223,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 231,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 239,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 247,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 308,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 316,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 324,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 332,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 340,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 348,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 356,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 364,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 372,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Column",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 135,
+          "caller": "renderItem",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 199,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 277,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 290,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 284,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 408,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 421,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 7,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 22,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 30,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 63,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "ForEach",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 291,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 422,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Grid",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\SectionedGrid.ets",
+          "line": 42,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "GridItem",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\SectionedGrid.ets",
+          "line": 45,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\SectionedGrid.ets",
+          "line": 51,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\SectionedGrid.ets",
+          "line": 55,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "List",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\SectionedList.ets",
+          "line": 40,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "ListItem",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\SectionedList.ets",
+          "line": 43,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\SectionedList.ets",
+          "line": 47,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\SectionedList.ets",
+          "line": 51,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Row",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 133,
+          "caller": "renderItem",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 201,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 222,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 143,
+          "caller": "renderHeader",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 173,
+          "caller": "renderFooter",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 286,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 307,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 9,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 41,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 74,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\sectionedrecyclerview\\DefaultSectionHeader.ets",
+          "line": 17,
+          "caller": "SectionedDefaultHeader",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Scroll",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 221,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 289,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 306,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 420,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 21,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Stack",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 159,
+          "caller": "renderItem",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Text",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 142,
+          "caller": "renderItem",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 202,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 208,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 278,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 284,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 292,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 144,
+          "caller": "renderHeader",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 160,
+          "caller": "renderItem",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 174,
+          "caller": "renderFooter",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 287,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 293,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 409,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 415,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 423,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 10,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 23,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 31,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 36,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 42,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 64,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 69,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 75,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\sectionedrecyclerview\\DefaultSectionHeader.ets",
+          "line": 18,
+          "caller": "SectionedDefaultHeader",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "hilog.error",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 12,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 27,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 14,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 18,
+          "caller": "onDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 23,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 30,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 36,
+          "caller": "onWindowStageDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 41,
+          "caller": "onForeground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 46,
+          "caller": "onBackground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 8,
+          "caller": "onBackup",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 13,
+          "caller": "onRestore",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "router.back",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\AgendaListPage.ets",
+          "line": 206,
+          "caller": "build",
+          "kit": "ArkUI"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\CountGridPage.ets",
+          "line": 291,
+          "caller": "build",
+          "kit": "ArkUI"
+        }
+      ]
+    },
+    {
+      "api": "router.pushUrl",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 52,
+          "caller": "build",
+          "kit": "ArkUI"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 85,
+          "caller": "build",
+          "kit": "ArkUI"
+        }
+      ]
+    },
+    {
+      "api": "this.context.getApplicationContext",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 10,
+          "caller": "onCreate",
+          "kit": null
+        }
+      ]
+    }
+  ]
+}

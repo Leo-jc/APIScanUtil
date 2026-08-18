@@ -1,0 +1,9 @@
+{
+  "name": "sidebar",
+  "version": "1.0.0",
+  "description": "HarmonyOS 字母索引侧边栏控件，自绘字母列表，监听触摸/滑动选择并回调，可配合列表实现快速定位。",
+  "main": "Index.ets",
+  "author": "leo",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}

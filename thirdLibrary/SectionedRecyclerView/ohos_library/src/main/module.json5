@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "sectionedrecyclerview",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

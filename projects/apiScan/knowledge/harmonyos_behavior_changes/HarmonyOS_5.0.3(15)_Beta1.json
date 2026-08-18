@@ -1,0 +1,211 @@
+{
+  "document": "HarmonyOS 5.0.3(15)_Beta1 行为变更清单",
+  "apiVersion": 15,
+  "versionName": "5.0.3(15)",
+  "baseVersion": "5.0.3(15)",
+  "subVersion": "Beta1",
+  "releaseDate": null,
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-roadmap/all-changelogs-503",
+  "sourceUrl": null,
+  "totalKits": null,
+  "totalChanges": 8,
+  "kits": [],
+  "interfaceBehaviorChanges": [
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "_SIGNAL_H.defined(_POSIX_SOURCE)",
+          "completePath": "/interface/sdk_c/third_party/musl/ndk_musl_include/signal.h",
+          "implementLanguage": "c",
+          "interfaceName": "sigaction",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "int sigaction(int, const struct sigaction *__restrict, struct sigaction *__restrict)",
+          "packageName": null,
+          "version": null
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "信号处理方法注册接口sigaction支持SA_RESETHAND标志位变更",
+        "changeType": "接口行为变更",
+        "id": 233,
+        "sdkVersion": "5.0.3(15) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "SheetMode",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "EMBEDDED",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "EMBEDDED = 1",
+          "packageName": "common",
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "半模态SheetMode.EMBEDDED模式支持响应ESC键退出",
+        "changeType": "UX交互行为变更",
+        "id": "324",
+        "sdkVersion": "5.0.3(15) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "hilog日志在商用版本（nolog版本）开发者模式下默认日志级别由info变为warning",
+        "changeType": "None",
+        "id": 312,
+        "sdkVersion": "5.0.3(15) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "FrameNode",
+          "completePath": "/interface/sdk-js/api/arkui/FrameNode.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "isVisible",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "isVisible(): boolean",
+          "packageName": "FrameNode",
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "FrameNode被UINode包裹时isVisible接口返回值发生变更",
+        "changeType": "接口行为变更",
+        "id": 322,
+        "sdkVersion": "5.0.3(15) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CopyEvent",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rich_editor.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "preventDefault",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "preventDefault?: Callback<void>",
+          "packageName": "rich_editor",
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "富文本组件RichEditor的onCopy回调中设置preventDefault()时的行为变更",
+        "changeType": "UX交互行为变更",
+        "id": "326",
+        "sdkVersion": "5.0.3(15) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "window.Window",
+          "completePath": "/interface/sdk-js/api/@ohos.window.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "on",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "on(type: 'screenshot', callback: Callback<void>): void",
+          "packageName": "ohos.window",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "系统录屏应用调用的截屏接口变更",
+        "changeType": "接口行为变更",
+        "id": 309,
+        "sdkVersion": "5.0.3(15) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "ApplicationInfo",
+          "completePath": "/interface/sdk-js/api/bundleManager/ApplicationInfo.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "installSource",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "readonly installSource: string",
+          "packageName": "ApplicationInfo",
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "installSource字段规格变更",
+        "changeType": "接口行为变更",
+        "id": 317,
+        "sdkVersion": "5.0.3(15) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "NATIVE_AVCODEC_BASE_H",
+          "completePath": "/interface/sdk_c/multimedia/av_codec/native_avcodec_base.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_AVCodecOnStreamChanged",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "typedef void (*OH_AVCodecOnStreamChanged)(OH_AVCodec *codec, OH_AVFormat *format, void *userData)",
+          "packageName": null,
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "OH_AVCodecOnStreamChanged在音频解码场景的默认行为变更",
+        "changeType": "接口行为变更",
+        "id": 319,
+        "sdkVersion": "5.0.3(15) Beta1",
+        "url": null
+      }
+    }
+  ]
+}

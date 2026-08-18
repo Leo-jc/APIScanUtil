@@ -1,0 +1,1878 @@
+{
+  "document": "HarmonyOS 5.1.1(19)_Release API变更清单",
+  "apiVersion": 19,
+  "versionName": "5.1.1(19)",
+  "baseVersion": "5.1.1(19)",
+  "subVersion": "Release",
+  "releaseDate": "2025/06/30",
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/511",
+  "sourceUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/apidiff-511-release",
+  "totalKits": 9,
+  "totalChanges": 100,
+  "kits": [
+    {
+      "name": "Account Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-accountkit-5112",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "类新增可选成员",
+          "className": "AuthorizationWithHuaweiIDRequest",
+          "apiDeclaration": "supportAtomicService?: boolean;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "AuthorizationWithHuaweiIDRequest",
+            "apiDeclaration": "supportAtomicService?: boolean;",
+            "diffContent": "supportAtomicService?: boolean;",
+            "raw": null
+          },
+          "file": "api/@hms.core.authentication.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "AREngine",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arengine-5112",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "权限变更",
+          "className": "ARViewContext",
+          "apiDeclaration": "init(): Promise<void>;",
+          "old": {
+            "className": "ARViewContext",
+            "apiDeclaration": "init(): Promise<void>;",
+            "diffContent": "ohos.permission.CAMERA",
+            "raw": null
+          },
+          "new": {
+            "className": "ARViewContext",
+            "apiDeclaration": "init(): Promise<void>;",
+            "diffContent": "ohos.permission.CAMERA and ohos.permission.GYROSCOPE and ohos.permission.ACCELEROMETER",
+            "raw": null
+          },
+          "file": "api/@hms.core.ar.arview.d.ets"
+        }
+      ]
+    },
+    {
+      "name": "ArkUI",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkui-5112",
+      "changeCount": 16,
+      "changes": [
+        {
+          "operation": "删除错误码",
+          "className": "Window",
+          "apiDeclaration": "destroyWindow(callback: AsyncCallback<void>): void;",
+          "old": {
+            "className": "Window",
+            "apiDeclaration": "destroyWindow(callback: AsyncCallback<void>): void;",
+            "diffContent": "1300003",
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "destroyWindow(callback: AsyncCallback<void>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "Window",
+          "apiDeclaration": "destroyWindow(): Promise<void>;",
+          "old": {
+            "className": "Window",
+            "apiDeclaration": "destroyWindow(): Promise<void>;",
+            "diffContent": "1300003",
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "destroyWindow(): Promise<void>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "Window",
+          "apiDeclaration": "loadContent(path: string, storage: LocalStorage, callback: AsyncCallback<void>): void;",
+          "old": {
+            "className": "Window",
+            "apiDeclaration": "loadContent(path: string, storage: LocalStorage, callback: AsyncCallback<void>): void;",
+            "diffContent": "1300003",
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "loadContent(path: string, storage: LocalStorage, callback: AsyncCallback<void>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "Window",
+          "apiDeclaration": "loadContent(path: string, storage: LocalStorage): Promise<void>;",
+          "old": {
+            "className": "Window",
+            "apiDeclaration": "loadContent(path: string, storage: LocalStorage): Promise<void>;",
+            "diffContent": "1300003",
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "loadContent(path: string, storage: LocalStorage): Promise<void>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "Window",
+          "apiDeclaration": "setUIContent(path: string, callback: AsyncCallback<void>): void;",
+          "old": {
+            "className": "Window",
+            "apiDeclaration": "setUIContent(path: string, callback: AsyncCallback<void>): void;",
+            "diffContent": "1300003",
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "setUIContent(path: string, callback: AsyncCallback<void>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "Window",
+          "apiDeclaration": "setUIContent(path: string): Promise<void>;",
+          "old": {
+            "className": "Window",
+            "apiDeclaration": "setUIContent(path: string): Promise<void>;",
+            "diffContent": "1300003",
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "setUIContent(path: string): Promise<void>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "WindowStage",
+          "apiDeclaration": "createSubWindow(name: string): Promise<Window>;",
+          "old": {
+            "className": "WindowStage",
+            "apiDeclaration": "createSubWindow(name: string): Promise<Window>;",
+            "diffContent": "1300005",
+            "raw": null
+          },
+          "new": {
+            "className": "WindowStage",
+            "apiDeclaration": "createSubWindow(name: string): Promise<Window>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "WindowStage",
+          "apiDeclaration": "createSubWindow(name: string, callback: AsyncCallback<Window>): void;",
+          "old": {
+            "className": "WindowStage",
+            "apiDeclaration": "createSubWindow(name: string, callback: AsyncCallback<Window>): void;",
+            "diffContent": "1300005",
+            "raw": null
+          },
+          "new": {
+            "className": "WindowStage",
+            "apiDeclaration": "createSubWindow(name: string, callback: AsyncCallback<Window>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "WindowStage",
+          "apiDeclaration": "loadContent(path: string, storage: LocalStorage, callback: AsyncCallback<void>): void;",
+          "old": {
+            "className": "WindowStage",
+            "apiDeclaration": "loadContent(path: string, storage: LocalStorage, callback: AsyncCallback<void>): void;",
+            "diffContent": "1300005",
+            "raw": null
+          },
+          "new": {
+            "className": "WindowStage",
+            "apiDeclaration": "loadContent(path: string, storage: LocalStorage, callback: AsyncCallback<void>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "WindowStage",
+          "apiDeclaration": "loadContent(path: string, storage?: LocalStorage): Promise<void>;",
+          "old": {
+            "className": "WindowStage",
+            "apiDeclaration": "loadContent(path: string, storage?: LocalStorage): Promise<void>;",
+            "diffContent": "1300005",
+            "raw": null
+          },
+          "new": {
+            "className": "WindowStage",
+            "apiDeclaration": "loadContent(path: string, storage?: LocalStorage): Promise<void>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "WindowStage",
+          "apiDeclaration": "loadContent(path: string, callback: AsyncCallback<void>): void;",
+          "old": {
+            "className": "WindowStage",
+            "apiDeclaration": "loadContent(path: string, callback: AsyncCallback<void>): void;",
+            "diffContent": "1300005",
+            "raw": null
+          },
+          "new": {
+            "className": "WindowStage",
+            "apiDeclaration": "loadContent(path: string, callback: AsyncCallback<void>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "WindowStage",
+          "apiDeclaration": "loadContentByName(name: string, storage: LocalStorage, callback: AsyncCallback<void>): void;",
+          "old": {
+            "className": "WindowStage",
+            "apiDeclaration": "loadContentByName(name: string, storage: LocalStorage, callback: AsyncCallback<void>): void;",
+            "diffContent": "1300003",
+            "raw": null
+          },
+          "new": {
+            "className": "WindowStage",
+            "apiDeclaration": "loadContentByName(name: string, storage: LocalStorage, callback: AsyncCallback<void>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "WindowStage",
+          "apiDeclaration": "loadContentByName(name: string, callback: AsyncCallback<void>): void;",
+          "old": {
+            "className": "WindowStage",
+            "apiDeclaration": "loadContentByName(name: string, callback: AsyncCallback<void>): void;",
+            "diffContent": "1300003",
+            "raw": null
+          },
+          "new": {
+            "className": "WindowStage",
+            "apiDeclaration": "loadContentByName(name: string, callback: AsyncCallback<void>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "WindowStage",
+          "apiDeclaration": "loadContentByName(name: string, storage?: LocalStorage): Promise<void>;",
+          "old": {
+            "className": "WindowStage",
+            "apiDeclaration": "loadContentByName(name: string, storage?: LocalStorage): Promise<void>;",
+            "diffContent": "1300003",
+            "raw": null
+          },
+          "new": {
+            "className": "WindowStage",
+            "apiDeclaration": "loadContentByName(name: string, storage?: LocalStorage): Promise<void>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "错误码变更",
+          "className": "WindowStage",
+          "apiDeclaration": "getSubWindow(): Promise<Array<Window>>;",
+          "old": {
+            "className": "WindowStage",
+            "apiDeclaration": "getSubWindow(): Promise<Array<Window>>;",
+            "diffContent": "1300005",
+            "raw": null
+          },
+          "new": {
+            "className": "WindowStage",
+            "apiDeclaration": "getSubWindow(): Promise<Array<Window>>;",
+            "diffContent": "1300002",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "错误码变更",
+          "className": "WindowStage",
+          "apiDeclaration": "getSubWindow(callback: AsyncCallback<Array<Window>>): void;",
+          "old": {
+            "className": "WindowStage",
+            "apiDeclaration": "getSubWindow(callback: AsyncCallback<Array<Window>>): void;",
+            "diffContent": "1300005",
+            "raw": null
+          },
+          "new": {
+            "className": "WindowStage",
+            "apiDeclaration": "getSubWindow(callback: AsyncCallback<Array<Window>>): void;",
+            "diffContent": "1300002",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Connectivity Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-connectivitykit-5112",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "ScanReportMode",
+          "apiDeclaration": "BATCH = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ScanReportMode",
+            "apiDeclaration": "BATCH = 2",
+            "diffContent": "BATCH = 2",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.ble.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ScanReportType",
+          "apiDeclaration": "ON_BATCH = 3",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ScanReportType",
+            "apiDeclaration": "ON_BATCH = 3",
+            "diffContent": "ON_BATCH = 3",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.ble.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Intents Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-intentskit-5112",
+      "changeCount": 3,
+      "changes": [
+        {
+          "operation": "删除错误码",
+          "className": "insightIntent",
+          "apiDeclaration": "function shareIntent(context: common.BaseContext, intents: InsightIntent\\[\\], callback: AsyncCallback<void>): void;",
+          "old": {
+            "className": "insightIntent",
+            "apiDeclaration": "function shareIntent(context: common.BaseContext, intents: InsightIntent\\[\\], callback: AsyncCallback<void>): void;",
+            "diffContent": "1000101102,1000101103",
+            "raw": null
+          },
+          "new": {
+            "className": "insightIntent",
+            "apiDeclaration": "function shareIntent(context: common.BaseContext, intents: InsightIntent\\[\\], callback: AsyncCallback<void>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@hms.ai.insightIntent.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "insightIntent",
+          "apiDeclaration": "function shareIntent(context: common.BaseContext, intents: InsightIntent\\[\\]): Promise<void>;",
+          "old": {
+            "className": "insightIntent",
+            "apiDeclaration": "function shareIntent(context: common.BaseContext, intents: InsightIntent\\[\\]): Promise<void>;",
+            "diffContent": "1000101102,1000101103",
+            "raw": null
+          },
+          "new": {
+            "className": "insightIntent",
+            "apiDeclaration": "function shareIntent(context: common.BaseContext, intents: InsightIntent\\[\\]): Promise<void>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@hms.ai.insightIntent.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "insightIntent",
+          "apiDeclaration": "function getSid(context: common.BaseContext, renew: boolean): Promise<string>;",
+          "old": {
+            "className": "insightIntent",
+            "apiDeclaration": "function getSid(context: common.BaseContext, renew: boolean): Promise<string>;",
+            "diffContent": "1000101103",
+            "raw": null
+          },
+          "new": {
+            "className": "insightIntent",
+            "apiDeclaration": "function getSid(context: common.BaseContext, renew: boolean): Promise<string>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@hms.ai.insightIntent.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Media Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-mediakit-5112",
+      "changeCount": 6,
+      "changes": [
+        {
+          "operation": "API从不支持元服务到支持元服务",
+          "className": "AVPlayer",
+          "apiDeclaration": "off(type: 'volumeChange', callback?: Callback<number>): void;",
+          "old": {
+            "className": "AVPlayer",
+            "apiDeclaration": "off(type: 'volumeChange', callback?: Callback<number>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "AVPlayer",
+            "apiDeclaration": "off(type: 'volumeChange', callback?: Callback<number>): void;",
+            "diffContent": "atomicservice",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.media.d.ts"
+        },
+        {
+          "operation": "API从不支持元服务到支持元服务",
+          "className": "AVPlayer",
+          "apiDeclaration": "off(type: 'endOfStream', callback?: Callback<void>): void;",
+          "old": {
+            "className": "AVPlayer",
+            "apiDeclaration": "off(type: 'endOfStream', callback?: Callback<void>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "AVPlayer",
+            "apiDeclaration": "off(type: 'endOfStream', callback?: Callback<void>): void;",
+            "diffContent": "atomicservice",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.media.d.ts"
+        },
+        {
+          "operation": "API从不支持元服务到支持元服务",
+          "className": "AVPlayer",
+          "apiDeclaration": "off(type: 'speedDone', callback?: Callback<number>): void;",
+          "old": {
+            "className": "AVPlayer",
+            "apiDeclaration": "off(type: 'speedDone', callback?: Callback<number>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "AVPlayer",
+            "apiDeclaration": "off(type: 'speedDone', callback?: Callback<number>): void;",
+            "diffContent": "atomicservice",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.media.d.ts"
+        },
+        {
+          "operation": "API从不支持元服务到支持元服务",
+          "className": "AVPlayer",
+          "apiDeclaration": "off(type: 'bitrateDone', callback?: Callback<number>): void;",
+          "old": {
+            "className": "AVPlayer",
+            "apiDeclaration": "off(type: 'bitrateDone', callback?: Callback<number>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "AVPlayer",
+            "apiDeclaration": "off(type: 'bitrateDone', callback?: Callback<number>): void;",
+            "diffContent": "atomicservice",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.media.d.ts"
+        },
+        {
+          "operation": "API从不支持元服务到支持元服务",
+          "className": "AVPlayer",
+          "apiDeclaration": "off(type: 'durationUpdate', callback?: Callback<number>): void;",
+          "old": {
+            "className": "AVPlayer",
+            "apiDeclaration": "off(type: 'durationUpdate', callback?: Callback<number>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "AVPlayer",
+            "apiDeclaration": "off(type: 'durationUpdate', callback?: Callback<number>): void;",
+            "diffContent": "atomicservice",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.media.d.ts"
+        },
+        {
+          "operation": "API从不支持元服务到支持元服务",
+          "className": "AVPlayer",
+          "apiDeclaration": "off(type: 'startRenderFrame', callback?: Callback<void>): void;",
+          "old": {
+            "className": "AVPlayer",
+            "apiDeclaration": "off(type: 'startRenderFrame', callback?: Callback<void>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "AVPlayer",
+            "apiDeclaration": "off(type: 'startRenderFrame', callback?: Callback<void>): void;",
+            "diffContent": "atomicservice",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.media.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Multimodal Awareness Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-multimodalawarenesskit-5112",
+      "changeCount": 8,
+      "changes": [
+        {
+          "operation": "syscap变更",
+          "className": "global",
+          "apiDeclaration": "declare namespace motion",
+          "old": {
+            "className": "global",
+            "apiDeclaration": "declare namespace motion",
+            "diffContent": "SystemCapability.MultimodalAwarness.Motion",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare namespace motion",
+            "diffContent": "SystemCapability.MultimodalAwareness.Motion",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalAwareness.motion.d.ts"
+        },
+        {
+          "operation": "syscap变更",
+          "className": "motion",
+          "apiDeclaration": "export enum OperatingHandStatus",
+          "old": {
+            "className": "motion",
+            "apiDeclaration": "export enum OperatingHandStatus",
+            "diffContent": "SystemCapability.MultimodalAwarness.Motion",
+            "raw": null
+          },
+          "new": {
+            "className": "motion",
+            "apiDeclaration": "export enum OperatingHandStatus",
+            "diffContent": "SystemCapability.MultimodalAwareness.Motion",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalAwareness.motion.d.ts"
+        },
+        {
+          "operation": "syscap变更",
+          "className": "OperatingHandStatus",
+          "apiDeclaration": "UNKNOWN_STATUS = 0",
+          "old": {
+            "className": "OperatingHandStatus",
+            "apiDeclaration": "UNKNOWN_STATUS = 0",
+            "diffContent": "SystemCapability.MultimodalAwarness.Motion",
+            "raw": null
+          },
+          "new": {
+            "className": "OperatingHandStatus",
+            "apiDeclaration": "UNKNOWN_STATUS = 0",
+            "diffContent": "SystemCapability.MultimodalAwareness.Motion",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalAwareness.motion.d.ts"
+        },
+        {
+          "operation": "syscap变更",
+          "className": "OperatingHandStatus",
+          "apiDeclaration": "LEFT_HAND_OPERATED = 1",
+          "old": {
+            "className": "OperatingHandStatus",
+            "apiDeclaration": "LEFT_HAND_OPERATED = 1",
+            "diffContent": "SystemCapability.MultimodalAwarness.Motion",
+            "raw": null
+          },
+          "new": {
+            "className": "OperatingHandStatus",
+            "apiDeclaration": "LEFT_HAND_OPERATED = 1",
+            "diffContent": "SystemCapability.MultimodalAwareness.Motion",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalAwareness.motion.d.ts"
+        },
+        {
+          "operation": "syscap变更",
+          "className": "OperatingHandStatus",
+          "apiDeclaration": "RIGHT_HAND_OPERATED = 2",
+          "old": {
+            "className": "OperatingHandStatus",
+            "apiDeclaration": "RIGHT_HAND_OPERATED = 2",
+            "diffContent": "SystemCapability.MultimodalAwarness.Motion",
+            "raw": null
+          },
+          "new": {
+            "className": "OperatingHandStatus",
+            "apiDeclaration": "RIGHT_HAND_OPERATED = 2",
+            "diffContent": "SystemCapability.MultimodalAwareness.Motion",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalAwareness.motion.d.ts"
+        },
+        {
+          "operation": "syscap变更",
+          "className": "motion",
+          "apiDeclaration": "function on(type: 'operatingHandChanged', callback: Callback<OperatingHandStatus>): void;",
+          "old": {
+            "className": "motion",
+            "apiDeclaration": "function on(type: 'operatingHandChanged', callback: Callback<OperatingHandStatus>): void;",
+            "diffContent": "SystemCapability.MultimodalAwarness.Motion",
+            "raw": null
+          },
+          "new": {
+            "className": "motion",
+            "apiDeclaration": "function on(type: 'operatingHandChanged', callback: Callback<OperatingHandStatus>): void;",
+            "diffContent": "SystemCapability.MultimodalAwareness.Motion",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalAwareness.motion.d.ts"
+        },
+        {
+          "operation": "syscap变更",
+          "className": "motion",
+          "apiDeclaration": "function off(type: 'operatingHandChanged', callback?: Callback<OperatingHandStatus>): void;",
+          "old": {
+            "className": "motion",
+            "apiDeclaration": "function off(type: 'operatingHandChanged', callback?: Callback<OperatingHandStatus>): void;",
+            "diffContent": "SystemCapability.MultimodalAwarness.Motion",
+            "raw": null
+          },
+          "new": {
+            "className": "motion",
+            "apiDeclaration": "function off(type: 'operatingHandChanged', callback?: Callback<OperatingHandStatus>): void;",
+            "diffContent": "SystemCapability.MultimodalAwareness.Motion",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalAwareness.motion.d.ts"
+        },
+        {
+          "operation": "syscap变更",
+          "className": "motion",
+          "apiDeclaration": "function getRecentOperatingHandStatus(): OperatingHandStatus;",
+          "old": {
+            "className": "motion",
+            "apiDeclaration": "function getRecentOperatingHandStatus(): OperatingHandStatus;",
+            "diffContent": "SystemCapability.MultimodalAwarness.Motion",
+            "raw": null
+          },
+          "new": {
+            "className": "motion",
+            "apiDeclaration": "function getRecentOperatingHandStatus(): OperatingHandStatus;",
+            "diffContent": "SystemCapability.MultimodalAwareness.Motion",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalAwareness.motion.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Pen Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-penkit-5112",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "syscap变更",
+          "className": "global",
+          "apiDeclaration": "export class HandwriteController",
+          "old": {
+            "className": "global",
+            "apiDeclaration": "export class HandwriteController",
+            "diffContent": "SystemCapability.Applications.StylusFeature",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "export class HandwriteController",
+            "diffContent": "SystemCapability.Stylus.Handwrite",
+            "raw": null
+          },
+          "file": "api/@hms.stylus.HandwriteComponent.d.ets"
+        }
+      ]
+    },
+    {
+      "name": "Sensor Service Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-sensorservicekit-5112",
+      "changeCount": 62,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.ACCELEROMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<AccelerometerResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.ACCELEROMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<AccelerometerResponse>): void;",
+            "diffContent": "function off(type: SensorId.ACCELEROMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<AccelerometerResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.ACCELEROMETER_UNCALIBRATED, sensorInfoParam?: SensorInfoParam, callback?: Callback<AccelerometerUncalibratedResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.ACCELEROMETER_UNCALIBRATED, sensorInfoParam?: SensorInfoParam, callback?: Callback<AccelerometerUncalibratedResponse>): void;",
+            "diffContent": "function off(type: SensorId.ACCELEROMETER_UNCALIBRATED, sensorInfoParam?: SensorInfoParam, callback?: Callback<AccelerometerUncalibratedResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.AMBIENT_LIGHT, sensorInfoParam?: SensorInfoParam, callback?: Callback<LightResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.AMBIENT_LIGHT, sensorInfoParam?: SensorInfoParam, callback?: Callback<LightResponse>): void;",
+            "diffContent": "function off(type: SensorId.AMBIENT_LIGHT, sensorInfoParam?: SensorInfoParam, callback?: Callback<LightResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.AMBIENT_TEMPERATURE, sensorInfoParam?: SensorInfoParam, callback?: Callback<AmbientTemperatureResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.AMBIENT_TEMPERATURE, sensorInfoParam?: SensorInfoParam, callback?: Callback<AmbientTemperatureResponse>): void;",
+            "diffContent": "function off(type: SensorId.AMBIENT_TEMPERATURE, sensorInfoParam?: SensorInfoParam, callback?: Callback<AmbientTemperatureResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.BAROMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<BarometerResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.BAROMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<BarometerResponse>): void;",
+            "diffContent": "function off(type: SensorId.BAROMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<BarometerResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.GRAVITY, sensorInfoParam?: SensorInfoParam, callback?: Callback<GravityResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.GRAVITY, sensorInfoParam?: SensorInfoParam, callback?: Callback<GravityResponse>): void;",
+            "diffContent": "function off(type: SensorId.GRAVITY, sensorInfoParam?: SensorInfoParam, callback?: Callback<GravityResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.GYROSCOPE, sensorInfoParam?: SensorInfoParam, callback?: Callback<GyroscopeResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.GYROSCOPE, sensorInfoParam?: SensorInfoParam, callback?: Callback<GyroscopeResponse>): void;",
+            "diffContent": "function off(type: SensorId.GYROSCOPE, sensorInfoParam?: SensorInfoParam, callback?: Callback<GyroscopeResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.GYROSCOPE_UNCALIBRATED, sensorInfoParam?: SensorInfoParam, callback?: Callback<GyroscopeUncalibratedResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.GYROSCOPE_UNCALIBRATED, sensorInfoParam?: SensorInfoParam, callback?: Callback<GyroscopeUncalibratedResponse>): void;",
+            "diffContent": "function off(type: SensorId.GYROSCOPE_UNCALIBRATED, sensorInfoParam?: SensorInfoParam, callback?: Callback<GyroscopeUncalibratedResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.HALL, sensorInfoParam?: SensorInfoParam, callback?: Callback<HallResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.HALL, sensorInfoParam?: SensorInfoParam, callback?: Callback<HallResponse>): void;",
+            "diffContent": "function off(type: SensorId.HALL, sensorInfoParam?: SensorInfoParam, callback?: Callback<HallResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.HEART_RATE, sensorInfoParam?: SensorInfoParam, callback?: Callback<HeartRateResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.HEART_RATE, sensorInfoParam?: SensorInfoParam, callback?: Callback<HeartRateResponse>): void;",
+            "diffContent": "function off(type: SensorId.HEART_RATE, sensorInfoParam?: SensorInfoParam, callback?: Callback<HeartRateResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.HUMIDITY, sensorInfoParam?: SensorInfoParam, callback?: Callback<HumidityResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.HUMIDITY, sensorInfoParam?: SensorInfoParam, callback?: Callback<HumidityResponse>): void;",
+            "diffContent": "function off(type: SensorId.HUMIDITY, sensorInfoParam?: SensorInfoParam, callback?: Callback<HumidityResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.LINEAR_ACCELEROMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<LinearAccelerometerResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.LINEAR_ACCELEROMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<LinearAccelerometerResponse>): void;",
+            "diffContent": "function off(type: SensorId.LINEAR_ACCELEROMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<LinearAccelerometerResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.MAGNETIC_FIELD, sensorInfoParam?: SensorInfoParam, callback?: Callback<MagneticFieldResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.MAGNETIC_FIELD, sensorInfoParam?: SensorInfoParam, callback?: Callback<MagneticFieldResponse>): void;",
+            "diffContent": "function off(type: SensorId.MAGNETIC_FIELD, sensorInfoParam?: SensorInfoParam, callback?: Callback<MagneticFieldResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.MAGNETIC_FIELD_UNCALIBRATED, sensorInfoParam?: SensorInfoParam, callback?: Callback<MagneticFieldUncalibratedResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.MAGNETIC_FIELD_UNCALIBRATED, sensorInfoParam?: SensorInfoParam, callback?: Callback<MagneticFieldUncalibratedResponse>): void;",
+            "diffContent": "function off(type: SensorId.MAGNETIC_FIELD_UNCALIBRATED, sensorInfoParam?: SensorInfoParam, callback?: Callback<MagneticFieldUncalibratedResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.ORIENTATION, sensorInfoParam?: SensorInfoParam, callback?: Callback<OrientationResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.ORIENTATION, sensorInfoParam?: SensorInfoParam, callback?: Callback<OrientationResponse>): void;",
+            "diffContent": "function off(type: SensorId.ORIENTATION, sensorInfoParam?: SensorInfoParam, callback?: Callback<OrientationResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.PEDOMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<PedometerResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.PEDOMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<PedometerResponse>): void;",
+            "diffContent": "function off(type: SensorId.PEDOMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<PedometerResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.PEDOMETER_DETECTION, sensorInfoParam?: SensorInfoParam, callback?: Callback<PedometerDetectionResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.PEDOMETER_DETECTION, sensorInfoParam?: SensorInfoParam, callback?: Callback<PedometerDetectionResponse>): void;",
+            "diffContent": "function off(type: SensorId.PEDOMETER_DETECTION, sensorInfoParam?: SensorInfoParam, callback?: Callback<PedometerDetectionResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.PROXIMITY, sensorInfoParam?: SensorInfoParam, callback?: Callback<ProximityResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.PROXIMITY, sensorInfoParam?: SensorInfoParam, callback?: Callback<ProximityResponse>): void;",
+            "diffContent": "function off(type: SensorId.PROXIMITY, sensorInfoParam?: SensorInfoParam, callback?: Callback<ProximityResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.ROTATION_VECTOR, sensorInfoParam?: SensorInfoParam, callback?: Callback<RotationVectorResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.ROTATION_VECTOR, sensorInfoParam?: SensorInfoParam, callback?: Callback<RotationVectorResponse>): void;",
+            "diffContent": "function off(type: SensorId.ROTATION_VECTOR, sensorInfoParam?: SensorInfoParam, callback?: Callback<RotationVectorResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.SIGNIFICANT_MOTION, sensorInfoParam?: SensorInfoParam, callback?: Callback<SignificantMotionResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.SIGNIFICANT_MOTION, sensorInfoParam?: SensorInfoParam, callback?: Callback<SignificantMotionResponse>): void;",
+            "diffContent": "function off(type: SensorId.SIGNIFICANT_MOTION, sensorInfoParam?: SensorInfoParam, callback?: Callback<SignificantMotionResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: SensorId.WEAR_DETECTION, sensorInfoParam?: SensorInfoParam, callback?: Callback<WearDetectionResponse>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: SensorId.WEAR_DETECTION, sensorInfoParam?: SensorInfoParam, callback?: Callback<WearDetectionResponse>): void;",
+            "diffContent": "function off(type: SensorId.WEAR_DETECTION, sensorInfoParam?: SensorInfoParam, callback?: Callback<WearDetectionResponse>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function getSingleSensorByDeviceSync(type: SensorId, deviceId?: number): Array<Sensor>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function getSingleSensorByDeviceSync(type: SensorId, deviceId?: number): Array<Sensor>;",
+            "diffContent": "function getSingleSensorByDeviceSync(type: SensorId, deviceId?: number): Array<Sensor>;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function getSensorListByDeviceSync(deviceId?: number): Array<Sensor>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function getSensorListByDeviceSync(deviceId?: number): Array<Sensor>;",
+            "diffContent": "function getSensorListByDeviceSync(deviceId?: number): Array<Sensor>;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function on(type: 'sensorStatusChange', callback: Callback<SensorStatusEvent>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function on(type: 'sensorStatusChange', callback: Callback<SensorStatusEvent>): void;",
+            "diffContent": "function on(type: 'sensorStatusChange', callback: Callback<SensorStatusEvent>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "function off(type: 'sensorStatusChange', callback?: Callback<SensorStatusEvent>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "function off(type: 'sensorStatusChange', callback?: Callback<SensorStatusEvent>): void;",
+            "diffContent": "function off(type: 'sensorStatusChange', callback?: Callback<SensorStatusEvent>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "interface SensorStatusEvent",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "interface SensorStatusEvent",
+            "diffContent": "interface SensorStatusEvent",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SensorStatusEvent",
+          "apiDeclaration": "timestamp: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SensorStatusEvent",
+            "apiDeclaration": "timestamp: number;",
+            "diffContent": "timestamp: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SensorStatusEvent",
+          "apiDeclaration": "sensorId: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SensorStatusEvent",
+            "apiDeclaration": "sensorId: number;",
+            "diffContent": "sensorId: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SensorStatusEvent",
+          "apiDeclaration": "sensorIndex: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SensorStatusEvent",
+            "apiDeclaration": "sensorIndex: number;",
+            "diffContent": "sensorIndex: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SensorStatusEvent",
+          "apiDeclaration": "isSensorOnline: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SensorStatusEvent",
+            "apiDeclaration": "isSensorOnline: boolean;",
+            "diffContent": "isSensorOnline: boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SensorStatusEvent",
+          "apiDeclaration": "deviceId: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SensorStatusEvent",
+            "apiDeclaration": "deviceId: number;",
+            "diffContent": "deviceId: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SensorStatusEvent",
+          "apiDeclaration": "deviceName: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SensorStatusEvent",
+            "apiDeclaration": "deviceName: string;",
+            "diffContent": "deviceName: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sensor",
+          "apiDeclaration": "interface SensorInfoParam",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sensor",
+            "apiDeclaration": "interface SensorInfoParam",
+            "diffContent": "interface SensorInfoParam",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SensorInfoParam",
+          "apiDeclaration": "deviceId?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SensorInfoParam",
+            "apiDeclaration": "deviceId?: number;",
+            "diffContent": "deviceId?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SensorInfoParam",
+          "apiDeclaration": "sensorIndex?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SensorInfoParam",
+            "apiDeclaration": "sensorIndex?: number;",
+            "diffContent": "sensorIndex?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "vibrator",
+          "apiDeclaration": "function stopVibration(param?: VibratorInfoParam): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "vibrator",
+            "apiDeclaration": "function stopVibration(param?: VibratorInfoParam): Promise<void>;",
+            "diffContent": "function stopVibration(param?: VibratorInfoParam): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "vibrator",
+          "apiDeclaration": "function getEffectInfoSync(effectId: string, param?: VibratorInfoParam): EffectInfo;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "vibrator",
+            "apiDeclaration": "function getEffectInfoSync(effectId: string, param?: VibratorInfoParam): EffectInfo;",
+            "diffContent": "function getEffectInfoSync(effectId: string, param?: VibratorInfoParam): EffectInfo;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "vibrator",
+          "apiDeclaration": "interface EffectInfo",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "vibrator",
+            "apiDeclaration": "interface EffectInfo",
+            "diffContent": "interface EffectInfo",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "EffectInfo",
+          "apiDeclaration": "isEffectSupported: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "EffectInfo",
+            "apiDeclaration": "isEffectSupported: boolean;",
+            "diffContent": "isEffectSupported: boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "vibrator",
+          "apiDeclaration": "interface VibratorInfoParam",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "vibrator",
+            "apiDeclaration": "interface VibratorInfoParam",
+            "diffContent": "interface VibratorInfoParam",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VibratorInfoParam",
+          "apiDeclaration": "deviceId?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VibratorInfoParam",
+            "apiDeclaration": "deviceId?: number;",
+            "diffContent": "deviceId?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VibratorInfoParam",
+          "apiDeclaration": "vibratorId?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VibratorInfoParam",
+            "apiDeclaration": "vibratorId?: number;",
+            "diffContent": "vibratorId?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "vibrator",
+          "apiDeclaration": "interface VibratorInfo",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "vibrator",
+            "apiDeclaration": "interface VibratorInfo",
+            "diffContent": "interface VibratorInfo",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VibratorInfo",
+          "apiDeclaration": "deviceId: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VibratorInfo",
+            "apiDeclaration": "deviceId: number;",
+            "diffContent": "deviceId: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VibratorInfo",
+          "apiDeclaration": "vibratorId: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VibratorInfo",
+            "apiDeclaration": "vibratorId: number;",
+            "diffContent": "vibratorId: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VibratorInfo",
+          "apiDeclaration": "deviceName: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VibratorInfo",
+            "apiDeclaration": "deviceName: string;",
+            "diffContent": "deviceName: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VibratorInfo",
+          "apiDeclaration": "isHdHapticSupported: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VibratorInfo",
+            "apiDeclaration": "isHdHapticSupported: boolean;",
+            "diffContent": "isHdHapticSupported: boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VibratorInfo",
+          "apiDeclaration": "isLocalVibrator: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VibratorInfo",
+            "apiDeclaration": "isLocalVibrator: boolean;",
+            "diffContent": "isLocalVibrator: boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "vibrator",
+          "apiDeclaration": "function getVibratorInfoSync(param?: VibratorInfoParam): Array<VibratorInfo>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "vibrator",
+            "apiDeclaration": "function getVibratorInfoSync(param?: VibratorInfoParam): Array<VibratorInfo>;",
+            "diffContent": "function getVibratorInfoSync(param?: VibratorInfoParam): Array<VibratorInfo>;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "vibrator",
+          "apiDeclaration": "function on(type: 'vibratorStateChange', callback: Callback<VibratorStatusEvent>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "vibrator",
+            "apiDeclaration": "function on(type: 'vibratorStateChange', callback: Callback<VibratorStatusEvent>): void;",
+            "diffContent": "function on(type: 'vibratorStateChange', callback: Callback<VibratorStatusEvent>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "vibrator",
+          "apiDeclaration": "function off(type: 'vibratorStateChange', callback?: Callback<VibratorStatusEvent>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "vibrator",
+            "apiDeclaration": "function off(type: 'vibratorStateChange', callback?: Callback<VibratorStatusEvent>): void;",
+            "diffContent": "function off(type: 'vibratorStateChange', callback?: Callback<VibratorStatusEvent>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "vibrator",
+          "apiDeclaration": "interface VibratorStatusEvent",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "vibrator",
+            "apiDeclaration": "interface VibratorStatusEvent",
+            "diffContent": "interface VibratorStatusEvent",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VibratorStatusEvent",
+          "apiDeclaration": "timestamp: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VibratorStatusEvent",
+            "apiDeclaration": "timestamp: number;",
+            "diffContent": "timestamp: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VibratorStatusEvent",
+          "apiDeclaration": "deviceId: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VibratorStatusEvent",
+            "apiDeclaration": "deviceId: number;",
+            "diffContent": "deviceId: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VibratorStatusEvent",
+          "apiDeclaration": "vibratorCount: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VibratorStatusEvent",
+            "apiDeclaration": "vibratorCount: number;",
+            "diffContent": "vibratorCount: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VibratorStatusEvent",
+          "apiDeclaration": "isVibratorOnline: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VibratorStatusEvent",
+            "apiDeclaration": "isVibratorOnline: boolean;",
+            "diffContent": "isVibratorOnline: boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "Sensor",
+          "apiDeclaration": "sensorIndex?: number;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Sensor",
+            "apiDeclaration": "sensorIndex?: number;",
+            "diffContent": "sensorIndex?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "Sensor",
+          "apiDeclaration": "deviceId?: number;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Sensor",
+            "apiDeclaration": "deviceId?: number;",
+            "diffContent": "deviceId?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "Sensor",
+          "apiDeclaration": "deviceName?: string;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Sensor",
+            "apiDeclaration": "deviceName?: string;",
+            "diffContent": "deviceName?: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "Sensor",
+          "apiDeclaration": "isLocalSensor?: boolean;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Sensor",
+            "apiDeclaration": "isLocalSensor?: boolean;",
+            "diffContent": "isLocalSensor?: boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "Options",
+          "apiDeclaration": "sensorInfoParam?: SensorInfoParam;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Options",
+            "apiDeclaration": "sensorInfoParam?: SensorInfoParam;",
+            "diffContent": "sensorInfoParam?: SensorInfoParam;",
+            "raw": null
+          },
+          "file": "api/@ohos.sensor.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "VibrateAttribute",
+          "apiDeclaration": "deviceId?: number;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "VibrateAttribute",
+            "apiDeclaration": "deviceId?: number;",
+            "diffContent": "deviceId?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.vibrator.d.ts"
+        }
+      ]
+    }
+  ],
+  "interfaceBehaviorChanges": []
+}

@@ -1,0 +1,14 @@
+{
+  "document": "HarmonyOS 6.1.0(23)_Beta2 行为变更清单",
+  "apiVersion": 23,
+  "versionName": "6.1.0(23)",
+  "baseVersion": "6.1.0(23)",
+  "subVersion": "Beta2",
+  "releaseDate": null,
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-roadmap/all-changelogs-610",
+  "sourceUrl": null,
+  "totalKits": null,
+  "totalChanges": 0,
+  "kits": [],
+  "interfaceBehaviorChanges": []
+}

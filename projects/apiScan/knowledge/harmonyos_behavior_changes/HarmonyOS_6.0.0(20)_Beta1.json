@@ -1,0 +1,1505 @@
+{
+  "document": "HarmonyOS 6.0.0(20)_Beta1 行为变更清单",
+  "apiVersion": 20,
+  "versionName": "6.0.0(20)",
+  "baseVersion": "6.0.0(20)",
+  "subVersion": "Beta1",
+  "releaseDate": null,
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-roadmap/all-changelogs-600",
+  "sourceUrl": null,
+  "totalKits": null,
+  "totalChanges": 21,
+  "kits": [],
+  "interfaceBehaviorChanges": [
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "SheetOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "preferType",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "preferType?: SheetType",
+          "packageName": "common",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "bindSheet在2in1设备中默认避让窗口安全区",
+        "changeType": "UX视觉布局变更",
+        "id": "393",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "userAuth.UserAuthInstance",
+          "completePath": "/interface/sdk-js/api/@ohos.userIAM.userAuth.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "start",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "start(): void",
+          "packageName": "ohos.userIAM.userAuth",
+          "version": "10"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "@ohos.useriam.userAuth限制应用从后台发起带交互界面的身份认证变更",
+        "changeType": "接口行为变更",
+        "id": "390",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "image.ImageInfo",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.image.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "mimeType",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "mimeType: string",
+          "packageName": "ohos.multimedia.image",
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "ImageInfo对象mimeType返回值变更",
+        "changeType": "接口行为变更",
+        "id": "406",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "ble.GattClientDevice",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "writeDescriptorValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "writeDescriptorValue(descriptor: BLEDescriptor): Promise<void>",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        },
+        {
+          "className": "ble",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "stopAdvertising",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function stopAdvertising(advertisingId: number): Promise<void>",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "11"
+        },
+        {
+          "className": "ble.GattClientDevice",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "readCharacteristicValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "readCharacteristicValue(characteristic: BLECharacteristic, callback: AsyncCallback<BLECharacteristic>): void",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        },
+        {
+          "className": "ble.GattClientDevice",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "setCharacteristicChangeIndication",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "setCharacteristicChangeIndication(characteristic: BLECharacteristic, enable: boolean): Promise<void>",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        },
+        {
+          "className": "ble",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "startAdvertising",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function startAdvertising(setting: AdvertiseSetting, advData: AdvertiseData, advResponse?: AdvertiseData): void",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        },
+        {
+          "className": "ble",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "enableAdvertising",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function enableAdvertising(advertisingEnableParams: AdvertisingEnableParams, callback: AsyncCallback<void>): void",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "11"
+        },
+        {
+          "className": "ble.GattClientDevice",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "setCharacteristicChangeNotification",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "setCharacteristicChangeNotification(characteristic: BLECharacteristic, enable: boolean): Promise<void>",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        },
+        {
+          "className": "ble.GattClientDevice",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "readDescriptorValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "readDescriptorValue(descriptor: BLEDescriptor): Promise<BLEDescriptor>",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        },
+        {
+          "className": "ble",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "startAdvertising",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function startAdvertising(advertisingParams: AdvertisingParams, callback: AsyncCallback<number>): void",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "11"
+        },
+        {
+          "className": "ble",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "disableAdvertising",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function disableAdvertising(advertisingDisableParams: AdvertisingDisableParams, callback: AsyncCallback<void>): void",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "11"
+        },
+        {
+          "className": "ble.GattClientDevice",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "readDescriptorValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "readDescriptorValue(descriptor: BLEDescriptor, callback: AsyncCallback<BLEDescriptor>): void",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        },
+        {
+          "className": "ble",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "disableAdvertising",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function disableAdvertising(advertisingDisableParams: AdvertisingDisableParams): Promise<void>",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "11"
+        },
+        {
+          "className": "ble.GattClientDevice",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "writeCharacteristicValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "writeCharacteristicValue(characteristic: BLECharacteristic, writeType: GattWriteType): Promise<void>",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        },
+        {
+          "className": "ble.GattClientDevice",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "writeCharacteristicValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "writeCharacteristicValue(      characteristic: BLECharacteristic,      writeType: GattWriteType,      callback: AsyncCallback<void>    ): void",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        },
+        {
+          "className": "ble.GattClientDevice",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "writeDescriptorValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "writeDescriptorValue(descriptor: BLEDescriptor, callback: AsyncCallback<void>): void",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        },
+        {
+          "className": "ble.GattClientDevice",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "setCharacteristicChangeIndication",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "setCharacteristicChangeIndication(      characteristic: BLECharacteristic,      enable: boolean,      callback: AsyncCallback<void>    ): void",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        },
+        {
+          "className": "ble.GattClientDevice",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getRssiValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getRssiValue(): Promise<number>",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        },
+        {
+          "className": "ble",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "stopAdvertising",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function stopAdvertising(advertisingId: number, callback: AsyncCallback<void>): void",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "11"
+        },
+        {
+          "className": "ble",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "enableAdvertising",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function enableAdvertising(advertisingEnableParams: AdvertisingEnableParams): Promise<void>",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "11"
+        },
+        {
+          "className": "ble.GattClientDevice",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "setCharacteristicChangeNotification",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "setCharacteristicChangeNotification(      characteristic: BLECharacteristic,      enable: boolean,      callback: AsyncCallback<void>    ): void",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        },
+        {
+          "className": "ble",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "startAdvertising",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function startAdvertising(advertisingParams: AdvertisingParams): Promise<number>",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "11"
+        },
+        {
+          "className": "ble.GattClientDevice",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getRssiValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getRssiValue(callback: AsyncCallback<number>): void",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        },
+        {
+          "className": "ble.GattClientDevice",
+          "completePath": "/interface/sdk-js/api/@ohos.bluetooth.ble.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "readCharacteristicValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "readCharacteristicValue(characteristic: BLECharacteristic): Promise<BLECharacteristic>",
+          "packageName": "ohos.bluetooth.ble",
+          "version": "10"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "蓝牙BLE接口错误码变更",
+        "changeType": "接口定义变更",
+        "id": "CH2025040175433",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "LANGUAGE_RULE_CHANGE",
+        "changeTitle": "通过字面量定义的数组在删除元素后再使用该字面量定义数组时数组内容异常",
+        "changeType": "None",
+        "id": "CH2025042210344",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CustomDialogController",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/custom_dialog_controller.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "CustomDialogController",
+          "interfaceType": "class",
+          "invokeInstance": null,
+          "methodDefinition": "declare class CustomDialogController",
+          "packageName": "custom_dialog_controller",
+          "version": "7"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "使用字面量初始化CustomDialogController类实例导致的编译行为变更",
+        "changeType": "接口定义变更",
+        "id": "CH2025071721132",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "wantConstant.Params",
+          "completePath": "/interface/sdk-js/api/@ohos.app.ability.wantConstant.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "PARAMS_STREAM",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "PARAMS_STREAM = 'ability.params.stream'",
+          "packageName": "ohos.app.ability.wantConstant",
+          "version": "12"
+        },
+        {
+          "className": "wantConstant.Flags",
+          "completePath": "/interface/sdk-js/api/@ohos.app.ability.wantConstant.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "FLAG_AUTH_READ_URI_PERMISSION",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "FLAG_AUTH_READ_URI_PERMISSION = 0x00000001",
+          "packageName": "ohos.app.ability.wantConstant",
+          "version": "9"
+        },
+        {
+          "className": "wantConstant.Flags",
+          "completePath": "/interface/sdk-js/api/@ohos.app.ability.wantConstant.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "FLAG_AUTH_WRITE_URI_PERMISSION",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "FLAG_AUTH_WRITE_URI_PERMISSION = 0x00000002",
+          "packageName": "ohos.app.ability.wantConstant",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "借助Want进行文件分享时擦除不合法的URI",
+        "changeType": "接口行为变更",
+        "id": "CH2025041851851",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "_SYS_PTRACE_H",
+          "completePath": "/interface/sdk_c/third_party/musl/ndk_musl_include/sys/ptrace.h",
+          "implementLanguage": "c",
+          "interfaceName": "ptrace",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "long ptrace(int, ...)",
+          "packageName": null,
+          "version": null
+        },
+        {
+          "className": "_SYS_PTRACE_H",
+          "completePath": "/interface/sdk_c/third_party/musl/ndk_musl_include/sys/ptrace.h",
+          "implementLanguage": "c",
+          "interfaceName": "PTRACE_DETACH",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "#define PTRACE_DETACH 17",
+          "packageName": null,
+          "version": null
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "ptrace syscall操作未被停住的线程由返回0改为返回ESRCH.1",
+        "changeType": "接口行为变更",
+        "id": "170",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "_SYS_PTRACE_H",
+          "completePath": "/interface/sdk_c/third_party/musl/ndk_musl_include/sys/ptrace.h",
+          "implementLanguage": "c",
+          "interfaceName": "ptrace",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "long ptrace(int, ...)",
+          "packageName": null,
+          "version": null
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "限制ptrace接口仅可在开发者调试模式下使用",
+        "changeType": "接口行为变更",
+        "id": "CH2025040675033",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "PolylineOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/polyline.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "height",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "height?: string | number",
+          "packageName": "polyline",
+          "version": "7"
+        },
+        {
+          "className": "CircleOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/circle.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "height",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "height?: string | number",
+          "packageName": "circle",
+          "version": "7"
+        },
+        {
+          "className": "PathOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/path.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "height",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "height?: number | string",
+          "packageName": "path",
+          "version": "7"
+        },
+        {
+          "className": "SubHeaderV2SelectOptions",
+          "completePath": "/interface/sdk-js/api/@ohos.arkui.advanced.SubHeaderV2.d.ets",
+          "implementLanguage": "typeScript",
+          "interfaceName": "selectedContent",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "selectedContent?: string",
+          "packageName": "ohos.arkui.advanced.SubHeaderV2",
+          "version": "18"
+        },
+        {
+          "className": "RectOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rect.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "height",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "height?: number | string",
+          "packageName": "rect",
+          "version": "7"
+        },
+        {
+          "className": "SelectOptions",
+          "completePath": "/interface/sdk-js/api/@ohos.arkui.advanced.SubHeader.d.ets",
+          "implementLanguage": "typeScript",
+          "interfaceName": "value",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "value?: string",
+          "packageName": "ohos.arkui.advanced.SubHeader",
+          "version": "10"
+        },
+        {
+          "className": "PathOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/path.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "width",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "width?: number | string",
+          "packageName": "path",
+          "version": "7"
+        },
+        {
+          "className": "SearchOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/search.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "value",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "value?: string",
+          "packageName": "search",
+          "version": "8"
+        },
+        {
+          "className": "PolylineOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/polyline.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "width",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "width?: string | number",
+          "packageName": "polyline",
+          "version": "7"
+        },
+        {
+          "className": "ShapeAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/shape.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "strokeWidth",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "strokeWidth(value: number | string): ShapeAttribute",
+          "packageName": "shape",
+          "version": "7"
+        },
+        {
+          "className": "ShapeAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/shape.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "strokeDashOffset",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "strokeDashOffset(value: number | string): ShapeAttribute",
+          "packageName": "shape",
+          "version": "7"
+        },
+        {
+          "className": "RectOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rect.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "width",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "width?: number | string",
+          "packageName": "rect",
+          "version": "7"
+        },
+        {
+          "className": "BadgeStyle",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/badge.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "fontWeight",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "fontWeight?: number | FontWeight | string",
+          "packageName": "badge",
+          "version": "10"
+        },
+        {
+          "className": "StarStyleOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rating.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "secondaryUri",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "secondaryUri?: string",
+          "packageName": "rating",
+          "version": "7"
+        },
+        {
+          "className": "SpanAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/span.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "letterSpacing",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "letterSpacing(value: number | string): SpanAttribute",
+          "packageName": "span",
+          "version": "7"
+        },
+        {
+          "className": "EllipseOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/ellipse.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "height",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "height?: string | number",
+          "packageName": "ellipse",
+          "version": "7"
+        },
+        {
+          "className": "TextInputAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/text_input.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "fontWeight",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "fontWeight(value: number | FontWeight | string): TextInputAttribute",
+          "packageName": "text_input",
+          "version": "7"
+        },
+        {
+          "className": "ViewportRect",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/shape.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "width",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "width?: number | string",
+          "packageName": "shape",
+          "version": "7"
+        },
+        {
+          "className": "ProgressButton",
+          "completePath": "/interface/sdk-js/api/@ohos.arkui.advanced.ProgressButton.d.ets",
+          "implementLanguage": "typeScript",
+          "interfaceName": "content",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "content: string",
+          "packageName": "ohos.arkui.advanced.ProgressButton",
+          "version": "10"
+        },
+        {
+          "className": "TextTimerAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/text_timer.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "fontWeight",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "fontWeight(value: number | FontWeight | string): TextTimerAttribute",
+          "packageName": "text_timer",
+          "version": "8"
+        },
+        {
+          "className": "TextAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/text.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "fontWeight",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "fontWeight(weight: number | FontWeight | string, options?: FontSettingOptions): TextAttribute",
+          "packageName": "text",
+          "version": "12"
+        },
+        {
+          "className": "CapsuleStyleOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/progress.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "content",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "content?: string",
+          "packageName": "progress",
+          "version": "10"
+        },
+        {
+          "className": "RectOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rect.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "radius",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "radius?: number | string | Array<any>",
+          "packageName": "rect",
+          "version": "7"
+        },
+        {
+          "className": "RectAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rect.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "radiusHeight",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "radiusHeight(value: number | string): RectAttribute",
+          "packageName": "rect",
+          "version": "7"
+        },
+        {
+          "className": "StarStyleOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rating.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "backgroundUri",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "backgroundUri: string",
+          "packageName": "rating",
+          "version": "7"
+        },
+        {
+          "className": "RichEditorController",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rich_editor.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "addTextSpan",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "addTextSpan(value: string, options?: RichEditorTextSpanOptions): number",
+          "packageName": "rich_editor",
+          "version": "10"
+        },
+        {
+          "className": "SubHeaderV2Select",
+          "completePath": "/interface/sdk-js/api/@ohos.arkui.advanced.SubHeaderV2.d.ets",
+          "implementLanguage": "typeScript",
+          "interfaceName": "selectedContent",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "selectedContent?: string",
+          "packageName": "ohos.arkui.advanced.SubHeaderV2",
+          "version": "18"
+        },
+        {
+          "className": "TextAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/text.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "letterSpacing",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "letterSpacing(value: number | string): TextAttribute",
+          "packageName": "text",
+          "version": "7"
+        },
+        {
+          "className": "RoundedRectOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rect.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "height",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "height?: number | string",
+          "packageName": "rect",
+          "version": "7"
+        },
+        {
+          "className": "PathOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/path.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "commands",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "commands?: string",
+          "packageName": "path",
+          "version": "7"
+        },
+        {
+          "className": "StarStyleOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rating.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "foregroundUri",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "foregroundUri: string",
+          "packageName": "rating",
+          "version": "7"
+        },
+        {
+          "className": "RectAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rect.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "radiusWidth",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "radiusWidth(value: number | string): RectAttribute",
+          "packageName": "rect",
+          "version": "7"
+        },
+        {
+          "className": "TextAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/text.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "fontWeight",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "fontWeight(value: number | FontWeight | string): TextAttribute",
+          "packageName": "text",
+          "version": "7"
+        },
+        {
+          "className": "TextPickerOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/text_picker.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "value",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "value?: string | string[]",
+          "packageName": "text_picker",
+          "version": "8"
+        },
+        {
+          "className": "RoundedRectOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rect.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "radiusHeight",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "radiusHeight?: number | string",
+          "packageName": "rect",
+          "version": "7"
+        },
+        {
+          "className": "ViewportRect",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/shape.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "height",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "height?: number | string",
+          "packageName": "shape",
+          "version": "7"
+        },
+        {
+          "className": "ViewportRect",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/shape.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "x",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "x?: number | string",
+          "packageName": "shape",
+          "version": "7"
+        },
+        {
+          "className": "PathAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/path.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "commands",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "commands(value: string): PathAttribute",
+          "packageName": "path",
+          "version": "7"
+        },
+        {
+          "className": "SpanAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/span.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "fontWeight",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "fontWeight(value: number | FontWeight | string): SpanAttribute",
+          "packageName": "span",
+          "version": "7"
+        },
+        {
+          "className": "EllipseOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/ellipse.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "width",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "width?: string | number",
+          "packageName": "ellipse",
+          "version": "7"
+        },
+        {
+          "className": "CircleOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/circle.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "width",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "width?: string | number",
+          "packageName": "circle",
+          "version": "7"
+        },
+        {
+          "className": "BadgeParamWithString",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/badge.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "value",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "value: string",
+          "packageName": "badge",
+          "version": "7"
+        },
+        {
+          "className": "RectAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rect.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "radius",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "radius(value: number | string | Array<any>): RectAttribute",
+          "packageName": "rect",
+          "version": "7"
+        },
+        {
+          "className": "TextAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/text.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "baselineOffset",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "baselineOffset(value: number | string): TextAttribute",
+          "packageName": "text",
+          "version": "7"
+        },
+        {
+          "className": "PolygonOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/polygon.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "height",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "height?: string | number",
+          "packageName": "polygon",
+          "version": "7"
+        },
+        {
+          "className": "BadgeStyle",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/badge.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "badgeSize",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "badgeSize?: number | string",
+          "packageName": "badge",
+          "version": "7"
+        },
+        {
+          "className": "ShapeAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/shape.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "strokeMiterLimit",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "strokeMiterLimit(value: number | string): ShapeAttribute",
+          "packageName": "shape",
+          "version": "7"
+        },
+        {
+          "className": "SwipeRefresher",
+          "completePath": "/interface/sdk-js/api/@ohos.arkui.advanced.SwipeRefresher.d.ets",
+          "implementLanguage": "typeScript",
+          "interfaceName": "content",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "content?: string",
+          "packageName": "ohos.arkui.advanced.SwipeRefresher",
+          "version": "10"
+        },
+        {
+          "className": "RoundedRectOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rect.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "radiusWidth",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "radiusWidth?: number | string",
+          "packageName": "rect",
+          "version": "7"
+        },
+        {
+          "className": "LineOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/line.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "height",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "height?: string | number",
+          "packageName": "line",
+          "version": "7"
+        },
+        {
+          "className": "TextAreaAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/text_area.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "fontWeight",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "fontWeight(value: number | FontWeight | string): TextAreaAttribute",
+          "packageName": "text_area",
+          "version": "7"
+        },
+        {
+          "className": "ViewportRect",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/shape.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "y",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "y?: number | string",
+          "packageName": "shape",
+          "version": "7"
+        },
+        {
+          "className": "RoundedRectOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rect.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "width",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "width?: number | string",
+          "packageName": "rect",
+          "version": "7"
+        },
+        {
+          "className": "PolygonOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/polygon.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "width",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "width?: string | number",
+          "packageName": "polygon",
+          "version": "7"
+        },
+        {
+          "className": "LineOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/line.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "width",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "width?: string | number",
+          "packageName": "line",
+          "version": "7"
+        },
+        {
+          "className": "BadgeStyle",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/badge.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "fontSize",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "fontSize?: number | string",
+          "packageName": "badge",
+          "version": "7"
+        },
+        {
+          "className": "TextClockAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/text_clock.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "format",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "format(value: string): TextClockAttribute",
+          "packageName": "text_clock",
+          "version": "8"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "API_SPECIFICATION_ISSUES",
+        "changeTitle": "文本与输入、信息展示、按钮与选择、滚动与滑动、图形绘制组件接口支持Resource类型",
+        "changeType": "接口定义变更",
+        "id": "383",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "FullScreenLaunchComponent",
+          "completePath": "/interface/sdk-js/api/@ohos.arkui.advanced.FullScreenLaunchComponent.d.ets",
+          "implementLanguage": "typeScript",
+          "interfaceName": "FullScreenLaunchComponent",
+          "interfaceType": "struct",
+          "invokeInstance": null,
+          "methodDefinition": "export declare struct FullScreenLaunchComponent",
+          "packageName": "ohos.arkui.advanced.FullScreenLaunchComponent",
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "6.0.0(20)",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "FullScreenLaunchComponent嵌入式运行元服务内容区避让系统安全区行为变更",
+        "changeType": "UX视觉布局变更",
+        "id": "CH2025050666880",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "ArkWeb基于上游社区的Chromium内核从114升级为132版本",
+        "changeType": "None",
+        "id": "CH2025050804757",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "USB_DDK_API_H",
+          "completePath": "/interface/sdk_c/drivers/external_device_manager/usb/usb_ddk_api.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_Usb_SendPipeRequest",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "int32_t OH_Usb_SendPipeRequest(const struct UsbRequestPipe *pipe, UsbDeviceMemMap *devMmap)",
+          "packageName": "",
+          "version": "10"
+        },
+        {
+          "className": "USB_DDK_API_H",
+          "completePath": "/interface/sdk_c/drivers/external_device_manager/usb/usb_ddk_api.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_Usb_SendPipeRequestWithAshmem",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "int32_t OH_Usb_SendPipeRequestWithAshmem(const struct UsbRequestPipe *pipe, DDK_Ashmem *ashmem)",
+          "packageName": "",
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "SendPipeRequest和SendPipeRequestWithAshmem传入错误参数时，返回值由USB_DDK_SUCCESS变更为USB_DDK_INVALID_PARAMETER",
+        "changeType": "接口行为变更",
+        "id": "336",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "__cplusplus.defined(_GNU_SOURCE)",
+          "completePath": "/interface/sdk_c/third_party/musl/ndk_musl_include/sys/mman.h",
+          "implementLanguage": "c",
+          "interfaceName": "mincore",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "int mincore (void *, size_t, unsigned char *)",
+          "packageName": null,
+          "version": null
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "mincore接口功能补齐至与Linux一致",
+        "changeType": "接口行为变更",
+        "id": "CH2025033190005",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "unnamed",
+          "completePath": "/interface/sdk-js/api/@ohos.file.fs.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "copy",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "declare function copy(srcUri: string, destUri: string, options: CopyOptions, callback: AsyncCallback<void>): void",
+          "packageName": "ohos.file.fs",
+          "version": "11"
+        },
+        {
+          "className": "unnamed",
+          "completePath": "/interface/sdk-js/api/@ohos.file.fs.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "copy",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "declare function copy(srcUri: string, destUri: string, callback: AsyncCallback<void>): void",
+          "packageName": "ohos.file.fs",
+          "version": "11"
+        },
+        {
+          "className": "unnamed",
+          "completePath": "/interface/sdk-js/api/@ohos.file.fs.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "copy",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "declare function copy(srcUri: string, destUri: string, options?: CopyOptions): Promise<void>",
+          "packageName": "ohos.file.fs",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "@ohos.file.fs.d.ts中copy接口在拷贝后，对目标文件原有数据处理方式发生变更",
+        "changeType": "接口行为变更",
+        "id": "CH2025040165962",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "AbilityDelegator",
+          "completePath": "/interface/sdk-js/api/application/AbilityDelegator.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "startAbility",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "startAbility(want: Want): Promise<void>",
+          "packageName": "AbilityDelegator",
+          "version": "9"
+        },
+        {
+          "className": "AbilityDelegator",
+          "completePath": "/interface/sdk-js/api/application/AbilityDelegator.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "startAbility",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "startAbility(want: Want, callback: AsyncCallback<void>): void",
+          "packageName": "AbilityDelegator",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "AbilityDelegator.startAbility()接口错误码变更",
+        "changeType": "接口行为变更",
+        "id": "284",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "_ARKUI_UI_INPUT_EVENT_H_",
+          "completePath": "/interface/sdk_c/arkui/ace_engine/native/ui_input_event.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_ArkUI_UIInputEvent_GetAction",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "int32_t OH_ArkUI_UIInputEvent_GetAction(const ArkUI_UIInputEvent* event)",
+          "packageName": null,
+          "version": "12"
+        },
+        {
+          "className": "_ARKUI_UI_INPUT_EVENT_H_",
+          "completePath": "/interface/sdk_c/arkui/ace_engine/native/ui_input_event.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_ArkUI_UIInputEvent_GetDeviceId",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "int32_t OH_ArkUI_UIInputEvent_GetDeviceId(const ArkUI_UIInputEvent* event)",
+          "packageName": null,
+          "version": "14"
+        },
+        {
+          "className": "_ARKUI_UI_INPUT_EVENT_H_",
+          "completePath": "/interface/sdk_c/arkui/ace_engine/native/ui_input_event.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_ArkUI_UIInputEvent_GetType",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "int32_t OH_ArkUI_UIInputEvent_GetType(const ArkUI_UIInputEvent *event)",
+          "packageName": null,
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "UI Input相关NDK接口行为变更",
+        "changeType": "接口行为变更",
+        "id": "CH2025040107071",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "GridRowOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/grid_row.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "columns",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "columns?: number | GridRowColumnOption",
+          "packageName": "grid_row",
+          "version": "9"
+        },
+        {
+          "className": "GridColOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/grid_col.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "span",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "span?: number | GridColColumnOption",
+          "packageName": "grid_col",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "GridRow组件columns参数和GridCol组件span参数默认值变更",
+        "changeType": "接口行为变更",
+        "id": "CH2025040702131",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "LayoutPolicy",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "matchParent",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "static readonly matchParent: LayoutPolicy",
+          "packageName": "common",
+          "version": "15"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "width和height支持的matchParent接口规格变更",
+        "changeType": "接口行为变更",
+        "id": "CH2025040275645",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "media.AVPlayer",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.media.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "AVPlayer",
+          "interfaceType": "interface",
+          "invokeInstance": null,
+          "methodDefinition": "interface AVPlayer",
+          "packageName": "ohos.multimedia.media",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "播放器所使用的内存归属变更",
+        "changeType": "接口行为变更",
+        "id": "CH2025040590071",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    },
+    {
+      "isPresent": false,
+      "affectedApis": [
+        {
+          "className": "SheetType",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "POPUP",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "POPUP = 2",
+          "packageName": "common",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "半模态跟手样式弹窗显示位置避让规则变更",
+        "changeType": "UX视觉布局变更",
+        "id": "395",
+        "sdkVersion": "6.0.0(20) Beta1",
+        "url": null
+      }
+    }
+  ]
+}

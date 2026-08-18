@@ -1,0 +1,40 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#000000"
+    },
+    {
+      "name": "panel_background",
+      "value": "#1E1E1E"
+    },
+    {
+      "name": "panel_title_text",
+      "value": "#E0E0E0"
+    },
+    {
+      "name": "panel_body_text",
+      "value": "#B0B0B0"
+    },
+    {
+      "name": "log_text",
+      "value": "#E8E8E8"
+    },
+    {
+      "name": "log_background",
+      "value": "#2A2A2A"
+    },
+    {
+      "name": "hello_text",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "button_bg",
+      "value": "#3F51B5"
+    },
+    {
+      "name": "button_text",
+      "value": "#FFFFFF"
+    }
+  ]
+}

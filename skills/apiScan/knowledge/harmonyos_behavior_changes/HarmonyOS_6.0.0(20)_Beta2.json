@@ -1,0 +1,859 @@
+{
+  "document": "HarmonyOS 6.0.0(20)_Beta2 行为变更清单",
+  "apiVersion": 20,
+  "versionName": "6.0.0(20)",
+  "baseVersion": "6.0.0(20)",
+  "subVersion": "Beta2",
+  "releaseDate": null,
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-roadmap/all-changelogs-600",
+  "sourceUrl": null,
+  "totalKits": null,
+  "totalChanges": 13,
+  "kits": [],
+  "interfaceBehaviorChanges": [
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "zlib",
+          "completePath": "/interface/sdk-js/api/@ohos.zlib.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "unzipFile",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function unzipFile(inFile:string, outFile:string, options: Options): Promise<void>",
+          "packageName": "ohos.zlib",
+          "version": "7"
+        },
+        {
+          "className": "zlib",
+          "completePath": "/interface/sdk-js/api/@ohos.zlib.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "decompressFile",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function decompressFile(inFile: string, outFile: string, options?: Options): Promise<void>",
+          "packageName": "ohos.zlib",
+          "version": "9"
+        },
+        {
+          "className": "zlib",
+          "completePath": "/interface/sdk-js/api/@ohos.zlib.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "decompressFile",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function decompressFile(inFile: string, outFile: string, callback: AsyncCallback<void>): void",
+          "packageName": "ohos.zlib",
+          "version": "10"
+        },
+        {
+          "className": "zlib",
+          "completePath": "/interface/sdk-js/api/@ohos.zlib.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "decompressFile",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function decompressFile(inFile: string, outFile: string, options: Options, callback: AsyncCallback<void>): void",
+          "packageName": "ohos.zlib",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "zlib.unzipFile和zlib.decompressFile解压文件接口变更",
+        "changeType": "接口行为变更",
+        "id": "CH2025061279339",
+        "sdkVersion": "6.0.0(20) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CommonMethod",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "drawModifier",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "drawModifier(modifier: DrawModifier | undefined): T",
+          "packageName": "common",
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "通用属性drawModifier接口行为变更",
+        "changeType": "接口行为变更",
+        "id": "CH2025061956154",
+        "sdkVersion": "6.0.0(20) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "TreeMap",
+          "completePath": "/interface/sdk-js/api/@ohos.util.TreeMap.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "constructor",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "constructor(comparator?: (firstValue: K, secondValue: K) => boolean)",
+          "packageName": "ohos.util.TreeMap",
+          "version": "8"
+        },
+        {
+          "className": "TreeSet",
+          "completePath": "/interface/sdk-js/api/@ohos.util.TreeSet.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "constructor",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "constructor(comparator?: (firstValue: T, secondValue: T) => boolean)",
+          "packageName": "ohos.util.TreeSet",
+          "version": "8"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "TreeSet/TreeMap扩容导致比较器丢失问题正向修复",
+        "changeType": "接口行为变更",
+        "id": "CH2025062036364",
+        "sdkVersion": "6.0.0(20) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "FFRT_API_CPP_CONDITION_VARIABLE_H.ffrt.condition_variable",
+          "completePath": "/interfaces/kits/cpp/condition_variable.h",
+          "implementLanguage": "c",
+          "interfaceName": "wait_for",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "public template <typename Rep, typename Period>    cv_status wait_for(std::unique_lock<mutex>& lk, const std::chrono::duration<Rep, Period>& sleep_time) noexcept    {        return _wait_for(lk, sleep_time);    }",
+          "packageName": null,
+          "version": "10"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "libc++ condition_variable::wait_for接口变更",
+        "changeType": "接口行为变更",
+        "id": "CH2025062308656",
+        "sdkVersion": "6.0.0(20) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "SaveButtonTipPosition",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/save_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "SaveButtonTipPosition",
+          "interfaceType": "enum_class",
+          "invokeInstance": null,
+          "methodDefinition": "declare enum SaveButtonTipPosition",
+          "packageName": "save_button",
+          "version": "20"
+        },
+        {
+          "className": "SaveButtonAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/save_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "tipPosition",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "tipPosition(position: SaveButtonTipPosition): SaveButtonAttribute",
+          "packageName": "save_button",
+          "version": "20"
+        },
+        {
+          "className": "SaveButtonTipPosition",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/save_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "ABOVE_BOTTOM",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "ABOVE_BOTTOM = 0",
+          "packageName": "save_button",
+          "version": "20"
+        },
+        {
+          "className": "SaveButtonTipPosition",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/save_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "BELOW_TOP",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "BELOW_TOP = 1",
+          "packageName": "save_button",
+          "version": "20"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "去除保存控件系统提示弹框变更",
+        "changeType": "UX交互行为变更",
+        "id": "CH2025070747763",
+        "sdkVersion": "6.0.0(20) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CanvasRenderer",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "font",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "font: string",
+          "packageName": "canvas",
+          "version": "8"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "CanvasRenderer的font接口支持自定义字体行为变更",
+        "changeType": "接口行为变更",
+        "id": "CH2025062517095",
+        "sdkVersion": "6.0.0(20) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "retrieval.VectorQuery",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.data.retrieval.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "value",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "value: Float32Array",
+          "packageName": "hms.data.retrieval",
+          "version": "6.0.0(20)"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "6.0.0(20)",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "retrieval.VectorQuery接口value字段变更为可选",
+        "changeType": "接口定义变更",
+        "id": "CH2025070161508",
+        "sdkVersion": "6.0.0(20) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "appInfoManager",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.core.appgalleryservice.appInfoManager.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "selectDynamicIcon",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function selectDynamicIcon(iconId: string): Promise<void>",
+          "packageName": "hms.core.appgalleryservice.appInfoManager",
+          "version": "5.0.3(15)"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "6.0.0(20)",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "selectDynamicIcon接口新增错误码",
+        "changeType": "接口行为变更",
+        "id": "CH2025061689518",
+        "sdkVersion": "6.0.0(20) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "SheetType",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "SIDE",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "SIDE = 3",
+          "packageName": "common",
+          "version": "20"
+        },
+        {
+          "className": "SheetOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "keyboardAvoidMode",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "keyboardAvoidMode?: SheetKeyboardAvoidMode",
+          "packageName": "common",
+          "version": "13"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "半模态SIDE侧边样式新增避让软键盘能力",
+        "changeType": "UX交互行为变更",
+        "id": "CH2025061805350",
+        "sdkVersion": "6.0.0(20) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "LocationButtonInterface",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LocationButtonAttribute",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "(): LocationButtonAttribute",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationButtonInterface",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LocationButtonAttribute",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "(options: LocationButtonOptions): LocationButtonAttribute",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationButtonAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LocationButtonAttribute",
+          "interfaceType": "class",
+          "invokeInstance": null,
+          "methodDefinition": "declare class LocationButtonAttribute extends SecurityComponentMethod<LocationButtonAttribute>",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "unnamed",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LocationButtonInstance",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "declare const LocationButtonInstance: LocationButtonAttribute",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationButtonOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LocationButtonOptions",
+          "interfaceType": "interface",
+          "invokeInstance": null,
+          "methodDefinition": "declare interface LocationButtonOptions",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "unnamed",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LocationButton",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "declare const LocationButton: LocationButtonInterface",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationButtonInterface",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LocationButtonInterface",
+          "interfaceType": "interface",
+          "invokeInstance": null,
+          "methodDefinition": "interface LocationButtonInterface",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationButtonOnClickResult",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LocationButtonOnClickResult",
+          "interfaceType": "enum_class",
+          "invokeInstance": null,
+          "methodDefinition": "declare enum LocationButtonOnClickResult",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "unnamed",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LocationButtonCallback",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "type LocationButtonCallback = (event: ClickEvent, result: LocationButtonOnClickResult, error?: BusinessError<void>) => void",
+          "packageName": "location_button",
+          "version": "18"
+        },
+        {
+          "className": "LocationIconStyle",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "FULL_FILLED",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "FULL_FILLED = 0",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationIconStyle",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LocationIconStyle",
+          "interfaceType": "enum_class",
+          "invokeInstance": null,
+          "methodDefinition": "declare enum LocationIconStyle",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationIconStyle",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LINES",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "LINES = 1",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationDescription",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LocationDescription",
+          "interfaceType": "enum_class",
+          "invokeInstance": null,
+          "methodDefinition": "declare enum LocationDescription",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationDescription",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "CURRENT_LOCATION",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "CURRENT_LOCATION = 0",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationDescription",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "ADD_LOCATION",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "ADD_LOCATION = 1",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationDescription",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "SELECT_LOCATION",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "SELECT_LOCATION = 2",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationDescription",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "SHARE_LOCATION",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "SHARE_LOCATION = 3",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationDescription",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "SEND_LOCATION",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "SEND_LOCATION = 4",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationDescription",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LOCATING",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "LOCATING = 5",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationButtonOnClickResult",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "SUCCESS",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "SUCCESS = 0",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationButtonOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "text",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "text?: LocationDescription",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationDescription",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "RELOCATION",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "RELOCATION = 8",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationDescription",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LOCATION",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "LOCATION = 6",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationButtonOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "icon",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "icon?: LocationIconStyle",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationDescription",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "CURRENT_POSITION",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "CURRENT_POSITION = 10",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationDescription",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "SEND_CURRENT_LOCATION",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "SEND_CURRENT_LOCATION = 7",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationDescription",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "PUNCH_IN",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "PUNCH_IN = 9",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationButtonOnClickResult",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "TEMPORARY_AUTHORIZATION_FAILED",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "TEMPORARY_AUTHORIZATION_FAILED = 1",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationButtonOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "buttonType",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "buttonType?: ButtonType",
+          "packageName": "location_button",
+          "version": "10"
+        },
+        {
+          "className": "LocationButtonAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/location_button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "onClick",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "onClick(event: LocationButtonCallback): LocationButtonAttribute",
+          "packageName": "location_button",
+          "version": "10"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "位置控件功能变更",
+        "changeType": "接口废弃变更",
+        "id": "CH2025051227329",
+        "sdkVersion": "6.0.0(20) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "commonEventManager.Support",
+          "completePath": "/interface/sdk-js/api/@ohos.commonEventManager.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "COMMON_EVENT_PACKAGE_CHANGED",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "COMMON_EVENT_PACKAGE_CHANGED = usual.event.PACKAGE_CHANGED",
+          "packageName": "ohos.commonEventManager",
+          "version": "9"
+        },
+        {
+          "className": "commonEventManager.Support",
+          "completePath": "/interface/sdk-js/api/@ohos.commonEventManager.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "COMMON_EVENT_PACKAGE_DATA_CLEARED",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "COMMON_EVENT_PACKAGE_DATA_CLEARED = usual.event.PACKAGE_DATA_CLEARED",
+          "packageName": "ohos.commonEventManager",
+          "version": "9"
+        },
+        {
+          "className": "commonEventManager.Support",
+          "completePath": "/interface/sdk-js/api/@ohos.commonEventManager.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "COMMON_EVENT_PACKAGE_REMOVED",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "COMMON_EVENT_PACKAGE_REMOVED = usual.event.PACKAGE_REMOVED",
+          "packageName": "ohos.commonEventManager",
+          "version": "9"
+        },
+        {
+          "className": "commonEventManager.Support",
+          "completePath": "/interface/sdk-js/api/@ohos.commonEventManager.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "COMMON_EVENT_PACKAGE_CACHE_CLEARED",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "COMMON_EVENT_PACKAGE_CACHE_CLEARED = usual.event.PACKAGE_CACHE_CLEARED",
+          "packageName": "ohos.commonEventManager",
+          "version": "9"
+        },
+        {
+          "className": "commonEventManager.Support",
+          "completePath": "/interface/sdk-js/api/@ohos.commonEventManager.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "COMMON_EVENT_PACKAGE_ADDED",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "COMMON_EVENT_PACKAGE_ADDED = usual.event.PACKAGE_ADDED",
+          "packageName": "ohos.commonEventManager",
+          "version": "9"
+        },
+        {
+          "className": "commonEventManager.Support",
+          "completePath": "/interface/sdk-js/api/@ohos.commonEventManager.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "COMMON_EVENT_QUICK_FIX_APPLY_RESULT",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "COMMON_EVENT_QUICK_FIX_APPLY_RESULT = usual.event.QUICK_FIX_APPLY_RESULT",
+          "packageName": "ohos.commonEventManager",
+          "version": "9"
+        },
+        {
+          "className": "commonEventManager.Support",
+          "completePath": "/interface/sdk-js/api/@ohos.commonEventManager.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "COMMON_EVENT_PACKAGE_RESTARTED",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "COMMON_EVENT_PACKAGE_RESTARTED = usual.event.PACKAGE_RESTARTED",
+          "packageName": "ohos.commonEventManager",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "Ability Kit相关公共事件行为变更，增加管控",
+        "changeType": "接口行为变更",
+        "id": "CH2025051312838",
+        "sdkVersion": "6.0.0(20) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "harmonyShare.RecvCapability",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.collaboration.harmonyShare.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "RecvCapability",
+          "interfaceType": "interface",
+          "invokeInstance": null,
+          "methodDefinition": "interface RecvCapability",
+          "packageName": "hms.collaboration.harmonyShare",
+          "version": "6.0.0(20)"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "6.0.0(20)",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "on('dataReceive')接口新增必填参数capabilities",
+        "changeType": "接口行为变更",
+        "id": "CH2025071525869",
+        "sdkVersion": "6.0.0(20) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "intl.DateTimeFormat",
+          "completePath": "/interface/sdk-js/api/@ohos.intl.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "format",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "format(date: Date): string",
+          "packageName": "ohos.intl",
+          "version": "6"
+        },
+        {
+          "className": "intl.DateTimeFormat",
+          "completePath": "/interface/sdk-js/api/@ohos.intl.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "formatRange",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "formatRange(startDate: Date, endDate: Date): string",
+          "packageName": "ohos.intl",
+          "version": "6"
+        },
+        {
+          "className": "i18n.Calendar",
+          "completePath": "/interface/sdk-js/api/@ohos.i18n.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "get",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "get(field: string): number",
+          "packageName": "ohos.i18n",
+          "version": "8"
+        },
+        {
+          "className": "i18n.Calendar",
+          "completePath": "/interface/sdk-js/api/@ohos.i18n.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getDisplayName",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getDisplayName(locale: string): string",
+          "packageName": "ohos.i18n",
+          "version": "8"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "20",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "泰国、沙特阿拉伯、阿富汗和伊朗的默认历法变更",
+        "changeType": "接口行为变更",
+        "id": "CH2025063039411",
+        "sdkVersion": "6.0.0(20) Beta2",
+        "url": null
+      }
+    }
+  ]
+}

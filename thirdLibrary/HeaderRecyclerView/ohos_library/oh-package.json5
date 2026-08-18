@@ -1,0 +1,9 @@
+{
+  "name": "header_recycler_view",
+  "version": "1.0.0",
+  "description": "HeaderRecyclerView HarmonyOS HAR: a data controller that transparently manages header/items/footer for ArkUI Grid/List, plus a span lookup for header/footer to occupy full width in a grid.",
+  "main": "Index.ets",
+  "author": "Karumi",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}

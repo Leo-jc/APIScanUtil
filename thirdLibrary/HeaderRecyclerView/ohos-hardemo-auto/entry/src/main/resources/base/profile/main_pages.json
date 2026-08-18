@@ -1,0 +1,15 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/ModuleF01Page",
+    "pages/TestCaseF0101Page",
+    "pages/TestCaseF0102Page",
+    "pages/TestCaseF0103Page",
+    "pages/TestCaseF0104Page",
+    "pages/TestCaseF0105Page",
+    "pages/ModuleF02Page",
+    "pages/TestCaseF0201Page",
+    "pages/TestCaseF0202Page",
+    "pages/TestCaseF0203Page"
+  ]
+}

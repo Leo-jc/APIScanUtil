@@ -1,0 +1,156 @@
+{
+  "sdks": [
+    {
+      "version": "5.0.0.13(SP4)",
+      "releaseType": "canary4",
+      "sdk": [
+        {
+          "name": "hms",
+          "path": "D:/data_import/harmonyos-next-db5-linux/hms/ets"
+        },
+        {
+          "name": "ohos",
+          "path": "D:/data_import/harmonyos-next-db5-linux/openharmony/ets"
+        }
+      ]
+    },
+    {
+      "version": "5.0.0.18(SP3)",
+      "releaseType": "canary4",
+      "sdk": [
+        {
+          "name": "hms",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/hms/ets"
+        },
+        {
+          "name": "ohos",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/openharmony/ets"
+        }
+      ]
+    },
+    {
+      "version": "5.0.0.22(SP6)",
+      "releaseType": "canary4",
+      "sdk": [
+        {
+          "name": "hms",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/hms/ets"
+        },
+        {
+          "name": "ohos",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/openharmony/ets"
+        }
+      ]
+    },
+    {
+      "version": "5.0.0.22(SP12)",
+      "releaseType": "canary4",
+      "sdk": [
+        {
+          "name": "hms",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/hms/ets"
+        },
+        {
+          "name": "ohos",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/openharmony/ets"
+        }
+      ]
+    },
+    {
+      "version": "5.0.0.25(SP10)",
+      "releaseType": "canary4",
+      "sdk": [
+        {
+          "name": "hms",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/hms/ets"
+        },
+        {
+          "name": "ohos",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/openharmony/ets"
+        }
+      ]
+    },
+    {
+      "version": "5.0.0.31(SP6)",
+      "releaseType": "canary4",
+      "sdk": [
+        {
+          "name": "hms",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/hms/ets"
+        },
+        {
+          "name": "ohos",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/openharmony/ets"
+        }
+      ]
+    },
+    {
+      "version": "5.0.0.36(SP6)",
+      "releaseType": "canary4",
+      "sdk": [
+        {
+          "name": "hms",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/hms/ets"
+        },
+        {
+          "name": "ohos",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/openharmony/ets"
+        }
+      ]
+    },
+    {
+      "version": "5.0.0.25(SP16)",
+      "releaseType": "canary4",
+      "sdk": [
+        {
+          "name": "hms",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/hms/ets"
+        },
+        {
+          "name": "ohos",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/openharmony/ets"
+        }
+      ]
+    },
+    {
+      "version": "4.1.0.73",
+      "releaseType": "canary4",
+      "sdk": [
+        {
+          "name": "hms",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/hms/ets"
+        },
+        {
+          "name": "ohos",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/openharmony/ets"
+        }
+      ]
+    },
+    {
+      "version": "4.0.0.60",
+      "releaseType": "canary4",
+      "sdk": [
+        {
+          "name": "hms",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/hms/ets"
+        },
+        {
+          "name": "ohos",
+          "path": "D:/data_import/harmonyos-next-db5-linux1/openharmony/ets"
+        }
+      ]
+    }
+  ],
+  "version": "default",
+  "releaseType": "canary3",
+  "default": [
+    {
+      "name": "ohos",
+      "path": "D:\\sdk\\5.0.0.36(SP5)\\harmonyos-next-dp1-linux-x64\\base\\ets"
+    },
+    {
+      "name": "hms",
+      "path": "D:\\sdk\\5.0.0.36(SP5)\\harmonyos-next-dp1-linux-x64\\hms\\ets"
+    }
+  ]
+}

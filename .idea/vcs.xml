@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdLibrary/CalendarListview" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdLibrary/CheckerboardDrawable" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdLibrary/FlexTags" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdLibrary/FluidLayout" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdLibrary/HeaderRecyclerView" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdLibrary/InsLoadingAnimation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdLibrary/MarqueeTextView" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdLibrary/SectionedRecyclerView" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdLibrary/SideBar" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdLibrary/TableFixHeaders" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdLibrary/viewpagerdots" vcs="Git" />
+  </component>
+</project>

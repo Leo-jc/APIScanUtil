@@ -1,0 +1,28 @@
+{
+  "supportFileExts": [
+    ".ets",
+    ".ts",
+    ".d.ets",
+    ".d.ts"
+  ],
+  "enableLeadingComments": false,
+  "isScanAbc": true,
+  "enableBuiltIn": false,
+  "ignoreFileNames": [
+    "oh_modules",
+    "node_modules",
+    "hvigorfile.ts",
+    "hvigorfile.js",
+    "hvigor-wrapper.js",
+    "build-tools",
+    "build",
+    ".cxx",
+    ".test",
+    ".preview"
+  ],
+  "sdkGlobalFolders": [
+    "component",
+    "@internal"
+  ],
+  "tsconfig": "tsconfig.json"
+}

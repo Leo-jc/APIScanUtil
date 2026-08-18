@@ -1,0 +1,36 @@
+{
+  "float": [
+    {
+      "name": "page_text_font_size",
+      "value": "50fp"
+    },
+    {
+      "name": "title_font_size",
+      "value": "20fp"
+    },
+    {
+      "name": "body_font_size",
+      "value": "14fp"
+    },
+    {
+      "name": "small_font_size",
+      "value": "12fp"
+    },
+    {
+      "name": "button_height",
+      "value": "40vp"
+    },
+    {
+      "name": "panel_padding",
+      "value": "16vp"
+    },
+    {
+      "name": "panel_radius",
+      "value": "16vp"
+    },
+    {
+      "name": "swatch_size",
+      "value": "32vp"
+    }
+  ]
+}

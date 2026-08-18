@@ -1,0 +1,341 @@
+{
+  "document": "HarmonyOS 5.0.3(15)_Release API变更清单",
+  "apiVersion": 15,
+  "versionName": "5.0.3(15)",
+  "baseVersion": "5.0.3(15)",
+  "subVersion": "Release",
+  "releaseDate": "2025/03/15",
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-503",
+  "sourceUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/apidiff-from-503-release",
+  "totalKits": 3,
+  "totalChanges": 17,
+  "kits": [
+    {
+      "name": "ArkUI",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkui-5033",
+      "changeCount": 14,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "CommonMethod",
+          "apiDeclaration": "dragPreview(preview: CustomBuilder | DragItemInfo | string, config?: PreviewConfiguration): T;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CommonMethod",
+            "apiDeclaration": "dragPreview(preview: CustomBuilder | DragItemInfo | string, config?: PreviewConfiguration): T;",
+            "diffContent": "dragPreview(preview: CustomBuilder | DragItemInfo | string, config?: PreviewConfiguration): T;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "HoverEvent",
+          "apiDeclaration": "x?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "HoverEvent",
+            "apiDeclaration": "x?: number;",
+            "diffContent": "x?: number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "HoverEvent",
+          "apiDeclaration": "y?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "HoverEvent",
+            "apiDeclaration": "y?: number;",
+            "diffContent": "y?: number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "HoverEvent",
+          "apiDeclaration": "windowX?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "HoverEvent",
+            "apiDeclaration": "windowX?: number;",
+            "diffContent": "windowX?: number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "HoverEvent",
+          "apiDeclaration": "windowY?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "HoverEvent",
+            "apiDeclaration": "windowY?: number;",
+            "diffContent": "windowY?: number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "HoverEvent",
+          "apiDeclaration": "displayX?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "HoverEvent",
+            "apiDeclaration": "displayX?: number;",
+            "diffContent": "displayX?: number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "HoverEvent",
+          "apiDeclaration": "displayY?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "HoverEvent",
+            "apiDeclaration": "displayY?: number;",
+            "diffContent": "displayY?: number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "DragInteractionOptions",
+          "apiDeclaration": "isLiftingDisabled?: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "DragInteractionOptions",
+            "apiDeclaration": "isLiftingDisabled?: boolean;",
+            "diffContent": "isLiftingDisabled?: boolean;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare interface PreviewConfiguration",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare interface PreviewConfiguration",
+            "diffContent": "declare interface PreviewConfiguration",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PreviewConfiguration",
+          "apiDeclaration": "onlyForLifting?: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PreviewConfiguration",
+            "apiDeclaration": "onlyForLifting?: boolean;",
+            "diffContent": "onlyForLifting?: boolean;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PreviewConfiguration",
+          "apiDeclaration": "delayCreating?: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PreviewConfiguration",
+            "apiDeclaration": "delayCreating?: boolean;",
+            "diffContent": "delayCreating?: boolean;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CommonMethod",
+          "apiDeclaration": "onHoverMove(event: Callback<HoverEvent>): T;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CommonMethod",
+            "apiDeclaration": "onHoverMove(event: Callback<HoverEvent>): T;",
+            "diffContent": "onHoverMove(event: Callback<HoverEvent>): T;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ScrollableCommonMethod",
+          "apiDeclaration": "backToTop(backToTop: boolean): T;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ScrollableCommonMethod",
+            "apiDeclaration": "backToTop(backToTop: boolean): T;",
+            "diffContent": "backToTop(backToTop: boolean): T;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "TextMenuItemId",
+          "apiDeclaration": "static readonly TRANSLATE: TextMenuItemId;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "TextMenuItemId",
+            "apiDeclaration": "static readonly TRANSLATE: TextMenuItemId;",
+            "diffContent": "static readonly TRANSLATE: TextMenuItemId;",
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Asset Store Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-assetstorekit-5033",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "错误码变更",
+          "className": "asset",
+          "apiDeclaration": "function add(attributes: AssetMap): Promise<void>;",
+          "old": {
+            "className": "asset",
+            "apiDeclaration": "function add(attributes: AssetMap): Promise<void>;",
+            "diffContent": "24000001,24000003,24000005,24000006,24000007,24000008,24000009,24000010,24000011,24000012,24000013,24000014,24000015,401",
+            "raw": null
+          },
+          "new": {
+            "className": "asset",
+            "apiDeclaration": "function add(attributes: AssetMap): Promise<void>;",
+            "diffContent": "201,24000001,24000003,24000005,24000006,24000007,24000008,24000009,24000010,24000011,24000012,24000013,24000014,24000015,401",
+            "raw": null
+          },
+          "file": "api/@ohos.security.asset.d.ts"
+        },
+        {
+          "operation": "错误码变更",
+          "className": "asset",
+          "apiDeclaration": "function addSync(attributes: AssetMap): void;",
+          "old": {
+            "className": "asset",
+            "apiDeclaration": "function addSync(attributes: AssetMap): void;",
+            "diffContent": "24000001,24000003,24000005,24000006,24000007,24000008,24000009,24000010,24000011,24000012,24000013,24000014,24000015,401",
+            "raw": null
+          },
+          "new": {
+            "className": "asset",
+            "apiDeclaration": "function addSync(attributes: AssetMap): void;",
+            "diffContent": "201,24000001,24000003,24000005,24000006,24000007,24000008,24000009,24000010,24000011,24000012,24000013,24000014,24000015,401",
+            "raw": null
+          },
+          "file": "api/@ohos.security.asset.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "IME Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-imekit-5033",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "函数变更",
+          "className": "Panel",
+          "apiDeclaration": "adjustPanelRect(flag: PanelFlag, rect: EnhancedPanelRect): void;",
+          "old": {
+            "className": "Panel",
+            "apiDeclaration": "adjustPanelRect(flag: PanelFlag, rect: PanelRect | EnhancedPanelRect): void;",
+            "diffContent": "rect: PanelRect | EnhancedPanelRect",
+            "raw": null
+          },
+          "new": {
+            "className": "Panel",
+            "apiDeclaration": "adjustPanelRect(flag: PanelFlag, rect: EnhancedPanelRect): void;",
+            "diffContent": "rect: EnhancedPanelRect",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethodEngine.d.ts"
+        }
+      ]
+    }
+  ]
+}

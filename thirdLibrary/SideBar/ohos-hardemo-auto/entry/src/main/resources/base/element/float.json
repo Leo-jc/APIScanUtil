@@ -1,0 +1,32 @@
+{
+  "float": [
+    {
+      "name": "item_text_size",
+      "value": "20fp"
+    },
+    {
+      "name": "hint_text_size",
+      "value": "20fp"
+    },
+    {
+      "name": "title_text_size",
+      "value": "18fp"
+    },
+    {
+      "name": "sidebar_width",
+      "value": "50vp"
+    },
+    {
+      "name": "hint_width",
+      "value": "60vp"
+    },
+    {
+      "name": "hint_height",
+      "value": "44vp"
+    },
+    {
+      "name": "hint_arrow_size",
+      "value": "10vp"
+    }
+  ]
+}

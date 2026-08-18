@@ -1,0 +1,9 @@
+{
+  "name": "fluidlayout",
+  "version": "1.0.0",
+  "description": "HarmonyOS 流式布局容器，子项从左到右排列，超宽自动换行，支持容器级与逐子项级的垂直对齐。",
+  "main": "Index.ets",
+  "author": "fynn",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "marquee_text_view",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

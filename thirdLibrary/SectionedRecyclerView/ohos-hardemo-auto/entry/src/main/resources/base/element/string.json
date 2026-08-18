@@ -1,0 +1,104 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "SectionedRecyclerView 示例应用"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "SectionedRecyclerView 示例入口"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "SectionedRecyclerView Demo"
+    },
+    {
+      "name": "home_title",
+      "value": "SectionedRecyclerView Demo"
+    },
+    {
+      "name": "home_subtitle",
+      "value": "鸿蒙分组列表/网格库 ArkUI 适配示例"
+    },
+    {
+      "name": "home_count_card_title",
+      "value": "Count Grid（SectionedGrid）"
+    },
+    {
+      "name": "home_count_card_desc",
+      "value": "5 段分组网格：每段含 header/item/footer，第 i 段 i+1 个 item，2 列 spanCount。展示完整 SectionedModel + SectionedGrid + 多 viewType。"
+    },
+    {
+      "name": "home_agenda_card_title",
+      "value": "Agenda List（SimpleSectionedModel + SectionedList）"
+    },
+    {
+      "name": "home_agenda_card_desc",
+      "value": "2 段简化分组列表：Today / Tomorrow，每段 3 项。展示 SimpleSectionedModel + 默认 header + SectionedList。"
+    },
+    {
+      "name": "count_page_title",
+      "value": "Count Grid"
+    },
+    {
+      "name": "agenda_page_title",
+      "value": "Agenda List"
+    },
+    {
+      "name": "back",
+      "value": "返回"
+    },
+    {
+      "name": "btn_add_section",
+      "value": "+ Section"
+    },
+    {
+      "name": "btn_remove_section",
+      "value": "- Section"
+    },
+    {
+      "name": "btn_toggle_footer",
+      "value": "Toggle Footer S0"
+    },
+    {
+      "name": "btn_change_item",
+      "value": "Change Item S2P0"
+    },
+    {
+      "name": "btn_log_positions",
+      "value": "Log Positions"
+    },
+    {
+      "name": "btn_change_header",
+      "value": "Change Header S0"
+    },
+    {
+      "name": "btn_change_footer",
+      "value": "Change Footer S1"
+    },
+    {
+      "name": "btn_set_model",
+      "value": "Set Model"
+    },
+    {
+      "name": "btn_reload",
+      "value": "Reload"
+    },
+    {
+      "name": "btn_change_agenda",
+      "value": "Change Item 0,0"
+    },
+    {
+      "name": "btn_add_agenda",
+      "value": "Add Item Today"
+    },
+    {
+      "name": "log_area_title",
+      "value": "操作日志"
+    },
+    {
+      "name": "log_empty",
+      "value": "点击上方按钮查看 API 返回值与状态变化。"
+    }
+  ]
+}

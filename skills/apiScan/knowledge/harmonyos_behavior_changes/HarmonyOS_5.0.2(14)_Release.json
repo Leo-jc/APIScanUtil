@@ -1,0 +1,14 @@
+{
+  "document": "HarmonyOS 5.0.2(14)_Release 行为变更清单",
+  "apiVersion": 14,
+  "versionName": "5.0.2(14)",
+  "baseVersion": "5.0.2(14)",
+  "subVersion": "Release",
+  "releaseDate": null,
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-roadmap/all-changelogs-502",
+  "sourceUrl": null,
+  "totalKits": null,
+  "totalChanges": 0,
+  "kits": [],
+  "interfaceBehaviorChanges": []
+}

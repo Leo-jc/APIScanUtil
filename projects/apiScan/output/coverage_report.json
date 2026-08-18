@@ -1,0 +1,195 @@
+{
+  "caliber": {
+    "coverage": "召回率 Recall = matched / 真实清单总条数",
+    "matchKey": "(api, codeLocation) 严格匹配（分隔符归一为反斜杠，不剥离模块前缀）",
+    "dataSource": "本次重新扫描 output/{项目名}_scan_result.json（API 12→26）",
+    "extraHandling": "仅统计分类，不修改工具，不参与覆盖率扣分"
+  },
+  "overall": {
+    "projects": 11,
+    "ref_total": 1543,
+    "matched": 1543,
+    "missing": 0,
+    "extra": 13850,
+    "recall_pct": 100.0,
+    "allCovered": true
+  },
+  "projects": {
+    "CalendarListview": {
+      "status": "OK",
+      "ref_total": 116,
+      "sc_total": 522,
+      "matched": 116,
+      "missing": 0,
+      "extra": 406,
+      "recall_pct": 100.0,
+      "extra_by_category": {
+        "system_change": 359,
+        "behavior_change": 114
+      },
+      "missing_by_type": {},
+      "ref_path": "20260812101405_apiChange.json",
+      "sc_path": "D:\\Projects\\APIScanUtil\\projects\\apiScan\\output\\CalendarListview_scan_result.json"
+    },
+    "CheckerboardDrawable": {
+      "status": "OK",
+      "ref_total": 92,
+      "sc_total": 382,
+      "matched": 92,
+      "missing": 0,
+      "extra": 290,
+      "recall_pct": 100.0,
+      "extra_by_category": {
+        "system_change": 236,
+        "behavior_change": 137
+      },
+      "missing_by_type": {},
+      "ref_path": "20260813115051_apiChange.json",
+      "sc_path": "D:\\Projects\\APIScanUtil\\projects\\apiScan\\output\\CheckerboardDrawable_scan_result.json"
+    },
+    "FlexTags": {
+      "status": "OK",
+      "ref_total": 95,
+      "sc_total": 1176,
+      "matched": 95,
+      "missing": 0,
+      "extra": 1081,
+      "recall_pct": 100.0,
+      "extra_by_category": {
+        "system_change": 1090,
+        "behavior_change": 103
+      },
+      "missing_by_type": {},
+      "ref_path": "20260812100953_apiChange.json",
+      "sc_path": "D:\\Projects\\APIScanUtil\\projects\\apiScan\\output\\FlexTags_scan_result.json"
+    },
+    "FluidLayout": {
+      "status": "OK",
+      "ref_total": 66,
+      "sc_total": 218,
+      "matched": 66,
+      "missing": 0,
+      "extra": 152,
+      "recall_pct": 100.0,
+      "extra_by_category": {
+        "system_change": 105,
+        "behavior_change": 66
+      },
+      "missing_by_type": {},
+      "ref_path": "20260812101223_apiChange.json",
+      "sc_path": "D:\\Projects\\APIScanUtil\\projects\\apiScan\\output\\FluidLayout_scan_result.json"
+    },
+    "HeaderRecyclerView": {
+      "status": "OK",
+      "ref_total": 50,
+      "sc_total": 221,
+      "matched": 50,
+      "missing": 0,
+      "extra": 171,
+      "recall_pct": 100.0,
+      "extra_by_category": {
+        "system_change": 156,
+        "behavior_change": 35
+      },
+      "missing_by_type": {},
+      "ref_path": "20260813115408_apiChange.json",
+      "sc_path": "D:\\Projects\\APIScanUtil\\projects\\apiScan\\output\\HeaderRecyclerView_scan_result.json"
+    },
+    "InsLoadingAnimation": {
+      "status": "OK",
+      "ref_total": 430,
+      "sc_total": 4787,
+      "matched": 430,
+      "missing": 0,
+      "extra": 4357,
+      "recall_pct": 100.0,
+      "extra_by_category": {
+        "system_change": 4637,
+        "behavior_change": 393
+      },
+      "missing_by_type": {},
+      "ref_path": "20260812093633_apiChange.json",
+      "sc_path": "D:\\Projects\\APIScanUtil\\projects\\apiScan\\output\\InsLoadingAnimation_scan_result.json"
+    },
+    "MarqueeTextView": {
+      "status": "OK",
+      "ref_total": 138,
+      "sc_total": 2438,
+      "matched": 138,
+      "missing": 0,
+      "extra": 2300,
+      "recall_pct": 100.0,
+      "extra_by_category": {
+        "system_change": 2518,
+        "behavior_change": 182
+      },
+      "missing_by_type": {},
+      "ref_path": "20260813115517_apiChange.json",
+      "sc_path": "D:\\Projects\\APIScanUtil\\projects\\apiScan\\output\\MarqueeTextView_scan_result.json"
+    },
+    "SectionedRecyclerView": {
+      "status": "OK",
+      "ref_total": 208,
+      "sc_total": 3345,
+      "matched": 208,
+      "missing": 0,
+      "extra": 3137,
+      "recall_pct": 100.0,
+      "extra_by_category": {
+        "system_change": 3319,
+        "behavior_change": 180
+      },
+      "missing_by_type": {},
+      "ref_path": "20260813115606_apiChange.json",
+      "sc_path": "D:\\Projects\\APIScanUtil\\projects\\apiScan\\output\\SectionedRecyclerView_scan_result.json"
+    },
+    "SideBar": {
+      "status": "OK",
+      "ref_total": 122,
+      "sc_total": 753,
+      "matched": 122,
+      "missing": 0,
+      "extra": 631,
+      "recall_pct": 100.0,
+      "extra_by_category": {
+        "system_change": 592,
+        "behavior_change": 101
+      },
+      "missing_by_type": {},
+      "ref_path": "20260813115657_apiChange.json",
+      "sc_path": "D:\\Projects\\APIScanUtil\\projects\\apiScan\\output\\SideBar_scan_result.json"
+    },
+    "TableFixHeaders": {
+      "status": "OK",
+      "ref_total": 124,
+      "sc_total": 1205,
+      "matched": 124,
+      "missing": 0,
+      "extra": 1081,
+      "recall_pct": 100.0,
+      "extra_by_category": {
+        "system_change": 1031,
+        "behavior_change": 176
+      },
+      "missing_by_type": {},
+      "ref_path": "20260812101453_apiChange.json",
+      "sc_path": "D:\\Projects\\APIScanUtil\\projects\\apiScan\\output\\TableFixHeaders_scan_result.json"
+    },
+    "viewpagerdots": {
+      "status": "OK",
+      "ref_total": 102,
+      "sc_total": 346,
+      "matched": 102,
+      "missing": 0,
+      "extra": 244,
+      "recall_pct": 100.0,
+      "extra_by_category": {
+        "system_change": 200,
+        "behavior_change": 81
+      },
+      "missing_by_type": {},
+      "ref_path": "20260813115759_apiChange.json",
+      "sc_path": "D:\\Projects\\APIScanUtil\\projects\\apiScan\\output\\viewpagerdots_scan_result.json"
+    }
+  }
+}

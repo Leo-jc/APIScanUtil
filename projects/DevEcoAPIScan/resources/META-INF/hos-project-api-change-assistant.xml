@@ -1,0 +1,23 @@
+<idea-plugin>
+    <resource-bundle>messages.HosProjectApichangeMgmt</resource-bundle>
+    <application-components>
+    </application-components>
+    <!--工程级别  component-->
+    <project-components>
+        <!--add here-->
+    </project-components>
+    <actions>
+        <action id="Api change" class="com.huawei.deveco.programanalysis.apiscan.actions.ApiChangeAssistantAction">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+    <extensionPoints>
+        <extensionPoint name="apiChangeIntelligentService"
+                        interface="com.huawei.deveco.programanalysis.apiscan.handler.utils.ApiChangeIntelligentService"/>
+    </extensionPoints>
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow anchor="bottom" factoryClass="com.huawei.deveco.programanalysis.apiscan.ApiChangeAssistantFactory"
+                    icon="com.huawei.deveco.programanalysis.apiscan.icon.Icons.API_CHANGE_ASSISTANT_ICON_LIGHT"
+                    id="API Change Assistant" secondary="false" canCloseContents="false" doNotActivateOnStart="true"/>
+    </extensions>
+</idea-plugin>

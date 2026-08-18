@@ -1,0 +1,3962 @@
+{
+  "document": "HarmonyOS 5.0.3(15)_Beta1 API变更清单",
+  "apiVersion": 15,
+  "versionName": "5.0.3(15)",
+  "baseVersion": "5.0.3(15)",
+  "subVersion": "Beta1",
+  "releaseDate": "2025/03/15",
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-503",
+  "sourceUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/apidiff-from-503-beta1",
+  "totalKits": 24,
+  "totalChanges": 210,
+  "kits": [
+    {
+      "name": "Ability Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-abilitykit-5031",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "Want",
+          "apiDeclaration": "readonly fds?: Record<string, number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Want",
+            "apiDeclaration": "readonly fds?: Record<string, number>;",
+            "diffContent": "readonly fds?: Record<string, number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.app.ability.Want.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "bundleManager",
+          "apiDeclaration": "export type AppCloneIdentity = _BundleInfo.AppCloneIdentity;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "bundleManager",
+            "apiDeclaration": "export type AppCloneIdentity = _BundleInfo.AppCloneIdentity;",
+            "diffContent": "export type AppCloneIdentity = _BundleInfo.AppCloneIdentity;",
+            "raw": null
+          },
+          "file": "api/@ohos.bundle.bundleManager.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Ads Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-adskit-5031",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "AdComponent",
+          "apiDeclaration": "@Prop rollPlayState?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AdComponent",
+            "apiDeclaration": "@Prop rollPlayState?: number;",
+            "diffContent": "@Prop rollPlayState?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.advertising.AdComponent.d.ets"
+        }
+      ]
+    },
+    {
+      "name": "AppGallery Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-appgallerykit-5031",
+      "changeCount": 7,
+      "changes": [
+        {
+          "operation": "kit变更",
+          "className": null,
+          "apiDeclaration": null,
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "StoreKit"
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "AppGalleryKit"
+          },
+          "file": "api/@hms.bundle.sceneManager.d.ts"
+        },
+        {
+          "operation": "kit变更",
+          "className": null,
+          "apiDeclaration": null,
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "StoreKit"
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "AppGalleryKit"
+          },
+          "file": "api/@hms.core.appgalleryservice.attributionManager.d.ts"
+        },
+        {
+          "operation": "kit变更",
+          "className": null,
+          "apiDeclaration": null,
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "StoreKit"
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "AppGalleryKit"
+          },
+          "file": "api/@hms.core.appgalleryservice.attributionTestManager.d.ts"
+        },
+        {
+          "operation": "kit变更",
+          "className": null,
+          "apiDeclaration": null,
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "StoreKit"
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "AppGalleryKit"
+          },
+          "file": "api/@hms.core.appgalleryservice.moduleInstallManager.d.ts"
+        },
+        {
+          "operation": "kit变更",
+          "className": null,
+          "apiDeclaration": null,
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "StoreKit"
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "AppGalleryKit"
+          },
+          "file": "api/@hms.core.appgalleryservice.productViewManager.d.ts"
+        },
+        {
+          "operation": "kit变更",
+          "className": null,
+          "apiDeclaration": null,
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "StoreKit"
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "AppGalleryKit"
+          },
+          "file": "api/@hms.core.appgalleryservice.updateManager.d.ts"
+        },
+        {
+          "operation": "kit变更",
+          "className": null,
+          "apiDeclaration": null,
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "StoreKit"
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "AppGalleryKit"
+          },
+          "file": "api/@hms.core.appgalleryservice.privacyManager.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "App Linking Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-applinkingkit-5031",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare namespace deferredLink",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare namespace deferredLink",
+            "diffContent": "declare namespace deferredLink",
+            "raw": null
+          },
+          "file": "api/@hms.bundle.applinking.deferredLink.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "deferredLink",
+          "apiDeclaration": "function popDeferredLink(): Promise<string>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "deferredLink",
+            "apiDeclaration": "function popDeferredLink(): Promise<string>;",
+            "diffContent": "function popDeferredLink(): Promise<string>;",
+            "raw": null
+          },
+          "file": "api/@hms.bundle.applinking.deferredLink.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "ArkData",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkdata-5031",
+      "changeCount": 23,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "UnifiedRecord",
+          "apiDeclaration": "getTypes(): Array<string>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "UnifiedRecord",
+            "apiDeclaration": "getTypes(): Array<string>;",
+            "diffContent": "getTypes(): Array<string>;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.unifiedDataChannel.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "UnifiedRecord",
+          "apiDeclaration": "addEntry(type: string, value: ValueType): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "UnifiedRecord",
+            "apiDeclaration": "addEntry(type: string, value: ValueType): void;",
+            "diffContent": "addEntry(type: string, value: ValueType): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.unifiedDataChannel.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "UnifiedRecord",
+          "apiDeclaration": "getEntry(type: string): ValueType;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "UnifiedRecord",
+            "apiDeclaration": "getEntry(type: string): ValueType;",
+            "diffContent": "getEntry(type: string): ValueType;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.unifiedDataChannel.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "UnifiedRecord",
+          "apiDeclaration": "getEntries(): Record<string, ValueType>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "UnifiedRecord",
+            "apiDeclaration": "getEntries(): Record<string, ValueType>;",
+            "diffContent": "getEntries(): Record<string, ValueType>;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.unifiedDataChannel.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "uniformDataStruct",
+          "apiDeclaration": "interface Form",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "uniformDataStruct",
+            "apiDeclaration": "interface Form",
+            "diffContent": "interface Form",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Form",
+          "apiDeclaration": "readonly uniformDataType: 'openharmony.form';",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Form",
+            "apiDeclaration": "readonly uniformDataType: 'openharmony.form';",
+            "diffContent": "readonly uniformDataType: 'openharmony.form';",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Form",
+          "apiDeclaration": "formId: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Form",
+            "apiDeclaration": "formId: number;",
+            "diffContent": "formId: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Form",
+          "apiDeclaration": "formName: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Form",
+            "apiDeclaration": "formName: string;",
+            "diffContent": "formName: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Form",
+          "apiDeclaration": "bundleName: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Form",
+            "apiDeclaration": "bundleName: string;",
+            "diffContent": "bundleName: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Form",
+          "apiDeclaration": "abilityName: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Form",
+            "apiDeclaration": "abilityName: string;",
+            "diffContent": "abilityName: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Form",
+          "apiDeclaration": "module: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Form",
+            "apiDeclaration": "module: string;",
+            "diffContent": "module: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Form",
+          "apiDeclaration": "details?: Record<string, number | string | Uint8Array>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Form",
+            "apiDeclaration": "details?: Record<string, number | string | Uint8Array>;",
+            "diffContent": "details?: Record<string, number | string | Uint8Array>;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "uniformDataStruct",
+          "apiDeclaration": "interface FileUri",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "uniformDataStruct",
+            "apiDeclaration": "interface FileUri",
+            "diffContent": "interface FileUri",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FileUri",
+          "apiDeclaration": "readonly uniformDataType: 'general.file-uri';",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FileUri",
+            "apiDeclaration": "readonly uniformDataType: 'general.file-uri';",
+            "diffContent": "readonly uniformDataType: 'general.file-uri';",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FileUri",
+          "apiDeclaration": "oriUri: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FileUri",
+            "apiDeclaration": "oriUri: string;",
+            "diffContent": "oriUri: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FileUri",
+          "apiDeclaration": "fileType: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FileUri",
+            "apiDeclaration": "fileType: string;",
+            "diffContent": "fileType: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FileUri",
+          "apiDeclaration": "details?: Record<string, number | string | Uint8Array>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FileUri",
+            "apiDeclaration": "details?: Record<string, number | string | Uint8Array>;",
+            "diffContent": "details?: Record<string, number | string | Uint8Array>;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "uniformDataStruct",
+          "apiDeclaration": "interface PixelMap",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "uniformDataStruct",
+            "apiDeclaration": "interface PixelMap",
+            "diffContent": "interface PixelMap",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PixelMap",
+          "apiDeclaration": "readonly uniformDataType: 'openharmony.pixel-map';",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PixelMap",
+            "apiDeclaration": "readonly uniformDataType: 'openharmony.pixel-map';",
+            "diffContent": "readonly uniformDataType: 'openharmony.pixel-map';",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PixelMap",
+          "apiDeclaration": "pixelMap: image.PixelMap;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PixelMap",
+            "apiDeclaration": "pixelMap: image.PixelMap;",
+            "diffContent": "pixelMap: image.PixelMap;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PixelMap",
+          "apiDeclaration": "details?: Record<string, number | string | Uint8Array>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PixelMap",
+            "apiDeclaration": "details?: Record<string, number | string | Uint8Array>;",
+            "diffContent": "details?: Record<string, number | string | Uint8Array>;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformDataStruct.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "UniformDataType",
+          "apiDeclaration": "FILE_URI = 'general.file-uri'",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "UniformDataType",
+            "apiDeclaration": "FILE_URI = 'general.file-uri'",
+            "diffContent": "FILE_URI = 'general.file-uri'",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformTypeDescriptor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "UniformDataType",
+          "apiDeclaration": "CONTENT_FORM = 'general.content-form'",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "UniformDataType",
+            "apiDeclaration": "CONTENT_FORM = 'general.content-form'",
+            "diffContent": "CONTENT_FORM = 'general.content-form'",
+            "raw": null
+          },
+          "file": "api/@ohos.data.uniformTypeDescriptor.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "ArkGraphics 2D",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkgraphics2d-5031",
+      "changeCount": 4,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "Font",
+          "apiDeclaration": "setThemeFontFollowed(followed: boolean): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Font",
+            "apiDeclaration": "setThemeFontFollowed(followed: boolean): void;",
+            "diffContent": "setThemeFontFollowed(followed: boolean): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.graphics.drawing.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Font",
+          "apiDeclaration": "isThemeFontFollowed(): boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Font",
+            "apiDeclaration": "isThemeFontFollowed(): boolean;",
+            "diffContent": "isThemeFontFollowed(): boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.graphics.drawing.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "drawing",
+          "apiDeclaration": "class Tool",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "drawing",
+            "apiDeclaration": "class Tool",
+            "diffContent": "class Tool",
+            "raw": null
+          },
+          "file": "api/@ohos.graphics.drawing.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Tool",
+          "apiDeclaration": "static makeColorFromResourceColor(resourceColor: ResourceColor): common2D.Color;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Tool",
+            "apiDeclaration": "static makeColorFromResourceColor(resourceColor: ResourceColor): common2D.Color;",
+            "diffContent": "static makeColorFromResourceColor(resourceColor: ResourceColor): common2D.Color;",
+            "raw": null
+          },
+          "file": "api/@ohos.graphics.drawing.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "ArkUI",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkui-5031",
+      "changeCount": 55,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "Window",
+          "apiDeclaration": "moveWindowToAsync(x: number, y: number, moveConfiguration?: MoveConfiguration): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "moveWindowToAsync(x: number, y: number, moveConfiguration?: MoveConfiguration): Promise<void>;",
+            "diffContent": "moveWindowToAsync(x: number, y: number, moveConfiguration?: MoveConfiguration): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Window",
+          "apiDeclaration": "moveWindowToGlobal(x: number, y: number, moveConfiguration?: MoveConfiguration): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "moveWindowToGlobal(x: number, y: number, moveConfiguration?: MoveConfiguration): Promise<void>;",
+            "diffContent": "moveWindowToGlobal(x: number, y: number, moveConfiguration?: MoveConfiguration): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "window",
+          "apiDeclaration": "interface WindowDensityInfo",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "window",
+            "apiDeclaration": "interface WindowDensityInfo",
+            "diffContent": "interface WindowDensityInfo",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "WindowDensityInfo",
+          "apiDeclaration": "systemDensity: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "WindowDensityInfo",
+            "apiDeclaration": "systemDensity: number;",
+            "diffContent": "systemDensity: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "WindowDensityInfo",
+          "apiDeclaration": "defaultDensity: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "WindowDensityInfo",
+            "apiDeclaration": "defaultDensity: number;",
+            "diffContent": "defaultDensity: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "WindowDensityInfo",
+          "apiDeclaration": "customDensity: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "WindowDensityInfo",
+            "apiDeclaration": "customDensity: number;",
+            "diffContent": "customDensity: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "window",
+          "apiDeclaration": "function getAllWindowLayoutInfo(displayId: number): Promise<Array<WindowLayoutInfo>>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "window",
+            "apiDeclaration": "function getAllWindowLayoutInfo(displayId: number): Promise<Array<WindowLayoutInfo>>;",
+            "diffContent": "function getAllWindowLayoutInfo(displayId: number): Promise<Array<WindowLayoutInfo>>;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "window",
+          "apiDeclaration": "interface MoveConfiguration",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "window",
+            "apiDeclaration": "interface MoveConfiguration",
+            "diffContent": "interface MoveConfiguration",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "MoveConfiguration",
+          "apiDeclaration": "displayId?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "MoveConfiguration",
+            "apiDeclaration": "displayId?: number;",
+            "diffContent": "displayId?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Window",
+          "apiDeclaration": "getWindowDensityInfo(): WindowDensityInfo;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "getWindowDensityInfo(): WindowDensityInfo;",
+            "diffContent": "getWindowDensityInfo(): WindowDensityInfo;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Window",
+          "apiDeclaration": "on(type: 'systemDensityChange', callback: Callback<number>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "on(type: 'systemDensityChange', callback: Callback<number>): void;",
+            "diffContent": "on(type: 'systemDensityChange', callback: Callback<number>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Window",
+          "apiDeclaration": "off(type: 'systemDensityChange', callback?: Callback<number>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "off(type: 'systemDensityChange', callback?: Callback<number>): void;",
+            "diffContent": "off(type: 'systemDensityChange', callback?: Callback<number>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "WindowStage",
+          "apiDeclaration": "setCustomDensity(density: number): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "WindowStage",
+            "apiDeclaration": "setCustomDensity(density: number): void;",
+            "diffContent": "setCustomDensity(density: number): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "window",
+          "apiDeclaration": "interface WindowLayoutInfo",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "window",
+            "apiDeclaration": "interface WindowLayoutInfo",
+            "diffContent": "interface WindowLayoutInfo",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "WindowLayoutInfo",
+          "apiDeclaration": "windowRect: Rect;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "WindowLayoutInfo",
+            "apiDeclaration": "windowRect: Rect;",
+            "diffContent": "windowRect: Rect;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "NavigationAttribute",
+          "apiDeclaration": "enableModeChangeAnimation(isEnabled: Optional<boolean>): NavigationAttribute;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "NavigationAttribute",
+            "apiDeclaration": "enableModeChangeAnimation(isEnabled: Optional<boolean>): NavigationAttribute;",
+            "diffContent": "enableModeChangeAnimation(isEnabled: Optional<boolean>): NavigationAttribute;",
+            "raw": null
+          },
+          "file": "component/navigation.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SecurityComponentMethod",
+          "apiDeclaration": "borderRadius(radius: Dimension | BorderRadiuses): T;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SecurityComponentMethod",
+            "apiDeclaration": "borderRadius(radius: Dimension | BorderRadiuses): T;",
+            "diffContent": "borderRadius(radius: Dimension | BorderRadiuses): T;",
+            "raw": null
+          },
+          "file": "component/security_component.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SecurityComponentMethod",
+          "apiDeclaration": "align(alignType: Alignment): T;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SecurityComponentMethod",
+            "apiDeclaration": "align(alignType: Alignment): T;",
+            "diffContent": "align(alignType: Alignment): T;",
+            "raw": null
+          },
+          "file": "component/security_component.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SecurityComponentMethod",
+          "apiDeclaration": "alignRules(alignRule: AlignRuleOption): T;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SecurityComponentMethod",
+            "apiDeclaration": "alignRules(alignRule: AlignRuleOption): T;",
+            "diffContent": "alignRules(alignRule: AlignRuleOption): T;",
+            "raw": null
+          },
+          "file": "component/security_component.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SecurityComponentMethod",
+          "apiDeclaration": "alignRules(alignRule: LocalizedAlignRuleOptions): T;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SecurityComponentMethod",
+            "apiDeclaration": "alignRules(alignRule: LocalizedAlignRuleOptions): T;",
+            "diffContent": "alignRules(alignRule: LocalizedAlignRuleOptions): T;",
+            "raw": null
+          },
+          "file": "component/security_component.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SecurityComponentMethod",
+          "apiDeclaration": "id(description: string): T;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SecurityComponentMethod",
+            "apiDeclaration": "id(description: string): T;",
+            "diffContent": "id(description: string): T;",
+            "raw": null
+          },
+          "file": "component/security_component.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SecurityComponentMethod",
+          "apiDeclaration": "chainMode(direction: Axis, style: ChainStyle): T;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SecurityComponentMethod",
+            "apiDeclaration": "chainMode(direction: Axis, style: ChainStyle): T;",
+            "diffContent": "chainMode(direction: Axis, style: ChainStyle): T;",
+            "raw": null
+          },
+          "file": "component/security_component.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PiPWindow",
+          "apiDeclaration": "interface PiPWindowSize",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PiPWindow",
+            "apiDeclaration": "interface PiPWindowSize",
+            "diffContent": "interface PiPWindowSize",
+            "raw": null
+          },
+          "file": "api/@ohos.PiPWindow.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PiPWindowSize",
+          "apiDeclaration": "width: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PiPWindowSize",
+            "apiDeclaration": "width: number;",
+            "diffContent": "width: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.PiPWindow.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PiPWindowSize",
+          "apiDeclaration": "height: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PiPWindowSize",
+            "apiDeclaration": "height: number;",
+            "diffContent": "height: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.PiPWindow.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PiPWindowSize",
+          "apiDeclaration": "scale: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PiPWindowSize",
+            "apiDeclaration": "scale: number;",
+            "diffContent": "scale: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.PiPWindow.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PiPWindow",
+          "apiDeclaration": "interface PiPWindowInfo",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PiPWindow",
+            "apiDeclaration": "interface PiPWindowInfo",
+            "diffContent": "interface PiPWindowInfo",
+            "raw": null
+          },
+          "file": "api/@ohos.PiPWindow.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PiPWindowInfo",
+          "apiDeclaration": "windowId: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PiPWindowInfo",
+            "apiDeclaration": "windowId: number;",
+            "diffContent": "windowId: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.PiPWindow.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PiPWindowInfo",
+          "apiDeclaration": "size: PiPWindowSize;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PiPWindowInfo",
+            "apiDeclaration": "size: PiPWindowSize;",
+            "diffContent": "size: PiPWindowSize;",
+            "raw": null
+          },
+          "file": "api/@ohos.PiPWindow.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PiPController",
+          "apiDeclaration": "getPiPWindowInfo(): Promise<PiPWindowInfo>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PiPController",
+            "apiDeclaration": "getPiPWindowInfo(): Promise<PiPWindowInfo>;",
+            "diffContent": "getPiPWindowInfo(): Promise<PiPWindowInfo>;",
+            "raw": null
+          },
+          "file": "api/@ohos.PiPWindow.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare interface CrossLanguageOptions",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare interface CrossLanguageOptions",
+            "diffContent": "declare interface CrossLanguageOptions",
+            "raw": null
+          },
+          "file": "api/arkui/FrameNode.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CrossLanguageOptions",
+          "apiDeclaration": "attributeSetting?: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CrossLanguageOptions",
+            "apiDeclaration": "attributeSetting?: boolean;",
+            "diffContent": "attributeSetting?: boolean;",
+            "raw": null
+          },
+          "file": "api/arkui/FrameNode.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FrameNode",
+          "apiDeclaration": "setCrossLanguageOptions(options: CrossLanguageOptions): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FrameNode",
+            "apiDeclaration": "setCrossLanguageOptions(options: CrossLanguageOptions): void;",
+            "diffContent": "setCrossLanguageOptions(options: CrossLanguageOptions): void;",
+            "raw": null
+          },
+          "file": "api/arkui/FrameNode.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FrameNode",
+          "apiDeclaration": "getCrossLanguageOptions(): CrossLanguageOptions;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FrameNode",
+            "apiDeclaration": "getCrossLanguageOptions(): CrossLanguageOptions;",
+            "diffContent": "getCrossLanguageOptions(): CrossLanguageOptions;",
+            "raw": null
+          },
+          "file": "api/arkui/FrameNode.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "typeNode",
+          "apiDeclaration": "function getAttribute(node: FrameNode, nodeType: 'Scroll'): ScrollAttribute | undefined;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "typeNode",
+            "apiDeclaration": "function getAttribute(node: FrameNode, nodeType: 'Scroll'): ScrollAttribute | undefined;",
+            "diffContent": "function getAttribute(node: FrameNode, nodeType: 'Scroll'): ScrollAttribute | undefined;",
+            "raw": null
+          },
+          "file": "api/arkui/FrameNode.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "typeNode",
+          "apiDeclaration": "function bindController(node: FrameNode, controller: Scroller, nodeType: 'Scroll'): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "typeNode",
+            "apiDeclaration": "function bindController(node: FrameNode, controller: Scroller, nodeType: 'Scroll'): void;",
+            "diffContent": "function bindController(node: FrameNode, controller: Scroller, nodeType: 'Scroll'): void;",
+            "raw": null
+          },
+          "file": "api/arkui/FrameNode.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "RichEditorAttribute",
+          "apiDeclaration": "keyboardAppearance(appearance: Optional<KeyboardAppearance>): RichEditorAttribute;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "RichEditorAttribute",
+            "apiDeclaration": "keyboardAppearance(appearance: Optional<KeyboardAppearance>): RichEditorAttribute;",
+            "diffContent": "keyboardAppearance(appearance: Optional<KeyboardAppearance>): RichEditorAttribute;",
+            "raw": null
+          },
+          "file": "component/rich_editor.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SearchAttribute",
+          "apiDeclaration": "keyboardAppearance(appearance: Optional<KeyboardAppearance>): SearchAttribute;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SearchAttribute",
+            "apiDeclaration": "keyboardAppearance(appearance: Optional<KeyboardAppearance>): SearchAttribute;",
+            "diffContent": "keyboardAppearance(appearance: Optional<KeyboardAppearance>): SearchAttribute;",
+            "raw": null
+          },
+          "file": "component/search.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SearchAttribute",
+          "apiDeclaration": "stopBackPress(isStopped: Optional<boolean>): SearchAttribute;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SearchAttribute",
+            "apiDeclaration": "stopBackPress(isStopped: Optional<boolean>): SearchAttribute;",
+            "diffContent": "stopBackPress(isStopped: Optional<boolean>): SearchAttribute;",
+            "raw": null
+          },
+          "file": "component/search.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SwiperAttribute",
+          "apiDeclaration": "onContentWillScroll(handler: ContentWillScrollCallback): SwiperAttribute;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SwiperAttribute",
+            "apiDeclaration": "onContentWillScroll(handler: ContentWillScrollCallback): SwiperAttribute;",
+            "diffContent": "onContentWillScroll(handler: ContentWillScrollCallback): SwiperAttribute;",
+            "raw": null
+          },
+          "file": "component/swiper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare interface SwiperContentWillScrollResult",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare interface SwiperContentWillScrollResult",
+            "diffContent": "declare interface SwiperContentWillScrollResult",
+            "raw": null
+          },
+          "file": "component/swiper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SwiperContentWillScrollResult",
+          "apiDeclaration": "currentIndex: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SwiperContentWillScrollResult",
+            "apiDeclaration": "currentIndex: number;",
+            "diffContent": "currentIndex: number;",
+            "raw": null
+          },
+          "file": "component/swiper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SwiperContentWillScrollResult",
+          "apiDeclaration": "comingIndex: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SwiperContentWillScrollResult",
+            "apiDeclaration": "comingIndex: number;",
+            "diffContent": "comingIndex: number;",
+            "raw": null
+          },
+          "file": "component/swiper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SwiperContentWillScrollResult",
+          "apiDeclaration": "offset: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SwiperContentWillScrollResult",
+            "apiDeclaration": "offset: number;",
+            "diffContent": "offset: number;",
+            "raw": null
+          },
+          "file": "component/swiper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare type ContentWillScrollCallback = (result: SwiperContentWillScrollResult) => boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare type ContentWillScrollCallback = (result: SwiperContentWillScrollResult) => boolean;",
+            "diffContent": "declare type ContentWillScrollCallback = (result: SwiperContentWillScrollResult) => boolean;",
+            "raw": null
+          },
+          "file": "component/swiper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "TextAreaAttribute",
+          "apiDeclaration": "keyboardAppearance(appearance: Optional<KeyboardAppearance>): TextAreaAttribute;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "TextAreaAttribute",
+            "apiDeclaration": "keyboardAppearance(appearance: Optional<KeyboardAppearance>): TextAreaAttribute;",
+            "diffContent": "keyboardAppearance(appearance: Optional<KeyboardAppearance>): TextAreaAttribute;",
+            "raw": null
+          },
+          "file": "component/text_area.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "TextAreaAttribute",
+          "apiDeclaration": "stopBackPress(isStopped: Optional<boolean>): TextAreaAttribute;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "TextAreaAttribute",
+            "apiDeclaration": "stopBackPress(isStopped: Optional<boolean>): TextAreaAttribute;",
+            "diffContent": "stopBackPress(isStopped: Optional<boolean>): TextAreaAttribute;",
+            "raw": null
+          },
+          "file": "component/text_area.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare enum KeyboardAppearance",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare enum KeyboardAppearance",
+            "diffContent": "declare enum KeyboardAppearance",
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "KeyboardAppearance",
+          "apiDeclaration": "NONE_IMMERSIVE = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "KeyboardAppearance",
+            "apiDeclaration": "NONE_IMMERSIVE = 0",
+            "diffContent": "NONE_IMMERSIVE = 0",
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "KeyboardAppearance",
+          "apiDeclaration": "IMMERSIVE = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "KeyboardAppearance",
+            "apiDeclaration": "IMMERSIVE = 1",
+            "diffContent": "IMMERSIVE = 1",
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "KeyboardAppearance",
+          "apiDeclaration": "LIGHT_IMMERSIVE = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "KeyboardAppearance",
+            "apiDeclaration": "LIGHT_IMMERSIVE = 2",
+            "diffContent": "LIGHT_IMMERSIVE = 2",
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "KeyboardAppearance",
+          "apiDeclaration": "DARK_IMMERSIVE = 3",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "KeyboardAppearance",
+            "apiDeclaration": "DARK_IMMERSIVE = 3",
+            "diffContent": "DARK_IMMERSIVE = 3",
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "TextInputAttribute",
+          "apiDeclaration": "keyboardAppearance(appearance: Optional<KeyboardAppearance>): TextInputAttribute;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "TextInputAttribute",
+            "apiDeclaration": "keyboardAppearance(appearance: Optional<KeyboardAppearance>): TextInputAttribute;",
+            "diffContent": "keyboardAppearance(appearance: Optional<KeyboardAppearance>): TextInputAttribute;",
+            "raw": null
+          },
+          "file": "component/text_input.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "TextInputAttribute",
+          "apiDeclaration": "stopBackPress(isStopped: Optional<boolean>): TextInputAttribute;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "TextInputAttribute",
+            "apiDeclaration": "stopBackPress(isStopped: Optional<boolean>): TextInputAttribute;",
+            "diffContent": "stopBackPress(isStopped: Optional<boolean>): TextInputAttribute;",
+            "raw": null
+          },
+          "file": "component/text_input.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VideoAttribute",
+          "apiDeclaration": "enableShortcutKey(enabled: boolean): VideoAttribute;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VideoAttribute",
+            "apiDeclaration": "enableShortcutKey(enabled: boolean): VideoAttribute;",
+            "diffContent": "enableShortcutKey(enabled: boolean): VideoAttribute;",
+            "raw": null
+          },
+          "file": "component/video.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "ArkWeb",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkweb-5031",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "WebCookieManager",
+          "apiDeclaration": "static saveCookieSync(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "WebCookieManager",
+            "apiDeclaration": "static saveCookieSync(): void;",
+            "diffContent": "static saveCookieSync(): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.web.webview.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Background Tasks Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-backgroundtaskskit-5031",
+      "changeCount": 18,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "ContinuousTaskNotification",
+          "apiDeclaration": "continuousTaskId?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContinuousTaskNotification",
+            "apiDeclaration": "continuousTaskId?: number;",
+            "diffContent": "continuousTaskId?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "backgroundTaskManager",
+          "apiDeclaration": "interface ContinuousTaskCancelInfo",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "backgroundTaskManager",
+            "apiDeclaration": "interface ContinuousTaskCancelInfo",
+            "diffContent": "interface ContinuousTaskCancelInfo",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ContinuousTaskCancelInfo",
+          "apiDeclaration": "reason: ContinuousTaskCancelReason;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContinuousTaskCancelInfo",
+            "apiDeclaration": "reason: ContinuousTaskCancelReason;",
+            "diffContent": "reason: ContinuousTaskCancelReason;",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ContinuousTaskCancelInfo",
+          "apiDeclaration": "id: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContinuousTaskCancelInfo",
+            "apiDeclaration": "id: number;",
+            "diffContent": "id: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "backgroundTaskManager",
+          "apiDeclaration": "function on(type: 'continuousTaskCancel', callback: Callback<ContinuousTaskCancelInfo>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "backgroundTaskManager",
+            "apiDeclaration": "function on(type: 'continuousTaskCancel', callback: Callback<ContinuousTaskCancelInfo>): void;",
+            "diffContent": "function on(type: 'continuousTaskCancel', callback: Callback<ContinuousTaskCancelInfo>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "backgroundTaskManager",
+          "apiDeclaration": "function off(type: 'continuousTaskCancel', callback?: Callback<ContinuousTaskCancelInfo>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "backgroundTaskManager",
+            "apiDeclaration": "function off(type: 'continuousTaskCancel', callback?: Callback<ContinuousTaskCancelInfo>): void;",
+            "diffContent": "function off(type: 'continuousTaskCancel', callback?: Callback<ContinuousTaskCancelInfo>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "backgroundTaskManager",
+          "apiDeclaration": "export enum ContinuousTaskCancelReason",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "backgroundTaskManager",
+            "apiDeclaration": "export enum ContinuousTaskCancelReason",
+            "diffContent": "export enum ContinuousTaskCancelReason",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ContinuousTaskCancelReason",
+          "apiDeclaration": "USER_CANCEL = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContinuousTaskCancelReason",
+            "apiDeclaration": "USER_CANCEL = 1",
+            "diffContent": "USER_CANCEL = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ContinuousTaskCancelReason",
+          "apiDeclaration": "SYSTEM_CANCEL = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContinuousTaskCancelReason",
+            "apiDeclaration": "SYSTEM_CANCEL = 2",
+            "diffContent": "SYSTEM_CANCEL = 2",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ContinuousTaskCancelReason",
+          "apiDeclaration": "USER_CANCEL_REMOVE_NOTIFICATION = 3",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContinuousTaskCancelReason",
+            "apiDeclaration": "USER_CANCEL_REMOVE_NOTIFICATION = 3",
+            "diffContent": "USER_CANCEL_REMOVE_NOTIFICATION = 3",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ContinuousTaskCancelReason",
+          "apiDeclaration": "SYSTEM_CANCEL_DATA_TRANSFER_LOW_SPEED = 4",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContinuousTaskCancelReason",
+            "apiDeclaration": "SYSTEM_CANCEL_DATA_TRANSFER_LOW_SPEED = 4",
+            "diffContent": "SYSTEM_CANCEL_DATA_TRANSFER_LOW_SPEED = 4",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ContinuousTaskCancelReason",
+          "apiDeclaration": "SYSTEM_CANCEL_AUDIO_PLAYBACK_NOT_USE_AVSESSION = 5",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContinuousTaskCancelReason",
+            "apiDeclaration": "SYSTEM_CANCEL_AUDIO_PLAYBACK_NOT_USE_AVSESSION = 5",
+            "diffContent": "SYSTEM_CANCEL_AUDIO_PLAYBACK_NOT_USE_AVSESSION = 5",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ContinuousTaskCancelReason",
+          "apiDeclaration": "SYSTEM_CANCEL_AUDIO_PLAYBACK_NOT_RUNNING = 6",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContinuousTaskCancelReason",
+            "apiDeclaration": "SYSTEM_CANCEL_AUDIO_PLAYBACK_NOT_RUNNING = 6",
+            "diffContent": "SYSTEM_CANCEL_AUDIO_PLAYBACK_NOT_RUNNING = 6",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ContinuousTaskCancelReason",
+          "apiDeclaration": "SYSTEM_CANCEL_AUDIO_RECORDING_NOT_RUNNING = 7",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContinuousTaskCancelReason",
+            "apiDeclaration": "SYSTEM_CANCEL_AUDIO_RECORDING_NOT_RUNNING = 7",
+            "diffContent": "SYSTEM_CANCEL_AUDIO_RECORDING_NOT_RUNNING = 7",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ContinuousTaskCancelReason",
+          "apiDeclaration": "SYSTEM_CANCEL_NOT_USE_LOCATION = 8",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContinuousTaskCancelReason",
+            "apiDeclaration": "SYSTEM_CANCEL_NOT_USE_LOCATION = 8",
+            "diffContent": "SYSTEM_CANCEL_NOT_USE_LOCATION = 8",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ContinuousTaskCancelReason",
+          "apiDeclaration": "SYSTEM_CANCEL_NOT_USE_BLUETOOTH = 9",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContinuousTaskCancelReason",
+            "apiDeclaration": "SYSTEM_CANCEL_NOT_USE_BLUETOOTH = 9",
+            "diffContent": "SYSTEM_CANCEL_NOT_USE_BLUETOOTH = 9",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ContinuousTaskCancelReason",
+          "apiDeclaration": "SYSTEM_CANCEL_NOT_USE_MULTI_DEVICE = 10",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContinuousTaskCancelReason",
+            "apiDeclaration": "SYSTEM_CANCEL_NOT_USE_MULTI_DEVICE = 10",
+            "diffContent": "SYSTEM_CANCEL_NOT_USE_MULTI_DEVICE = 10",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ContinuousTaskCancelReason",
+          "apiDeclaration": "SYSTEM_CANCEL_USE_ILLEGALLY = 11",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContinuousTaskCancelReason",
+            "apiDeclaration": "SYSTEM_CANCEL_USE_ILLEGALLY = 11",
+            "diffContent": "SYSTEM_CANCEL_USE_ILLEGALLY = 11",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Basic Services Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-basicserviceskit-5031",
+      "changeCount": 12,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "AccountManager",
+          "apiDeclaration": "getForegroundOsAccountLocalId(): Promise<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AccountManager",
+            "apiDeclaration": "getForegroundOsAccountLocalId(): Promise<number>;",
+            "diffContent": "getForegroundOsAccountLocalId(): Promise<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.account.osAccount.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AccountManager",
+          "apiDeclaration": "getOsAccountDomainInfo(localId: number): Promise<DomainAccountInfo>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AccountManager",
+            "apiDeclaration": "getOsAccountDomainInfo(localId: number): Promise<DomainAccountInfo>;",
+            "diffContent": "getOsAccountDomainInfo(localId: number): Promise<DomainAccountInfo>;",
+            "raw": null
+          },
+          "file": "api/@ohos.account.osAccount.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "agent",
+          "apiDeclaration": "interface Notification",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "agent",
+            "apiDeclaration": "interface Notification",
+            "diffContent": "interface Notification",
+            "raw": null
+          },
+          "file": "api/@ohos.request.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Notification",
+          "apiDeclaration": "title?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Notification",
+            "apiDeclaration": "title?: string;",
+            "diffContent": "title?: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.request.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Notification",
+          "apiDeclaration": "text?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Notification",
+            "apiDeclaration": "text?: string;",
+            "diffContent": "text?: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.request.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Config",
+          "apiDeclaration": "notification?: Notification;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Config",
+            "apiDeclaration": "notification?: Notification;",
+            "diffContent": "notification?: Notification;",
+            "raw": null
+          },
+          "file": "api/@ohos.request.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "agent",
+          "apiDeclaration": "interface GroupConfig",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "agent",
+            "apiDeclaration": "interface GroupConfig",
+            "diffContent": "interface GroupConfig",
+            "raw": null
+          },
+          "file": "api/@ohos.request.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "GroupConfig",
+          "apiDeclaration": "gauge?: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "GroupConfig",
+            "apiDeclaration": "gauge?: boolean;",
+            "diffContent": "gauge?: boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.request.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "GroupConfig",
+          "apiDeclaration": "notification: Notification;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "GroupConfig",
+            "apiDeclaration": "notification: Notification;",
+            "diffContent": "notification: Notification;",
+            "raw": null
+          },
+          "file": "api/@ohos.request.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "agent",
+          "apiDeclaration": "function createGroup(config: GroupConfig): Promise<string>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "agent",
+            "apiDeclaration": "function createGroup(config: GroupConfig): Promise<string>;",
+            "diffContent": "function createGroup(config: GroupConfig): Promise<string>;",
+            "raw": null
+          },
+          "file": "api/@ohos.request.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "agent",
+          "apiDeclaration": "function attachGroup(gid: string, tids: string\\[\\]): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "agent",
+            "apiDeclaration": "function attachGroup(gid: string, tids: string\\[\\]): Promise<void>;",
+            "diffContent": "function attachGroup(gid: string, tids: string\\[\\]): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.request.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "agent",
+          "apiDeclaration": "function deleteGroup(gid: string): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "agent",
+            "apiDeclaration": "function deleteGroup(gid: string): Promise<void>;",
+            "diffContent": "function deleteGroup(gid: string): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.request.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Cloud Foundation Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-cloudfoundationkit-5031",
+      "changeCount": 14,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare namespace cloudResPrefetch",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare namespace cloudResPrefetch",
+            "diffContent": "declare namespace cloudResPrefetch",
+            "raw": null
+          },
+          "file": "api/@hms.core.deviceCloudGateway.cloudResPrefetch.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "cloudResPrefetch",
+          "apiDeclaration": "function registerPrefetchTask(options: PrefetchOptions): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "cloudResPrefetch",
+            "apiDeclaration": "function registerPrefetchTask(options: PrefetchOptions): void;",
+            "diffContent": "function registerPrefetchTask(options: PrefetchOptions): void;",
+            "raw": null
+          },
+          "file": "api/@hms.core.deviceCloudGateway.cloudResPrefetch.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "cloudResPrefetch",
+          "apiDeclaration": "function getPrefetchResult(mode: PrefetchMode): Promise<PrefetchResult>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "cloudResPrefetch",
+            "apiDeclaration": "function getPrefetchResult(mode: PrefetchMode): Promise<PrefetchResult>;",
+            "diffContent": "function getPrefetchResult(mode: PrefetchMode): Promise<PrefetchResult>;",
+            "raw": null
+          },
+          "file": "api/@hms.core.deviceCloudGateway.cloudResPrefetch.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "cloudResPrefetch",
+          "apiDeclaration": "function getPrefetchResult(mode: PrefetchMode, callback: AsyncCallback<PrefetchResult>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "cloudResPrefetch",
+            "apiDeclaration": "function getPrefetchResult(mode: PrefetchMode, callback: AsyncCallback<PrefetchResult>): void;",
+            "diffContent": "function getPrefetchResult(mode: PrefetchMode, callback: AsyncCallback<PrefetchResult>): void;",
+            "raw": null
+          },
+          "file": "api/@hms.core.deviceCloudGateway.cloudResPrefetch.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "cloudResPrefetch",
+          "apiDeclaration": "interface PrefetchOptions",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "cloudResPrefetch",
+            "apiDeclaration": "interface PrefetchOptions",
+            "diffContent": "interface PrefetchOptions",
+            "raw": null
+          },
+          "file": "api/@hms.core.deviceCloudGateway.cloudResPrefetch.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PrefetchOptions",
+          "apiDeclaration": "token?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PrefetchOptions",
+            "apiDeclaration": "token?: string;",
+            "diffContent": "token?: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.deviceCloudGateway.cloudResPrefetch.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PrefetchOptions",
+          "apiDeclaration": "params?: string | Object;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PrefetchOptions",
+            "apiDeclaration": "params?: string | Object;",
+            "diffContent": "params?: string | Object;",
+            "raw": null
+          },
+          "file": "api/@hms.core.deviceCloudGateway.cloudResPrefetch.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "cloudResPrefetch",
+          "apiDeclaration": "enum PrefetchMode",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "cloudResPrefetch",
+            "apiDeclaration": "enum PrefetchMode",
+            "diffContent": "enum PrefetchMode",
+            "raw": null
+          },
+          "file": "api/@hms.core.deviceCloudGateway.cloudResPrefetch.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PrefetchMode",
+          "apiDeclaration": "INSTALL_PREFETCH = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PrefetchMode",
+            "apiDeclaration": "INSTALL_PREFETCH = 1",
+            "diffContent": "INSTALL_PREFETCH = 1",
+            "raw": null
+          },
+          "file": "api/@hms.core.deviceCloudGateway.cloudResPrefetch.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PrefetchMode",
+          "apiDeclaration": "PERIODIC_PREFETCH = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PrefetchMode",
+            "apiDeclaration": "PERIODIC_PREFETCH = 2",
+            "diffContent": "PERIODIC_PREFETCH = 2",
+            "raw": null
+          },
+          "file": "api/@hms.core.deviceCloudGateway.cloudResPrefetch.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "cloudResPrefetch",
+          "apiDeclaration": "interface PrefetchResult",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "cloudResPrefetch",
+            "apiDeclaration": "interface PrefetchResult",
+            "diffContent": "interface PrefetchResult",
+            "raw": null
+          },
+          "file": "api/@hms.core.deviceCloudGateway.cloudResPrefetch.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PrefetchResult",
+          "apiDeclaration": "result: string | Object;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PrefetchResult",
+            "apiDeclaration": "result: string | Object;",
+            "diffContent": "result: string | Object;",
+            "raw": null
+          },
+          "file": "api/@hms.core.deviceCloudGateway.cloudResPrefetch.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PrefetchResult",
+          "apiDeclaration": "timestamp: Date;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PrefetchResult",
+            "apiDeclaration": "timestamp: Date;",
+            "diffContent": "timestamp: Date;",
+            "raw": null
+          },
+          "file": "api/@hms.core.deviceCloudGateway.cloudResPrefetch.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PrefetchResult",
+          "apiDeclaration": "token: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PrefetchResult",
+            "apiDeclaration": "token: string;",
+            "diffContent": "token: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.deviceCloudGateway.cloudResPrefetch.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Connectivity Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-connectivitykit-5031",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "wifiManager",
+          "apiDeclaration": "function isHotspotActive(): boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "wifiManager",
+            "apiDeclaration": "function isHotspotActive(): boolean;",
+            "diffContent": "function isHotspotActive(): boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.wifiManager.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Core File Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-corefilekit-5031",
+      "changeCount": 18,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare namespace keyManager",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare namespace keyManager",
+            "diffContent": "declare namespace keyManager",
+            "raw": null
+          },
+          "file": "api/@ohos.file.keyManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "export class AtomicFile",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "export class AtomicFile",
+            "diffContent": "export class AtomicFile",
+            "raw": null
+          },
+          "file": "api/@ohos.file.fs.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AtomicFile",
+          "apiDeclaration": "getBaseFile(): File;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AtomicFile",
+            "apiDeclaration": "getBaseFile(): File;",
+            "diffContent": "getBaseFile(): File;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.fs.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AtomicFile",
+          "apiDeclaration": "openRead(): ReadStream;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AtomicFile",
+            "apiDeclaration": "openRead(): ReadStream;",
+            "diffContent": "openRead(): ReadStream;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.fs.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AtomicFile",
+          "apiDeclaration": "readFully(): ArrayBuffer;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AtomicFile",
+            "apiDeclaration": "readFully(): ArrayBuffer;",
+            "diffContent": "readFully(): ArrayBuffer;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.fs.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AtomicFile",
+          "apiDeclaration": "startWrite(): WriteStream;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AtomicFile",
+            "apiDeclaration": "startWrite(): WriteStream;",
+            "diffContent": "startWrite(): WriteStream;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.fs.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AtomicFile",
+          "apiDeclaration": "finishWrite(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AtomicFile",
+            "apiDeclaration": "finishWrite(): void;",
+            "diffContent": "finishWrite(): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.fs.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AtomicFile",
+          "apiDeclaration": "failWrite(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AtomicFile",
+            "apiDeclaration": "failWrite(): void;",
+            "diffContent": "failWrite(): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.fs.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AtomicFile",
+          "apiDeclaration": "delete(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AtomicFile",
+            "apiDeclaration": "delete(): void;",
+            "diffContent": "delete(): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.fs.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Stat",
+          "apiDeclaration": "readonly atimeNs?: bigint;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Stat",
+            "apiDeclaration": "readonly atimeNs?: bigint;",
+            "diffContent": "readonly atimeNs?: bigint;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.fs.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Stat",
+          "apiDeclaration": "readonly mtimeNs?: bigint;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Stat",
+            "apiDeclaration": "readonly mtimeNs?: bigint;",
+            "diffContent": "readonly mtimeNs?: bigint;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.fs.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Stat",
+          "apiDeclaration": "readonly ctimeNs?: bigint;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Stat",
+            "apiDeclaration": "readonly ctimeNs?: bigint;",
+            "diffContent": "readonly ctimeNs?: bigint;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.fs.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "storageStatistics",
+          "apiDeclaration": "function getTotalSize(callback: AsyncCallback<number>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "storageStatistics",
+            "apiDeclaration": "function getTotalSize(callback: AsyncCallback<number>): void;",
+            "diffContent": "function getTotalSize(callback: AsyncCallback<number>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.storageStatistics.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "storageStatistics",
+          "apiDeclaration": "function getTotalSize(): Promise<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "storageStatistics",
+            "apiDeclaration": "function getTotalSize(): Promise<number>;",
+            "diffContent": "function getTotalSize(): Promise<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.storageStatistics.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "storageStatistics",
+          "apiDeclaration": "function getTotalSizeSync(): number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "storageStatistics",
+            "apiDeclaration": "function getTotalSizeSync(): number;",
+            "diffContent": "function getTotalSizeSync(): number;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.storageStatistics.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "storageStatistics",
+          "apiDeclaration": "function getFreeSize(callback: AsyncCallback<number>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "storageStatistics",
+            "apiDeclaration": "function getFreeSize(callback: AsyncCallback<number>): void;",
+            "diffContent": "function getFreeSize(callback: AsyncCallback<number>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.storageStatistics.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "storageStatistics",
+          "apiDeclaration": "function getFreeSize(): Promise<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "storageStatistics",
+            "apiDeclaration": "function getFreeSize(): Promise<number>;",
+            "diffContent": "function getFreeSize(): Promise<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.storageStatistics.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "storageStatistics",
+          "apiDeclaration": "function getFreeSizeSync(): number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "storageStatistics",
+            "apiDeclaration": "function getFreeSizeSync(): number;",
+            "diffContent": "function getFreeSizeSync(): number;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.storageStatistics.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Game Service Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-gameservicekit-5031",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "gamePerformance",
+          "apiDeclaration": "interface GameStatus",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "gamePerformance",
+            "apiDeclaration": "interface GameStatus",
+            "diffContent": "interface GameStatus",
+            "raw": null
+          },
+          "file": "api/@hms.core.gameservice.gameperformance.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Image Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-imagekit-5031",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "image",
+          "apiDeclaration": "function createPixelMapFromSurface(surfaceId: string): Promise<PixelMap>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "image",
+            "apiDeclaration": "function createPixelMapFromSurface(surfaceId: string): Promise<PixelMap>;",
+            "diffContent": "function createPixelMapFromSurface(surfaceId: string): Promise<PixelMap>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "image",
+          "apiDeclaration": "function createPixelMapFromSurfaceSync(surfaceId: string): PixelMap;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "image",
+            "apiDeclaration": "function createPixelMapFromSurfaceSync(surfaceId: string): PixelMap;",
+            "diffContent": "function createPixelMapFromSurfaceSync(surfaceId: string): PixelMap;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "IME Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-imekit-5031",
+      "changeCount": 19,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "InputMethodSetting",
+          "apiDeclaration": "getInputMethodState(): Promise<EnabledState>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "InputMethodSetting",
+            "apiDeclaration": "getInputMethodState(): Promise<EnabledState>;",
+            "diffContent": "getInputMethodState(): Promise<EnabledState>;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "InputMethodController",
+          "apiDeclaration": "sendMessage(msgId: string, msgParam?: ArrayBuffer): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "InputMethodController",
+            "apiDeclaration": "sendMessage(msgId: string, msgParam?: ArrayBuffer): Promise<void>;",
+            "diffContent": "sendMessage(msgId: string, msgParam?: ArrayBuffer): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "InputMethodController",
+          "apiDeclaration": "recvMessage(msgHandler?: MessageHandler): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "InputMethodController",
+            "apiDeclaration": "recvMessage(msgHandler?: MessageHandler): void;",
+            "diffContent": "recvMessage(msgHandler?: MessageHandler): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "inputMethod",
+          "apiDeclaration": "export enum EnabledState",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "inputMethod",
+            "apiDeclaration": "export enum EnabledState",
+            "diffContent": "export enum EnabledState",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "EnabledState",
+          "apiDeclaration": "DISABLED = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "EnabledState",
+            "apiDeclaration": "DISABLED = 0",
+            "diffContent": "DISABLED = 0",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "EnabledState",
+          "apiDeclaration": "BASIC_MODE",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "EnabledState",
+            "apiDeclaration": "BASIC_MODE",
+            "diffContent": "BASIC_MODE",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "EnabledState",
+          "apiDeclaration": "FULL_EXPERIENCE_MODE",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "EnabledState",
+            "apiDeclaration": "FULL_EXPERIENCE_MODE",
+            "diffContent": "FULL_EXPERIENCE_MODE",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "inputMethod",
+          "apiDeclaration": "interface MessageHandler",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "inputMethod",
+            "apiDeclaration": "interface MessageHandler",
+            "diffContent": "interface MessageHandler",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "MessageHandler",
+          "apiDeclaration": "onMessage(msgId: string, msgParam?: ArrayBuffer): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "MessageHandler",
+            "apiDeclaration": "onMessage(msgId: string, msgParam?: ArrayBuffer): void;",
+            "diffContent": "onMessage(msgId: string, msgParam?: ArrayBuffer): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "MessageHandler",
+          "apiDeclaration": "onTerminated(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "MessageHandler",
+            "apiDeclaration": "onTerminated(): void;",
+            "diffContent": "onTerminated(): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "InputClient",
+          "apiDeclaration": "sendMessage(msgId: string, msgParam?: ArrayBuffer): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "InputClient",
+            "apiDeclaration": "sendMessage(msgId: string, msgParam?: ArrayBuffer): Promise<void>;",
+            "diffContent": "sendMessage(msgId: string, msgParam?: ArrayBuffer): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethodEngine.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "InputClient",
+          "apiDeclaration": "recvMessage(msgHandler?: MessageHandler): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "InputClient",
+            "apiDeclaration": "recvMessage(msgHandler?: MessageHandler): void;",
+            "diffContent": "recvMessage(msgHandler?: MessageHandler): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethodEngine.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Panel",
+          "apiDeclaration": "startMoving(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Panel",
+            "apiDeclaration": "startMoving(): void;",
+            "diffContent": "startMoving(): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethodEngine.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Panel",
+          "apiDeclaration": "getDisplayId(): Promise<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Panel",
+            "apiDeclaration": "getDisplayId(): Promise<number>;",
+            "diffContent": "getDisplayId(): Promise<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethodEngine.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Panel",
+          "apiDeclaration": "getImmersiveMode(): ImmersiveMode;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Panel",
+            "apiDeclaration": "getImmersiveMode(): ImmersiveMode;",
+            "diffContent": "getImmersiveMode(): ImmersiveMode;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethodEngine.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PanelFlag",
+          "apiDeclaration": "FLAG_CANDIDATE",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PanelFlag",
+            "apiDeclaration": "FLAG_CANDIDATE",
+            "diffContent": "FLAG_CANDIDATE",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethodEngine.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "inputMethodEngine",
+          "apiDeclaration": "interface MessageHandler",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "inputMethodEngine",
+            "apiDeclaration": "interface MessageHandler",
+            "diffContent": "interface MessageHandler",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethodEngine.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "MessageHandler",
+          "apiDeclaration": "onMessage(msgId: string, msgParam?: ArrayBuffer): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "MessageHandler",
+            "apiDeclaration": "onMessage(msgId: string, msgParam?: ArrayBuffer): void;",
+            "diffContent": "onMessage(msgId: string, msgParam?: ArrayBuffer): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethodEngine.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "MessageHandler",
+          "apiDeclaration": "onTerminated(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "MessageHandler",
+            "apiDeclaration": "onTerminated(): void;",
+            "diffContent": "onTerminated(): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethodEngine.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Live View Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-liveviewkit-5031",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "CapsuleData",
+          "apiDeclaration": "isContentDisplayed?: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CapsuleData",
+            "apiDeclaration": "isContentDisplayed?: boolean;",
+            "diffContent": "isContentDisplayed?: boolean;",
+            "raw": null
+          },
+          "file": "api/@hms.core.liveview.liveViewManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "NavigationLayout",
+          "apiDeclaration": "isNavigationIconsDisplayed?: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "NavigationLayout",
+            "apiDeclaration": "isNavigationIconsDisplayed?: boolean;",
+            "diffContent": "isNavigationIconsDisplayed?: boolean;",
+            "raw": null
+          },
+          "file": "api/@hms.core.liveview.liveViewManager.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "MDM Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-mdmkit-5031",
+      "changeCount": 5,
+      "changes": [
+        {
+          "operation": "权限变更",
+          "className": "restrictions",
+          "apiDeclaration": "function setDisallowedPolicy(admin: Want, feature: string, disallow: boolean): void;",
+          "old": {
+            "className": "restrictions",
+            "apiDeclaration": "function setDisallowedPolicy(admin: Want, feature: string, disallow: boolean): void;",
+            "diffContent": "ohos.permission.ENTERPRISE_MANAGE_RESTRICTIONS",
+            "raw": null
+          },
+          "new": {
+            "className": "restrictions",
+            "apiDeclaration": "function setDisallowedPolicy(admin: Want, feature: string, disallow: boolean): void;",
+            "diffContent": "ohos.permission.ENTERPRISE_MANAGE_RESTRICTIONS or ohos.permission.PERSONAL_MANAGE_RESTRICTIONS",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.restrictions.d.ts"
+        },
+        {
+          "operation": "权限变更",
+          "className": "restrictions",
+          "apiDeclaration": "function getDisallowedPolicy(admin: Want, feature: string): boolean;",
+          "old": {
+            "className": "restrictions",
+            "apiDeclaration": "function getDisallowedPolicy(admin: Want, feature: string): boolean;",
+            "diffContent": "ohos.permission.ENTERPRISE_MANAGE_RESTRICTIONS",
+            "raw": null
+          },
+          "new": {
+            "className": "restrictions",
+            "apiDeclaration": "function getDisallowedPolicy(admin: Want, feature: string): boolean;",
+            "diffContent": "ohos.permission.ENTERPRISE_MANAGE_RESTRICTIONS or ohos.permission.PERSONAL_MANAGE_RESTRICTIONS",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.restrictions.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "adminManager",
+          "apiDeclaration": "export enum AdminType",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "adminManager",
+            "apiDeclaration": "export enum AdminType",
+            "diffContent": "export enum AdminType",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.adminManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AdminType",
+          "apiDeclaration": "ADMIN_TYPE_BYOD = 0x02",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AdminType",
+            "apiDeclaration": "ADMIN_TYPE_BYOD = 0x02",
+            "diffContent": "ADMIN_TYPE_BYOD = 0x02",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.adminManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "adminManager",
+          "apiDeclaration": "function startAdminProvision(admin: Want, type: AdminType, context: common.Context, parameters: Record<string, string>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "adminManager",
+            "apiDeclaration": "function startAdminProvision(admin: Want, type: AdminType, context: common.Context, parameters: Record<string, string>): void;",
+            "diffContent": "function startAdminProvision(admin: Want, type: AdminType, context: common.Context, parameters: Record<string, string>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.adminManager.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Media Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-mediakit-5031",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "AVScreenCaptureRecordConfig",
+          "apiDeclaration": "displayId?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AVScreenCaptureRecordConfig",
+            "apiDeclaration": "displayId?: number;",
+            "diffContent": "displayId?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.media.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Media Library Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-medialibrarykit-5031",
+      "changeCount": 9,
+      "changes": [
+        {
+          "operation": "错误码变更",
+          "className": "MediaAssetManager",
+          "apiDeclaration": "static requestVideoFile(context: Context, asset: PhotoAsset, requestOptions: RequestOptions, fileUri: string, dataHandler: MediaAssetDataHandler<boolean>): Promise<string>;",
+          "old": {
+            "className": "MediaAssetManager",
+            "apiDeclaration": "static requestVideoFile(context: Context, asset: PhotoAsset, requestOptions: RequestOptions, fileUri: string, dataHandler: MediaAssetDataHandler<boolean>): Promise<string>;",
+            "diffContent": "14000011,201,401",
+            "raw": null
+          },
+          "new": {
+            "className": "MediaAssetManager",
+            "apiDeclaration": "static requestVideoFile(context: Context, asset: PhotoAsset, requestOptions: RequestOptions, fileUri: string, dataHandler: MediaAssetDataHandler<boolean>): Promise<string>;",
+            "diffContent": "14000011,201,401,801",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "photoAccessHelper",
+          "apiDeclaration": "enum CompatibleMode",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "photoAccessHelper",
+            "apiDeclaration": "enum CompatibleMode",
+            "diffContent": "enum CompatibleMode",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CompatibleMode",
+          "apiDeclaration": "ORIGINAL_FORMAT_MODE = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CompatibleMode",
+            "apiDeclaration": "ORIGINAL_FORMAT_MODE = 0",
+            "diffContent": "ORIGINAL_FORMAT_MODE = 0",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CompatibleMode",
+          "apiDeclaration": "COMPATIBLE_FORMAT_MODE = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CompatibleMode",
+            "apiDeclaration": "COMPATIBLE_FORMAT_MODE = 1",
+            "diffContent": "COMPATIBLE_FORMAT_MODE = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "photoAccessHelper",
+          "apiDeclaration": "interface MediaAssetProgressHandler",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "photoAccessHelper",
+            "apiDeclaration": "interface MediaAssetProgressHandler",
+            "diffContent": "interface MediaAssetProgressHandler",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "MediaAssetProgressHandler",
+          "apiDeclaration": "onProgress(progress: number): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "MediaAssetProgressHandler",
+            "apiDeclaration": "onProgress(progress: number): void;",
+            "diffContent": "onProgress(progress: number): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "RequestOptions",
+          "apiDeclaration": "compatibleMode?: CompatibleMode;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "RequestOptions",
+            "apiDeclaration": "compatibleMode?: CompatibleMode;",
+            "diffContent": "compatibleMode?: CompatibleMode;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "RequestOptions",
+          "apiDeclaration": "mediaAssetProgressHandler?: MediaAssetProgressHandler;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "RequestOptions",
+            "apiDeclaration": "mediaAssetProgressHandler?: MediaAssetProgressHandler;",
+            "diffContent": "mediaAssetProgressHandler?: MediaAssetProgressHandler;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "MediaAssetChangeRequest",
+          "apiDeclaration": "setOrientation(orientation: number): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "MediaAssetChangeRequest",
+            "apiDeclaration": "setOrientation(orientation: number): void;",
+            "diffContent": "setOrientation(orientation: number): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Network Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-networkkit-5031",
+      "changeCount": 5,
+      "changes": [
+        {
+          "operation": "错误码变更",
+          "className": "HttpRequest",
+          "apiDeclaration": "requestInStream(url: string, callback: AsyncCallback<number>): void;",
+          "old": {
+            "className": "HttpRequest",
+            "apiDeclaration": "requestInStream(url: string, callback: AsyncCallback<number>): void;",
+            "diffContent": "201,2300001,2300003,2300005,2300006,2300007,2300008,2300009,2300016,2300018,2300023,2300025,2300026,2300027,2300028,2300047,2300052,2300055,2300056,2300058,2300059,2300060,2300061,2300063,2300070,2300073,2300077,2300078,2300094,2300999,401",
+            "raw": null
+          },
+          "new": {
+            "className": "HttpRequest",
+            "apiDeclaration": "requestInStream(url: string, callback: AsyncCallback<number>): void;",
+            "diffContent": "201,2300001,2300003,2300005,2300006,2300007,2300008,2300009,2300016,2300018,2300023,2300025,2300026,2300027,2300028,2300047,2300052,2300055,2300056,2300058,2300059,2300060,2300061,2300063,2300070,2300073,2300077,2300078,2300094,2300998,2300999,401",
+            "raw": null
+          },
+          "file": "api/@ohos.net.http.d.ts"
+        },
+        {
+          "operation": "错误码变更",
+          "className": "HttpRequest",
+          "apiDeclaration": "requestInStream(url: string, options: HttpRequestOptions, callback: AsyncCallback<number>): void;",
+          "old": {
+            "className": "HttpRequest",
+            "apiDeclaration": "requestInStream(url: string, options: HttpRequestOptions, callback: AsyncCallback<number>): void;",
+            "diffContent": "201,2300001,2300003,2300005,2300006,2300007,2300008,2300009,2300016,2300018,2300023,2300025,2300026,2300027,2300028,2300047,2300052,2300055,2300056,2300058,2300059,2300060,2300061,2300063,2300070,2300073,2300077,2300078,2300094,2300999,401",
+            "raw": null
+          },
+          "new": {
+            "className": "HttpRequest",
+            "apiDeclaration": "requestInStream(url: string, options: HttpRequestOptions, callback: AsyncCallback<number>): void;",
+            "diffContent": "201,2300001,2300003,2300005,2300006,2300007,2300008,2300009,2300016,2300018,2300023,2300025,2300026,2300027,2300028,2300047,2300052,2300055,2300056,2300058,2300059,2300060,2300061,2300063,2300070,2300073,2300077,2300078,2300094,2300998,2300999,401",
+            "raw": null
+          },
+          "file": "api/@ohos.net.http.d.ts"
+        },
+        {
+          "operation": "错误码变更",
+          "className": "HttpRequest",
+          "apiDeclaration": "requestInStream(url: string, options?: HttpRequestOptions): Promise<number>;",
+          "old": {
+            "className": "HttpRequest",
+            "apiDeclaration": "requestInStream(url: string, options?: HttpRequestOptions): Promise<number>;",
+            "diffContent": "201,2300001,2300003,2300005,2300006,2300007,2300008,2300009,2300016,2300018,2300023,2300025,2300026,2300027,2300028,2300047,2300052,2300055,2300056,2300058,2300059,2300060,2300061,2300063,2300070,2300073,2300077,2300078,2300094,2300999,401",
+            "raw": null
+          },
+          "new": {
+            "className": "HttpRequest",
+            "apiDeclaration": "requestInStream(url: string, options?: HttpRequestOptions): Promise<number>;",
+            "diffContent": "201,2300001,2300003,2300005,2300006,2300007,2300008,2300009,2300016,2300018,2300023,2300025,2300026,2300027,2300028,2300047,2300052,2300055,2300056,2300058,2300059,2300060,2300061,2300063,2300070,2300073,2300077,2300078,2300094,2300998,2300999,401",
+            "raw": null
+          },
+          "file": "api/@ohos.net.http.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "connection",
+          "apiDeclaration": "function setPacUrl(pacUrl: string): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "connection",
+            "apiDeclaration": "function setPacUrl(pacUrl: string): void;",
+            "diffContent": "function setPacUrl(pacUrl: string): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.net.connection.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "connection",
+          "apiDeclaration": "function getPacUrl(): string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "connection",
+            "apiDeclaration": "function getPacUrl(): string;",
+            "diffContent": "function getPacUrl(): string;",
+            "raw": null
+          },
+          "file": "api/@ohos.net.connection.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Performance Analysis Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-performanceanalysiskit-5031",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "hilog",
+          "apiDeclaration": "function setMinLogLevel(level: LogLevel): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "hilog",
+            "apiDeclaration": "function setMinLogLevel(level: LogLevel): void;",
+            "diffContent": "function setMinLogLevel(level: LogLevel): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.hilog.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "hiAppEvent",
+          "apiDeclaration": "function setEventConfig(name: string, config: Record<string, ParamType>): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "hiAppEvent",
+            "apiDeclaration": "function setEventConfig(name: string, config: Record<string, ParamType>): Promise<void>;",
+            "diffContent": "function setEventConfig(name: string, config: Record<string, ParamType>): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.hiviewdfx.hiAppEvent.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Share Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-sharekit-5031",
+      "changeCount": 5,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "harmonyShare",
+          "apiDeclaration": "enum SharableErrorCode",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "harmonyShare",
+            "apiDeclaration": "enum SharableErrorCode",
+            "diffContent": "enum SharableErrorCode",
+            "raw": null
+          },
+          "file": "api/@hms.collaboration.harmonyShare.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SharableErrorCode",
+          "apiDeclaration": "NO_CONTENT_ERROR = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SharableErrorCode",
+            "apiDeclaration": "NO_CONTENT_ERROR = 1",
+            "diffContent": "NO_CONTENT_ERROR = 1",
+            "raw": null
+          },
+          "file": "api/@hms.collaboration.harmonyShare.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SharableErrorCode",
+          "apiDeclaration": "NO_INTERNET_ERROR = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SharableErrorCode",
+            "apiDeclaration": "NO_INTERNET_ERROR = 2",
+            "diffContent": "NO_INTERNET_ERROR = 2",
+            "raw": null
+          },
+          "file": "api/@hms.collaboration.harmonyShare.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SharableErrorCode",
+          "apiDeclaration": "DOWNLOAD_ERROR = 3",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SharableErrorCode",
+            "apiDeclaration": "DOWNLOAD_ERROR = 3",
+            "diffContent": "DOWNLOAD_ERROR = 3",
+            "raw": null
+          },
+          "file": "api/@hms.collaboration.harmonyShare.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SharableTarget",
+          "apiDeclaration": "reject(error: SharableErrorCode): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SharableTarget",
+            "apiDeclaration": "reject(error: SharableErrorCode): Promise<void>;",
+            "diffContent": "reject(error: SharableErrorCode): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@hms.collaboration.harmonyShare.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Vision Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-visionkit-5031",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "CardRecognitionConfig",
+          "apiDeclaration": "setCardMargins?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CardRecognitionConfig",
+            "apiDeclaration": "setCardMargins?: number;",
+            "diffContent": "setCardMargins?: number;",
+            "raw": null
+          },
+          "file": "api/@hms.ai.CardRecognition.d.ets"
+        }
+      ]
+    }
+  ]
+}

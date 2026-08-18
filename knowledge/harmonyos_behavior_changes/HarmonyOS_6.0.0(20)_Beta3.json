@@ -1,0 +1,199 @@
+{
+  "document": "HarmonyOS 6.0.0(20)_Beta3 行为变更清单",
+  "apiVersion": 20,
+  "versionName": "6.0.0(20)",
+  "baseVersion": "6.0.0(20)",
+  "subVersion": "Beta3",
+  "releaseDate": null,
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-roadmap/all-changelogs-600",
+  "sourceUrl": null,
+  "totalKits": null,
+  "totalChanges": 2,
+  "kits": [],
+  "interfaceBehaviorChanges": [
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "smartMobilityCommon.SmartMobilityAwareness",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.carService.smartMobilityCommon.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "off",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "off(type: 'smartMobilityEvent', smartMobilityTypes: SmartMobilityType[],\n      callback?: Callback<SmartMobilityEvent>): void",
+          "packageName": "hms.carService.smartMobilityCommon",
+          "version": "5.0.0(12)"
+        },
+        {
+          "className": "smartMobilityCommon.SmartMobilityAwareness",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.carService.smartMobilityCommon.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "on",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "on(type: 'smartMobilityEvent', smartMobilityTypes: SmartMobilityType[],\n      callback: Callback<SmartMobilityEvent>): void",
+          "packageName": "hms.carService.smartMobilityCommon",
+          "version": "5.0.0(12)"
+        },
+        {
+          "className": "smartMobilityCommon.SmartMobilityAwareness",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.carService.smartMobilityCommon.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "off",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "off(type: 'smartMobilityStatus', smartMobilityTypes: SmartMobilityType[],\n      callback?: Callback<SmartMobilityInfo>): void",
+          "packageName": "hms.carService.smartMobilityCommon",
+          "version": "5.0.0(12)"
+        },
+        {
+          "className": "smartMobilityCommon.SmartMobilityAwareness",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.carService.smartMobilityCommon.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "on",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "on(type: 'smartMobilityStatus', smartMobilityTypes: SmartMobilityType[],\n      callback: Callback<SmartMobilityInfo>): void",
+          "packageName": "hms.carService.smartMobilityCommon",
+          "version": "5.0.0(12)"
+        },
+        {
+          "className": "smartMobilityCommon.SmartMobilityAwareness",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.carService.smartMobilityCommon.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getSmartMobilityEvent",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getSmartMobilityEvent(type: SmartMobilityType, eventName: string): SmartMobilityEvent",
+          "packageName": "hms.carService.smartMobilityCommon",
+          "version": "5.0.0(12)"
+        },
+        {
+          "className": "smartMobilityCommon.SmartMobilityAwareness",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.carService.smartMobilityCommon.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getSmartMobilityStatus",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getSmartMobilityStatus(type: SmartMobilityType): SmartMobilityInfo",
+          "packageName": "hms.carService.smartMobilityCommon",
+          "version": "5.0.0(12)"
+        },
+        {
+          "className": "smartMobilityCommon",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.carService.smartMobilityCommon.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getSmartMobilityAwareness",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function getSmartMobilityAwareness(): SmartMobilityAwareness",
+          "packageName": "hms.carService.smartMobilityCommon",
+          "version": "5.0.0(12)"
+        },
+        {
+          "className": "navigationInfoMgr.NavigationController",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.carService.navigationInfoMgr.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "updateNavigationStatus",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "updateNavigationStatus(navigationStatus: NavigationStatus): void",
+          "packageName": "hms.carService.navigationInfoMgr",
+          "version": "4.1.0(11)"
+        },
+        {
+          "className": "navigationInfoMgr.NavigationController",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.carService.navigationInfoMgr.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "updateNavigationMetadata",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "updateNavigationMetadata(navigationMetadata: NavigationMetadata): void",
+          "packageName": "hms.carService.navigationInfoMgr",
+          "version": "4.1.0(11)"
+        },
+        {
+          "className": "navigationInfoMgr.NavigationController",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.carService.navigationInfoMgr.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "registerSystemNavigationListener",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "registerSystemNavigationListener(listener: SystemNavigationListener): void",
+          "packageName": "hms.carService.navigationInfoMgr",
+          "version": "4.1.0(11)"
+        },
+        {
+          "className": "navigationInfoMgr.NavigationController",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.carService.navigationInfoMgr.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "unregisterSystemNavigationListener",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "unregisterSystemNavigationListener(): void",
+          "packageName": "hms.carService.navigationInfoMgr",
+          "version": "4.1.0(11)"
+        },
+        {
+          "className": "navigationInfoMgr",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.carService.navigationInfoMgr.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getNavigationController",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function getNavigationController(): NavigationController",
+          "packageName": "hms.carService.navigationInfoMgr",
+          "version": "4.1.0(11)"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "6.0.0(20)",
+        "changeReasonCategory": "API_SPECIFICATION_ISSUES",
+        "changeTitle": "Car Kit接口新增801、1003810001、1003810002错误码",
+        "changeType": "接口行为变更",
+        "id": "CH2025082874213",
+        "sdkVersion": "6.0.0(20) Beta3",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "SECURITY_AUDIT_H.SecurityAudit_Notify_Event",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_c/DeviceSecurityKit/security_audit.h",
+          "implementLanguage": "c",
+          "interfaceName": "SECURITY_AUDIT_NOTIFY_EVENT_FILE_INTERCEPTED",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "SECURITY_AUDIT_NOTIFY_EVENT_FILE_INTERCEPTED = 0x1C001100",
+          "packageName": "",
+          "version": "6.0.0(20)"
+        },
+        {
+          "className": "securityAudit.NotifyEvent",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.security.securityAudit.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "FILE_INTERCEPTED",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "FILE_INTERCEPTED = 0x1C001100",
+          "packageName": "hms.security.securityAudit",
+          "version": "6.0.0(20)"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "6.0.0(20)",
+        "changeReasonCategory": "LANGUAGE_RULE_CHANGE",
+        "changeTitle": "SECURITY_AUDIT_NOTIFY_EVENT_FILE_INTERCEPTED、FILE_INTERCEPTED枚举值变更",
+        "changeType": "接口定义变更",
+        "id": "CH2025072609886",
+        "sdkVersion": "6.0.0(20) Beta3",
+        "url": null
+      }
+    }
+  ]
+}

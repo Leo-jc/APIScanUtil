@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "FlexTags 示例模块"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "FlexTags 标签控件示例"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "FlexTags"
+    },
+    {
+      "name": "title_hot_search",
+      "value": "热门搜索"
+    },
+    {
+      "name": "title_select_simple",
+      "value": "选中示例(兴趣标签)"
+    },
+    {
+      "name": "title_edit_simple",
+      "value": "编辑示例(个人标签)"
+    },
+    {
+      "name": "btn_random_test",
+      "value": "随机测试"
+    },
+    {
+      "name": "btn_select_simple",
+      "value": "选中示例(兴趣标签)"
+    },
+    {
+      "name": "btn_edit_simple",
+      "value": "编辑示例(个人标签)"
+    },
+    {
+      "name": "btn_add",
+      "value": "添加"
+    },
+    {
+      "name": "label_new_tag",
+      "value": "新增标签"
+    },
+    {
+      "name": "default_input_text",
+      "value": "阳光帅气"
+    }
+  ]
+}

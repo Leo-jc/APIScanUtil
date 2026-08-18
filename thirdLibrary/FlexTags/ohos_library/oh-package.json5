@@ -1,0 +1,9 @@
+{
+  "name": "flex_tags",
+  "version": "1.0.0",
+  "description": "FlexTags 弹性标签布局控件，支持标签云、热门标签、兴趣标签、热门搜索词等场景。",
+  "main": "Index.ets",
+  "author": "chockqiu",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}

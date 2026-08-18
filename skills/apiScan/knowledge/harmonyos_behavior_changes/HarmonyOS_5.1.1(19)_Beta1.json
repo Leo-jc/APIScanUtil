@@ -1,0 +1,14 @@
+{
+  "document": "HarmonyOS 5.1.1(19)_Beta1 行为变更清单",
+  "apiVersion": 19,
+  "versionName": "5.1.1(19)",
+  "baseVersion": "5.1.1(19)",
+  "subVersion": "Beta1",
+  "releaseDate": null,
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-roadmap/all-changelogs-511",
+  "sourceUrl": null,
+  "totalKits": 0,
+  "totalChanges": 0,
+  "kits": [],
+  "interfaceBehaviorChanges": []
+}

@@ -1,0 +1,9 @@
+{
+  "name": "tablefixheaders",
+  "version": "1.0.0",
+  "description": "TableFixHeaders - 固定表头双向滚动表格控件（HarmonyOS HAR）",
+  "main": "Index.ets",
+  "author": "InQBarna (adapted for HarmonyOS)",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}

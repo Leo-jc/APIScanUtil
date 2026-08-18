@@ -1,0 +1,259 @@
+{
+  "document": "HarmonyOS 5.0.3(15)_Beta2 行为变更清单",
+  "apiVersion": 15,
+  "versionName": "5.0.3(15)",
+  "baseVersion": "5.0.3(15)",
+  "subVersion": "Beta2",
+  "releaseDate": null,
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-roadmap/all-changelogs-503",
+  "sourceUrl": null,
+  "totalKits": null,
+  "totalChanges": 6,
+  "kits": [],
+  "interfaceBehaviorChanges": [
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CommonMethod",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "onDragStart",
+          "interfaceType": "method",
+          "invokeInstance": "ImageAttribute",
+          "methodDefinition": "onDragStart(event: (event: DragEvent, extraParams?: string) => CustomBuilder | DragItemInfo): T",
+          "packageName": "common",
+          "version": "8"
+        },
+        {
+          "className": "CommonMethod",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "onDragStart",
+          "interfaceType": "method",
+          "invokeInstance": "TextAttribute",
+          "methodDefinition": "onDragStart(event: (event: DragEvent, extraParams?: string) => CustomBuilder | DragItemInfo): T",
+          "packageName": "common",
+          "version": "8"
+        },
+        {
+          "className": "CommonMethod",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "onDragStart",
+          "interfaceType": "method",
+          "invokeInstance": "ListItemAttribute",
+          "methodDefinition": "onDragStart(event: (event: DragEvent, extraParams?: string) => CustomBuilder | DragItemInfo): T",
+          "packageName": "common",
+          "version": "8"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "Image、Text和ListItem组件onDragStart接口默认行为变更",
+        "changeType": "接口行为变更",
+        "id": 363,
+        "sdkVersion": "5.0.3(15) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "voipCall",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.telephony.voipCall.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "reportIncomingCall",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function reportIncomingCall(voipCallAttribute: VoipCallAttribute): Promise<ErrorReason>",
+          "packageName": "hms.telephony.voipCall",
+          "version": "4.1.0(11)"
+        },
+        {
+          "className": "voipCall",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.telephony.voipCall.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "reportOutgoingCall",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function reportOutgoingCall(voipCallAttribute: VoipCallAttribute): Promise<ErrorReason>",
+          "packageName": "hms.telephony.voipCall",
+          "version": "5.0.0(12)"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "通话应用在前台时不显示通话胶囊",
+        "changeType": "UX视觉布局变更",
+        "id": 359,
+        "sdkVersion": "5.0.3(15) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "TextController",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/text.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "setStyledString",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "setStyledString(value: StyledString): void",
+          "packageName": "text",
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "TextController的SetStyledString接口支持保存设置的属性字符串信息到调用的TextController中",
+        "changeType": "接口行为变更",
+        "id": 348,
+        "sdkVersion": "5.0.3(15) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "_NATIVE_INTERFACE_XCOMPONENT_H_",
+          "completePath": "/interface/sdk_c/arkui/ace_engine/native/native_interface_xcomponent.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_NativeXComponent_RegisterUIInputEventCallback",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "int32_t OH_NativeXComponent_RegisterUIInputEventCallback(    OH_NativeXComponent *component,    void (*callback)(OH_NativeXComponent *component, ArkUI_UIInputEvent *event,                     ArkUI_UIInputEvent_Type type),    ArkUI_UIInputEvent_Type type)",
+          "packageName": null,
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "轴事件支持BEGIN、END及CANCEL类型回调触发",
+        "changeType": "接口行为变更",
+        "id": 356,
+        "sdkVersion": "5.0.3(15) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "hiAppEvent.Watcher",
+          "completePath": "/interface/sdk-js/api/@ohos.hiviewdfx.hiAppEvent.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "onReceive",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "onReceive?: (domain: string, appEventGroups: Array<AppEventGroup>) => void",
+          "packageName": "ohos.hiviewdfx.hiAppEvent",
+          "version": "11"
+        },
+        {
+          "className": "HIVIEWDFX_HIAPPEVENT_H",
+          "completePath": "/interface/sdk_c/hiviewdfx/hiappevent/include/hiappevent/hiappevent.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_HiAppEvent_OnReceive",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "typedef void (*OH_HiAppEvent_OnReceive)(    const char* domain, const struct HiAppEvent_AppEventGroup* appEventGroups, uint32_t groupLen)",
+          "packageName": null,
+          "version": "12"
+        },
+        {
+          "className": "hiAppEvent.AppEventPackageHolder",
+          "completePath": "/interface/sdk-js/api/@ohos.hiviewdfx.hiAppEvent.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "takeNext",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "takeNext(): AppEventPackage",
+          "packageName": "ohos.hiviewdfx.hiAppEvent",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "HiAppEvent模块onReceive、OH_HiAppEvent_OnReceive、takeNext接口支持应用分身故障日志订阅隔离",
+        "changeType": "接口行为变更",
+        "id": 364,
+        "sdkVersion": "5.0.3(15) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "NavDestinationAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/nav_destination.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "bindToScrollable",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "bindToScrollable(scrollers: Array<Scroller>): NavDestinationAttribute",
+          "packageName": "nav_destination",
+          "version": "14"
+        },
+        {
+          "className": "NavDestinationAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/nav_destination.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "bindToNestedScrollable",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "bindToNestedScrollable(scrollInfos: Array<NestedScrollInfo>): NavDestinationAttribute",
+          "packageName": "nav_destination",
+          "version": "14"
+        },
+        {
+          "className": "UIContext",
+          "completePath": "/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "bindTabsToScrollable",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "bindTabsToScrollable(tabsController: TabsController, scroller: Scroller): void",
+          "packageName": "ohos.arkui.UIContext",
+          "version": "13"
+        },
+        {
+          "className": "UIContext",
+          "completePath": "/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "bindTabsToNestedScrollable",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "bindTabsToNestedScrollable(tabsController: TabsController, parentScroller: Scroller, childScroller: Scroller): void",
+          "packageName": "ohos.arkui.UIContext",
+          "version": "13"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "NavDestination标题栏工具栏支持跟手滑动隐藏后，超过2秒未操作，不恢复显示",
+        "changeType": "UX交互行为变更",
+        "id": 342,
+        "sdkVersion": "5.0.3(15) Beta2",
+        "url": null
+      }
+    }
+  ]
+}

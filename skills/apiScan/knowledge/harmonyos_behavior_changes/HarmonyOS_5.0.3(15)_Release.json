@@ -1,0 +1,52 @@
+{
+  "document": "HarmonyOS 5.0.3(15)_Release 行为变更清单",
+  "apiVersion": 15,
+  "versionName": "5.0.3(15)",
+  "baseVersion": "5.0.3(15)",
+  "subVersion": "Release",
+  "releaseDate": null,
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-roadmap/all-changelogs-503",
+  "sourceUrl": null,
+  "totalKits": null,
+  "totalChanges": 1,
+  "kits": [],
+  "interfaceBehaviorChanges": [
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "_ARKUI_UI_INPUT_EVENT_H_",
+          "completePath": "/interface/sdk_c/arkui/ace_engine/native/ui_input_event.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_ArkUI_UIInputEvent_GetToolType",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "int32_t OH_ArkUI_UIInputEvent_GetToolType(const ArkUI_UIInputEvent* event)",
+          "packageName": null,
+          "version": "12"
+        },
+        {
+          "className": "_ARKUI_UI_INPUT_EVENT_H_",
+          "completePath": "/interface/sdk_c/arkui/ace_engine/native/ui_input_event.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_ArkUI_UIInputEvent_GetSourceType",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "int32_t OH_ArkUI_UIInputEvent_GetSourceType(const ArkUI_UIInputEvent* event)",
+          "packageName": null,
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "15",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "C API轴事件接口OH_ArkUI_UIInputEvent_GetSourceType和OH_ArkUI_UIInputEvent_GetToolType接口返回值变更",
+        "changeType": "接口行为变更",
+        "id": 367,
+        "sdkVersion": "5.0.3(15) Release",
+        "url": null
+      }
+    }
+  ]
+}

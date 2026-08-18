@@ -1,0 +1,9 @@
+{
+  "name": "viewpagerdots",
+  "version": "1.0.0",
+  "description": "A lightweight HarmonyOS ArkUI indicator library that renders dots for a Swiper, with customizable size, tint, drawable, orientation, gravity and animation.",
+  "main": "Index.ets",
+  "author": "Aidan Follestadt",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}

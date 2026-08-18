@@ -1,0 +1,16 @@
+{
+  "float": [
+    {
+      "name": "sidebar_default_text_size",
+      "value": "13vp"
+    },
+    {
+      "name": "sidebar_default_item_spacing",
+      "value": "10vp"
+    },
+    {
+      "name": "sidebar_default_width",
+      "value": "75vp"
+    }
+  ]
+}

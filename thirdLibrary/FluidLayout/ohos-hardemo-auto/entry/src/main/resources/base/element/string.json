@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "FluidLayout demo module"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "FluidLayout demo entry"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "FluidLayout"
+    }
+  ]
+}

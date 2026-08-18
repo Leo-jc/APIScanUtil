@@ -1,0 +1,1359 @@
+{
+  "title": "HarmonyOS API 调用图谱",
+  "summary": {
+    "filesAnalyzed": 9,
+    "systemApis": 15,
+    "systemApiCallSites": 61
+  },
+  "files": [
+    {
+      "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "AbilityConstant",
+            "ConfigurationConstant",
+            "UIAbility",
+            "Want"
+          ],
+          "source": "@kit.AbilityKit",
+          "kit": "AbilityKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 3,
+          "names": [
+            "window"
+          ],
+          "source": "@kit.ArkUI",
+          "kit": "ArkUI",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onCreate",
+        "onDestroy",
+        "onWindowStageCreate",
+        "onWindowStageDestroy",
+        "onForeground",
+        "onBackground"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 10,
+          "qualified": "this.context.getApplicationContext",
+          "base": "this",
+          "name": "getApplicationContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 12,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 14,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 18,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onDestroy"
+        },
+        {
+          "line": 23,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 27,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 30,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 36,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageDestroy"
+        },
+        {
+          "line": 41,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onForeground"
+        },
+        {
+          "line": 46,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackground"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "BackupExtensionAbility",
+            "BundleVersion"
+          ],
+          "source": "@kit.CoreFileKit",
+          "kit": "CoreFileKit",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onBackup",
+        "onRestore"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 8,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackup"
+        },
+        {
+          "line": 13,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onRestore"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\model\\ItemViews.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "FlexTagsAdapter",
+            "FlexTagsItemView"
+          ],
+          "source": "flex_tags",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 2,
+          "names": [
+            "SelectBean"
+          ],
+          "source": "./SelectBean",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "constructor",
+        "constructor",
+        "constructor",
+        "onCreateView",
+        "onBindView",
+        "getItemCount",
+        "onCreateView",
+        "onBindView",
+        "getItemCount",
+        "onCreateView",
+        "onBindView",
+        "getItemCount"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "entry\\src\\main\\ets\\model\\SelectBean.ets",
+      "imports": [],
+      "functions": [
+        "constructor"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "FlexTags",
+            "FlexTagsController",
+            "FlexTagsItemView"
+          ],
+          "source": "flex_tags",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 2,
+          "names": [
+            "EditTagAdapter",
+            "EditTagItemView"
+          ],
+          "source": "../model/ItemViews",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 3,
+          "names": [
+            "SelectBean"
+          ],
+          "source": "../model/SelectBean",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "aboutToAppear",
+        "addTag",
+        "itemBuilder",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 49,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "itemBuilder"
+        },
+        {
+          "line": 50,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "itemBuilder"
+        },
+        {
+          "line": 55,
+          "qualified": "Image",
+          "base": "Image",
+          "name": "Image",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "itemBuilder"
+        },
+        {
+          "line": 80,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 81,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 83,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 84,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 88,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 92,
+          "qualified": "Image",
+          "base": "Image",
+          "name": "Image",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 97,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 116,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 125,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 131,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 132,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 138,
+          "qualified": "TextInput",
+          "base": "TextInput",
+          "name": "TextInput",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 144,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "FlexTags",
+            "FlexTagsController",
+            "FlexTagsItemView"
+          ],
+          "source": "flex_tags",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 2,
+          "names": [
+            "HotSearchAdapter",
+            "HotSearchItemView"
+          ],
+          "source": "../model/ItemViews",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "aboutToAppear",
+        "randomTest",
+        "itemBuilder",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 52,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "aboutToAppear"
+        },
+        {
+          "line": 52,
+          "qualified": "getPromptAction",
+          "base": "getPromptAction",
+          "name": "getPromptAction",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "aboutToAppear"
+        },
+        {
+          "line": 52,
+          "qualified": "showToast",
+          "base": "showToast",
+          "name": "showToast",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "aboutToAppear"
+        },
+        {
+          "line": 76,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "itemBuilder"
+        },
+        {
+          "line": 98,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 99,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 101,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 102,
+          "qualified": "Image",
+          "base": "Image",
+          "name": "Image",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 107,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 126,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 135,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 141,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 142,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 149,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 150,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 153,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 156,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 159,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\pages\\SelectSimplePage.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "FlexTags",
+            "FlexTagsController",
+            "FlexTagsItemView"
+          ],
+          "source": "flex_tags",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 2,
+          "names": [
+            "InterestTagAdapter",
+            "InterestTagItemView"
+          ],
+          "source": "../model/ItemViews",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 3,
+          "names": [
+            "SelectBean"
+          ],
+          "source": "../model/SelectBean",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "aboutToAppear",
+        "itemBuilder",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 33,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "itemBuilder"
+        },
+        {
+          "line": 57,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 58,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 60,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 61,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 65,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 69,
+          "qualified": "Image",
+          "base": "Image",
+          "name": "Image",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 74,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 93,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 102,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\adapter\\FlexTagsAdapter.ets",
+      "imports": [],
+      "functions": [
+        "constructor",
+        "notifyDataSetChanged",
+        "hasObserver",
+        "setChangeCallback",
+        "bind",
+        "setAdapter",
+        "getAdapter"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\components\\FlexTags.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "FlexTagsAdapter",
+            "FlexTagsController",
+            "FlexTagsItemView"
+          ],
+          "source": "../adapter/FlexTagsAdapter",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "defaultItemBuilder",
+        "aboutToAppear",
+        "aboutToDisappear",
+        "handleSetAdapter",
+        "rebuildItems",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 70,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "<top-level>"
+        },
+        {
+          "line": 94,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "defaultItemBuilder"
+        },
+        {
+          "line": 169,
+          "qualified": "Flex",
+          "base": "Flex",
+          "name": "Flex",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 170,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 176,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    }
+  ],
+  "apiGraph": [
+    {
+      "api": "Button",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 144,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 142,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 150,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 156,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Column",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 81,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 125,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 131,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 99,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 135,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 141,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\SelectSimplePage.ets",
+          "line": 58,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\SelectSimplePage.ets",
+          "line": 102,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Flex",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\FlexTags.ets",
+          "line": 169,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "ForEach",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\FlexTags.ets",
+          "line": 176,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Image",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 55,
+          "caller": "itemBuilder",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 92,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 102,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\SelectSimplePage.ets",
+          "line": 69,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Row",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 49,
+          "caller": "itemBuilder",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 83,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 116,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 101,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 126,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 149,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\SelectSimplePage.ets",
+          "line": 60,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\SelectSimplePage.ets",
+          "line": 93,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\FlexTags.ets",
+          "line": 70,
+          "caller": "<top-level>",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\FlexTags.ets",
+          "line": 170,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Scroll",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 80,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 98,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\SelectSimplePage.ets",
+          "line": 57,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Text",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 50,
+          "caller": "itemBuilder",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 84,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 97,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 132,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 76,
+          "caller": "itemBuilder",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 107,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\SelectSimplePage.ets",
+          "line": 33,
+          "caller": "itemBuilder",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\SelectSimplePage.ets",
+          "line": 61,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\SelectSimplePage.ets",
+          "line": 74,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\FlexTags.ets",
+          "line": 94,
+          "caller": "defaultItemBuilder",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "TextInput",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 138,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "getPromptAction",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 52,
+          "caller": "aboutToAppear",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "hilog.error",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 12,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 27,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 14,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 18,
+          "caller": "onDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 23,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 30,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 36,
+          "caller": "onWindowStageDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 41,
+          "caller": "onForeground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 46,
+          "caller": "onBackground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 8,
+          "caller": "onBackup",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 13,
+          "caller": "onRestore",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "showToast",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 52,
+          "caller": "aboutToAppear",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "this.context.getApplicationContext",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 10,
+          "caller": "onCreate",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "this.getUIContext",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\EditSimplePage.ets",
+          "line": 88,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 52,
+          "caller": "aboutToAppear",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 153,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 159,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\SelectSimplePage.ets",
+          "line": 65,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    }
+  ]
+}

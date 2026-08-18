@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "checkerboarddrawable",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

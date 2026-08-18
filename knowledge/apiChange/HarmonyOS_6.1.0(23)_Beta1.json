@@ -1,0 +1,313 @@
+[
+  {
+    "affectedApis":[
+      {
+        "className":"intl.RelativeTimeFormat",
+        "completePath":"/interface/sdk-js/api/@ohos.intl.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"formatToParts",
+        "interfaceType":"method",
+        "methodDefinition":"formatToParts(value: double, unit: string): Array<object>",
+        "packageName":"ohos.intl",
+        "version":"8"
+      },
+      {
+        "className":"intl.RelativeTimeFormat",
+        "completePath":"/interface/sdk-js/api/@ohos.intl.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"format",
+        "interfaceType":"method",
+        "methodDefinition":"format(value: double, unit: string): string",
+        "packageName":"ohos.intl",
+        "version":"8"
+      },
+      {
+        "className":"i18n.SimpleDateTimeFormat",
+        "completePath":"/interface/sdk-js/api/@ohos.i18n.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"format",
+        "interfaceType":"method",
+        "methodDefinition":"format(date: Date): string",
+        "packageName":"ohos.i18n",
+        "version":"18"
+      },
+      {
+        "className":"i18n.StyledDateTimeFormat",
+        "completePath":"/interface/sdk-js/api/@ohos.i18n.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"format",
+        "interfaceType":"method",
+        "methodDefinition":"format(date: Date): StyledString",
+        "packageName":"ohos.i18n",
+        "version":"23"
+      },
+      {
+        "className":"intl.DateTimeFormat",
+        "completePath":"/interface/sdk-js/api/@ohos.intl.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"format",
+        "interfaceType":"method",
+        "methodDefinition":"format(date: Date): string",
+        "packageName":"ohos.intl",
+        "version":"6"
+      },
+      {
+        "className":"intl.DateTimeFormat",
+        "completePath":"/interface/sdk-js/api/@ohos.intl.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"formatRange",
+        "interfaceType":"method",
+        "methodDefinition":"formatRange(startDate: Date, endDate: Date): string",
+        "packageName":"ohos.intl",
+        "version":"6"
+      },
+      {
+        "className":"intl.DateTimeFormat",
+        "completePath":"/interface/sdk-js/api/@ohos.intl.static.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"formatRange",
+        "interfaceType":"method",
+        "methodDefinition":"formatRange(startDate: Date, endDate: Date): string",
+        "packageName":"ohos.intl.static",
+        "version":"23"
+      },
+      {
+        "className":"intl.DateTimeFormat",
+        "completePath":"/interface/sdk-js/api/@ohos.intl.static.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"format",
+        "interfaceType":"method",
+        "methodDefinition":"format(date: Date): string",
+        "packageName":"ohos.intl.static",
+        "version":"23"
+      },
+      {
+        "className":"intl.Locale",
+        "completePath":"/interface/sdk-js/api/@ohos.intl.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"maximize",
+        "interfaceType":"method",
+        "methodDefinition":"maximize(): Locale",
+        "packageName":"ohos.intl",
+        "version":"6"
+      },
+      {
+        "className":"intl.Locale",
+        "completePath":"/interface/sdk-js/api/@ohos.intl.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"minimize",
+        "interfaceType":"method",
+        "methodDefinition":"minimize(): Locale",
+        "packageName":"ohos.intl",
+        "version":"6"
+      },
+      {
+        "className":"i18n.System",
+        "completePath":"/interface/sdk-js/api/@ohos.i18n.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getDisplayCountry",
+        "interfaceType":"method",
+        "methodDefinition":"static getDisplayCountry(country: string, locale: string, sentenceCase?: boolean): string",
+        "packageName":"ohos.i18n",
+        "version":"9"
+      },
+      {
+        "className":"i18n",
+        "completePath":"/interface/sdk-js/api/@ohos.i18n.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getDisplayCountry",
+        "interfaceType":"method",
+        "methodDefinition":"export function getDisplayCountry(country: string, locale: string, sentenceCase?: boolean): string",
+        "packageName":"ohos.i18n",
+        "version":"7"
+      },
+      {
+        "className":"i18n.Transliterator",
+        "completePath":"/interface/sdk-js/api/@ohos.i18n.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"transform",
+        "interfaceType":"method",
+        "methodDefinition":"transform(text: string): string",
+        "packageName":"ohos.i18n",
+        "version":"9"
+      },
+      {
+        "className":"i18n.TimeZone",
+        "completePath":"/interface/sdk-js/api/@ohos.i18n.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getDisplayName",
+        "interfaceType":"method",
+        "methodDefinition":"getDisplayName(locale?: string, isDST?: boolean): string",
+        "packageName":"ohos.i18n",
+        "version":"7"
+      },
+      {
+        "className":"i18n.Calendar",
+        "completePath":"/interface/sdk-js/api/@ohos.i18n.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getDisplayName",
+        "interfaceType":"method",
+        "methodDefinition":"getDisplayName(locale: string): string",
+        "packageName":"ohos.i18n",
+        "version":"8"
+      },
+      {
+        "className":"i18n.System",
+        "completePath":"/interface/sdk-js/api/@ohos.i18n.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getDisplayLanguage",
+        "interfaceType":"method",
+        "methodDefinition":"static getDisplayLanguage(language: string, locale: string, sentenceCase?: boolean): string",
+        "packageName":"ohos.i18n",
+        "version":"9"
+      },
+      {
+        "className":"i18n",
+        "completePath":"/interface/sdk-js/api/@ohos.i18n.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getDisplayLanguage",
+        "interfaceType":"method",
+        "methodDefinition":"export function getDisplayLanguage(language: string, locale: string, sentenceCase?: boolean): string",
+        "packageName":"ohos.i18n",
+        "version":"7"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"NOT_ISOLATED",
+      "apiVersion":"23",
+      "changeReasonCategory":"UPSTREAM_OPEN_SOURCE_COMMUNITY_TRIGGERED_CHANGE",
+      "id":"CH2025121032586",
+      "sdkVersion":"6.1.0(23) Beta1",
+      "changeTitle": "全球化接口与运行时接口本地化显示优化及换行能力增强",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"text.WordBreak",
+        "completePath":"/interface/sdk-js/api/@ohos.graphics.text.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"BREAK_HYPHEN",
+        "interfaceType":"enum_instance",
+        "methodDefinition":"BREAK_HYPHEN = 3",
+        "packageName":"ohos.graphics.text",
+        "version":"18"
+      },
+      {
+        "className":"C_INCLUDE_DRAWING_TEXT_TYPOGRAPHY_H",
+        "completePath":"/interface/sdk_c/graphic/graphic_2d/native_drawing/drawing_text_typography.h",
+        "implementLanguage":"c",
+        "interfaceName":"OH_Drawing_SetTypographyTextWordBreakType",
+        "interfaceType":"method",
+        "methodDefinition":"void OH_Drawing_SetTypographyTextWordBreakType(OH_Drawing_TypographyStyle* style, int wordBreakType)",
+        "packageName":null,
+        "version":"11"
+      },
+      {
+        "className":"ARKUI_NATIVE_TYPE_H.ArkUI_WordBreak",
+        "completePath":"/interface/sdk_c/arkui/ace_engine/native/native_type.h",
+        "implementLanguage":"c",
+        "interfaceName":"ARKUI_WORD_BREAK_HYPHENATION",
+        "interfaceType":"enum_instance",
+        "methodDefinition":"ARKUI_WORD_BREAK_HYPHENATION",
+        "packageName":null,
+        "version":"18"
+      },
+      {
+        "className":"C_INCLUDE_DRAWING_TEXT_TYPOGRAPHY_H.OH_Drawing_WordBreakType",
+        "completePath":"/interface/sdk_c/graphic/graphic_2d/native_drawing/drawing_text_typography.h",
+        "implementLanguage":"c",
+        "interfaceName":"WORD_BREAK_TYPE_BREAK_HYPHEN",
+        "interfaceType":"enum_instance",
+        "methodDefinition":"WORD_BREAK_TYPE_BREAK_HYPHEN = 3",
+        "packageName":null,
+        "version":"18"
+      },
+      {
+        "className":"WordBreak",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/enums.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"HYPHENATION",
+        "interfaceType":"enum_instance",
+        "methodDefinition":"HYPHENATION = 3",
+        "packageName":"enums",
+        "version":"18"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"NOT_ISOLATED",
+      "apiVersion":"23",
+      "changeReasonCategory":"PRIVACY_AND_SECURITY_ISSUES",
+      "id":"CH2025112072187",
+      "sdkVersion":"6.1.0(23) Beta1",
+      "changeTitle": "WordBreak.HYPHENATION移除以下六种语言连字符“-”断词换行能力的支持：捷克语、印度尼西亚语、拉脱维亚语、马其顿语、斯洛伐克语、塞尔维亚语",
+      "changeType": "接口行为变更"
+
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"window.Window",
+        "completePath":"/interface/sdk-js/api/@ohos.window.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"enableLandscapeMultiWindow",
+        "interfaceType":"method",
+        "methodDefinition":"enableLandscapeMultiWindow(): Promise<void>",
+        "packageName":"ohos.window",
+        "version":"12"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"NOT_ISOLATED",
+      "apiVersion":"23",
+      "changeReasonCategory":"SOLUTION_DESIGN_ISSUES",
+      "id":"CH2025121230160",
+      "sdkVersion":"6.1.0(23) Beta1",
+      "changeTitle": "横屏悬浮窗尺寸优化",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"NOT_ISOLATED",
+      "apiVersion":"23",
+      "changeReasonCategory":"LANGUAGE_RULE_CHANGE",
+      "id":"CH2025110734134",
+      "sdkVersion":"6.1.0(23) Beta1",
+      "changeTitle": "JS OOM异常崩溃栈形式变更",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"ProgressAttribute",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/progress.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"color",
+        "interfaceType":"method",
+        "methodDefinition":"color(value: ResourceColor | LinearGradient): ProgressAttribute<Type>",
+        "packageName":"progress",
+        "version":"7"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"23",
+      "changeReasonCategory":"SOLUTION_DESIGN_ISSUES",
+      "id":"CH2025092048488",
+      "sdkVersion":"6.1.0(23) Beta1",
+      "changeTitle": "Progress组件color属性设置渐变色规格变更",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  }
+]

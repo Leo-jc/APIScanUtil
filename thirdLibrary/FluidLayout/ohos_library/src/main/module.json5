@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "fluidlayout",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

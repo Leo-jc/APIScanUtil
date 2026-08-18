@@ -1,0 +1,11 @@
+{
+  "title": "HarmonyOS C/C++ 原生 API 调用图谱",
+  "language": "C++",
+  "summary": {
+    "filesAnalyzed": 0,
+    "nativeApis": 0,
+    "nativeApiCallSites": 0
+  },
+  "files": [],
+  "apiGraph": []
+}

@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Leak scan 04-dedup result",
+  "type": "object",
+  "required": [
+    "$schema",
+    "schema_version",
+    "scanner",
+    "phase",
+    "status",
+    "summary",
+    "input_scope",
+    "outputs",
+    "zero_results",
+    "excluded",
+    "failure_reason",
+    "dedup",
+    "candidate_ids"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "scanner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "phase": {
+      "const": "04-dedup"
+    },
+    "status": {
+      "enum": [
+        "completed",
+        "partial",
+        "failed",
+        "zero"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_scope": {
+      "type": [
+        "object",
+        "array",
+        "string"
+      ]
+    },
+    "outputs": {
+      "type": [
+        "object",
+        "array"
+      ]
+    },
+    "zero_results": {
+      "type": "array"
+    },
+    "excluded": {
+      "type": "array"
+    },
+    "failure_reason": {
+      "type": "array"
+    },
+    "candidate_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "dedup": {
+      "type": "object",
+      "required": [
+        "input_candidate_counts",
+        "source_candidate_ids",
+        "groups",
+        "decisions",
+        "summary"
+      ],
+      "properties": {
+        "input_candidate_counts": {
+          "type": "object",
+          "required": ["phase_02", "phase_03", "total"],
+          "properties": {
+            "phase_02": {"type": "integer", "minimum": 0},
+            "phase_03": {"type": "integer", "minimum": 0},
+            "total": {"type": "integer", "minimum": 0}
+          },
+          "additionalProperties": false
+        },
+        "source_candidate_ids": {
+          "type": "object",
+          "required": ["phase_02", "phase_03"],
+          "properties": {
+            "phase_02": {"type": "array", "items": {"type": "string", "minLength": 1}},
+            "phase_03": {"type": "array", "items": {"type": "string", "minLength": 1}}
+          },
+          "additionalProperties": false
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["group_id", "candidate_ids", "retained_candidate_id", "decision", "reason"],
+            "properties": {
+              "group_id": {"type": "string", "minLength": 1},
+              "candidate_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+              "retained_candidate_id": {"type": "string", "minLength": 1},
+              "decision": {"enum": ["retain", "merge", "exclude"]},
+              "reason": {"type": "string", "minLength": 1},
+              "source_phases": {"type": "array", "items": {"enum": ["02-git-patterns", "03-source-review"]}}
+            },
+            "additionalProperties": true
+          }
+        },
+        "decisions": {
+          "type": "array"
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "zero"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "zero_results": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "enum": [
+              "partial",
+              "failed"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "failure_reason": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

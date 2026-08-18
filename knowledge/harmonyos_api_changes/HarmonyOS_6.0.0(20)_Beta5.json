@@ -1,0 +1,3773 @@
+{
+  "document": "HarmonyOS 6.0.0(20)_Beta5 API变更清单",
+  "apiVersion": 20,
+  "versionName": "6.0.0(20)",
+  "baseVersion": "6.0.0(20)",
+  "subVersion": "Beta5",
+  "releaseDate": "2025/09/25",
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-600",
+  "sourceUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/apidiff-6004",
+  "totalKits": 15,
+  "totalChanges": 203,
+  "kits": [
+    {
+      "name": "Ads Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-adskit-6004",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "API从不支持元服务到支持元服务",
+          "className": "AdComponent",
+          "apiDeclaration": "@BuilderParam adRenderer?: () => void;",
+          "old": {
+            "className": "AdComponent",
+            "apiDeclaration": "@BuilderParam adRenderer?: () => void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "AdComponent",
+            "apiDeclaration": "@BuilderParam adRenderer?: () => void;",
+            "diffContent": "atomicservice",
+            "raw": null
+          },
+          "file": "api/@ohos.advertising.AdComponent.d.ets"
+        },
+        {
+          "operation": "API从不支持元服务到支持元服务",
+          "className": "AdComponent",
+          "apiDeclaration": "@Prop rollPlayState?: number;",
+          "old": {
+            "className": "AdComponent",
+            "apiDeclaration": "@Prop rollPlayState?: number;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "AdComponent",
+            "apiDeclaration": "@Prop rollPlayState?: number;",
+            "diffContent": "atomicservice",
+            "raw": null
+          },
+          "file": "api/@ohos.advertising.AdComponent.d.ets"
+        }
+      ]
+    },
+    {
+      "name": "ArkData",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkdata-6004",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "新增错误码",
+          "className": "DeviceKVStore",
+          "apiDeclaration": "getResultSize(deviceId: string, query: Query, callback: AsyncCallback<number>): void;",
+          "old": {
+            "className": "DeviceKVStore",
+            "apiDeclaration": "getResultSize(deviceId: string, query: Query, callback: AsyncCallback<number>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "DeviceKVStore",
+            "apiDeclaration": "getResultSize(deviceId: string, query: Query, callback: AsyncCallback<number>): void;",
+            "diffContent": "15100004",
+            "raw": null
+          },
+          "file": "api/@ohos.data.distributedKVStore.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "DeviceKVStore",
+          "apiDeclaration": "getResultSize(deviceId: string, query: Query): Promise<number>;",
+          "old": {
+            "className": "DeviceKVStore",
+            "apiDeclaration": "getResultSize(deviceId: string, query: Query): Promise<number>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "DeviceKVStore",
+            "apiDeclaration": "getResultSize(deviceId: string, query: Query): Promise<number>;",
+            "diffContent": "15100004",
+            "raw": null
+          },
+          "file": "api/@ohos.data.distributedKVStore.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "ArkUI",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkui-6004",
+      "changeCount": 87,
+      "changes": [
+        {
+          "operation": "API卡片权限变更",
+          "className": "global",
+          "apiDeclaration": "declare namespace curves",
+          "old": {
+            "className": "global",
+            "apiDeclaration": "declare namespace curves",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare namespace curves",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "curves",
+          "apiDeclaration": "export enum Curve",
+          "old": {
+            "className": "curves",
+            "apiDeclaration": "enum Curve",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "curves",
+            "apiDeclaration": "export enum Curve",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "Curve",
+          "apiDeclaration": "Linear",
+          "old": {
+            "className": "Curve",
+            "apiDeclaration": "Linear",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Curve",
+            "apiDeclaration": "Linear",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "Curve",
+          "apiDeclaration": "Ease",
+          "old": {
+            "className": "Curve",
+            "apiDeclaration": "Ease",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Curve",
+            "apiDeclaration": "Ease",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "Curve",
+          "apiDeclaration": "EaseIn",
+          "old": {
+            "className": "Curve",
+            "apiDeclaration": "EaseIn",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Curve",
+            "apiDeclaration": "EaseIn",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "Curve",
+          "apiDeclaration": "EaseOut",
+          "old": {
+            "className": "Curve",
+            "apiDeclaration": "EaseOut",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Curve",
+            "apiDeclaration": "EaseOut",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "Curve",
+          "apiDeclaration": "EaseInOut",
+          "old": {
+            "className": "Curve",
+            "apiDeclaration": "EaseInOut",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Curve",
+            "apiDeclaration": "EaseInOut",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "Curve",
+          "apiDeclaration": "FastOutSlowIn",
+          "old": {
+            "className": "Curve",
+            "apiDeclaration": "FastOutSlowIn",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Curve",
+            "apiDeclaration": "FastOutSlowIn",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "Curve",
+          "apiDeclaration": "LinearOutSlowIn",
+          "old": {
+            "className": "Curve",
+            "apiDeclaration": "LinearOutSlowIn",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Curve",
+            "apiDeclaration": "LinearOutSlowIn",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "Curve",
+          "apiDeclaration": "FastOutLinearIn",
+          "old": {
+            "className": "Curve",
+            "apiDeclaration": "FastOutLinearIn",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Curve",
+            "apiDeclaration": "FastOutLinearIn",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "Curve",
+          "apiDeclaration": "ExtremeDeceleration",
+          "old": {
+            "className": "Curve",
+            "apiDeclaration": "ExtremeDeceleration",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Curve",
+            "apiDeclaration": "ExtremeDeceleration",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "Curve",
+          "apiDeclaration": "Sharp",
+          "old": {
+            "className": "Curve",
+            "apiDeclaration": "Sharp",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Curve",
+            "apiDeclaration": "Sharp",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "Curve",
+          "apiDeclaration": "Rhythm",
+          "old": {
+            "className": "Curve",
+            "apiDeclaration": "Rhythm",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Curve",
+            "apiDeclaration": "Rhythm",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "Curve",
+          "apiDeclaration": "Smooth",
+          "old": {
+            "className": "Curve",
+            "apiDeclaration": "Smooth",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Curve",
+            "apiDeclaration": "Smooth",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "Curve",
+          "apiDeclaration": "Friction",
+          "old": {
+            "className": "Curve",
+            "apiDeclaration": "Friction",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Curve",
+            "apiDeclaration": "Friction",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "curves",
+          "apiDeclaration": "export interface ICurve",
+          "old": {
+            "className": "curves",
+            "apiDeclaration": "interface ICurve",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "curves",
+            "apiDeclaration": "export interface ICurve",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "API卡片权限变更",
+          "className": "ICurve",
+          "apiDeclaration": "interpolate(fraction: number): number;",
+          "old": {
+            "className": "ICurve",
+            "apiDeclaration": "interpolate(fraction: number): number;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "ICurve",
+            "apiDeclaration": "interpolate(fraction: number): number;",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.curves.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "uiAppearance",
+          "apiDeclaration": "function getDarkMode(): DarkMode;",
+          "old": {
+            "className": "uiAppearance",
+            "apiDeclaration": "function getDarkMode(): DarkMode;",
+            "diffContent": "401",
+            "raw": null
+          },
+          "new": {
+            "className": "uiAppearance",
+            "apiDeclaration": "function getDarkMode(): DarkMode;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.uiAppearance.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "uiAppearance",
+          "apiDeclaration": "function getFontScale(): number;",
+          "old": {
+            "className": "uiAppearance",
+            "apiDeclaration": "function getFontScale(): number;",
+            "diffContent": "401",
+            "raw": null
+          },
+          "new": {
+            "className": "uiAppearance",
+            "apiDeclaration": "function getFontScale(): number;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.uiAppearance.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "uiAppearance",
+          "apiDeclaration": "function getFontWeightScale(): number;",
+          "old": {
+            "className": "uiAppearance",
+            "apiDeclaration": "function getFontWeightScale(): number;",
+            "diffContent": "401",
+            "raw": null
+          },
+          "new": {
+            "className": "uiAppearance",
+            "apiDeclaration": "function getFontWeightScale(): number;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.uiAppearance.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "LengthMetrics",
+          "apiDeclaration": "static resource(value: Resource): LengthMetrics;",
+          "old": {
+            "className": "LengthMetrics",
+            "apiDeclaration": "static resource(value: Resource): LengthMetrics;",
+            "diffContent": "180001,180002",
+            "raw": null
+          },
+          "new": {
+            "className": "LengthMetrics",
+            "apiDeclaration": "static resource(value: Resource): LengthMetrics;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/arkui/Graphics.d.ts"
+        },
+        {
+          "operation": "函数变更",
+          "className": "SymbolGlyphAttribute",
+          "apiDeclaration": "shaderStyle(shader: Array<ShaderStyle | undefined> | ShaderStyle): SymbolGlyphAttribute;",
+          "old": {
+            "className": "SymbolGlyphAttribute",
+            "apiDeclaration": "shaderStyle(shaders: Array<ShaderStyle>): SymbolGlyphAttribute;",
+            "diffContent": "shaders: Array<ShaderStyle>",
+            "raw": null
+          },
+          "new": {
+            "className": "SymbolGlyphAttribute",
+            "apiDeclaration": "shaderStyle(shader: Array<ShaderStyle | undefined> | ShaderStyle): SymbolGlyphAttribute;",
+            "diffContent": "shader: Array<ShaderStyle | undefined> | ShaderStyle",
+            "raw": null
+          },
+          "file": "component/symbolglyph.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare enum ReplaceEffectType",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare enum ReplaceEffectType",
+            "diffContent": "declare enum ReplaceEffectType",
+            "raw": null
+          },
+          "file": "component/symbolglyph.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReplaceEffectType",
+          "apiDeclaration": "SEQUENTIAL = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReplaceEffectType",
+            "apiDeclaration": "SEQUENTIAL = 0",
+            "diffContent": "SEQUENTIAL = 0",
+            "raw": null
+          },
+          "file": "component/symbolglyph.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReplaceEffectType",
+          "apiDeclaration": "CROSS_FADE = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReplaceEffectType",
+            "apiDeclaration": "CROSS_FADE = 1",
+            "diffContent": "CROSS_FADE = 1",
+            "raw": null
+          },
+          "file": "component/symbolglyph.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReplaceEffectType",
+          "apiDeclaration": "SLASH_OVERLAY = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReplaceEffectType",
+            "apiDeclaration": "SLASH_OVERLAY = 2",
+            "diffContent": "SLASH_OVERLAY = 2",
+            "raw": null
+          },
+          "file": "component/symbolglyph.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "StickyStyle",
+          "apiDeclaration": "BOTH = 3",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "StickyStyle",
+            "apiDeclaration": "BOTH = 3",
+            "diffContent": "BOTH = 3",
+            "raw": null
+          },
+          "file": "component/list.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "global",
+          "apiDeclaration": "declare class DisableSymbolEffect",
+          "old": {
+            "className": "global",
+            "apiDeclaration": "declare class DisableSymbolEffect",
+            "diffContent": "declare class DisableSymbolEffect",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/symbolglyph.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "DisableSymbolEffect",
+          "apiDeclaration": "scope?: EffectScope;",
+          "old": {
+            "className": "DisableSymbolEffect",
+            "apiDeclaration": "scope?: EffectScope;",
+            "diffContent": "scope?: EffectScope;",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/symbolglyph.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "global",
+          "apiDeclaration": "declare class QuickReplaceSymbolEffect",
+          "old": {
+            "className": "global",
+            "apiDeclaration": "declare class QuickReplaceSymbolEffect",
+            "diffContent": "declare class QuickReplaceSymbolEffect",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/symbolglyph.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "QuickReplaceSymbolEffect",
+          "apiDeclaration": "scope?: EffectScope;",
+          "old": {
+            "className": "QuickReplaceSymbolEffect",
+            "apiDeclaration": "scope?: EffectScope;",
+            "diffContent": "scope?: EffectScope;",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/symbolglyph.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "global",
+          "apiDeclaration": "declare enum TextChangeReason",
+          "old": {
+            "className": "global",
+            "apiDeclaration": "declare enum TextChangeReason",
+            "diffContent": "declare enum TextChangeReason",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "TextChangeReason",
+          "apiDeclaration": "UNKNOWN = 0",
+          "old": {
+            "className": "TextChangeReason",
+            "apiDeclaration": "UNKNOWN = 0",
+            "diffContent": "UNKNOWN = 0",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "TextChangeReason",
+          "apiDeclaration": "INPUT = 1",
+          "old": {
+            "className": "TextChangeReason",
+            "apiDeclaration": "INPUT = 1",
+            "diffContent": "INPUT = 1",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "TextChangeReason",
+          "apiDeclaration": "PASTE = 2",
+          "old": {
+            "className": "TextChangeReason",
+            "apiDeclaration": "PASTE = 2",
+            "diffContent": "PASTE = 2",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "TextChangeReason",
+          "apiDeclaration": "CUT = 3",
+          "old": {
+            "className": "TextChangeReason",
+            "apiDeclaration": "CUT = 3",
+            "diffContent": "CUT = 3",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "TextChangeReason",
+          "apiDeclaration": "DRAG = 4",
+          "old": {
+            "className": "TextChangeReason",
+            "apiDeclaration": "DRAG = 4",
+            "diffContent": "DRAG = 4",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "TextChangeReason",
+          "apiDeclaration": "AUTO_FILL = 5",
+          "old": {
+            "className": "TextChangeReason",
+            "apiDeclaration": "AUTO_FILL = 5",
+            "diffContent": "AUTO_FILL = 5",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "TextChangeReason",
+          "apiDeclaration": "AI_WRITE = 6",
+          "old": {
+            "className": "TextChangeReason",
+            "apiDeclaration": "AI_WRITE = 6",
+            "diffContent": "AI_WRITE = 6",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "TextChangeReason",
+          "apiDeclaration": "REDO = 7",
+          "old": {
+            "className": "TextChangeReason",
+            "apiDeclaration": "REDO = 7",
+            "diffContent": "REDO = 7",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "TextChangeReason",
+          "apiDeclaration": "UNDO = 8",
+          "old": {
+            "className": "TextChangeReason",
+            "apiDeclaration": "UNDO = 8",
+            "diffContent": "UNDO = 8",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "TextChangeReason",
+          "apiDeclaration": "CONTROLLER = 9",
+          "old": {
+            "className": "TextChangeReason",
+            "apiDeclaration": "CONTROLLER = 9",
+            "diffContent": "CONTROLLER = 9",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "TextChangeReason",
+          "apiDeclaration": "ACCESSIBILITY = 10",
+          "old": {
+            "className": "TextChangeReason",
+            "apiDeclaration": "ACCESSIBILITY = 10",
+            "diffContent": "ACCESSIBILITY = 10",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "TextChangeReason",
+          "apiDeclaration": "COLLABORATION = 11",
+          "old": {
+            "className": "TextChangeReason",
+            "apiDeclaration": "COLLABORATION = 11",
+            "diffContent": "COLLABORATION = 11",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "TextChangeReason",
+          "apiDeclaration": "STYLUS = 12",
+          "old": {
+            "className": "TextChangeReason",
+            "apiDeclaration": "STYLUS = 12",
+            "diffContent": "STYLUS = 12",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "函数变更",
+          "className": "TextDataDetectorConfig",
+          "apiDeclaration": "onDetectResultUpdate?: Callback<string>;",
+          "old": {
+            "className": "TextDataDetectorConfig",
+            "apiDeclaration": "onDetectResultUpdate?: (result: string) => void;",
+            "diffContent": "(result: string) => void",
+            "raw": null
+          },
+          "new": {
+            "className": "TextDataDetectorConfig",
+            "apiDeclaration": "onDetectResultUpdate?: Callback<string>;",
+            "diffContent": "Callback<string>",
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "类新增可选成员",
+          "className": "ReplaceSymbolEffect",
+          "apiDeclaration": "replaceType?: ReplaceEffectType;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "ReplaceSymbolEffect",
+            "apiDeclaration": "replaceType?: ReplaceEffectType;",
+            "diffContent": "replaceType?: ReplaceEffectType;",
+            "raw": null
+          },
+          "file": "component/symbolglyph.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "Padding",
+          "apiDeclaration": "top?: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Padding",
+            "apiDeclaration": "top?: Length;",
+            "diffContent": "top?: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "Padding",
+          "apiDeclaration": "right?: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Padding",
+            "apiDeclaration": "right?: Length;",
+            "diffContent": "right?: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "Padding",
+          "apiDeclaration": "bottom?: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Padding",
+            "apiDeclaration": "bottom?: Length;",
+            "diffContent": "bottom?: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "Padding",
+          "apiDeclaration": "left?: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Padding",
+            "apiDeclaration": "left?: Length;",
+            "diffContent": "left?: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeWidths",
+          "apiDeclaration": "top?: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeWidths",
+            "apiDeclaration": "top?: Length;",
+            "diffContent": "top?: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeWidths",
+          "apiDeclaration": "right?: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeWidths",
+            "apiDeclaration": "right?: Length;",
+            "diffContent": "right?: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeWidths",
+          "apiDeclaration": "bottom?: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeWidths",
+            "apiDeclaration": "bottom?: Length;",
+            "diffContent": "bottom?: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeWidths",
+          "apiDeclaration": "left?: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeWidths",
+            "apiDeclaration": "left?: Length;",
+            "diffContent": "left?: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeOutlineWidths",
+          "apiDeclaration": "top?: Dimension;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeOutlineWidths",
+            "apiDeclaration": "top?: Dimension;",
+            "diffContent": "top?: Dimension;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeOutlineWidths",
+          "apiDeclaration": "right?: Dimension;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeOutlineWidths",
+            "apiDeclaration": "right?: Dimension;",
+            "diffContent": "right?: Dimension;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeOutlineWidths",
+          "apiDeclaration": "bottom?: Dimension;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeOutlineWidths",
+            "apiDeclaration": "bottom?: Dimension;",
+            "diffContent": "bottom?: Dimension;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeOutlineWidths",
+          "apiDeclaration": "left?: Dimension;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeOutlineWidths",
+            "apiDeclaration": "left?: Dimension;",
+            "diffContent": "left?: Dimension;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "BorderRadiuses",
+          "apiDeclaration": "topLeft?: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "BorderRadiuses",
+            "apiDeclaration": "topLeft?: Length;",
+            "diffContent": "topLeft?: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "BorderRadiuses",
+          "apiDeclaration": "topRight?: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "BorderRadiuses",
+            "apiDeclaration": "topRight?: Length;",
+            "diffContent": "topRight?: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "BorderRadiuses",
+          "apiDeclaration": "bottomLeft?: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "BorderRadiuses",
+            "apiDeclaration": "bottomLeft?: Length;",
+            "diffContent": "bottomLeft?: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "BorderRadiuses",
+          "apiDeclaration": "bottomRight?: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "BorderRadiuses",
+            "apiDeclaration": "bottomRight?: Length;",
+            "diffContent": "bottomRight?: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "OutlineRadiuses",
+          "apiDeclaration": "topLeft?: Dimension;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "OutlineRadiuses",
+            "apiDeclaration": "topLeft?: Dimension;",
+            "diffContent": "topLeft?: Dimension;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "OutlineRadiuses",
+          "apiDeclaration": "topRight?: Dimension;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "OutlineRadiuses",
+            "apiDeclaration": "topRight?: Dimension;",
+            "diffContent": "topRight?: Dimension;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "OutlineRadiuses",
+          "apiDeclaration": "bottomLeft?: Dimension;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "OutlineRadiuses",
+            "apiDeclaration": "bottomLeft?: Dimension;",
+            "diffContent": "bottomLeft?: Dimension;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "OutlineRadiuses",
+          "apiDeclaration": "bottomRight?: Dimension;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "OutlineRadiuses",
+            "apiDeclaration": "bottomRight?: Dimension;",
+            "diffContent": "bottomRight?: Dimension;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeColors",
+          "apiDeclaration": "top?: ResourceColor;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeColors",
+            "apiDeclaration": "top?: ResourceColor;",
+            "diffContent": "top?: ResourceColor;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeColors",
+          "apiDeclaration": "right?: ResourceColor;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeColors",
+            "apiDeclaration": "right?: ResourceColor;",
+            "diffContent": "right?: ResourceColor;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeColors",
+          "apiDeclaration": "bottom?: ResourceColor;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeColors",
+            "apiDeclaration": "bottom?: ResourceColor;",
+            "diffContent": "bottom?: ResourceColor;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeColors",
+          "apiDeclaration": "left?: ResourceColor;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeColors",
+            "apiDeclaration": "left?: ResourceColor;",
+            "diffContent": "left?: ResourceColor;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeStyles",
+          "apiDeclaration": "top?: BorderStyle;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeStyles",
+            "apiDeclaration": "top?: BorderStyle;",
+            "diffContent": "top?: BorderStyle;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeStyles",
+          "apiDeclaration": "right?: BorderStyle;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeStyles",
+            "apiDeclaration": "right?: BorderStyle;",
+            "diffContent": "right?: BorderStyle;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeStyles",
+          "apiDeclaration": "bottom?: BorderStyle;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeStyles",
+            "apiDeclaration": "bottom?: BorderStyle;",
+            "diffContent": "bottom?: BorderStyle;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeStyles",
+          "apiDeclaration": "left?: BorderStyle;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeStyles",
+            "apiDeclaration": "left?: BorderStyle;",
+            "diffContent": "left?: BorderStyle;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeOutlineStyles",
+          "apiDeclaration": "top?: OutlineStyle;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeOutlineStyles",
+            "apiDeclaration": "top?: OutlineStyle;",
+            "diffContent": "top?: OutlineStyle;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeOutlineStyles",
+          "apiDeclaration": "right?: OutlineStyle;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeOutlineStyles",
+            "apiDeclaration": "right?: OutlineStyle;",
+            "diffContent": "right?: OutlineStyle;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeOutlineStyles",
+          "apiDeclaration": "bottom?: OutlineStyle;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeOutlineStyles",
+            "apiDeclaration": "bottom?: OutlineStyle;",
+            "diffContent": "bottom?: OutlineStyle;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "EdgeOutlineStyles",
+          "apiDeclaration": "left?: OutlineStyle;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "EdgeOutlineStyles",
+            "apiDeclaration": "left?: OutlineStyle;",
+            "diffContent": "left?: OutlineStyle;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增必选属性",
+          "className": "Offset",
+          "apiDeclaration": "dx: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Offset",
+            "apiDeclaration": "dx: Length;",
+            "diffContent": "dx: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增必选属性",
+          "className": "Offset",
+          "apiDeclaration": "dy: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Offset",
+            "apiDeclaration": "dy: Length;",
+            "diffContent": "dy: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增必选属性",
+          "className": "LengthConstrain",
+          "apiDeclaration": "minLength: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "LengthConstrain",
+            "apiDeclaration": "minLength: Length;",
+            "diffContent": "minLength: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "接口新增必选属性",
+          "className": "LengthConstrain",
+          "apiDeclaration": "maxLength: Length;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "LengthConstrain",
+            "apiDeclaration": "maxLength: Length;",
+            "diffContent": "maxLength: Length;",
+            "raw": null
+          },
+          "file": "component/units.d.ts"
+        },
+        {
+          "operation": "新增导出符号",
+          "className": "global",
+          "apiDeclaration": "export interface ShapeSize",
+          "old": {
+            "className": "global",
+            "apiDeclaration": "export interface ShapeSize",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "export interface ShapeSize",
+            "raw": null
+          },
+          "file": "api/@ohos.arkui.shape.d.ts"
+        },
+        {
+          "operation": "新增导出符号",
+          "className": "global",
+          "apiDeclaration": "export interface RectShapeOptions",
+          "old": {
+            "className": "global",
+            "apiDeclaration": "export interface RectShapeOptions",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "export interface RectShapeOptions",
+            "raw": null
+          },
+          "file": "api/@ohos.arkui.shape.d.ts"
+        },
+        {
+          "operation": "新增导出符号",
+          "className": "global",
+          "apiDeclaration": "export interface RoundRectShapeOptions",
+          "old": {
+            "className": "global",
+            "apiDeclaration": "export interface RoundRectShapeOptions",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "export interface RoundRectShapeOptions",
+            "raw": null
+          },
+          "file": "api/@ohos.arkui.shape.d.ts"
+        },
+        {
+          "operation": "新增导出符号",
+          "className": "global",
+          "apiDeclaration": "export interface PathShapeOptions",
+          "old": {
+            "className": "global",
+            "apiDeclaration": "export interface PathShapeOptions",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "export interface PathShapeOptions",
+            "raw": null
+          },
+          "file": "api/@ohos.arkui.shape.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "ArkWeb",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkweb-6004",
+      "changeCount": 9,
+      "changes": [
+        {
+          "operation": "新增错误码",
+          "className": "WebviewController",
+          "apiDeclaration": "getPageOffset(): ScrollOffset;",
+          "old": {
+            "className": "WebviewController",
+            "apiDeclaration": "getPageOffset(): ScrollOffset;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "WebviewController",
+            "apiDeclaration": "getPageOffset(): ScrollOffset;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.web.webview.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "WebviewController",
+          "apiDeclaration": "getProgress(): number;",
+          "old": {
+            "className": "WebviewController",
+            "apiDeclaration": "getProgress(): number;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "WebviewController",
+            "apiDeclaration": "getProgress(): number;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.web.webview.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "WebviewController",
+          "apiDeclaration": "avoidVisibleViewportBottom(avoidHeight: number): void;",
+          "old": {
+            "className": "WebviewController",
+            "apiDeclaration": "avoidVisibleViewportBottom(avoidHeight: number): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "WebviewController",
+            "apiDeclaration": "avoidVisibleViewportBottom(avoidHeight: number): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.web.webview.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "webview",
+          "apiDeclaration": "enum ArkWebEngineVersion",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "webview",
+            "apiDeclaration": "enum ArkWebEngineVersion",
+            "diffContent": "enum ArkWebEngineVersion",
+            "raw": null
+          },
+          "file": "api/@ohos.web.webview.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ArkWebEngineVersion",
+          "apiDeclaration": "SYSTEM_DEFAULT = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ArkWebEngineVersion",
+            "apiDeclaration": "SYSTEM_DEFAULT = 0",
+            "diffContent": "SYSTEM_DEFAULT = 0",
+            "raw": null
+          },
+          "file": "api/@ohos.web.webview.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ArkWebEngineVersion",
+          "apiDeclaration": "M114 = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ArkWebEngineVersion",
+            "apiDeclaration": "M114 = 1",
+            "diffContent": "M114 = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.web.webview.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ArkWebEngineVersion",
+          "apiDeclaration": "M132 = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ArkWebEngineVersion",
+            "apiDeclaration": "M132 = 2",
+            "diffContent": "M132 = 2",
+            "raw": null
+          },
+          "file": "api/@ohos.web.webview.d.ts"
+        },
+        {
+          "operation": "类新增必选属性或非同名方法",
+          "className": "WebviewController",
+          "apiDeclaration": "static setActiveWebEngineVersion(engineVersion: ArkWebEngineVersion): void;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "WebviewController",
+            "apiDeclaration": "static setActiveWebEngineVersion(engineVersion: ArkWebEngineVersion): void;",
+            "diffContent": "static setActiveWebEngineVersion(engineVersion: ArkWebEngineVersion): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.web.webview.d.ts"
+        },
+        {
+          "operation": "类新增必选属性或非同名方法",
+          "className": "WebviewController",
+          "apiDeclaration": "static getActiveWebEngineVersion(): ArkWebEngineVersion;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "WebviewController",
+            "apiDeclaration": "static getActiveWebEngineVersion(): ArkWebEngineVersion;",
+            "diffContent": "static getActiveWebEngineVersion(): ArkWebEngineVersion;",
+            "raw": null
+          },
+          "file": "api/@ohos.web.webview.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Basic Services Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-basicserviceskit-6004",
+      "changeCount": 43,
+      "changes": [
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.handsfree.ag.CONNECT_STATE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.handsfree.ag.CONNECT_STATE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.handsfree.ag.CONNECT_STATE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CURRENT_DEVICE_UPDATE = 'usual.event.bluetooth.handsfree.ag.CURRENT_DEVICE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CURRENT_DEVICE_UPDATE = 'usual.event.bluetooth.handsfree.ag.CURRENT_DEVICE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CURRENT_DEVICE_UPDATE = 'usual.event.bluetooth.handsfree.ag.CURRENT_DEVICE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_AUDIO_STATE_UPDATE = 'usual.event.bluetooth.handsfree.ag.AUDIO_STATE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_AUDIO_STATE_UPDATE = 'usual.event.bluetooth.handsfree.ag.AUDIO_STATE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_AUDIO_STATE_UPDATE = 'usual.event.bluetooth.handsfree.ag.AUDIO_STATE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.a2dpsource.CONNECT_STATE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.a2dpsource.CONNECT_STATE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.a2dpsource.CONNECT_STATE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CURRENT_DEVICE_UPDATE = 'usual.event.bluetooth.a2dpsource.CURRENT_DEVICE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CURRENT_DEVICE_UPDATE = 'usual.event.bluetooth.a2dpsource.CURRENT_DEVICE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CURRENT_DEVICE_UPDATE = 'usual.event.bluetooth.a2dpsource.CURRENT_DEVICE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_PLAYING_STATE_UPDATE = 'usual.event.bluetooth.a2dpsource.PLAYING_STATE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_PLAYING_STATE_UPDATE = 'usual.event.bluetooth.a2dpsource.PLAYING_STATE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_PLAYING_STATE_UPDATE = 'usual.event.bluetooth.a2dpsource.PLAYING_STATE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.a2dpsource.AVRCP_CONNECT_STATE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.a2dpsource.AVRCP_CONNECT_STATE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.a2dpsource.AVRCP_CONNECT_STATE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_UPDATE = 'usual.event.bluetooth.a2dpsource.CODEC_VALUE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_UPDATE = 'usual.event.bluetooth.a2dpsource.CODEC_VALUE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_UPDATE = 'usual.event.bluetooth.a2dpsource.CODEC_VALUE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_DISCOVERED = 'usual.event.bluetooth.remotedevice.DISCOVERED'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_DISCOVERED = 'usual.event.bluetooth.remotedevice.DISCOVERED'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_DISCOVERED = 'usual.event.bluetooth.remotedevice.DISCOVERED'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CLASS_VALUE_UPDATE = 'usual.event.bluetooth.remotedevice.CLASS_VALUE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CLASS_VALUE_UPDATE = 'usual.event.bluetooth.remotedevice.CLASS_VALUE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CLASS_VALUE_UPDATE = 'usual.event.bluetooth.remotedevice.CLASS_VALUE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_CONNECTED = 'usual.event.bluetooth.remotedevice.ACL_CONNECTED'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_CONNECTED = 'usual.event.bluetooth.remotedevice.ACL_CONNECTED'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_CONNECTED = 'usual.event.bluetooth.remotedevice.ACL_CONNECTED'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_DISCONNECTED = 'usual.event.bluetooth.remotedevice.ACL_DISCONNECTED'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_DISCONNECTED = 'usual.event.bluetooth.remotedevice.ACL_DISCONNECTED'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_DISCONNECTED = 'usual.event.bluetooth.remotedevice.ACL_DISCONNECTED'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_NAME_UPDATE = 'usual.event.bluetooth.remotedevice.NAME_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_NAME_UPDATE = 'usual.event.bluetooth.remotedevice.NAME_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_NAME_UPDATE = 'usual.event.bluetooth.remotedevice.NAME_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE = 'usual.event.bluetooth.remotedevice.PAIR_STATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE = 'usual.event.bluetooth.remotedevice.PAIR_STATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE = 'usual.event.bluetooth.remotedevice.PAIR_STATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_BATTERY_VALUE_UPDATE = 'usual.event.bluetooth.remotedevice.BATTERY_VALUE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_BATTERY_VALUE_UPDATE = 'usual.event.bluetooth.remotedevice.BATTERY_VALUE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_BATTERY_VALUE_UPDATE = 'usual.event.bluetooth.remotedevice.BATTERY_VALUE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_SDP_RESULT = 'usual.event.bluetooth.remotedevice.SDP_RESULT'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_SDP_RESULT = 'usual.event.bluetooth.remotedevice.SDP_RESULT'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_SDP_RESULT = 'usual.event.bluetooth.remotedevice.SDP_RESULT'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_UUID_VALUE = 'usual.event.bluetooth.remotedevice.UUID_VALUE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_UUID_VALUE = 'usual.event.bluetooth.remotedevice.UUID_VALUE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_UUID_VALUE = 'usual.event.bluetooth.remotedevice.UUID_VALUE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_REQ = 'usual.event.bluetooth.remotedevice.PAIRING_REQ'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_REQ = 'usual.event.bluetooth.remotedevice.PAIRING_REQ'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_REQ = 'usual.event.bluetooth.remotedevice.PAIRING_REQ'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_CANCEL = 'usual.event.bluetooth.remotedevice.PAIRING_CANCEL'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_CANCEL = 'usual.event.bluetooth.remotedevice.PAIRING_CANCEL'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_CANCEL = 'usual.event.bluetooth.remotedevice.PAIRING_CANCEL'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REQ = 'usual.event.bluetooth.remotedevice.CONNECT_REQ'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REQ = 'usual.event.bluetooth.remotedevice.CONNECT_REQ'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REQ = 'usual.event.bluetooth.remotedevice.CONNECT_REQ'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REPLY = 'usual.event.bluetooth.remotedevice.CONNECT_REPLY'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REPLY = 'usual.event.bluetooth.remotedevice.CONNECT_REPLY'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REPLY = 'usual.event.bluetooth.remotedevice.CONNECT_REPLY'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_CANCEL = 'usual.event.bluetooth.remotedevice.CONNECT_CANCEL'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_CANCEL = 'usual.event.bluetooth.remotedevice.CONNECT_CANCEL'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_CANCEL = 'usual.event.bluetooth.remotedevice.CONNECT_CANCEL'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.handsfreeunit.CONNECT_STATE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.handsfreeunit.CONNECT_STATE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.handsfreeunit.CONNECT_STATE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AUDIO_STATE_UPDATE = 'usual.event.bluetooth.handsfreeunit.AUDIO_STATE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AUDIO_STATE_UPDATE = 'usual.event.bluetooth.handsfreeunit.AUDIO_STATE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AUDIO_STATE_UPDATE = 'usual.event.bluetooth.handsfreeunit.AUDIO_STATE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_COMMON_EVENT = 'usual.event.bluetooth.handsfreeunit.AG_COMMON_EVENT'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_COMMON_EVENT = 'usual.event.bluetooth.handsfreeunit.AG_COMMON_EVENT'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_COMMON_EVENT = 'usual.event.bluetooth.handsfreeunit.AG_COMMON_EVENT'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_CALL_STATE_UPDATE = 'usual.event.bluetooth.handsfreeunit.AG_CALL_STATE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_CALL_STATE_UPDATE = 'usual.event.bluetooth.handsfreeunit.AG_CALL_STATE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_CALL_STATE_UPDATE = 'usual.event.bluetooth.handsfreeunit.AG_CALL_STATE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_STATE_UPDATE = 'usual.event.bluetooth.host.STATE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_STATE_UPDATE = 'usual.event.bluetooth.host.STATE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_STATE_UPDATE = 'usual.event.bluetooth.host.STATE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_REQ_DISCOVERABLE = 'usual.event.bluetooth.host.REQ_DISCOVERABLE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_REQ_DISCOVERABLE = 'usual.event.bluetooth.host.REQ_DISCOVERABLE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_REQ_DISCOVERABLE = 'usual.event.bluetooth.host.REQ_DISCOVERABLE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_REQ_ENABLE = 'usual.event.bluetooth.host.REQ_ENABLE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_REQ_ENABLE = 'usual.event.bluetooth.host.REQ_ENABLE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_REQ_ENABLE = 'usual.event.bluetooth.host.REQ_ENABLE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_REQ_DISABLE = 'usual.event.bluetooth.host.REQ_DISABLE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_REQ_DISABLE = 'usual.event.bluetooth.host.REQ_DISABLE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_REQ_DISABLE = 'usual.event.bluetooth.host.REQ_DISABLE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_SCAN_MODE_UPDATE = 'usual.event.bluetooth.host.SCAN_MODE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_SCAN_MODE_UPDATE = 'usual.event.bluetooth.host.SCAN_MODE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_SCAN_MODE_UPDATE = 'usual.event.bluetooth.host.SCAN_MODE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_DISCOVERY_STARTED = 'usual.event.bluetooth.host.DISCOVERY_STARTED'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_DISCOVERY_STARTED = 'usual.event.bluetooth.host.DISCOVERY_STARTED'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_DISCOVERY_STARTED = 'usual.event.bluetooth.host.DISCOVERY_STARTED'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_DISCOVERY_FINISHED = 'usual.event.bluetooth.host.DISCOVERY_FINISHED'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_DISCOVERY_FINISHED = 'usual.event.bluetooth.host.DISCOVERY_FINISHED'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_DISCOVERY_FINISHED = 'usual.event.bluetooth.host.DISCOVERY_FINISHED'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_NAME_UPDATE = 'usual.event.bluetooth.host.NAME_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_NAME_UPDATE = 'usual.event.bluetooth.host.NAME_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HOST_NAME_UPDATE = 'usual.event.bluetooth.host.NAME_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSINK_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.a2dpsink.CONNECT_STATE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSINK_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.a2dpsink.CONNECT_STATE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSINK_CONNECT_STATE_UPDATE = 'usual.event.bluetooth.a2dpsink.CONNECT_STATE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSINK_PLAYING_STATE_UPDATE = 'usual.event.bluetooth.a2dpsink.PLAYING_STATE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSINK_PLAYING_STATE_UPDATE = 'usual.event.bluetooth.a2dpsink.PLAYING_STATE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSINK_PLAYING_STATE_UPDATE = 'usual.event.bluetooth.a2dpsink.PLAYING_STATE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSINK_AUDIO_STATE_UPDATE = 'usual.event.bluetooth.a2dpsink.AUDIO_STATE_UPDATE'",
+          "old": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSINK_AUDIO_STATE_UPDATE = 'usual.event.bluetooth.a2dpsink.AUDIO_STATE_UPDATE'",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSINK_AUDIO_STATE_UPDATE = 'usual.event.bluetooth.a2dpsink.AUDIO_STATE_UPDATE'",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_CHANGE = 'usual.event.bluetooth.handsfree.ag.CONNECT_STATE_CHANGE'",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_CHANGE = 'usual.event.bluetooth.handsfree.ag.CONNECT_STATE_CHANGE'",
+            "diffContent": "COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_CHANGE = 'usual.event.bluetooth.handsfree.ag.CONNECT_STATE_CHANGE'",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_CHANGE = 'usual.event.bluetooth.a2dpsource.CONNECT_STATE_CHANGE'",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_CHANGE = 'usual.event.bluetooth.a2dpsource.CONNECT_STATE_CHANGE'",
+            "diffContent": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_CHANGE = 'usual.event.bluetooth.a2dpsource.CONNECT_STATE_CHANGE'",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_CHANGE = 'usual.event.bluetooth.a2dpsource.AVRCP_CONNECT_STATE_CHANGE'",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_CHANGE = 'usual.event.bluetooth.a2dpsource.AVRCP_CONNECT_STATE_CHANGE'",
+            "diffContent": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_CHANGE = 'usual.event.bluetooth.a2dpsource.AVRCP_CONNECT_STATE_CHANGE'",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_CHANGE = 'usual.event.bluetooth.a2dpsource.CODEC_VALUE_CHANGE'",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_CHANGE = 'usual.event.bluetooth.a2dpsource.CODEC_VALUE_CHANGE'",
+            "diffContent": "COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_CHANGE = 'usual.event.bluetooth.a2dpsource.CODEC_VALUE_CHANGE'",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_STATE_CHANGE = 'usual.event.bluetooth.remotedevice.ACL_STATE_CHANGE'",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_STATE_CHANGE = 'usual.event.bluetooth.remotedevice.ACL_STATE_CHANGE'",
+            "diffContent": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_STATE_CHANGE = 'usual.event.bluetooth.remotedevice.ACL_STATE_CHANGE'",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Support",
+          "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE_CHANGE = 'usual.event.bluetooth.remotedevice.PAIR_STATE_CHANGE'",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Support",
+            "apiDeclaration": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE_CHANGE = 'usual.event.bluetooth.remotedevice.PAIR_STATE_CHANGE'",
+            "diffContent": "COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE_CHANGE = 'usual.event.bluetooth.remotedevice.PAIR_STATE_CHANGE'",
+            "raw": null
+          },
+          "file": "api/@ohos.commonEventManager.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Camera Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-camerakit-6004",
+      "changeCount": 4,
+      "changes": [
+        {
+          "operation": "接口新增可选或必选方法",
+          "className": "PhotoSession",
+          "apiDeclaration": "on(type: 'macroStatusChanged', callback: AsyncCallback<boolean>): void;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "PhotoSession",
+            "apiDeclaration": "on(type: 'macroStatusChanged', callback: AsyncCallback<boolean>): void;",
+            "diffContent": "on(type: 'macroStatusChanged', callback: AsyncCallback<boolean>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "接口新增可选或必选方法",
+          "className": "PhotoSession",
+          "apiDeclaration": "off(type: 'macroStatusChanged', callback?: AsyncCallback<boolean>): void;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "PhotoSession",
+            "apiDeclaration": "off(type: 'macroStatusChanged', callback?: AsyncCallback<boolean>): void;",
+            "diffContent": "off(type: 'macroStatusChanged', callback?: AsyncCallback<boolean>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "接口新增可选或必选方法",
+          "className": "VideoSession",
+          "apiDeclaration": "on(type: 'macroStatusChanged', callback: AsyncCallback<boolean>): void;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "VideoSession",
+            "apiDeclaration": "on(type: 'macroStatusChanged', callback: AsyncCallback<boolean>): void;",
+            "diffContent": "on(type: 'macroStatusChanged', callback: AsyncCallback<boolean>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "接口新增可选或必选方法",
+          "className": "VideoSession",
+          "apiDeclaration": "off(type: 'macroStatusChanged', callback?: AsyncCallback<boolean>): void;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "VideoSession",
+            "apiDeclaration": "off(type: 'macroStatusChanged', callback?: AsyncCallback<boolean>): void;",
+            "diffContent": "off(type: 'macroStatusChanged', callback?: AsyncCallback<boolean>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Connectivity Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-connectivitykit-6004",
+      "changeCount": 4,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "socket",
+          "apiDeclaration": "function getL2capPsm(serverSocket: number): number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "socket",
+            "apiDeclaration": "function getL2capPsm(serverSocket: number): number;",
+            "diffContent": "function getL2capPsm(serverSocket: number): number;",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.socket.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SppType",
+          "apiDeclaration": "SPP_L2CAP = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SppType",
+            "apiDeclaration": "SPP_L2CAP = 1",
+            "diffContent": "SPP_L2CAP = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.socket.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SppType",
+          "apiDeclaration": "SPP_L2CAP_BLE = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SppType",
+            "apiDeclaration": "SPP_L2CAP_BLE = 2",
+            "diffContent": "SPP_L2CAP_BLE = 2",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.socket.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "SppOptions",
+          "apiDeclaration": "psm?: number;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "SppOptions",
+            "apiDeclaration": "psm?: number;",
+            "diffContent": "psm?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.socket.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Core File Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-corefilekit-6004",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "ErrorType",
+          "apiDeclaration": "REMOTE_SERVER_ABNORMAL = 8",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ErrorType",
+            "apiDeclaration": "REMOTE_SERVER_ABNORMAL = 8",
+            "diffContent": "REMOTE_SERVER_ABNORMAL = 8",
+            "raw": null
+          },
+          "file": "api/@ohos.file.cloudSync.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "MDM Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-mdmkit-6004",
+      "changeCount": 20,
+      "changes": [
+        {
+          "operation": "新增错误码",
+          "className": "accountManager",
+          "apiDeclaration": "function setDomainAccountPolicy(admin: Want, domainAccountInfo: osAccount.DomainAccountInfo, policy: DomainAccountPolicy): void;",
+          "old": {
+            "className": "accountManager",
+            "apiDeclaration": "function setDomainAccountPolicy(admin: Want, domainAccountInfo: osAccount.DomainAccountInfo, policy: DomainAccountPolicy): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "accountManager",
+            "apiDeclaration": "function setDomainAccountPolicy(admin: Want, domainAccountInfo: osAccount.DomainAccountInfo, policy: DomainAccountPolicy): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.accountManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "accountManager",
+          "apiDeclaration": "function getDomainAccountPolicy(admin: Want, domainAccountInfo: osAccount.DomainAccountInfo): DomainAccountPolicy;",
+          "old": {
+            "className": "accountManager",
+            "apiDeclaration": "function getDomainAccountPolicy(admin: Want, domainAccountInfo: osAccount.DomainAccountInfo): DomainAccountPolicy;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "accountManager",
+            "apiDeclaration": "function getDomainAccountPolicy(admin: Want, domainAccountInfo: osAccount.DomainAccountInfo): DomainAccountPolicy;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.accountManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "applicationManager",
+          "apiDeclaration": "function addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number): void;",
+          "old": {
+            "className": "applicationManager",
+            "apiDeclaration": "function addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "applicationManager",
+            "apiDeclaration": "function addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.applicationManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "applicationManager",
+          "apiDeclaration": "function addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number, disallowModify: boolean): void;",
+          "old": {
+            "className": "applicationManager",
+            "apiDeclaration": "function addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number, disallowModify: boolean): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "applicationManager",
+            "apiDeclaration": "function addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number, disallowModify: boolean): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.applicationManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "networkManager",
+          "apiDeclaration": "function setGlobalProxyForAccount(admin: Want, httpProxy: connection.HttpProxy, accountId: number): void;",
+          "old": {
+            "className": "networkManager",
+            "apiDeclaration": "function setGlobalProxyForAccount(admin: Want, httpProxy: connection.HttpProxy, accountId: number): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "networkManager",
+            "apiDeclaration": "function setGlobalProxyForAccount(admin: Want, httpProxy: connection.HttpProxy, accountId: number): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.networkManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "systemManager",
+          "apiDeclaration": "function setAutoUnlockAfterReboot(admin: Want, isAllowed: boolean): void;",
+          "old": {
+            "className": "systemManager",
+            "apiDeclaration": "function setAutoUnlockAfterReboot(admin: Want, isAllowed: boolean): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "systemManager",
+            "apiDeclaration": "function setAutoUnlockAfterReboot(admin: Want, isAllowed: boolean): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.systemManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "systemManager",
+          "apiDeclaration": "function getAutoUnlockAfterReboot(admin: Want): boolean;",
+          "old": {
+            "className": "systemManager",
+            "apiDeclaration": "function getAutoUnlockAfterReboot(admin: Want): boolean;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "systemManager",
+            "apiDeclaration": "function getAutoUnlockAfterReboot(admin: Want): boolean;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.systemManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "systemManager",
+          "apiDeclaration": "function setInstallLocalEnterpriseAppEnabled(admin: Want, isEnable: boolean): void;",
+          "old": {
+            "className": "systemManager",
+            "apiDeclaration": "function setInstallLocalEnterpriseAppEnabled(admin: Want, isEnable: boolean): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "systemManager",
+            "apiDeclaration": "function setInstallLocalEnterpriseAppEnabled(admin: Want, isEnable: boolean): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.systemManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "systemManager",
+          "apiDeclaration": "function getInstallLocalEnterpriseAppEnabled(admin: Want): boolean;",
+          "old": {
+            "className": "systemManager",
+            "apiDeclaration": "function getInstallLocalEnterpriseAppEnabled(admin: Want): boolean;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "systemManager",
+            "apiDeclaration": "function getInstallLocalEnterpriseAppEnabled(admin: Want): boolean;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.systemManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "systemManager",
+          "apiDeclaration": "function addDisallowedNearLinkProtocols(admin: Want, protocols: Array<NearLinkProtocol>, accountId: number): void;",
+          "old": {
+            "className": "systemManager",
+            "apiDeclaration": "function addDisallowedNearLinkProtocols(admin: Want, protocols: Array<NearLinkProtocol>, accountId: number): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "systemManager",
+            "apiDeclaration": "function addDisallowedNearLinkProtocols(admin: Want, protocols: Array<NearLinkProtocol>, accountId: number): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.systemManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "systemManager",
+          "apiDeclaration": "function removeDisallowedNearLinkProtocols(admin: Want, protocols: Array<NearLinkProtocol>, accountId: number): void;",
+          "old": {
+            "className": "systemManager",
+            "apiDeclaration": "function removeDisallowedNearLinkProtocols(admin: Want, protocols: Array<NearLinkProtocol>, accountId: number): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "systemManager",
+            "apiDeclaration": "function removeDisallowedNearLinkProtocols(admin: Want, protocols: Array<NearLinkProtocol>, accountId: number): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.systemManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "systemManager",
+          "apiDeclaration": "function getDisallowedNearLinkProtocols(admin: Want, accountId: number): Array<NearLinkProtocol>;",
+          "old": {
+            "className": "systemManager",
+            "apiDeclaration": "function getDisallowedNearLinkProtocols(admin: Want, accountId: number): Array<NearLinkProtocol>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "systemManager",
+            "apiDeclaration": "function getDisallowedNearLinkProtocols(admin: Want, accountId: number): Array<NearLinkProtocol>;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.systemManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "telephonyManager",
+          "apiDeclaration": "function addOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void;",
+          "old": {
+            "className": "telephonyManager",
+            "apiDeclaration": "function addOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "telephonyManager",
+            "apiDeclaration": "function addOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.telephonyManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "telephonyManager",
+          "apiDeclaration": "function removeOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void;",
+          "old": {
+            "className": "telephonyManager",
+            "apiDeclaration": "function removeOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "telephonyManager",
+            "apiDeclaration": "function removeOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.telephonyManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "telephonyManager",
+          "apiDeclaration": "function getOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy): Array<string>;",
+          "old": {
+            "className": "telephonyManager",
+            "apiDeclaration": "function getOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy): Array<string>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "telephonyManager",
+            "apiDeclaration": "function getOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy): Array<string>;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.telephonyManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "telephonyManager",
+          "apiDeclaration": "function addIncomingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void;",
+          "old": {
+            "className": "telephonyManager",
+            "apiDeclaration": "function addIncomingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "telephonyManager",
+            "apiDeclaration": "function addIncomingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.telephonyManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "telephonyManager",
+          "apiDeclaration": "function removeIncomingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void;",
+          "old": {
+            "className": "telephonyManager",
+            "apiDeclaration": "function removeIncomingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "telephonyManager",
+            "apiDeclaration": "function removeIncomingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.telephonyManager.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "telephonyManager",
+          "apiDeclaration": "function getIncomingCallPolicyNumbers(admin: Want, policy: adminManager.Policy): Array<string>;",
+          "old": {
+            "className": "telephonyManager",
+            "apiDeclaration": "function getIncomingCallPolicyNumbers(admin: Want, policy: adminManager.Policy): Array<string>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "telephonyManager",
+            "apiDeclaration": "function getIncomingCallPolicyNumbers(admin: Want, policy: adminManager.Policy): Array<string>;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.telephonyManager.d.ts"
+        },
+        {
+          "operation": "错误码变更",
+          "className": "networkManager",
+          "apiDeclaration": "function getGlobalProxyForAccount(admin: Want | null, accountId: number): connection.HttpProxy;",
+          "old": {
+            "className": "networkManager",
+            "apiDeclaration": "function getGlobalProxyForAccount(admin: Want, accountId: number): connection.HttpProxy;",
+            "diffContent": "201,401,9200001,9200002",
+            "raw": null
+          },
+          "new": {
+            "className": "networkManager",
+            "apiDeclaration": "function getGlobalProxyForAccount(admin: Want | null, accountId: number): connection.HttpProxy;",
+            "diffContent": "201,801,9200001,9200002",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.networkManager.d.ts"
+        },
+        {
+          "operation": "函数变更",
+          "className": "networkManager",
+          "apiDeclaration": "function getGlobalProxyForAccount(admin: Want | null, accountId: number): connection.HttpProxy;",
+          "old": {
+            "className": "networkManager",
+            "apiDeclaration": "function getGlobalProxyForAccount(admin: Want, accountId: number): connection.HttpProxy;",
+            "diffContent": "admin: Want",
+            "raw": null
+          },
+          "new": {
+            "className": "networkManager",
+            "apiDeclaration": "function getGlobalProxyForAccount(admin: Want | null, accountId: number): connection.HttpProxy;",
+            "diffContent": "admin: Want | null",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.networkManager.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Media Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-mediakit-6004",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "新增错误码",
+          "className": "AVPlayer",
+          "apiDeclaration": "on(type: 'error', callback: ErrorCallback): void;",
+          "old": {
+            "className": "AVPlayer",
+            "apiDeclaration": "on(type: 'error', callback: ErrorCallback): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "AVPlayer",
+            "apiDeclaration": "on(type: 'error', callback: ErrorCallback): void;",
+            "diffContent": "5410002",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.media.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Multimodal Awareness Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-multimodalawarenesskit-6004",
+      "changeCount": 4,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare namespace onScreen",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare namespace onScreen",
+            "diffContent": "declare namespace onScreen",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalAwareness.onScreen.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "onScreen",
+          "apiDeclaration": "export enum Scenario",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "onScreen",
+            "apiDeclaration": "export enum Scenario",
+            "diffContent": "export enum Scenario",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalAwareness.onScreen.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "onScreen",
+          "apiDeclaration": "export enum EventType",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "onScreen",
+            "apiDeclaration": "export enum EventType",
+            "diffContent": "export enum EventType",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalAwareness.onScreen.d.ts"
+        },
+        {
+          "operation": "新增kit",
+          "className": "global",
+          "apiDeclaration": "api@ohos.multimodalAwareness.onScreen.d.ts",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "api@ohos.multimodalAwareness.onScreen.d.ts",
+            "diffContent": "MultimodalAwarenessKit",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalAwareness.onScreen.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Network Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-networkkit-6004",
+      "changeCount": 9,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "connection",
+          "apiDeclaration": "function setPacFileUrl(pacFileUrl: string): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "connection",
+            "apiDeclaration": "function setPacFileUrl(pacFileUrl: string): void;",
+            "diffContent": "function setPacFileUrl(pacFileUrl: string): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.net.connection.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "connection",
+          "apiDeclaration": "function getPacFileUrl(): string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "connection",
+            "apiDeclaration": "function getPacFileUrl(): string;",
+            "diffContent": "function getPacFileUrl(): string;",
+            "raw": null
+          },
+          "file": "api/@ohos.net.connection.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "connection",
+          "apiDeclaration": "function findProxyForUrl(url: string): string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "connection",
+            "apiDeclaration": "function findProxyForUrl(url: string): string;",
+            "diffContent": "function findProxyForUrl(url: string): string;",
+            "raw": null
+          },
+          "file": "api/@ohos.net.connection.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "http",
+          "apiDeclaration": "export type SslType = 'TLS' | 'TLCP';",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "http",
+            "apiDeclaration": "export type SslType = 'TLS' | 'TLCP';",
+            "diffContent": "export type SslType = 'TLS' | 'TLCP';",
+            "raw": null
+          },
+          "file": "api/@ohos.net.http.d.ts"
+        },
+        {
+          "operation": "接口新增可选或必选方法",
+          "className": "VpnConnection",
+          "apiDeclaration": "generateVpnId(): Promise<string>;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "VpnConnection",
+            "apiDeclaration": "generateVpnId(): Promise<string>;",
+            "diffContent": "generateVpnId(): Promise<string>;",
+            "raw": null
+          },
+          "file": "api/@ohos.net.vpnExtension.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "VpnConfig",
+          "apiDeclaration": "vpnId?: string;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "VpnConfig",
+            "apiDeclaration": "vpnId?: string;",
+            "diffContent": "vpnId?: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.net.vpnExtension.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "HttpRequestOptions",
+          "apiDeclaration": "sslType?: SslType;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "HttpRequestOptions",
+            "apiDeclaration": "sslType?: SslType;",
+            "diffContent": "sslType?: SslType;",
+            "raw": null
+          },
+          "file": "api/@ohos.net.http.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "HttpRequestOptions",
+          "apiDeclaration": "clientEncCert?: ClientCert;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "HttpRequestOptions",
+            "apiDeclaration": "clientEncCert?: ClientCert;",
+            "diffContent": "clientEncCert?: ClientCert;",
+            "raw": null
+          },
+          "file": "api/@ohos.net.http.d.ts"
+        },
+        {
+          "operation": "接口新增同名方法且参数类型与已有的参数类型范围是包含关系",
+          "className": "VpnConnection",
+          "apiDeclaration": "destroy(vpnId: string): Promise<void>;",
+          "old": {
+            "className": "VpnConnection",
+            "apiDeclaration": "destroy(): Promise<void>;",
+            "diffContent": "destroy(): Promise<void>;",
+            "raw": null
+          },
+          "new": {
+            "className": "VpnConnection",
+            "apiDeclaration": "destroy(vpnId: string): Promise<void>;",
+            "diffContent": "destroy(vpnId: string): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.net.vpnExtension.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Notification Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-notificationkit-6004",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "API废弃版本变更",
+          "className": "NotificationSlot",
+          "apiDeclaration": "level?: notification.SlotLevel;",
+          "old": {
+            "className": "NotificationSlot",
+            "apiDeclaration": "level?: notification.SlotLevel;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "NotificationSlot",
+            "apiDeclaration": "level?: notification.SlotLevel;",
+            "diffContent": "20",
+            "raw": null
+          },
+          "file": "api/notification/notificationSlot.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "NotificationSlot",
+          "apiDeclaration": "notificationLevel?: notificationManager.SlotLevel;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "NotificationSlot",
+            "apiDeclaration": "notificationLevel?: notificationManager.SlotLevel;",
+            "diffContent": "notificationLevel?: notificationManager.SlotLevel;",
+            "raw": null
+          },
+          "file": "api/notification/notificationSlot.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Telephony Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-telephonykit-6004",
+      "changeCount": 13,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "eSIM",
+          "apiDeclaration": "export interface AccessRule",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "eSIM",
+            "apiDeclaration": "export interface AccessRule",
+            "diffContent": "export interface AccessRule",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.esim.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AccessRule",
+          "apiDeclaration": "certificateHashHexStr: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AccessRule",
+            "apiDeclaration": "certificateHashHexStr: string;",
+            "diffContent": "certificateHashHexStr: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.esim.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AccessRule",
+          "apiDeclaration": "packageName: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AccessRule",
+            "apiDeclaration": "packageName: string;",
+            "diffContent": "packageName: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.esim.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AccessRule",
+          "apiDeclaration": "accessType: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AccessRule",
+            "apiDeclaration": "accessType: number;",
+            "diffContent": "accessType: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.esim.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sim",
+          "apiDeclaration": "function getSimLabel(slotId: number, callback: AsyncCallback<SimLabel>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sim",
+            "apiDeclaration": "function getSimLabel(slotId: number, callback: AsyncCallback<SimLabel>): void;",
+            "diffContent": "function getSimLabel(slotId: number, callback: AsyncCallback<SimLabel>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.sim.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sim",
+          "apiDeclaration": "function getSimLabel(slotId: number): Promise<SimLabel>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sim",
+            "apiDeclaration": "function getSimLabel(slotId: number): Promise<SimLabel>;",
+            "diffContent": "function getSimLabel(slotId: number): Promise<SimLabel>;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.sim.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sim",
+          "apiDeclaration": "function getSimLabelSync(slotId: number): SimLabel;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sim",
+            "apiDeclaration": "function getSimLabelSync(slotId: number): SimLabel;",
+            "diffContent": "function getSimLabelSync(slotId: number): SimLabel;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.sim.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sim",
+          "apiDeclaration": "export enum SimType",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sim",
+            "apiDeclaration": "export enum SimType",
+            "diffContent": "export enum SimType",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.sim.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SimType",
+          "apiDeclaration": "PSIM = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SimType",
+            "apiDeclaration": "PSIM = 0",
+            "diffContent": "PSIM = 0",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.sim.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SimType",
+          "apiDeclaration": "ESIM = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SimType",
+            "apiDeclaration": "ESIM = 1",
+            "diffContent": "ESIM = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.sim.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "sim",
+          "apiDeclaration": "export interface SimLabel",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "sim",
+            "apiDeclaration": "export interface SimLabel",
+            "diffContent": "export interface SimLabel",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.sim.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SimLabel",
+          "apiDeclaration": "simType: SimType;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SimLabel",
+            "apiDeclaration": "simType: SimType;",
+            "diffContent": "simType: SimType;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.sim.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SimLabel",
+          "apiDeclaration": "index: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SimLabel",
+            "apiDeclaration": "index: number;",
+            "diffContent": "index: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.sim.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "User Authentication Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-userauthenticationkit-6004",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "删除错误码",
+          "className": "UserAuthInstance",
+          "apiDeclaration": "start(): void;",
+          "old": {
+            "className": "UserAuthInstance",
+            "apiDeclaration": "start(): void;",
+            "diffContent": "12500001,12500004,12500007",
+            "raw": null
+          },
+          "new": {
+            "className": "UserAuthInstance",
+            "apiDeclaration": "start(): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.userIAM.userAuth.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "UserAuthTipCode",
+          "apiDeclaration": "COMPARE_FAILURE_WITH_FROZEN = 7",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "UserAuthTipCode",
+            "apiDeclaration": "COMPARE_FAILURE_WITH_FROZEN = 7",
+            "diffContent": "COMPARE_FAILURE_WITH_FROZEN = 7",
+            "raw": null
+          },
+          "file": "api/@ohos.userIAM.userAuth.d.ts"
+        }
+      ]
+    }
+  ]
+}

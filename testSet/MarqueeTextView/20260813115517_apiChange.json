@@ -1,0 +1,1952 @@
+[
+  {
+    "API名称": "fillText(text: string, x: number, y: number, maxWidth?: number): void",
+    "语言": "ArkTS",
+    "SDK变更版本": "5.0.1(13) Release",
+    "影响版本": "5.0.1(13) - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-b112#canvasrenderingcontext2d%E5%92%8Coffscreencanvasrenderingcontext2d%E7%9A%84globalcompositeoperation%E5%B1%9E%E6%80%A7%E5%8F%98%E6%9B%B4%E4%B8%BA%E5%9C%A8%E7%BB%98%E5%88%B6%E6%96%87%E6%9C%AC%E6%97%B6%E7%94%9F%E6%95%88",
+      "title": "画布组件在绘制文本时设置globalCompositeOperation、fillStyle和globalAlpha属性的效果变更"
+    },
+    "代码位置": "ohos_library\\src\\main\\ets\\marquee\\MarqueeTextView.ets:246",
+    "修复状态": "未修复",
+    "变更类型": "接口行为变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "5.1.0(18) Release",
+    "影响版本": "5.1.0(18) - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-5101/#section174",
+      "title": "按钮默认值变更为新增圆角矩形类型"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:261",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "5.1.0(18) Release",
+    "影响版本": "5.1.0(18) - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-5101/#section174",
+      "title": "按钮默认值变更为新增圆角矩形类型"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:268",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "5.1.0(18) Release",
+    "影响版本": "5.1.0(18) - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-5101/#section174",
+      "title": "按钮默认值变更为新增圆角矩形类型"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:279",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "5.1.0(18) Release",
+    "影响版本": "5.1.0(18) - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-5101/#section174",
+      "title": "按钮默认值变更为新增圆角矩形类型"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:286",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "5.1.0(18) Release",
+    "影响版本": "5.1.0(18) - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-5101/#section174",
+      "title": "按钮默认值变更为新增圆角矩形类型"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:477",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "5.1.0(18) Release",
+    "影响版本": "5.1.0(18) - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-5101/#section174",
+      "title": "按钮默认值变更为新增圆角矩形类型"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:496",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "font: string",
+    "语言": "ArkTS",
+    "SDK变更版本": "6.0.0(20) Beta2",
+    "影响版本": "6.0.0(20) - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-6002/#ch2025062517095",
+      "title": "CanvasRenderer的font接口支持自定义字体行为变更"
+    },
+    "代码位置": "ohos_library\\src\\main\\ets\\marquee\\MarqueeTextView.ets:198",
+    "修复状态": "未修复",
+    "变更类型": "接口行为变更"
+  },
+  {
+    "API名称": "font: string",
+    "语言": "ArkTS",
+    "SDK变更版本": "6.0.0(20) Beta2",
+    "影响版本": "6.0.0(20) - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-6002/#ch2025062517095",
+      "title": "CanvasRenderer的font接口支持自定义字体行为变更"
+    },
+    "代码位置": "ohos_library\\src\\main\\ets\\marquee\\MarqueeTextView.ets:242",
+    "修复状态": "未修复",
+    "变更类型": "接口行为变更"
+  },
+  {
+    "API名称": "fontWeight(value: number | FontWeight | string): TextAttribute",
+    "语言": "ArkTS",
+    "SDK变更版本": "6.0.0(20) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-6001/#section383",
+      "title": "文本与输入、信息展示、按钮与选择、滚动与滑动、图形绘制组件接口支持Resource类型"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:193",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:191",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:204",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:255",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:308",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:314",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:327",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:341",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:355",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:368",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:389",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:406",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:430",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:434",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:460",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:466",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:492",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:510",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Text: TextInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032761266",
+      "title": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:518",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:196",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:197",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:198",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:207",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:226",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:227",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:228",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:229",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:230",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:242",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:245",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:246",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:247",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:258",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:263",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:264",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:266",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:270",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:271",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:273",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:274",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:276",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:281",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:282",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:284",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:288",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:289",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:291",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:292",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:294",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:295",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:297",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:298",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:299",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:300",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:301",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:311",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:320",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:321",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:322",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:330",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:334",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:335",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:344",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:348",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:349",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:358",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:362",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:363",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:371",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:377",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:378",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:392",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:400",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:401",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:409",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:413",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:414",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:418",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:419",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:420",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:421",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:422",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:433",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:438",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:442",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:452",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:453",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:461",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:462",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:463",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:464",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:465",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:469",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:471",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:472",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:479",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:480",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:482",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:484",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:485",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:495",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:498",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:499",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:501",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:503",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:505",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:513",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:521",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:522",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:525",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:528",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:529",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:530",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:531",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:532",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:533",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:538",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:539",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:540",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:541",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:542",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "ohos_library\\src\\main\\ets\\marquee\\MarqueeTextView.ets:384",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "ohos_library\\src\\main\\ets\\marquee\\MarqueeTextView.ets:385",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare class CommonMethod<T>",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "ALL",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-for-all-apps-7001/#ch2026010615012",
+      "title": "ArkUI接口新增仅支持Stage模型的约束"
+    },
+    "代码位置": "ohos_library\\src\\main\\ets\\marquee\\MarqueeTextView.ets:395",
+    "修复状态": "未修复",
+    "变更类型": "接口定义变更"
+  },
+  {
+    "API名称": "declare const Slider: SliderInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032801249",
+      "title": "内置文本的组件文本样式优化"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:441",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032801249",
+      "title": "内置文本的组件文本样式优化"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:261",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032801249",
+      "title": "内置文本的组件文本样式优化"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:268",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032801249",
+      "title": "内置文本的组件文本样式优化"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:279",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032801249",
+      "title": "内置文本的组件文本样式优化"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:286",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032801249",
+      "title": "内置文本的组件文本样式优化"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:477",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026032801249",
+      "title": "内置文本的组件文本样式优化"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:496",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Toggle: ToggleInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026031846233",
+      "title": "表单类组件触摸热区最小高度变更"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:331",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Toggle: ToggleInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026031846233",
+      "title": "表单类组件触摸热区最小高度变更"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:345",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Toggle: ToggleInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026031846233",
+      "title": "表单类组件触摸热区最小高度变更"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:359",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Toggle: ToggleInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026031846233",
+      "title": "表单类组件触摸热区最小高度变更"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:410",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026031846233",
+      "title": "表单类组件触摸热区最小高度变更"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:261",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026031846233",
+      "title": "表单类组件触摸热区最小高度变更"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:268",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026031846233",
+      "title": "表单类组件触摸热区最小高度变更"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:279",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026031846233",
+      "title": "表单类组件触摸热区最小高度变更"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:286",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026031846233",
+      "title": "表单类组件触摸热区最小高度变更"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:477",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  },
+  {
+    "API名称": "declare const Button: ButtonInterface",
+    "语言": "ArkTS",
+    "SDK变更版本": "7.0.0(26) Beta1",
+    "影响版本": "26.0.0 - 26.0.0(26.0.0)",
+    "标题": {
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-7001/#ch2026031846233",
+      "title": "表单类组件触摸热区最小高度变更"
+    },
+    "代码位置": "entry\\src\\main\\ets\\pages\\Index.ets:496",
+    "修复状态": "未修复",
+    "变更类型": "UX视觉布局变更"
+  }
+]

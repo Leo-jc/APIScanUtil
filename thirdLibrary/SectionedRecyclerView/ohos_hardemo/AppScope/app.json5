@@ -1,0 +1,10 @@
+{
+  "app": {
+    "bundleName": "com.truizlop.sectionedrecyclerview.sample",
+    "vendor": "truizlop",
+    "versionCode": 1000000,
+    "versionName": "1.2.0",
+    "icon": "$media:layered_image",
+    "label": "$string:app_name"
+  }
+}

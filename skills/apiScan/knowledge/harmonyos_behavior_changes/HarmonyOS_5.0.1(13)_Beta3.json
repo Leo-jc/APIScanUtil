@@ -1,0 +1,411 @@
+{
+  "document": "HarmonyOS 5.0.1(13)_Beta3 行为变更清单",
+  "apiVersion": 13,
+  "versionName": "5.0.1(13)",
+  "baseVersion": "5.0.1(13)",
+  "subVersion": "Beta3",
+  "releaseDate": null,
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-roadmap/all-changelogs-501",
+  "sourceUrl": null,
+  "totalKits": null,
+  "totalChanges": 14,
+  "kits": [],
+  "interfaceBehaviorChanges": [
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "QRCodeInterface",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/qrcode.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "QRCodeInterface",
+          "interfaceType": "interface",
+          "invokeInstance": null,
+          "methodDefinition": "interface QRCodeInterface",
+          "packageName": "qrcode",
+          "version": "7"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "13",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "QRCode深浅色适配修改",
+        "changeType": "UX视觉布局变更",
+        "id": "256",
+        "sdkVersion": "5.0.1(13) Beta3",
+        "url": "changelogs-ux-b106#qrcode%E6%B7%B1%E6%B5%85%E8%89%B2%E9%80%82%E9%85%8D%E4%BF%AE%E6%94%B9"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "xml.ConvertXML",
+          "completePath": "/interface/sdk-js/api/@ohos.convertxml.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "convertToJSObject",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "convertToJSObject(xml: string, options?: ConvertOptions) : Object",
+          "packageName": "ohos.convertxml",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "13",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "convertXml模块未支持parentKey属性的行为变更",
+        "changeType": "接口行为变更",
+        "id": "77",
+        "sdkVersion": "5.0.1(13) Beta3",
+        "url": "changelogs-for-all-apps-b106#convertxml%E6%A8%A1%E5%9D%97%E6%9C%AA%E6%94%AF%E6%8C%81parentkey%E5%B1%9E%E6%80%A7%E7%9A%84%E8%A1%8C%E4%B8%BA%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "AnimateParam",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "onFinish",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "onFinish?: () => void",
+          "packageName": "common",
+          "version": "7"
+        },
+        {
+          "className": "KeyframeAnimateParam",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "KeyframeAnimateParam",
+          "interfaceType": "interface",
+          "invokeInstance": null,
+          "methodDefinition": "declare interface KeyframeAnimateParam",
+          "packageName": "common",
+          "version": "11"
+        },
+        {
+          "className": "KeyframeAnimateParam",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "onFinish",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "onFinish?: () => void",
+          "packageName": "common",
+          "version": "11"
+        },
+        {
+          "className": "AnimateParam",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "AnimateParam",
+          "interfaceType": "interface",
+          "invokeInstance": null,
+          "methodDefinition": "declare interface AnimateParam",
+          "packageName": "common",
+          "version": "7"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "13",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "属性动画onFinish结束回调在UIAbility退后台时因有限循环动画被终止而提前触发",
+        "changeType": "UX交互行为变更",
+        "id": "153",
+        "sdkVersion": "5.0.1(13) Beta3",
+        "url": "changelogs-ux-b106#%E5%B1%9E%E6%80%A7%E5%8A%A8%E7%94%BBonfinish%E7%BB%93%E6%9D%9F%E5%9B%9E%E8%B0%83%E5%9C%A8uiability%E9%80%80%E5%90%8E%E5%8F%B0%E6%97%B6%E5%9B%A0%E6%9C%89%E9%99%90%E5%BE%AA%E7%8E%AF%E5%8A%A8%E7%94%BB%E8%A2%AB%E7%BB%88%E6%AD%A2%E8%80%8C%E6%8F%90%E5%89%8D%E8%A7%A6%E5%8F%91"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "TextInputAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/text_input.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "showCounter",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "showCounter(value: boolean, options?: InputCounterOptions): TextInputAttribute",
+          "packageName": "text_input",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "13",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "TextInput组件在非标准字体场景下showCounter接口布局变更",
+        "changeType": "UX视觉布局变更",
+        "id": "CH2025051709649",
+        "sdkVersion": "5.0.1(13) Beta3",
+        "url": "changelogs-ux-b106#textinput%E7%BB%84%E4%BB%B6%E5%9C%A8%E9%9D%9E%E6%A0%87%E5%87%86%E5%AD%97%E4%BD%93%E5%9C%BA%E6%99%AF%E4%B8%8Bshowcounter%E6%8E%A5%E5%8F%A3%E5%B8%83%E5%B1%80%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "router",
+          "completePath": "/interface/sdk-js/api/@ohos.router.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getState",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function getState():RouterState",
+          "packageName": "ohos.router",
+          "version": "8"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "13",
+        "changeReasonCategory": "API_SPECIFICATION_ISSUES",
+        "changeTitle": "在字节码HAR中通过router.getState()获取的path内容变更",
+        "changeType": "接口行为变更",
+        "id": "138",
+        "sdkVersion": "5.0.1(13) Beta3",
+        "url": "changelogs-for-all-apps-b106#%E5%9C%A8%E5%AD%97%E8%8A%82%E7%A0%81har%E4%B8%AD%E9%80%9A%E8%BF%87routergetstate%E8%8E%B7%E5%8F%96%E7%9A%84path%E5%86%85%E5%AE%B9%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "i18n.System",
+          "completePath": "/interface/sdk-js/api/@ohos.i18n.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getDisplayCountry",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "static getDisplayCountry(country: string, locale: string, sentenceCase?: boolean): string",
+          "packageName": "ohos.i18n",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "13",
+        "changeReasonCategory": "LANGUAGE_RULE_CHANGE",
+        "changeTitle": "国家、地区本地化名称变更",
+        "changeType": "接口行为变更",
+        "id": "270",
+        "sdkVersion": "5.0.1(13) Beta3",
+        "url": "changelogs-for-all-apps-b106#%E5%9B%BD%E5%AE%B6%E5%9C%B0%E5%8C%BA%E6%9C%AC%E5%9C%B0%E5%8C%96%E5%90%8D%E7%A7%B0%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "intl.DateTimeFormat",
+          "completePath": "/interface/sdk-js/api/@ohos.intl.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "formatRange",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "formatRange(startDate: Date, endDate: Date): string",
+          "packageName": "ohos.intl",
+          "version": "6"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "13",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "日期时间段格式化在zh-Hant-HK下结果错误问题修改",
+        "changeType": "接口行为变更",
+        "id": "267",
+        "sdkVersion": "5.0.1(13) Beta3",
+        "url": "changelogs-for-all-apps-b106#%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E6%AE%B5%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%9C%A8zh-hans-hk%E4%B8%8B%E7%BB%93%E6%9E%9C%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98%E4%BF%AE%E6%94%B9"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "i18n.PhoneNumberFormat",
+          "completePath": "/interface/sdk-js/api/@ohos.i18n.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getLocationName",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getLocationName(number: string, locale: string): string",
+          "packageName": "ohos.i18n",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "13",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "归属地获取接口对无效号码的归属计算错误问题修改",
+        "changeType": "接口行为变更",
+        "id": "264",
+        "sdkVersion": "5.0.1(13) Beta3",
+        "url": "changelogs-for-all-apps-b106#%E5%BD%92%E5%B1%9E%E5%9C%B0%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3%E5%AF%B9%E6%97%A0%E6%95%88%E5%8F%B7%E7%A0%81%E7%9A%84%E5%BD%92%E5%B1%9E%E8%AE%A1%E7%AE%97%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98%E4%BF%AE%E6%94%B9"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "TabsAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/tabs.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "barOverlap",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "barOverlap(value: boolean): TabsAttribute",
+          "packageName": "tabs",
+          "version": "10"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "13",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "Tabs组件barOverlap接口默认效果变更",
+        "changeType": "UX视觉布局变更",
+        "id": "CH2025051690183",
+        "sdkVersion": "5.0.1(13) Beta3",
+        "url": "changelogs-ux-b106#tabs%E7%BB%84%E4%BB%B6baroverlap%E6%8E%A5%E5%8F%A3%E9%BB%98%E8%AE%A4%E6%95%88%E6%9E%9C%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "window.WindowProperties",
+          "completePath": "/interface/sdk-js/api/@ohos.window.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "drawableRect",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "drawableRect: Rect",
+          "packageName": "ohos.window",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "13",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "优化getWindowProperties，增加返回值中drawableRect的实时性，调用行为变更",
+        "changeType": "接口行为变更",
+        "id": "149",
+        "sdkVersion": "5.0.1(13) Beta3",
+        "url": "changelogs-for-all-apps-b106#%E4%BC%98%E5%8C%96getwindowproperties%E5%A2%9E%E5%8A%A0%E8%BF%94%E5%9B%9E%E5%80%BC%E4%B8%ADdrawablerect%E7%9A%84%E5%AE%9E%E6%97%B6%E6%80%A7%E8%B0%83%E7%94%A8%E8%A1%8C%E4%B8%BA%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "13",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "禁止bm命令进行跨用户操作",
+        "changeType": "None",
+        "id": "151",
+        "sdkVersion": "5.0.1(13) Beta3",
+        "url": "changelogs-for-all-apps-b106#%E7%A6%81%E6%AD%A2bm%E5%91%BD%E4%BB%A4%E8%BF%9B%E8%A1%8C%E8%B7%A8%E7%94%A8%E6%88%B7%E6%93%8D%E4%BD%9C"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "intl.DateTimeFormat",
+          "completePath": "/interface/sdk-js/api/@ohos.intl.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "format",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "format(date: Date): string",
+          "packageName": "ohos.intl",
+          "version": "6"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "13",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "时间日期格式“十一月”格式化结果错误问题修改",
+        "changeType": "接口行为变更",
+        "id": "268",
+        "sdkVersion": "5.0.1(13) Beta3",
+        "url": "changelogs-for-all-apps-b106#%E6%97%B6%E9%97%B4%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F%E5%8D%81%E4%B8%80%E6%9C%88%E6%A0%BC%E5%BC%8F%E5%8C%96%E7%BB%93%E6%9E%9C%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98%E4%BF%AE%E6%94%B9"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CommonMethod",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "transition",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "transition(effect: TransitionEffect, onFinish: Optional<TransitionFinishCallback>): T",
+          "packageName": "common",
+          "version": "12"
+        },
+        {
+          "className": "CommonMethod",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "transition",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "transition(value: TransitionOptions | TransitionEffect): T",
+          "packageName": "common",
+          "version": "7"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "13",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "禁止在转场动画过程中，更新消失节点的属性。",
+        "changeType": "接口行为变更",
+        "id": "CH2025051729493",
+        "sdkVersion": "5.0.1(13) Beta3",
+        "url": "changelogs-for-all-apps-b106#%E7%A6%81%E6%AD%A2%E5%9C%A8%E8%BD%AC%E5%9C%BA%E5%8A%A8%E7%94%BB%E8%BF%87%E7%A8%8B%E4%B8%AD%E6%9B%B4%E6%96%B0%E6%B6%88%E5%A4%B1%E8%8A%82%E7%82%B9%E7%9A%84%E5%B1%9E%E6%80%A7"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "unnamed",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/menu_item.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "MenuItem",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "declare const MenuItem: MenuItemInterface",
+          "packageName": "menu_item",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "13",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "MenuItem组件在非PC/2in1设备上超长文本布局由缩略显示变更为换行显示",
+        "changeType": "UX交互行为变更",
+        "id": "158",
+        "sdkVersion": "5.0.1(13) Beta3",
+        "url": "changelogs-ux-b106#menuitem%E7%BB%84%E4%BB%B6%E5%9C%A8%E9%9D%9E2in1%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%B6%85%E9%95%BF%E6%96%87%E6%9C%AC%E5%B8%83%E5%B1%80%E7%94%B1%E7%BC%A9%E7%95%A5%E6%98%BE%E7%A4%BA%E5%8F%98%E6%9B%B4%E4%B8%BA%E6%8D%A2%E8%A1%8C%E6%98%BE%E7%A4%BA"
+      }
+    }
+  ]
+}

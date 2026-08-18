@@ -1,0 +1,56 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "SideBar 字母索引侧边栏 Demo"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "SideBar 主能力"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "SideBar"
+    },
+    {
+      "name": "settings_title",
+      "value": "样式配置"
+    },
+    {
+      "name": "settings_text_color",
+      "value": "未选中文字颜色"
+    },
+    {
+      "name": "settings_pressed_text_color",
+      "value": "选中文字颜色"
+    },
+    {
+      "name": "settings_pressed_bg_color",
+      "value": "选中背景颜色"
+    },
+    {
+      "name": "settings_text_size",
+      "value": "字号"
+    },
+    {
+      "name": "settings_item_spacing",
+      "value": "项间距"
+    },
+    {
+      "name": "settings_item_height",
+      "value": "项高度（0=回退字号）"
+    },
+    {
+      "name": "settings_back",
+      "value": "返回"
+    },
+    {
+      "name": "index_config",
+      "value": "配置"
+    },
+    {
+      "name": "index_hint_default",
+      "value": "请触摸右侧字母索引"
+    }
+  ]
+}

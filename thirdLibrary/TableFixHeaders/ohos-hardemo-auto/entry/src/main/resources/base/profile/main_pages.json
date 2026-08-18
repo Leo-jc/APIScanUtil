@@ -1,0 +1,22 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/ModuleF01Page",
+    "pages/TestCaseF0101Page",
+    "pages/TestCaseF0102Page",
+    "pages/TestCaseF0103Page",
+    "pages/TestCaseF0104Page",
+    "pages/TestCaseF0105Page",
+    "pages/TestCaseF0106Page",
+    "pages/TestCaseF0107Page",
+    "pages/TestCaseF0108Page",
+    "pages/TestCaseF0109Page",
+    "pages/TestCaseF0110Page",
+    "pages/TestCaseF0111Page",
+    "pages/TestCaseF0112Page",
+    "pages/TestCaseF0113Page",
+    "pages/TestCaseF0114Page",
+    "pages/TestCaseF0115Page",
+    "pages/TestCaseF0116Page"
+  ]
+}

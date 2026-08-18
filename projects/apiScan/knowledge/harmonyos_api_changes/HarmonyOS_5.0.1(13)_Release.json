@@ -1,0 +1,741 @@
+{
+  "document": "HarmonyOS 5.0.1(13)_Release API变更清单",
+  "apiVersion": 13,
+  "versionName": "5.0.1(13)",
+  "baseVersion": "5.0.1(13)",
+  "subVersion": "Release",
+  "releaseDate": "2024/11/30",
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-501",
+  "sourceUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/apidiff-from-501-release",
+  "totalKits": 6,
+  "totalChanges": 38,
+  "kits": [
+    {
+      "name": "ArkUI",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkui-b112",
+      "changeCount": 5,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "CommonMethod",
+          "apiDeclaration": "onGestureRecognizerJudgeBegin(callback: GestureRecognizerJudgeBeginCallback, exposeInnerGesture: boolean): T;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CommonMethod",
+            "apiDeclaration": "onGestureRecognizerJudgeBegin(callback: GestureRecognizerJudgeBeginCallback, exposeInnerGesture: boolean): T;",
+            "diffContent": "onGestureRecognizerJudgeBegin(callback: GestureRecognizerJudgeBeginCallback, exposeInnerGesture: boolean): T;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Window",
+          "apiDeclaration": "setGestureBackEnabled(enabled: boolean): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "setGestureBackEnabled(enabled: boolean): Promise<void>;",
+            "diffContent": "setGestureBackEnabled(enabled: boolean): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Window",
+          "apiDeclaration": "isGestureBackEnabled(): boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "isGestureBackEnabled(): boolean;",
+            "diffContent": "isGestureBackEnabled(): boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ListItemGroupOptions",
+          "apiDeclaration": "headerComponent?: ComponentContent;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ListItemGroupOptions",
+            "apiDeclaration": "headerComponent?: ComponentContent;",
+            "diffContent": "headerComponent?: ComponentContent;",
+            "raw": null
+          },
+          "file": "component/list_item_group.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ListItemGroupOptions",
+          "apiDeclaration": "footerComponent?: ComponentContent;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ListItemGroupOptions",
+            "apiDeclaration": "footerComponent?: ComponentContent;",
+            "diffContent": "footerComponent?: ComponentContent;",
+            "raw": null
+          },
+          "file": "component/list_item_group.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Audio Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-audiokit-b112",
+      "changeCount": 10,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "audio",
+          "apiDeclaration": "enum DeviceBlockStatus",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "audio",
+            "apiDeclaration": "enum DeviceBlockStatus",
+            "diffContent": "enum DeviceBlockStatus",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.audio.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "DeviceBlockStatus",
+          "apiDeclaration": "UNBLOCKED = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "DeviceBlockStatus",
+            "apiDeclaration": "UNBLOCKED = 0",
+            "diffContent": "UNBLOCKED = 0",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.audio.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "DeviceBlockStatus",
+          "apiDeclaration": "BLOCKED = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "DeviceBlockStatus",
+            "apiDeclaration": "BLOCKED = 1",
+            "diffContent": "BLOCKED = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.audio.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "audio",
+          "apiDeclaration": "interface DeviceBlockStatusInfo",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "audio",
+            "apiDeclaration": "interface DeviceBlockStatusInfo",
+            "diffContent": "interface DeviceBlockStatusInfo",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.audio.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "DeviceBlockStatusInfo",
+          "apiDeclaration": "blockStatus: DeviceBlockStatus;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "DeviceBlockStatusInfo",
+            "apiDeclaration": "blockStatus: DeviceBlockStatus;",
+            "diffContent": "blockStatus: DeviceBlockStatus;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.audio.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "DeviceBlockStatusInfo",
+          "apiDeclaration": "devices: AudioDeviceDescriptors;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "DeviceBlockStatusInfo",
+            "apiDeclaration": "devices: AudioDeviceDescriptors;",
+            "diffContent": "devices: AudioDeviceDescriptors;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.audio.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AudioRoutingManager",
+          "apiDeclaration": "isMicBlockDetectionSupported(): Promise<boolean>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AudioRoutingManager",
+            "apiDeclaration": "isMicBlockDetectionSupported(): Promise<boolean>;",
+            "diffContent": "isMicBlockDetectionSupported(): Promise<boolean>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.audio.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AudioRoutingManager",
+          "apiDeclaration": "on(type: 'micBlockStatusChanged', callback: Callback<DeviceBlockStatusInfo>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AudioRoutingManager",
+            "apiDeclaration": "on(type: 'micBlockStatusChanged', callback: Callback<DeviceBlockStatusInfo>): void;",
+            "diffContent": "on(type: 'micBlockStatusChanged', callback: Callback<DeviceBlockStatusInfo>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.audio.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AudioRoutingManager",
+          "apiDeclaration": "off(type: 'micBlockStatusChanged', callback?: Callback<DeviceBlockStatusInfo>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AudioRoutingManager",
+            "apiDeclaration": "off(type: 'micBlockStatusChanged', callback?: Callback<DeviceBlockStatusInfo>): void;",
+            "diffContent": "off(type: 'micBlockStatusChanged', callback?: Callback<DeviceBlockStatusInfo>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.audio.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SourceType",
+          "apiDeclaration": "SOURCE_TYPE_CAMCORDER = 13",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SourceType",
+            "apiDeclaration": "SOURCE_TYPE_CAMCORDER = 13",
+            "diffContent": "SOURCE_TYPE_CAMCORDER = 13",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.audio.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Camera Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-camerakit-b112",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "错误码变更",
+          "className": "CameraManager",
+          "apiDeclaration": "createSession<T extends Session>(mode: SceneMode): T;",
+          "old": {
+            "className": "CameraManager",
+            "apiDeclaration": "createSession<T extends Session>(mode: SceneMode): T;",
+            "diffContent": "7400201",
+            "raw": null
+          },
+          "new": {
+            "className": "CameraManager",
+            "apiDeclaration": "createSession<T extends Session>(mode: SceneMode): T;",
+            "diffContent": "401,7400201",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "错误码变更",
+          "className": "CameraInput",
+          "apiDeclaration": "open(): Promise<void>;",
+          "old": {
+            "className": "CameraInput",
+            "apiDeclaration": "open(): Promise<void>;",
+            "diffContent": "7400107,7400108,7400201",
+            "raw": null
+          },
+          "new": {
+            "className": "CameraInput",
+            "apiDeclaration": "open(): Promise<void>;",
+            "diffContent": "7400102,7400107,7400108,7400201",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Image Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-imagekit-b112",
+      "changeCount": 17,
+      "changes": [
+        {
+          "operation": "API废弃版本变更",
+          "className": "ImagePacker",
+          "apiDeclaration": "packing(source: ImageSource, option: PackingOption, callback: AsyncCallback<ArrayBuffer>): void;",
+          "old": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packing(source: ImageSource, option: PackingOption, callback: AsyncCallback<ArrayBuffer>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packing(source: ImageSource, option: PackingOption, callback: AsyncCallback<ArrayBuffer>): void;",
+            "diffContent": "13",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "ImagePacker",
+          "apiDeclaration": "packing(source: ImageSource, option: PackingOption): Promise<ArrayBuffer>;",
+          "old": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packing(source: ImageSource, option: PackingOption): Promise<ArrayBuffer>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packing(source: ImageSource, option: PackingOption): Promise<ArrayBuffer>;",
+            "diffContent": "13",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "ImagePacker",
+          "apiDeclaration": "packing(source: PixelMap, option: PackingOption, callback: AsyncCallback<ArrayBuffer>): void;",
+          "old": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packing(source: PixelMap, option: PackingOption, callback: AsyncCallback<ArrayBuffer>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packing(source: PixelMap, option: PackingOption, callback: AsyncCallback<ArrayBuffer>): void;",
+            "diffContent": "13",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "API废弃版本变更",
+          "className": "ImagePacker",
+          "apiDeclaration": "packing(source: PixelMap, option: PackingOption): Promise<ArrayBuffer>;",
+          "old": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packing(source: PixelMap, option: PackingOption): Promise<ArrayBuffer>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packing(source: PixelMap, option: PackingOption): Promise<ArrayBuffer>;",
+            "diffContent": "13",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "错误码变更",
+          "className": "ImagePacker",
+          "apiDeclaration": "packToFile(source: ImageSource, fd: number, options: PackingOption, callback: AsyncCallback<void>): void;",
+          "old": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packToFile(source: ImageSource, fd: number, options: PackingOption, callback: AsyncCallback<void>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packToFile(source: ImageSource, fd: number, options: PackingOption, callback: AsyncCallback<void>): void;",
+            "diffContent": "62980096,62980101,62980106,62980113,62980115,62980119,62980120,62980172,62980252",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "错误码变更",
+          "className": "ImagePacker",
+          "apiDeclaration": "packToFile(source: ImageSource, fd: number, options: PackingOption): Promise<void>;",
+          "old": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packToFile(source: ImageSource, fd: number, options: PackingOption): Promise<void>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packToFile(source: ImageSource, fd: number, options: PackingOption): Promise<void>;",
+            "diffContent": "62980096,62980101,62980106,62980113,62980115,62980119,62980120,62980172,62980252",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "错误码变更",
+          "className": "ImagePacker",
+          "apiDeclaration": "packToFile(source: PixelMap, fd: number, options: PackingOption, callback: AsyncCallback<void>): void;",
+          "old": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packToFile(source: PixelMap, fd: number, options: PackingOption, callback: AsyncCallback<void>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packToFile(source: PixelMap, fd: number, options: PackingOption, callback: AsyncCallback<void>): void;",
+            "diffContent": "62980096,62980101,62980106,62980113,62980115,62980119,62980120,62980172,62980252",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "错误码变更",
+          "className": "ImagePacker",
+          "apiDeclaration": "packToFile(source: PixelMap, fd: number, options: PackingOption): Promise<void>;",
+          "old": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packToFile(source: PixelMap, fd: number, options: PackingOption): Promise<void>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packToFile(source: PixelMap, fd: number, options: PackingOption): Promise<void>;",
+            "diffContent": "62980096,62980101,62980106,62980113,62980115,62980119,62980120,62980172,62980252",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ImagePacker",
+          "apiDeclaration": "packToData(source: ImageSource, options: PackingOption): Promise<ArrayBuffer>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packToData(source: ImageSource, options: PackingOption): Promise<ArrayBuffer>;",
+            "diffContent": "packToData(source: ImageSource, options: PackingOption): Promise<ArrayBuffer>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ImagePacker",
+          "apiDeclaration": "packToData(source: PixelMap, options: PackingOption): Promise<ArrayBuffer>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packToData(source: PixelMap, options: PackingOption): Promise<ArrayBuffer>;",
+            "diffContent": "packToData(source: PixelMap, options: PackingOption): Promise<ArrayBuffer>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "image",
+          "apiDeclaration": "interface PackingOptionsForSequence",
+          "old": {
+            "className": "image",
+            "apiDeclaration": "interface PackingOptionsForSequence",
+            "diffContent": "interface PackingOptionsForSequence",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "PackingOptionsForSequence",
+          "apiDeclaration": "frameCount: number;",
+          "old": {
+            "className": "PackingOptionsForSequence",
+            "apiDeclaration": "frameCount: number;",
+            "diffContent": "frameCount: number;",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "PackingOptionsForSequence",
+          "apiDeclaration": "delayTimeList: Array<number>;",
+          "old": {
+            "className": "PackingOptionsForSequence",
+            "apiDeclaration": "delayTimeList: Array<number>;",
+            "diffContent": "delayTimeList: Array<number>;",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "PackingOptionsForSequence",
+          "apiDeclaration": "disposalTypes?: Array<number>;",
+          "old": {
+            "className": "PackingOptionsForSequence",
+            "apiDeclaration": "disposalTypes?: Array<number>;",
+            "diffContent": "disposalTypes?: Array<number>;",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "PackingOptionsForSequence",
+          "apiDeclaration": "loopCount?: number;",
+          "old": {
+            "className": "PackingOptionsForSequence",
+            "apiDeclaration": "loopCount?: number;",
+            "diffContent": "loopCount?: number;",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "ImagePacker",
+          "apiDeclaration": "packing(pixelmapSequence: Array<PixelMap>, options: PackingOptionsForSequence): Promise<ArrayBuffer>;",
+          "old": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packing(pixelmapSequence: Array<PixelMap>, options: PackingOptionsForSequence): Promise<ArrayBuffer>;",
+            "diffContent": "packing(pixelmapSequence: Array<PixelMap>, options: PackingOptionsForSequence): Promise<ArrayBuffer>;",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "ImagePacker",
+          "apiDeclaration": "packToFile(pixelmapSequence: Array<PixelMap>, fd: number, options: PackingOptionsForSequence): Promise<void>;",
+          "old": {
+            "className": "ImagePacker",
+            "apiDeclaration": "packToFile(pixelmapSequence: Array<PixelMap>, fd: number, options: PackingOptionsForSequence): Promise<void>;",
+            "diffContent": "packToFile(pixelmapSequence: Array<PixelMap>, fd: number, options: PackingOptionsForSequence): Promise<void>;",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.image.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Media Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-mediakit-b112",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "函数变更",
+          "className": "AVPlayer",
+          "apiDeclaration": "on(type: 'amplitudeUpdate', callback: Callback<Array<number>>): void;",
+          "old": {
+            "className": "AVPlayer",
+            "apiDeclaration": "on(type: 'amplitudeUpdate', callback: Callback<Array<Number>>): void;",
+            "diffContent": "callback: Callback<Array<Number>>",
+            "raw": null
+          },
+          "new": {
+            "className": "AVPlayer",
+            "apiDeclaration": "on(type: 'amplitudeUpdate', callback: Callback<Array<number>>): void;",
+            "diffContent": "callback: Callback<Array<number>>",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.media.d.ts"
+        },
+        {
+          "operation": "函数变更",
+          "className": "AVPlayer",
+          "apiDeclaration": "off(type: 'amplitudeUpdate', callback?: Callback<Array<number>>): void;",
+          "old": {
+            "className": "AVPlayer",
+            "apiDeclaration": "off(type: 'amplitudeUpdate', callback?: Callback<Array<Number>>): void;",
+            "diffContent": "callback?: Callback<Array<Number>>",
+            "raw": null
+          },
+          "new": {
+            "className": "AVPlayer",
+            "apiDeclaration": "off(type: 'amplitudeUpdate', callback?: Callback<Array<number>>): void;",
+            "diffContent": "callback?: Callback<Array<number>>",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.media.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Natural Language Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-naturallanguagekit-b112",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "错误码变更",
+          "className": "textProcessing",
+          "apiDeclaration": "function init(): Promise<boolean>;",
+          "old": {
+            "className": "textProcessing",
+            "apiDeclaration": "function init(): Promise<boolean>;",
+            "diffContent": "1011200001,1011200002,200,401",
+            "raw": null
+          },
+          "new": {
+            "className": "textProcessing",
+            "apiDeclaration": "function init(): Promise<boolean>;",
+            "diffContent": "1011200001,1011200002,200",
+            "raw": null
+          },
+          "file": "api/@hms.ai.nlp.textProcessing.d.ts"
+        },
+        {
+          "operation": "错误码变更",
+          "className": "textProcessing",
+          "apiDeclaration": "function release(): Promise<boolean>;",
+          "old": {
+            "className": "textProcessing",
+            "apiDeclaration": "function release(): Promise<boolean>;",
+            "diffContent": "1011200001,1011200002,200,401",
+            "raw": null
+          },
+          "new": {
+            "className": "textProcessing",
+            "apiDeclaration": "function release(): Promise<boolean>;",
+            "diffContent": "1011200001,1011200002,200",
+            "raw": null
+          },
+          "file": "api/@hms.ai.nlp.textProcessing.d.ts"
+        }
+      ]
+    }
+  ],
+  "interfaceBehaviorChanges": []
+}

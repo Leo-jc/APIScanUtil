@@ -1,0 +1,88 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "white",
+      "value": "#FFFFFFFF"
+    },
+    {
+      "name": "black",
+      "value": "#FF000000"
+    },
+    {
+      "name": "background",
+      "value": "#FFF0F0F0"
+    },
+    {
+      "name": "character_goku",
+      "value": "#BF360C"
+    },
+    {
+      "name": "character_freezer",
+      "value": "#4A148C"
+    },
+    {
+      "name": "character_buu",
+      "value": "#880E4F"
+    },
+    {
+      "name": "character_roshi",
+      "value": "#1B5E20"
+    },
+    {
+      "name": "character_cell",
+      "value": "#004D40"
+    },
+    {
+      "name": "character_tien",
+      "value": "#1A237E"
+    },
+    {
+      "name": "character_piccolo",
+      "value": "#33691E"
+    },
+    {
+      "name": "character_raditz",
+      "value": "#4E342E"
+    },
+    {
+      "name": "character_trunks",
+      "value": "#0D47A1"
+    },
+    {
+      "name": "character_beerus",
+      "value": "#311B92"
+    },
+    {
+      "name": "character_babidi",
+      "value": "#5F580F"
+    },
+    {
+      "name": "character_gohan",
+      "value": "#A04000"
+    },
+    {
+      "name": "character_vegeta",
+      "value": "#01579B"
+    },
+    {
+      "name": "character_krillin",
+      "value": "#BF360C"
+    },
+    {
+      "name": "character_nappa",
+      "value": "#263238"
+    },
+    {
+      "name": "character_king_kai",
+      "value": "#006064"
+    },
+    {
+      "name": "header_overlay",
+      "value": "#66000000"
+    }
+  ]
+}

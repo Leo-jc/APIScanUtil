@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "viewpagerdots 演示模块"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "viewpagerdots 指示器演示"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "ViewPagerDots Sample"
+    }
+  ]
+}

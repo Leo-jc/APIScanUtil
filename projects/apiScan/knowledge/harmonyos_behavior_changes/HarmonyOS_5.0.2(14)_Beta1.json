@@ -1,0 +1,1118 @@
+{
+  "document": "HarmonyOS 5.0.2(14)_Beta1 行为变更清单",
+  "apiVersion": 14,
+  "versionName": "5.0.2(14)",
+  "baseVersion": "5.0.2(14)",
+  "subVersion": "Beta1",
+  "releaseDate": null,
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-roadmap/all-changelogs-502",
+  "sourceUrl": null,
+  "totalKits": null,
+  "totalChanges": 33,
+  "kits": [],
+  "interfaceBehaviorChanges": [
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "ImageModifier",
+          "completePath": "/interface/sdk-js/api/arkui/ImageModifier.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "applyNormalAttribute",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "applyNormalAttribute?(instance: ImageAttribute): void",
+          "packageName": "ImageModifier",
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "ImageAttributeModifier支持new方式创建ColorFilter对象传入colorFilter接口变更",
+        "changeType": "接口行为变更",
+        "id": "253",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#imageattributemodifier%E6%94%AF%E6%8C%81new%E6%96%B9%E5%BC%8F%E5%88%9B%E5%BB%BAcolorfilter%E5%AF%B9%E8%B1%A1%E4%BC%A0%E5%85%A5colorfilter%E6%8E%A5%E5%8F%A3%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "_ARKUI_UI_INPUT_EVENT_H_",
+          "completePath": "/interface/sdk_c/arkui/ace_engine/native/ui_input_event.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_ArkUI_AxisEvent_GetPinchAxisScaleValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "double OH_ArkUI_AxisEvent_GetPinchAxisScaleValue(const ArkUI_UIInputEvent *event)",
+          "packageName": null,
+          "version": "12"
+        },
+        {
+          "className": "_ARKUI_UI_INPUT_EVENT_H_",
+          "completePath": "/interface/sdk_c/arkui/ace_engine/native/ui_input_event.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_ArkUI_AxisEvent_GetHorizontalAxisValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "double OH_ArkUI_AxisEvent_GetHorizontalAxisValue(const ArkUI_UIInputEvent *event)",
+          "packageName": null,
+          "version": "12"
+        },
+        {
+          "className": "_ARKUI_UI_INPUT_EVENT_H_",
+          "completePath": "/interface/sdk_c/arkui/ace_engine/native/ui_input_event.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_ArkUI_AxisEvent_GetVerticalAxisValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "double OH_ArkUI_AxisEvent_GetVerticalAxisValue(const ArkUI_UIInputEvent *event)",
+          "packageName": null,
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "轴事件分发机制变更",
+        "changeType": "接口行为变更",
+        "id": "169",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#%E8%BD%B4%E4%BA%8B%E4%BB%B6%E5%88%86%E5%8F%91%E5%88%B0xcomponent%E7%BB%84%E4%BB%B6%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "5.0.2(14)",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "kit.CallKit.d.ts文件废弃，替换为kit.CallServiceKit.d.ts文件访问级别",
+        "changeType": "None",
+        "id": "178",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#kitcallkitdts%E6%96%87%E4%BB%B6%E5%BA%9F%E5%BC%83%E6%9B%BF%E6%8D%A2%E4%B8%BAkitcallservicekitdts%E6%96%87%E4%BB%B6%E8%AE%BF%E9%97%AE%E7%BA%A7%E5%88%AB"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CommonMethod",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "borderRadius",
+          "interfaceType": "method",
+          "invokeInstance": "ImageAttribute",
+          "methodDefinition": "borderRadius(value: Length | BorderRadiuses | LocalizedBorderRadiuses): T",
+          "packageName": "common",
+          "version": "7"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "Image组件的borderRadius接口支持动态修改",
+        "changeType": "接口行为变更",
+        "id": "252",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#image%E7%BB%84%E4%BB%B6%E7%9A%84borderradius%E6%8E%A5%E5%8F%A3%E6%94%AF%E6%8C%81%E5%8A%A8%E6%80%81%E4%BF%AE%E6%94%B9"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "ListOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/list.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "initialIndex",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "initialIndex?: number",
+          "packageName": "list",
+          "version": "7"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "List组件首次创建布局时，Scroller控制器的跳转方法优先级变更为高于initialIndex的优先级",
+        "changeType": "接口行为变更",
+        "id": "279",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#list%E7%BB%84%E4%BB%B6%E9%A6%96%E6%AC%A1%E5%88%9B%E5%BB%BA%E5%B8%83%E5%B1%80%E6%97%B6scroller%E6%8E%A7%E5%88%B6%E5%99%A8%E7%9A%84%E8%B7%B3%E8%BD%AC%E6%96%B9%E6%B3%95%E4%BC%98%E5%85%88%E7%BA%A7%E5%8F%98%E6%9B%B4%E4%B8%BA%E9%AB%98%E4%BA%8Einitialindex%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "customScan",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.core.scan.customScan.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "start",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function start(viewControl: ViewControl, callback: AsyncCallback<Array<scanBarcode.ScanResult>>, frameCallback?: AsyncCallback<ScanFrame>): void",
+          "packageName": "hms.core.scan.customScan",
+          "version": "4.1.0(11)"
+        },
+        {
+          "className": "customScan",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.core.scan.customScan.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "init",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function init(options?: scanBarcode.ScanOptions): void",
+          "packageName": "hms.core.scan.customScan",
+          "version": "4.1.0(11)"
+        },
+        {
+          "className": "customScan",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.core.scan.customScan.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "start",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function start(viewControl: ViewControl): Promise<Array<scanBarcode.ScanResult>>",
+          "packageName": "hms.core.scan.customScan",
+          "version": "4.1.0(11)"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "5.0.2(14)",
+        "changeReasonCategory": "API_SPECIFICATION_ISSUES",
+        "changeTitle": "自定义界面扫码权限校验错误码变更",
+        "changeType": "接口行为变更",
+        "id": "230",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%95%8C%E9%9D%A2%E6%89%AB%E7%A0%81%E6%9D%83%E9%99%90%E6%A0%A1%E9%AA%8C%E8%AF%AF%E7%A0%81%E5%8F%98%E6%9B%B4%E5%8F%98%E6%9B%B4%E5%8E%9F%E5%9B%A0"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "relationalStore.ResultSet",
+          "completePath": "/interface/sdk-js/api/@ohos.data.relationalStore.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getValue(columnIndex: number): ValueType",
+          "packageName": "ohos.data.relationalStore",
+          "version": "12"
+        },
+        {
+          "className": "relationalStore.ResultSet",
+          "completePath": "/interface/sdk-js/api/@ohos.data.relationalStore.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getRow",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getRow(): ValuesBucket",
+          "packageName": "ohos.data.relationalStore",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "数据库插入长度为0的Uint8Array的数据，getRow、getValue 接口返回值发生变化",
+        "changeType": "接口行为变更",
+        "id": "172",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8F%92%E5%85%A5%E9%95%BF%E5%BA%A6%E4%B8%BA0%E7%9A%84uint8array%E7%9A%84%E6%95%B0%E6%8D%AEgetrowgetvalue-%E6%8E%A5%E5%8F%A3%E8%BF%94%E5%9B%9E%E5%80%BC%E5%8F%91%E7%94%9F%E5%8F%98%E5%8C%96"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "RichEditorAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/rich_editor.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "onWillChange",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "onWillChange(callback: Callback<RichEditorChangeValue, boolean>) : RichEditorAttribute",
+          "packageName": "rich_editor",
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "RichEditor（富文本）在光标处于文本起始位置情况时向前删除空文本onWillChange回调变更",
+        "changeType": "接口行为变更",
+        "id": "262",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#richeditor%E5%AF%8C%E6%96%87%E6%9C%AC%E5%9C%A8%E5%85%89%E6%A0%87%E5%A4%84%E4%BA%8E%E6%96%87%E6%9C%AC%E8%B5%B7%E5%A7%8B%E4%BD%8D%E7%BD%AE%E6%83%85%E5%86%B5%E6%97%B6%E5%90%91%E5%89%8D%E5%88%A0%E9%99%A4%E7%A9%BA%E6%96%87%E6%9C%AConwillchange%E5%9B%9E%E8%B0%83%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "hidumper组件内存输出显示每列后新增一个空格",
+        "changeType": "None",
+        "id": "246",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#hidumper%E7%BB%84%E4%BB%B6%E5%86%85%E5%AD%98%E8%BE%93%E5%87%BA%E6%98%BE%E7%A4%BA%E6%AF%8F%E5%88%97%E5%90%8E%E6%96%B0%E5%A2%9E%E4%B8%80%E4%B8%AA%E7%A9%BA%E6%A0%BC"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "relationalStore",
+          "completePath": "/interface/sdk-js/api/@ohos.data.relationalStore.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getRdbStore",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function getRdbStore(context: Context, config: StoreConfig): Promise<RdbStore>",
+          "packageName": "ohos.data.relationalStore",
+          "version": "9"
+        },
+        {
+          "className": "relationalStore",
+          "completePath": "/interface/sdk-js/api/@ohos.data.relationalStore.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getRdbStore",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function getRdbStore(context: Context, config: StoreConfig, callback: AsyncCallback<RdbStore>): void",
+          "packageName": "ohos.data.relationalStore",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "关系型数据管理@ohos.data.relationalStore.d.ts中getRdbStore接口新增错误码14800020，用于业务侧进行恢复重建数据库",
+        "changeType": "接口行为变更",
+        "id": "CH2025050919556",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86ohosdatarelationalstoredts%E4%B8%ADgetrdbstore%E6%8E%A5%E5%8F%A3%E6%96%B0%E5%A2%9E%E9%94%99%E8%AF%AF%E7%A0%8114800020%E7%94%A8%E4%BA%8E%E4%B8%9A%E5%8A%A1%E4%BE%A7%E8%BF%9B%E8%A1%8C%E6%81%A2%E5%A4%8D%E9%87%8D%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "NavDestinationCommonTitle",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/nav_destination.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "main",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "main: string | Resource",
+          "packageName": "nav_destination",
+          "version": "9"
+        },
+        {
+          "className": "NavDestinationCommonTitle",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/nav_destination.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "sub",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "sub: string | Resource",
+          "packageName": "nav_destination",
+          "version": "9"
+        },
+        {
+          "className": "NavDestinationAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/nav_destination.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "title",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "title(value: string | CustomBuilder | NavDestinationCommonTitle | NavDestinationCustomTitle | Resource,          options?: NavigationTitleOptions): NavDestinationAttribute",
+          "packageName": "nav_destination",
+          "version": "9"
+        },
+        {
+          "className": "NavigationCommonTitle",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/navigation.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "main",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "main: string | Resource",
+          "packageName": "navigation",
+          "version": "9"
+        },
+        {
+          "className": "NavigationCommonTitle",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/navigation.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "sub",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "sub: string | Resource",
+          "packageName": "navigation",
+          "version": "9"
+        },
+        {
+          "className": "NavigationMenuItem",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/navigation.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "value",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "value: string | Resource",
+          "packageName": "navigation",
+          "version": "8"
+        },
+        {
+          "className": "NavigationMenuItem",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/navigation.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "icon",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "icon?: string | Resource",
+          "packageName": "navigation",
+          "version": "8"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "Navigation的menus接口、NavDestination的title和menus接口支持Resource类型资源",
+        "changeType": "接口定义变更",
+        "id": "274",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#navigationnavdestination%E7%9A%84title%E5%92%8Cmenus%E6%8E%A5%E5%8F%A3%E6%94%AF%E6%8C%81resource%E7%B1%BB%E5%9E%8B%E8%B5%84%E6%BA%90"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "appAccount.AppAccountManager",
+          "completePath": "/interface/sdk-js/api/@ohos.account.appAccount.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "setAppAccess",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "setAppAccess(name: string, bundleName: string, isAccessible: boolean): Promise<void>",
+          "packageName": "ohos.account.appAccount",
+          "version": "9"
+        },
+        {
+          "className": "appAccount.AppAccountManager",
+          "completePath": "/interface/sdk-js/api/@ohos.account.appAccount.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "setAppAccess",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "setAppAccess(name: string, bundleName: string, isAccessible: boolean, callback: AsyncCallback<void>): void",
+          "packageName": "ohos.account.appAccount",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "setAppAccess错误码变更",
+        "changeType": "接口行为变更",
+        "id": "167",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#setappaccess%E9%94%99%E8%AF%AF%E7%A0%81%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "hdc file recv命令不支持操作媒体库目录",
+        "changeType": "None",
+        "id": "CH2025051728465",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#hdc%E5%91%BD%E4%BB%A4file-recv%E5%91%BD%E4%BB%A4%E4%B8%8D%E6%94%AF%E6%8C%81%E6%93%8D%E4%BD%9C%E5%AA%92%E4%BD%93%E5%BA%93%E7%9B%AE%E5%BD%95"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "image.DecodingOptionsForPicture",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.image.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "desiredAuxiliaryPictures",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "desiredAuxiliaryPictures: Array<AuxiliaryPictureType>",
+          "packageName": "ohos.multimedia.image",
+          "version": "13"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "image.ImageSource.DecodingOptionsForPicture接口的desiredAuxiliaryPictures属性系统能力变更",
+        "changeType": "接口定义变更",
+        "id": "236",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#imageimagesourcedecodingoptionsforpicture%E6%8E%A5%E5%8F%A3%E7%9A%84desiredauxiliarypictures%E5%B1%9E%E6%80%A7%E7%B3%BB%E7%BB%9F%E8%83%BD%E5%8A%9B%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "media.AVPlayer",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.media.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "on",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "on(type: 'error', callback: ErrorCallback): void",
+          "packageName": "ohos.multimedia.media",
+          "version": "9"
+        },
+        {
+          "className": "MULTIMEDIA_PLAYER_FRAMEWORK_NATIVE_AVPLAYER_BASH_H",
+          "completePath": "/interface/sdk_c/multimedia/player_framework/avplayer_base.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_AVPlayerOnErrorCallback",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "typedef void (*OH_AVPlayerOnErrorCallback)(OH_AVPlayer *player, int32_t errorCode, const char *errorMsg, void *userData)",
+          "packageName": null,
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "AVErrorCode枚举值变更",
+        "changeType": "接口行为变更",
+        "id": "219",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#averrorcode%E6%9E%9A%E4%B8%BE%E5%80%BC%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "INTERFACES_KITS_NATIVE_INCLUDE_IMAGE_IMAGE_PACKER_NATIVE_H_",
+          "completePath": "/interface/sdk_c/multimedia/image_framework/include/image/image_packer_native.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_PackingOptions_SetMimeType",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "Image_ErrorCode OH_PackingOptions_SetMimeType(OH_PackingOptions *options,    Image_MimeType *format)",
+          "packageName": null,
+          "version": "12"
+        },
+        {
+          "className": "INTERFACES_KITS_NATIVE_INCLUDE_IMAGE_IMAGE_PACKER_NATIVE_H_",
+          "completePath": "/interface/sdk_c/multimedia/image_framework/include/image/image_packer_native.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_PackingOptions_GetMimeType",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "Image_ErrorCode OH_PackingOptions_GetMimeType(OH_PackingOptions *options,    Image_MimeType *format)",
+          "packageName": null,
+          "version": "12"
+        },
+        {
+          "className": "image.ImageInfo",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.image.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "mimeType",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "mimeType: string",
+          "packageName": "ohos.multimedia.image",
+          "version": "12"
+        },
+        {
+          "className": "image.ImagePacker",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.image.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "supportedFormats",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "readonly supportedFormats: Array<string>",
+          "packageName": "ohos.multimedia.image",
+          "version": "6"
+        },
+        {
+          "className": "image.ImageSource",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.image.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "supportedFormats",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "readonly supportedFormats: Array<string>",
+          "packageName": "ohos.multimedia.image",
+          "version": "6"
+        },
+        {
+          "className": "INTERFACES_KITS_NATIVE_INCLUDE_IMAGE_SOURCE_MDK_H_",
+          "completePath": "/interface/sdk_c/multimedia/image_framework/include/image_source_mdk.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_ImageSource_GetSupportedFormats",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "int32_t OH_ImageSource_GetSupportedFormats(struct OhosImageSourceSupportedFormatList* res)",
+          "packageName": null,
+          "version": "10"
+        },
+        {
+          "className": "INTERFACES_KITS_NATIVE_INCLUDE_IMAGE_SOURCE_MDK_H_",
+          "completePath": "/interface/sdk_c/multimedia/image_framework/include/image_source_mdk.h",
+          "implementLanguage": "c",
+          "interfaceName": "OhosImageSourceSupportedFormatList",
+          "interfaceType": "struct",
+          "invokeInstance": null,
+          "methodDefinition": "struct OhosImageSourceSupportedFormatList {    /** Image source supported format string list head.*/    struct OhosImageSourceSupportedFormat** supportedFormatList = nullptr;    /** Image source supported format string list size.*/    size_t size = 0;}",
+          "packageName": null,
+          "version": "10"
+        },
+        {
+          "className": "INTERFACES_KITS_NATIVE_INCLUDE_IMAGE_SOURCE_MDK_H_",
+          "completePath": "/interface/sdk_c/multimedia/image_framework/include/image_source_mdk.h",
+          "implementLanguage": "c",
+          "interfaceName": "OhosImageSourceSupportedFormat",
+          "interfaceType": "struct",
+          "invokeInstance": null,
+          "methodDefinition": "struct OhosImageSourceSupportedFormat {    /** Image source supported format string head.*/    char* format = nullptr;    /** Image source supported format string size.*/    size_t size = 0;}",
+          "packageName": null,
+          "version": "10"
+        },
+        {
+          "className": "image.PackingOption",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.image.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "format",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "format: string",
+          "packageName": "ohos.multimedia.image",
+          "version": "6"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "image接口Heif格式类型变更",
+        "changeType": "接口行为变更",
+        "id": "238",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#imagecomponentoh_packingoptions%E7%BB%93%E6%9E%84%E4%BD%93heif%E6%A0%BC%E5%BC%8F%E7%BC%96%E7%A0%81%E5%8F%82%E6%95%B0%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CommonMethod",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "zIndex",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "zIndex(value: number): T",
+          "packageName": "common",
+          "version": "7"
+        },
+        {
+          "className": "sharedTransitionOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "zIndex",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "zIndex?: number",
+          "packageName": "common",
+          "version": "7"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "修复zIndex接口会影响组件在3D变换中的透视效果的错误行为",
+        "changeType": "接口行为变更",
+        "id": "198",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#%E4%BF%AE%E5%A4%8Dzindex%E6%8E%A5%E5%8F%A3%E4%BC%9A%E5%BD%B1%E5%93%8D%E7%BB%84%E4%BB%B6%E5%9C%A83d%E5%8F%98%E6%8D%A2%E4%B8%AD%E7%9A%84%E9%80%8F%E8%A7%86%E6%95%88%E6%9E%9C%E7%9A%84%E9%94%99%E8%AF%AF%E8%A1%8C%E4%B8%BA"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "image.AuxiliaryPicture",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.image.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "setAuxiliaryPictureInfo",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "setAuxiliaryPictureInfo(info: AuxiliaryPictureInfo): void",
+          "packageName": "ohos.multimedia.image",
+          "version": "13"
+        },
+        {
+          "className": "INTERFACES_KITS_NATIVE_INCLUDE_IMAGE_PICTURE_NATIVE_H_",
+          "completePath": "/interface/sdk_c/multimedia/image_framework/include/image/picture_native.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_AuxiliaryPictureNative_SetInfo",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "Image_ErrorCode OH_AuxiliaryPictureNative_SetInfo(OH_AuxiliaryPictureNative *auxiliaryPicture,    OH_AuxiliaryPictureInfo *info)",
+          "packageName": null,
+          "version": "13"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "image.Component.OH_AuxiliaryPictureNative_SetInfo()接口行为变更",
+        "changeType": "接口行为变更",
+        "id": "237",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#imagecomponentoh_auxiliarypicturenative_setinfo%E6%8E%A5%E5%8F%A3%E8%A1%8C%E4%B8%BA%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "延迟加载（lazy import）影响异步任务执行时序变更为不影响异步任务执行时序",
+        "changeType": "None",
+        "id": "235",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BDlazy-import%E5%BD%B1%E5%93%8D%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1%E6%89%A7%E8%A1%8C%E6%97%B6%E5%BA%8F%E5%8F%98%E6%9B%B4%E4%B8%BA%E4%B8%8D%E5%BD%B1%E5%93%8D%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1%E6%89%A7%E8%A1%8C%E6%97%B6%E5%BA%8F"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "FILE_MANAGEMENT_OH_FILE_SHARE_H",
+          "completePath": "/interface/sdk_c/filemanagement/fileshare/include/oh_file_share.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_FileShare_ActivatePermission",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "FileManagement_ErrCode OH_FileShare_ActivatePermission(const FileShare_PolicyInfo *policies, unsigned int policyNum,    FileShare_PolicyErrorResult **result, unsigned int *resultNum)",
+          "packageName": null,
+          "version": "12"
+        },
+        {
+          "className": "fileShare",
+          "completePath": "/interface/sdk-js/api/@ohos.fileshare.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "activatePermission",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function activatePermission(policies: Array<PolicyInfo>): Promise<void>",
+          "packageName": "ohos.fileshare",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "持久化权限激活接口实现从sandbox_manager模块切换到UPMS模块",
+        "changeType": "接口行为变更",
+        "id": "276",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#%E6%8C%81%E4%B9%85%E5%8C%96%E6%9D%83%E9%99%90%E6%BF%80%E6%B4%BB%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0%E4%BB%8Esandbox_manager%E6%A8%A1%E5%9D%97%E5%88%87%E6%8D%A2%E5%88%B0upms%E6%A8%A1%E5%9D%97"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "hdc的file recv命令及shell读取权限变更",
+        "changeType": "None",
+        "id": "305",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#hdc%E5%91%BD%E4%BB%A4file-recv%E5%91%BD%E4%BB%A4%E5%8F%8Ashell%E8%AF%BB%E5%8F%96%E6%9D%83%E9%99%90%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "display.Display",
+          "completePath": "/interface/sdk-js/api/@ohos.display.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "orientation",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "orientation: Orientation",
+          "packageName": "ohos.display",
+          "version": "10"
+        },
+        {
+          "className": "display.Display",
+          "completePath": "/interface/sdk-js/api/@ohos.display.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "rotation",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "rotation: number",
+          "packageName": "ohos.display",
+          "version": "7"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "屏幕Display对象rotation和orientation属性变更",
+        "changeType": "接口行为变更",
+        "id": "202",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#%E5%B1%8F%E5%B9%95display%E5%AF%B9%E8%B1%A1rotation%E5%92%8Corientation%E5%B1%9E%E6%80%A7%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "window.Window",
+          "completePath": "/interface/sdk-js/api/@ohos.window.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "setWindowLayoutFullScreen",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "setWindowLayoutFullScreen(isLayoutFullScreen: boolean): Promise<void>",
+          "packageName": "ohos.window",
+          "version": "9"
+        },
+        {
+          "className": "window.Window",
+          "completePath": "/interface/sdk-js/api/@ohos.window.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "setImmersiveModeEnabledState",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "setImmersiveModeEnabledState(enabled: boolean): void",
+          "packageName": "ohos.window",
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "setWindowLayoutFullScreen、setImmersiveModeEnabledState接口在PC/2in1设备的自由多窗模式上禁用",
+        "changeType": "接口行为变更",
+        "id": "180",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#setwindowlayoutfullscreensetimmersivemodeenabledstate%E6%8E%A5%E5%8F%A3%E5%9C%A82in1%E8%AE%BE%E5%A4%87%E5%92%8C%E5%B9%B3%E6%9D%BF%E8%AE%BE%E5%A4%87%E7%9A%84%E8%87%AA%E7%94%B1%E5%A4%9A%E7%AA%97%E6%A8%A1%E5%BC%8F%E4%B8%8A%E7%A6%81%E7%94%A8"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "window.Window",
+          "completePath": "/interface/sdk-js/api/@ohos.window.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getWindowStatus",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getWindowStatus(): WindowStatusType",
+          "packageName": "ohos.window",
+          "version": "12"
+        },
+        {
+          "className": "window.Window",
+          "completePath": "/interface/sdk-js/api/@ohos.window.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "on",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "on(type: 'windowStatusChange', callback: Callback<WindowStatusType>): void",
+          "packageName": "ohos.window",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "在PC/2in1设备上getWindowStatus和on('windowStatusChange')接口在窗口最大化状态返回值变更",
+        "changeType": "接口行为变更",
+        "id": "218",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#%E5%9C%A82in1%E8%AE%BE%E5%A4%87%E4%B8%8Agetwindowstatus%E5%92%8Conwindowstatuschange%E6%8E%A5%E5%8F%A3%E5%9C%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%8C%96%E7%8A%B6%E6%80%81%E8%BF%94%E5%9B%9E%E5%80%BC%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "AbilityInfo",
+          "completePath": "/interface/sdk-js/api/bundleManager/AbilityInfo.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "orientationId",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "readonly orientationId: number",
+          "packageName": "AbilityInfo",
+          "version": "14"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "包管理bundleManager/AbilityInfo中新增必选属性orientationId",
+        "changeType": "接口行为变更",
+        "id": "303",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#%E5%8C%85%E7%AE%A1%E7%90%86bundlemanagerabilityinfo%E4%B8%AD%E6%96%B0%E5%A2%9E%E5%BF%85%E9%80%89%E5%B1%9E%E6%80%A7orientationid"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "uiExtension.WindowProxy",
+          "completePath": "/interface/sdk-js/api/@ohos.arkui.uiExtension.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "properties",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "properties: WindowProxyProperties",
+          "packageName": "ohos.arkui.uiExtension",
+          "version": "14"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "@ohos.arkui.uiExtension中uiExtension命名空间下新增properties必选属性",
+        "changeType": "接口定义变更",
+        "id": "306",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#ohosarkuiuiextension%E4%B8%ADuiextension%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E4%B8%8B%E6%96%B0%E5%A2%9Eproperties%E5%BF%85%E9%80%89%E5%B1%9E%E6%80%A7"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "SheetType",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "POPUP",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "POPUP = 2",
+          "packageName": "common",
+          "version": "11"
+        },
+        {
+          "className": "SheetOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "showClose",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "showClose?: boolean | Resource",
+          "packageName": "common",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "bindSheet半模态面板视觉样式增加",
+        "changeType": "UX视觉布局变更",
+        "id": "263",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-ux-b123sp16#bindsheet%E5%8D%8A%E6%A8%A1%E6%80%81%E9%9D%A2%E6%9D%BF%E8%A7%86%E8%A7%89%E6%A0%B7%E5%BC%8F%E5%A2%9E%E5%8A%A0"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "安装的应用是已卸载的预置应用时校验签名是否一致",
+        "changeType": "None",
+        "id": "261",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#%E5%AE%89%E8%A3%85%E7%9A%84%E5%BA%94%E7%94%A8%E6%98%AF%E5%B7%B2%E5%8D%B8%E8%BD%BD%E7%9A%84%E9%A2%84%E7%BD%AE%E5%BA%94%E7%94%A8%E6%97%B6%E6%A0%A1%E9%AA%8C%E7%AD%BE%E5%90%8D%E6%98%AF%E5%90%A6%E4%B8%80%E8%87%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "执行幂运算（**）当底数是1，指数是NaN或ToNumber之后是NaN的情况的返回值变更",
+        "changeType": "None",
+        "id": "CH2025051760992",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#%E6%89%A7%E8%A1%8C%E5%B9%82%E8%BF%90%E7%AE%97%E5%BD%93%E5%BA%95%E6%95%B0%E6%98%AF1%E6%8C%87%E6%95%B0%E6%98%AFnan%E6%88%96tonumber%E4%B9%8B%E5%90%8E%E6%98%AFnan%E7%9A%84%E6%83%85%E5%86%B5%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "String.prototype.lastIndexOf接口查找空字符串行为变更",
+        "changeType": "None",
+        "id": "CH2025051785453",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#stringprototypelastindexof-%E6%8E%A5%E5%8F%A3%E6%9F%A5%E6%89%BE%E7%A9%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%A1%8C%E4%B8%BA%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "BorderImageOption",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "outset",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "outset?: Length | EdgeWidths | LocalizedEdgeWidths",
+          "packageName": "common",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "borderImage的outset属性按照实际的延伸距离来绘制边框向外扩展的效果",
+        "changeType": "接口行为变更",
+        "id": "251",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-ux-b123sp16#borderimage%E7%9A%84outset%E5%B1%9E%E6%80%A7%E6%8C%89%E7%85%A7%E5%AE%9E%E9%99%85%E7%9A%84%E5%BB%B6%E4%BC%B8%E8%B7%9D%E7%A6%BB%E6%9D%A5%E7%BB%98%E5%88%B6%E8%BE%B9%E6%A1%86%E5%90%91%E5%A4%96%E6%89%A9%E5%B1%95%E7%9A%84%E6%95%88%E6%9E%9C"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CanvasRenderingContext2D",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "toDataURL",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "toDataURL(type?: string, quality?: any): string",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "OffscreenCanvasRenderingContext2D",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "toDataURL",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "toDataURL(type?: string, quality?: any): string",
+          "packageName": "canvas",
+          "version": "8"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "Canvas使用toDataURL接口生成图片，对于带有透明度的图片，创建为“image/png”或“image/webp”格式时，其效果可能会发生变更",
+        "changeType": "接口行为变更",
+        "id": "260",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-ux-b123sp16#canvas%E4%BD%BF%E7%94%A8todataurl%E6%8E%A5%E5%8F%A3%E7%94%9F%E6%88%90%E5%9B%BE%E7%89%87%E5%AF%B9%E4%BA%8E%E5%B8%A6%E6%9C%89%E9%80%8F%E6%98%8E%E5%BA%A6%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%9B%E5%BB%BA%E4%B8%BAimagepng%E6%88%96imagewebp%E6%A0%BC%E5%BC%8F%E6%97%B6%E5%85%B6%E6%95%88%E6%9E%9C%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%8F%91%E7%94%9F%E5%8F%98%E6%9B%B4"
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "window.Window",
+          "completePath": "/interface/sdk-js/api/@ohos.window.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "setWindowBrightness",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "setWindowBrightness(brightness: number, callback: AsyncCallback<void>): void",
+          "packageName": "ohos.window",
+          "version": "9"
+        },
+        {
+          "className": "window.Window",
+          "completePath": "/interface/sdk-js/api/@ohos.window.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "setWindowBrightness",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "setWindowBrightness(brightness: number): Promise<void>",
+          "packageName": "ohos.window",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "14",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "setWindowBrightness在PC/2in1设备的行为变更",
+        "changeType": "接口行为变更",
+        "id": "189",
+        "sdkVersion": "5.0.2(14) Beta1",
+        "url": "changelogs-for-all-apps-b123sp16#setwindowbrightness%E5%9C%A82in1%E8%AE%BE%E5%A4%87%E7%9A%84%E8%A1%8C%E4%B8%BA%E5%8F%98%E6%9B%B4"
+      }
+    }
+  ]
+}

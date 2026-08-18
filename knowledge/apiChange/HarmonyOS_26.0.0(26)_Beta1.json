@@ -1,0 +1,1964 @@
+[
+  {
+    "affectedApis":[
+
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"NOT_ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"UPSTREAM_OPEN_SOURCE_COMMUNITY_TRIGGERED_CHANGE",
+      "id":"CH2026031976074",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "ohpm-repo 由于公司内部的开源三方库版本的策略，需要去除node-fetch的三方库依赖，三方开发者使用ohpm-repo的自定义插件时可能依赖了该三方库的接口,去除后可能导致产生不兼容变更",
+      "changeType": "非API变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"CommonMethod",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"reuse",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"reuse(options: ReuseOptions): T",
+        "packageName":"common",
+        "version":"18"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"23",
+      "changeReasonCategory":"IMPLEMENTATION_BUG",
+      "id":"CH2026010512168",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "@ReusableV2组件复用的reuse属性支持动态复用标识",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"ARK_RUNTIME_JSVM_JSVM_H",
+        "completePath":"/interface/sdk_c/ark_runtime/jsvm/jsvm.h",
+        "implementLanguage":"c",
+        "interfaceName":"OH_JSVM_CompileWasmModule",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"JSVM_EXTERN JSVM_Status OH_JSVM_CompileWasmModule(JSVM_Env env,\r\n                                                  const uint8_t *wasmBytecode,\r\n                                                  size_t wasmBytecodeLength,\r\n                                                  const uint8_t *cacheData,\r\n                                                  size_t cacheDataLength,\r\n                                                  bool *cacheRejected,\r\n                                                  JSVM_Value *wasmModule)",
+        "packageName":null,
+        "version":"12"
+      },
+      {
+        "className":"ARK_RUNTIME_JSVM_JSVM_H",
+        "completePath":"/interface/sdk_c/ark_runtime/jsvm/jsvm.h",
+        "implementLanguage":"c",
+        "interfaceName":"OH_JSVM_CompileWasmFunction",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"JSVM_EXTERN JSVM_Status OH_JSVM_CompileWasmFunction(JSVM_Env env,\r\n                                                    JSVM_Value wasmModule,\r\n                                                    uint32_t functionIndex,\r\n                                                    JSVM_WasmOptLevel optLevel)",
+        "packageName":null,
+        "version":"12"
+      },
+      {
+        "className":"ARK_RUNTIME_JSVM_JSVM_H",
+        "completePath":"/interface/sdk_c/ark_runtime/jsvm/jsvm.h",
+        "implementLanguage":"c",
+        "interfaceName":"OH_JSVM_CreateWasmCache",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"JSVM_EXTERN JSVM_Status OH_JSVM_CreateWasmCache(JSVM_Env env,\r\n                                                JSVM_Value wasmModule,\r\n                                                const uint8_t** data,\r\n                                                size_t* length)",
+        "packageName":null,
+        "version":"12"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"LANGUAGE_RULE_CHANGE",
+      "id":"CH2026031127532",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "JSVM支持Wasm解释器，jitless默认行为发生变更",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"PhotoPickerComponent",
+        "completePath":"/interface/sdk-js/api/@ohos.file.PhotoPickerComponent.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"PhotoPickerComponent",
+        "interfaceType":"struct",
+        "invokeInstance":"",
+        "methodDefinition":"export declare struct PhotoPickerComponent",
+        "packageName":"ohos.file.PhotoPickerComponent",
+        "version":"12"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/embedded_component.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"EmbeddedComponent",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const EmbeddedComponent: EmbeddedComponentInterface",
+        "packageName":"embedded_component",
+        "version":"12"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"IMPLEMENTATION_BUG",
+      "id":"CH2026031800777",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "ExtensionComponent获焦能力变更",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"statistics",
+        "completePath":"/interface/sdk-js/api/@ohos.net.statistics.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getUidRxBytes",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"function getUidRxBytes(uid: int): Promise<long>",
+        "packageName":"ohos.net.statistics",
+        "version":"10"
+      },
+      {
+        "className":"statistics",
+        "completePath":"/interface/sdk-js/api/@ohos.net.statistics.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getUidRxBytes",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"function getUidRxBytes(uid: int, callback: AsyncCallback<long>): void",
+        "packageName":"ohos.net.statistics",
+        "version":"10"
+      },
+      {
+        "className":"statistics",
+        "completePath":"/interface/sdk-js/api/@ohos.net.statistics.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getUidTxBytes",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"function getUidTxBytes(uid: int, callback: AsyncCallback<long>): void",
+        "packageName":"ohos.net.statistics",
+        "version":"10"
+      },
+      {
+        "className":"statistics",
+        "completePath":"/interface/sdk-js/api/@ohos.net.statistics.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getUidTxBytes",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"function getUidTxBytes(uid: int): Promise<long>",
+        "packageName":"ohos.net.statistics",
+        "version":"10"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"PRIVACY_AND_SECURITY_ISSUES",
+      "id":"CH2026032458158",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "getUidRxBytes、getUidTxBytes接口权限变更",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"__cplusplus",
+        "completePath":"/interface/sdk_c/third_party/musl/ndk_musl_include/unistd.h",
+        "implementLanguage":"c",
+        "interfaceName":"execve",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"int execve(const char *, char *const [], char *const [])",
+        "packageName":null,
+        "version":null
+      },
+      {
+        "className":"__cplusplus",
+        "completePath":"/interface/sdk_c/third_party/musl/ndk_musl_include/unistd.h",
+        "implementLanguage":"c",
+        "interfaceName":"fexecve",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"int fexecve(int, char *const [], char *const [])",
+        "packageName":null,
+        "version":null
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"PRIVACY_AND_SECURITY_ISSUES",
+      "id":"CH2026031760265",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "权限策略变更说明",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"xml.ConvertXML",
+        "completePath":"/interface/sdk-js/api/@ohos.convertxml.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"fastConvertToJSObject",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"fastConvertToJSObject(xml: string, options?: ConvertOptions): Object",
+        "packageName":"ohos.convertxml",
+        "version":"14"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"COULD_NOT_ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"IMPLEMENTATION_BUG",
+      "id":"CH2026030646632",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "修复ConvertXML的fastConvertToJSObject接口解析时丢失同级text节点的问题",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"ARKUI_NATIVE_NODE_H.ArkUI_NodeEventType",
+        "completePath":"/interface/sdk_c/arkui/ace_engine/native/native_node.h",
+        "implementLanguage":"c",
+        "interfaceName":"NODE_SWIPER_EVENT_ON_CONTENT_DID_SCROLL",
+        "interfaceType":"enum_instance",
+        "invokeInstance":"",
+        "methodDefinition":"NODE_SWIPER_EVENT_ON_CONTENT_DID_SCROLL",
+        "packageName":null,
+        "version":"12"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"IMPLEMENTATION_BUG",
+      "id":"CH2026042449863",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "NODE_SWIPER_EVENT_ON_CONTENT_DID_SCROLL事件回调的返回值行为变更",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"util.types",
+        "completePath":"/interface/sdk-js/api/@ohos.util.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"isAsyncFunction",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"isAsyncFunction(value: Object): boolean",
+        "packageName":"ohos.util",
+        "version":"8"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"NOT_ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"IMPLEMENTATION_BUG",
+      "id":"CH2026030208973",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "async函数类型判定修复",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"NOT_ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"UPSTREAM_OPEN_SOURCE_COMMUNITY_TRIGGERED_CHANGE",
+      "id":"CH2025092812109",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "DevEco Studio & commandline tools默认携带的Node.js版本由于开源软件生命周期到期需要从18.x升级版本至24.x，开源软件本身产生了不兼容变更",
+      "changeType": "非API变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"NOT_ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"UX_SPECIFICATION_CHANGE",
+      "id":"CH2026022857472",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "notofonts三方件小语种字体升级变更",
+      "changeType": "视觉布局变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/with_theme.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"WithThemeInterface",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare type WithThemeInterface = (options: WithThemeOptions) => WithThemeAttribute",
+        "packageName":"with_theme",
+        "version":"12"
+      },
+      {
+        "className":"ThemeControl",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.theme.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"setDefaultTheme",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"static setDefaultTheme(theme: CustomTheme): void",
+        "packageName":"ohos.arkui.theme",
+        "version":"12"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"SOLUTION_DESIGN_ISSUES",
+      "id":"CH2026031417380",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "WithTheme相关组件行为变更",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"CommonMethod",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"CommonMethod",
+        "interfaceType":"class",
+        "invokeInstance":"",
+        "methodDefinition":"declare class CommonMethod<T>",
+        "packageName":"common",
+        "version":"7"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"NOT_ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"API_SPECIFICATION_ISSUES",
+      "id":"CH2026010615012",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "ArkUI接口新增仅支持Stage模型的约束",
+      "changeType": "接口定义变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"HomePathInfo",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/navigation.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"HomePathInfo",
+        "interfaceType":"interface",
+        "invokeInstance":"",
+        "methodDefinition":"declare interface HomePathInfo",
+        "packageName":"navigation",
+        "version":"20"
+      },
+      {
+        "className":"BaseCustomComponent",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"queryNavDestinationInfo",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"queryNavDestinationInfo(): NavDestinationInfo | undefined",
+        "packageName":"common",
+        "version":"11"
+      },
+      {
+        "className":"BaseCustomComponent",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"queryNavDestinationInfo",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"queryNavDestinationInfo(isInner: Optional<boolean>): NavDestinationInfo | undefined",
+        "packageName":"common",
+        "version":"18"
+      },
+      {
+        "className":"NavDestinationAttribute",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/nav_destination.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"onResult",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"onResult(callback: Optional<Callback<ESObject>>): NavDestinationAttribute",
+        "packageName":"nav_destination",
+        "version":"15"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"NOT_ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"IMPLEMENTATION_BUG",
+      "id":"CH2026033084250",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "主页NavDestination中使用queryNavDestinationInfo接口的行为变更",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"LayoutPolicy",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"matchParent",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"static readonly matchParent: LayoutPolicy",
+        "packageName":"common",
+        "version":"15"
+      },
+      {
+        "className":"LayoutPolicy",
+        "completePath":"/interface/sdk-js/api/arkui/component/common.static.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"matchParent",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"static readonly matchParent: LayoutPolicy",
+        "packageName":"common.static",
+        "version":"23"
+      },
+      {
+        "className":"ARKUI_NATIVE_TYPE_H.ArkUI_LayoutPolicy",
+        "completePath":"/interface/sdk_c/arkui/ace_engine/native/native_type.h",
+        "implementLanguage":"c",
+        "interfaceName":"ARKUI_LAYOUTPOLICY_MATCHPARENT",
+        "interfaceType":"enum_instance",
+        "invokeInstance":"",
+        "methodDefinition":"ARKUI_LAYOUTPOLICY_MATCHPARENT = 0",
+        "packageName":"",
+        "version":"21"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"SOLUTION_DESIGN_ISSUES",
+      "id":"CH2026031815681",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "LayoutPolicy.matchParent父组件为Row、Column、Flex组件时，单方向设置matchParent的子组件布局行为变更",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"SheetType",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"CENTER",
+        "interfaceType":"enum_instance",
+        "invokeInstance":"",
+        "methodDefinition":"CENTER = 1",
+        "packageName":"common",
+        "version":"11"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"UX_SPECIFICATION_CHANGE",
+      "id":"CH2026031731268",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "半模态居中弹窗最大高度变更",
+      "changeType": "UX视觉布局变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"NodeAdapter",
+        "completePath":"/interface/sdk-js/api/arkui/FrameNode.static.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"attachNodeAdapter",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"static attachNodeAdapter(adapter: NodeAdapter, node: FrameNode): boolean",
+        "packageName":"FrameNode.static",
+        "version":"23"
+      },
+      {
+        "className":"NodeAdapter",
+        "completePath":"/interface/sdk-js/api/arkui/FrameNode.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"attachNodeAdapter",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"static attachNodeAdapter(adapter: NodeAdapter, node: FrameNode): boolean",
+        "packageName":"FrameNode",
+        "version":"12"
+      },
+      {
+        "className":"ARKUI_NATIVE_NODE_H.ArkUI_NodeAttributeType",
+        "completePath":"/interface/sdk_c/arkui/ace_engine/native/native_node.h",
+        "implementLanguage":"c",
+        "interfaceName":"NODE_LIST_ITEM_GROUP_NODE_ADAPTER",
+        "interfaceType":"enum_instance",
+        "invokeInstance":"",
+        "methodDefinition":"NODE_LIST_ITEM_GROUP_NODE_ADAPTER = 1005004",
+        "packageName":null,
+        "version":"15"
+      },
+      {
+        "className":"ARKUI_NATIVE_NODE_H.ArkUI_NodeAttributeType",
+        "completePath":"/interface/sdk_c/arkui/ace_engine/native/native_node.h",
+        "implementLanguage":"c",
+        "interfaceName":"NODE_WATER_FLOW_NODE_ADAPTER",
+        "interfaceType":"enum_instance",
+        "invokeInstance":"",
+        "methodDefinition":"NODE_WATER_FLOW_NODE_ADAPTER",
+        "packageName":null,
+        "version":"12"
+      },
+      {
+        "className":"ARKUI_NATIVE_NODE_H.ArkUI_NodeAttributeType",
+        "completePath":"/interface/sdk_c/arkui/ace_engine/native/native_node.h",
+        "implementLanguage":"c",
+        "interfaceName":"NODE_LIST_NODE_ADAPTER",
+        "interfaceType":"enum_instance",
+        "invokeInstance":"",
+        "methodDefinition":"NODE_LIST_NODE_ADAPTER",
+        "packageName":null,
+        "version":"12"
+      },
+      {
+        "className":"ARKUI_NATIVE_NODE_H.ArkUI_NodeAttributeType",
+        "completePath":"/interface/sdk_c/arkui/ace_engine/native/native_node.h",
+        "implementLanguage":"c",
+        "interfaceName":"NODE_SWIPER_NODE_ADAPTER",
+        "interfaceType":"enum_instance",
+        "invokeInstance":"",
+        "methodDefinition":"NODE_SWIPER_NODE_ADAPTER",
+        "packageName":null,
+        "version":"12"
+      },
+      {
+        "className":"ARKUI_NATIVE_NODE_H.ArkUI_NodeAttributeType",
+        "completePath":"/interface/sdk_c/arkui/ace_engine/native/native_node.h",
+        "implementLanguage":"c",
+        "interfaceName":"NODE_GRID_NODE_ADAPTER",
+        "interfaceType":"enum_instance",
+        "invokeInstance":"",
+        "methodDefinition":"NODE_GRID_NODE_ADAPTER",
+        "packageName":null,
+        "version":"12"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"IMPLEMENTATION_BUG",
+      "id":"CH2026010926267",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "NodeAdapter的onAttachToNode回调触发时机变更",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"PromptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showToast",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showToast(options: promptAction.ShowToastOptions): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/text.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"Text",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const Text: TextInterface",
+        "packageName":"text",
+        "version":"7"
+      },
+      {
+        "className":"UIContext",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showAlertDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showAlertDialog(options: AlertDialogParamWithConfirm | AlertDialogParamWithButtons | AlertDialogParamWithOptions): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"PromptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"openCustomDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"openCustomDialog<T extends Object>(dialogContent: ComponentContent<T>, options?: promptAction.BaseDialogOptions): Promise<void>",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"12"
+      },
+      {
+        "className":"promptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.promptAction.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showToast",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"function showToast(options: ShowToastOptions): void",
+        "packageName":"ohos.promptAction",
+        "version":"9"
+      },
+      {
+        "className":"PromptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showActionMenu",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showActionMenu(options: promptAction.ActionMenuOptions): Promise<promptAction.ActionMenuSuccessResponse>",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"PromptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showDialog(options: promptAction.ShowDialogOptions): Promise<promptAction.ShowDialogSuccessResponse>",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"PromptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"openToast",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"openToast(options: promptAction.ShowToastOptions): Promise<number>",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"18"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/arkui/component/alphabetIndexer.static.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"AlphabetIndexer",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"export declare function AlphabetIndexer(\n style_: CustomBuilderT<AlphabetIndexerAttribute>\n): AlphabetIndexerAttribute",
+        "packageName":"alphabetIndexer.static",
+        "version":"26.0.0"
+      },
+      {
+        "className":"promptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.promptAction.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"openCustomDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"function openCustomDialog(options: CustomDialogOptions): Promise<number>",
+        "packageName":"ohos.promptAction",
+        "version":"11"
+      },
+      {
+        "className":"promptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.promptAction.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"function showDialog(options: ShowDialogOptions, callback: AsyncCallback<ShowDialogSuccessResponse>): void",
+        "packageName":"ohos.promptAction",
+        "version":"9"
+      },
+      {
+        "className":"PromptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showDialog(options: promptAction.ShowDialogOptions, callback: AsyncCallback<promptAction.ShowDialogSuccessResponse>): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"PromptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"openCustomDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"openCustomDialog(options: promptAction.CustomDialogOptions): Promise<number>",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"12"
+      },
+      {
+        "className":"promptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.promptAction.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"openToast",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"function openToast(options: ShowToastOptions): Promise<number>",
+        "packageName":"ohos.promptAction",
+        "version":"18"
+      },
+      {
+        "className":"UIContext",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showActionSheet",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showActionSheet(value: ActionSheetOptions): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"promptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.promptAction.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"function showDialog(options: ShowDialogOptions): Promise<ShowDialogSuccessResponse>",
+        "packageName":"ohos.promptAction",
+        "version":"9"
+      },
+      {
+        "className":"UIContext",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showTextPickerDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showTextPickerDialog(style: TextPickerDialogOptions | TextPickerDialogOptionsExt): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"20"
+      },
+      {
+        "className":"UIContext",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showTimePickerDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showTimePickerDialog(options: TimePickerDialogOptions): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"UIContext",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showTextPickerDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showTextPickerDialog(options: TextPickerDialogOptions): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"UIContext",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showDatePickerDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showDatePickerDialog(options: DatePickerDialogOptions): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"CalendarPickerDialog",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/calendar_picker.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"show",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"static show(options?: CalendarDialogOptions): void",
+        "packageName":"calendar_picker",
+        "version":"10"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"UX_SPECIFICATION_CHANGE",
+      "id":"CH2026032761266",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "Dialog、Toast、AlphabetIndexer和文本选择菜单默认开启沉浸式系统材质",
+      "changeType": "UX视觉布局变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/text_clock.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"TextClock",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const TextClock: TextClockInterface",
+        "packageName":"text_clock",
+        "version":"8"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.advanced.Chip.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"Chip",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"export declare function Chip(options: ChipOptions): void",
+        "packageName":"ohos.arkui.advanced.Chip",
+        "version":"11"
+      },
+      {
+        "className":"AlertDialog",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/alert_dialog.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"AlertDialog",
+        "interfaceType":"class",
+        "invokeInstance":"",
+        "methodDefinition":"declare class AlertDialog",
+        "packageName":"alert_dialog",
+        "version":"7"
+      },
+      {
+        "className":"PromptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showToast",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showToast(options: promptAction.ShowToastOptions): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"CommonMethod",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"bindSheet",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"bindSheet(isShow: boolean, builder: CustomBuilder, options?: SheetOptions): T",
+        "packageName":"common",
+        "version":"10"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/menu.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"Menu",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const Menu: MenuInterface",
+        "packageName":"menu",
+        "version":"9"
+      },
+      {
+        "className":"SegmentButton",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.advanced.SegmentButton.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"SegmentButton",
+        "interfaceType":"struct",
+        "invokeInstance":"",
+        "methodDefinition":"declare struct SegmentButton",
+        "packageName":"ohos.arkui.advanced.SegmentButton",
+        "version":"11"
+      },
+      {
+        "className":"CommonMethod",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"bindPopup",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"bindPopup(show: boolean, popup: PopupOptions | CustomPopupOptions): T",
+        "packageName":"common",
+        "version":"7"
+      },
+      {
+        "className":"TextPickerDialog",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/text_picker.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"TextPickerDialog",
+        "interfaceType":"class",
+        "invokeInstance":"",
+        "methodDefinition":"declare class TextPickerDialog",
+        "packageName":"text_picker",
+        "version":"8"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/select.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"Select",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const Select: SelectInterface",
+        "packageName":"select",
+        "version":"8"
+      },
+      {
+        "className":"UIContext",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showTimePickerDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showTimePickerDialog(options: TimePickerDialogOptions): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/button.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"Button",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const Button: ButtonInterface",
+        "packageName":"button",
+        "version":"7"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/marquee.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"Marquee",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const Marquee: MarqueeInterface",
+        "packageName":"marquee",
+        "version":"8"
+      },
+      {
+        "className":"UIContext",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showAlertDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showAlertDialog(options: AlertDialogParamWithConfirm | AlertDialogParamWithButtons | AlertDialogParamWithOptions): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"ArcButton",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.advanced.ArcButton.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"ArcButton",
+        "interfaceType":"struct",
+        "invokeInstance":"",
+        "methodDefinition":"export declare struct ArcButton",
+        "packageName":"ohos.arkui.advanced.ArcButton",
+        "version":"18"
+      },
+      {
+        "className":"TipsDialog",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.advanced.Dialog.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"TipsDialog",
+        "interfaceType":"struct",
+        "invokeInstance":"",
+        "methodDefinition":"export declare struct TipsDialog",
+        "packageName":"ohos.arkui.advanced.Dialog",
+        "version":"10"
+      },
+      {
+        "className":"ChipGroup",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.advanced.ChipGroup.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"ChipGroup",
+        "interfaceType":"struct",
+        "invokeInstance":"",
+        "methodDefinition":"export declare struct ChipGroup",
+        "packageName":"ohos.arkui.advanced.ChipGroup",
+        "version":"12"
+      },
+      {
+        "className":"promptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.promptAction.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showToast",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"function showToast(options: ShowToastOptions): void",
+        "packageName":"ohos.promptAction",
+        "version":"9"
+      },
+      {
+        "className":"SearchAttribute",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/search.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"searchButton",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"searchButton(value: ResourceStr, option?: SearchButtonOptions): SearchAttribute",
+        "packageName":"search",
+        "version":"8"
+      },
+      {
+        "className":"PromptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showDialog(options: promptAction.ShowDialogOptions): Promise<promptAction.ShowDialogSuccessResponse>",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/navigation.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"Navigation",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const Navigation: NavigationInterface",
+        "packageName":"navigation",
+        "version":"8"
+      },
+      {
+        "className":"PromptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"openToast",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"openToast(options: promptAction.ShowToastOptions): Promise<number>",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"18"
+      },
+      {
+        "className":"CommonMethod",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"bindTips",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"bindTips(message: TipsMessageType, options?: TipsOptions): T",
+        "packageName":"common",
+        "version":"19"
+      },
+      {
+        "className":"SubHeader",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.advanced.SubHeader.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"SubHeader",
+        "interfaceType":"struct",
+        "invokeInstance":"",
+        "methodDefinition":"export declare struct SubHeader",
+        "packageName":"ohos.arkui.advanced.SubHeader",
+        "version":"10"
+      },
+      {
+        "className":"promptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.promptAction.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"function showDialog(options: ShowDialogOptions, callback: AsyncCallback<ShowDialogSuccessResponse>): void",
+        "packageName":"ohos.promptAction",
+        "version":"9"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/slider.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"Slider",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const Slider: SliderInterface",
+        "packageName":"slider",
+        "version":"7"
+      },
+      {
+        "className":"DatePickerDialog",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/date_picker.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"DatePickerDialog",
+        "interfaceType":"class",
+        "invokeInstance":"",
+        "methodDefinition":"declare class DatePickerDialog",
+        "packageName":"date_picker",
+        "version":"8"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/menu_item.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"MenuItem",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const MenuItem: MenuItemInterface",
+        "packageName":"menu_item",
+        "version":"9"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/badge.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"Badge",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const Badge: BadgeInterface",
+        "packageName":"badge",
+        "version":"7"
+      },
+      {
+        "className":"UIContext",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showDatePickerDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showDatePickerDialog(options: DatePickerDialogOptions): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"UIContext",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showTextPickerDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showTextPickerDialog(style: TextPickerDialogOptions | TextPickerDialogOptionsExt): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"20"
+      },
+      {
+        "className":"PromptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showDialog(options: promptAction.ShowDialogOptions, callback: AsyncCallback<promptAction.ShowDialogSuccessResponse>): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"AlertDialog",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.advanced.Dialog.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"AlertDialog",
+        "interfaceType":"struct",
+        "invokeInstance":"",
+        "methodDefinition":"export declare struct AlertDialog",
+        "packageName":"ohos.arkui.advanced.Dialog",
+        "version":"10"
+      },
+      {
+        "className":"promptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.promptAction.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"openToast",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"function openToast(options: ShowToastOptions): Promise<number>",
+        "packageName":"ohos.promptAction",
+        "version":"18"
+      },
+      {
+        "className":"CalendarPickerDialog",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/calendar_picker.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"CalendarPickerDialog",
+        "interfaceType":"class",
+        "invokeInstance":"",
+        "methodDefinition":"declare class CalendarPickerDialog",
+        "packageName":"calendar_picker",
+        "version":"10"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/hyperlink.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"Hyperlink",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const Hyperlink: HyperlinkInterface",
+        "packageName":"hyperlink",
+        "version":"7"
+      },
+      {
+        "className":"UIContext",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showTextPickerDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"showTextPickerDialog(options: TextPickerDialogOptions): void",
+        "packageName":"ohos.arkui.UIContext",
+        "version":"10"
+      },
+      {
+        "className":"promptAction",
+        "completePath":"/interface/sdk-js/api/@ohos.promptAction.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"showDialog",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"function showDialog(options: ShowDialogOptions): Promise<ShowDialogSuccessResponse>",
+        "packageName":"ohos.promptAction",
+        "version":"9"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/save_button.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"SaveButton",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const SaveButton: SaveButtonInterface",
+        "packageName":"save_button",
+        "version":"10"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/arkui/component/saveButton.static.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"SaveButton",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"export declare function SaveButton(\n    options?: SaveButtonOptions \n): SaveButtonAttribute",
+        "packageName":"saveButton.static",
+        "version":"23"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/arkui/component/pasteButton.static.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"PasteButton",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"export declare function PasteButton(\n    options?: PasteButtonOptions\n): PasteButtonAttribute",
+        "packageName":"pasteButton.static",
+        "version":"23"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/paste_button.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"PasteButton",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const PasteButton: PasteButtonInterface",
+        "packageName":"paste_button",
+        "version":"10"
+      },
+      {
+        "className":"SaveButtonAttribute",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/save_button.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"setText",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"setText(text: string | Resource): SaveButtonAttribute",
+        "packageName":"save_button",
+        "version":"20"
+      },
+      {
+        "className":"SaveButtonAttribute",
+        "completePath":"/interface/sdk-js/api/arkui/component/saveButton.static.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"setText",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"setText(text: string | Resource | undefined): this",
+        "packageName":"saveButton.static",
+        "version":"23"
+      },
+      {
+        "className":"SaveButtonOptions",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/save_button.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"text",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"text?: SaveDescription",
+        "packageName":"save_button",
+        "version":"10"
+      },
+      {
+        "className":"SaveButtonOptions",
+        "completePath":"/interface/sdk-js/api/arkui/component/saveButton.static.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"text",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"text?: SaveDescription",
+        "packageName":"saveButton.static",
+        "version":"23"
+      },
+      {
+        "className":"PasteButtonOptions",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/paste_button.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"text",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"text?: PasteDescription",
+        "packageName":"paste_button",
+        "version":"10"
+      },
+      {
+        "className":"PasteButtonOptions",
+        "completePath":"/interface/sdk-js/api/arkui/component/pasteButton.static.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"text",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"text?: PasteDescription",
+        "packageName":"pasteButton.static",
+        "version":"23"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"UX_SPECIFICATION_CHANGE",
+      "id":"CH2026032801249",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "内置文本的组件文本样式优化",
+      "changeType": "UX视觉布局变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"commonEventManager.Support",
+        "completePath":"/interface/sdk-js/api/@ohos.commonEventManager.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"COMMON_EVENT_PACKAGE_ADDED",
+        "interfaceType":"enum_instance",
+        "invokeInstance":"",
+        "methodDefinition":"COMMON_EVENT_PACKAGE_ADDED = 'usual.event.PACKAGE_ADDED'",
+        "packageName":"ohos.commonEventManager",
+        "version":"9"
+      },
+      {
+        "className":"commonEventManager.Support",
+        "completePath":"/interface/sdk-js/api/@ohos.commonEventManager.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"COMMON_EVENT_PACKAGE_REMOVED",
+        "interfaceType":"enum_instance",
+        "invokeInstance":"",
+        "methodDefinition":"COMMON_EVENT_PACKAGE_REMOVED = 'usual.event.PACKAGE_REMOVED'",
+        "packageName":"ohos.commonEventManager",
+        "version":"9"
+      },
+      {
+        "className":"commonEventManager.Support",
+        "completePath":"/interface/sdk-js/api/@ohos.commonEventManager.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"COMMON_EVENT_PACKAGE_CHANGED",
+        "interfaceType":"enum_instance",
+        "invokeInstance":"",
+        "methodDefinition":"COMMON_EVENT_PACKAGE_CHANGED = 'usual.event.PACKAGE_CHANGED'",
+        "packageName":"ohos.commonEventManager",
+        "version":"9"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"24",
+      "changeReasonCategory":"PRIVACY_AND_SECURITY_ISSUES",
+      "id":"CH2026020567372",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "部分公共事件行为变更，增加管控",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"_ARKUI_UI_INPUT_EVENT_H_",
+        "completePath":"/interface/sdk_c/arkui/ace_engine/native/ui_input_event.h",
+        "implementLanguage":"c",
+        "interfaceName":"OH_ArkUI_MouseEvent_GetRawDeltaX",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"float OH_ArkUI_MouseEvent_GetRawDeltaX(const ArkUI_UIInputEvent* event)",
+        "packageName":"",
+        "version":"15"
+      },
+      {
+        "className":"_ARKUI_UI_INPUT_EVENT_H_",
+        "completePath":"/interface/sdk_c/arkui/ace_engine/native/ui_input_event.h",
+        "implementLanguage":"c",
+        "interfaceName":"OH_ArkUI_MouseEvent_GetRawDeltaY",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"float OH_ArkUI_MouseEvent_GetRawDeltaY(const ArkUI_UIInputEvent* event)",
+        "packageName":"",
+        "version":"15"
+      },
+      {
+        "className":"MouseEvent",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"rawDeltaX",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"rawDeltaX?: number",
+        "packageName":"common",
+        "version":"15"
+      },
+      {
+        "className":"MouseEvent",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"rawDeltaY",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"rawDeltaY?: number",
+        "packageName":"common",
+        "version":"15"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"NOT_ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"SOLUTION_DESIGN_ISSUES",
+      "id":"CH2025112446948",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "鼠标事件rawDeltaX和rawDeltaY的返回值变更",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.advanced.Chip.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"Chip",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"export declare function Chip(options: ChipOptions): void",
+        "packageName":"ohos.arkui.advanced.Chip",
+        "version":"11"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/select.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"Select",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const Select: SelectInterface",
+        "packageName":"select",
+        "version":"8"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/button.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"Button",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const Button: ButtonInterface",
+        "packageName":"button",
+        "version":"7"
+      },
+      {
+        "className":"ChipGroup",
+        "completePath":"/interface/sdk-js/api/@ohos.arkui.advanced.ChipGroup.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"ChipGroup",
+        "interfaceType":"struct",
+        "invokeInstance":"",
+        "methodDefinition":"export declare struct ChipGroup",
+        "packageName":"ohos.arkui.advanced.ChipGroup",
+        "version":"12"
+      },
+      {
+        "className":"unnamed",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/toggle.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"Toggle",
+        "interfaceType":"field",
+        "invokeInstance":"",
+        "methodDefinition":"declare const Toggle: ToggleInterface",
+        "packageName":"toggle",
+        "version":"8"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"UX_SPECIFICATION_CHANGE",
+      "id":"CH2026031846233",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "表单类组件触摸热区最小高度变更",
+      "changeType": "UX视觉布局变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"ParagraphStyle",
+        "completePath":"/interface/sdk-js/api/@internal/component/ets/styled_string.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"ParagraphStyle",
+        "interfaceType":"class",
+        "invokeInstance":"",
+        "methodDefinition":"declare class ParagraphStyle",
+        "packageName":"styled_string",
+        "version":"12"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"IMPLEMENTATION_BUG",
+      "id":"CH2026031362881",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "属性字符串段落首个占位为CustomSpan或ImageAttachment时，支持设置段落样式",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"ARK_RUNTIME_JSVM_JSVM_H",
+        "completePath":"/interface/sdk_c/ark_runtime/jsvm/jsvm.h",
+        "implementLanguage":"c",
+        "interfaceName":"OH_JSVM_CloseEnvScope",
+        "interfaceType":"method",
+        "invokeInstance":"OH_JSVM_CloseEnvScope",
+        "methodDefinition":"JSVM_EXTERN JSVM_Status OH_JSVM_CloseEnvScope(JSVM_Env env,\n                                              JSVM_EnvScope scope)",
+        "packageName":null,
+        "version":"11"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"NOT_ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"UPSTREAM_OPEN_SOURCE_COMMUNITY_TRIGGERED_CHANGE",
+      "id":"CH2026031811135",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "JSVM基于上游社区的Chromium/v8内核从132升级为144版本",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":true
+  },
+  {
+    "affectedApis": [
+      {
+        "className": "TextPickerDialogOptions",
+        "completePath": "/interface/sdk-js/api/@internal/component/ets/text_picker.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "text_picker",
+        "version": "12"
+      },
+      {
+        "className": "promptAction.ShowToastOptions",
+        "completePath": "/interface/sdk-js/api/@ohos.promptAction.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "ohos.promptAction",
+        "version": "12"
+      },
+      {
+        "className": "CustomDialogControllerOptions",
+        "completePath": "/interface/sdk-js/api/@internal/component/ets/custom_dialog_controller.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "custom_dialog_controller",
+        "version": "12"
+      },
+      {
+        "className": "TabSegmentButtonV2",
+        "completePath": "/interface/sdk-js/api/@ohos.arkui.advanced.SegmentButtonV2.d.ets",
+        "implementLanguage": "typeScript",
+        "interfaceName": "itemShadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "readonly itemShadow?: ShadowOptions | ShadowStyle",
+        "packageName": "ohos.arkui.advanced.SegmentButtonV2",
+        "version": "18"
+      },
+      {
+        "className": "promptAction.ShowDialogOptions",
+        "completePath": "/interface/sdk-js/api/@ohos.promptAction.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "ohos.promptAction",
+        "version": "12"
+      },
+      {
+        "className": "CapsuleSegmentButtonV2",
+        "completePath": "/interface/sdk-js/api/@ohos.arkui.advanced.SegmentButtonV2.d.ets",
+        "implementLanguage": "typeScript",
+        "interfaceName": "itemShadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "readonly itemShadow?: ShadowOptions | ShadowStyle",
+        "packageName": "ohos.arkui.advanced.SegmentButtonV2",
+        "version": "18"
+      },
+      {
+        "className": "PopupOptions",
+        "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "common",
+        "version": "11"
+      },
+      {
+        "className": "AlertDialogParam",
+        "completePath": "/interface/sdk-js/api/@internal/component/ets/alert_dialog.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "alert_dialog",
+        "version": "12"
+      },
+      {
+        "className": "SheetOptions",
+        "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "common",
+        "version": "12"
+      },
+      {
+        "className": "TextPickerDialogOptionsExt",
+        "completePath": "/interface/sdk-js/api/@internal/component/ets/text_picker.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "text_picker",
+        "version": "20"
+      },
+      {
+        "className": "CustomPopupOptions",
+        "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "common",
+        "version": "11"
+      },
+      {
+        "className": "ARKUI_NATIVE_NODE_H.ArkUI_NodeAttributeType",
+        "completePath": "/interface/sdk_c/arkui/ace_engine/native/native_node.h",
+        "implementLanguage": "c",
+        "interfaceName": "NODE_CUSTOM_SHADOW",
+        "interfaceType": "enum_instance",
+        "invokeInstance": "",
+        "methodDefinition": "NODE_CUSTOM_SHADOW",
+        "packageName": null,
+        "version": "12"
+      },
+      {
+        "className": "promptAction.CustomDialogOptions",
+        "completePath": "/interface/sdk-js/api/@ohos.promptAction.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "ohos.promptAction",
+        "version": "12"
+      },
+      {
+        "className": "TimePickerDialogOptions",
+        "completePath": "/interface/sdk-js/api/@internal/component/ets/time_picker.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "time_picker",
+        "version": "12"
+      },
+      {
+        "className": "CommonMethod",
+        "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "method",
+        "invokeInstance": "",
+        "methodDefinition": "shadow(value: ShadowOptions | ShadowStyle): T",
+        "packageName": "common",
+        "version": "7"
+      },
+      {
+        "className": "ActionSheetOptions",
+        "completePath": "/interface/sdk-js/api/@internal/component/ets/action_sheet.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "action_sheet",
+        "version": "12"
+      },
+      {
+        "className": "ARKUI_NATIVE_DIALOG_H",
+        "completePath": "/interface/sdk_c/arkui/ace_engine/native/native_dialog.h",
+        "implementLanguage": "c",
+        "interfaceName": "OH_ArkUI_CustomDialog_SetCustomShadow",
+        "interfaceType": "method",
+        "invokeInstance": "",
+        "methodDefinition": "int32_t OH_ArkUI_CustomDialog_SetCustomShadow(\n    ArkUI_CustomDialogOptions* options, const ArkUI_AttributeItem* customShadow)",
+        "packageName": "",
+        "version": "19"
+      },
+      {
+        "className": "PopupCommonOptions",
+        "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "common",
+        "version": "18"
+      },
+      {
+        "className": "CalendarDialogOptions",
+        "completePath": "/interface/sdk-js/api/@internal/component/ets/calendar_picker.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "calendar_picker",
+        "version": "12"
+      },
+      {
+        "className": "DatePickerDialogOptions",
+        "completePath": "/interface/sdk-js/api/@internal/component/ets/date_picker.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "shadow",
+        "interfaceType": "field",
+        "invokeInstance": "",
+        "methodDefinition": "shadow?: ShadowOptions | ShadowStyle",
+        "packageName": "date_picker",
+        "version": "12"
+      },
+      {
+        "className": "SymbolGlyphAttribute",
+        "completePath": "/interface/sdk-js/api/@internal/component/ets/symbolglyph.d.ts",
+        "implementLanguage": "typeScript",
+        "interfaceName": "symbolShadow",
+        "interfaceType": "method",
+        "invokeInstance": "",
+        "methodDefinition": "symbolShadow(shadow: Optional<ShadowOptions>): SymbolGlyphAttribute",
+        "packageName": "symbolglyph",
+        "version": "20"
+      }
+    ],
+    "interfaceChanges": {
+      "apiEffectiveVersion": "ISOLATED",
+      "apiVersion": "26.0.0",
+      "changeReasonCategory": "IMPLEMENTATION_BUG",
+      "id": "CH2026022422576",
+      "sdkVersion": "7.0.0(26) Beta1",
+      "changeTitle": "组件的阴影模糊半径规格变更",
+      "changeType": "接口行为变更"
+    },
+    "isPresent": true
+  },
+  {
+    "affectedApis":[
+      {
+        "className":"photoAccessHelper.AbsAlbum",
+        "completePath":"/interface/sdk-js/api/@ohos.file.photoAccessHelper.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getAssets",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"getAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<PhotoAsset>>): void",
+        "packageName":"ohos.file.photoAccessHelper",
+        "version":"10"
+      },
+      {
+        "className":"photoAccessHelper.PhotoAccessHelper",
+        "completePath":"/interface/sdk-js/api/@ohos.file.photoAccessHelper.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getAssets",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"getAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<PhotoAsset>>): void",
+        "packageName":"ohos.file.photoAccessHelper",
+        "version":"10"
+      },
+      {
+        "className":"photoAccessHelper.PhotoAccessHelper",
+        "completePath":"/interface/sdk-js/api/@ohos.file.photoAccessHelper.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getAssets",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"getAssets(options: FetchOptions): Promise<FetchResult<PhotoAsset>>",
+        "packageName":"ohos.file.photoAccessHelper",
+        "version":"10"
+      },
+      {
+        "className":"photoAccessHelper.AbsAlbum",
+        "completePath":"/interface/sdk-js/api/@ohos.file.photoAccessHelper.d.ts",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getAssets",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"getAssets(options: FetchOptions): Promise<FetchResult<PhotoAsset>>",
+        "packageName":"ohos.file.photoAccessHelper",
+        "version":"10"
+      },
+      {
+        "className":"sendablePhotoAccessHelper.AbsAlbum",
+        "completePath":"/interface/sdk-js/api/@ohos.file.sendablePhotoAccessHelper.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getAssets",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"getAssets(options: photoAccessHelper.FetchOptions): Promise<FetchResult<PhotoAsset>>",
+        "packageName":"ohos.file.sendablePhotoAccessHelper",
+        "version":"12"
+      },
+      {
+        "className":"sendablePhotoAccessHelper.PhotoAccessHelper",
+        "completePath":"/interface/sdk-js/api/@ohos.file.sendablePhotoAccessHelper.d.ets",
+        "implementLanguage":"typeScript",
+        "interfaceName":"getAssets",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"getAssets(options: photoAccessHelper.FetchOptions): Promise<FetchResult<PhotoAsset>>",
+        "packageName":"ohos.file.sendablePhotoAccessHelper",
+        "version":"12"
+      },
+      {
+        "className":"PhotoAccessHelper",
+        "completePath":"/interface/sdk_cangjie/api/MediaLibraryKit/ohos.file.photo_access_helper.cj.d",
+        "implementLanguage":"cj",
+        "interfaceName":"getAssets",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"public func getAssets(options: FetchOptions): PhotoAssetResult",
+        "packageName":"ohos.file.photo_access_helper",
+        "version":"22"
+      },
+      {
+        "className":"AbsAlbum",
+        "completePath":"/interface/sdk_cangjie/api/MediaLibraryKit/ohos.file.photo_access_helper.cj.d",
+        "implementLanguage":"cj",
+        "interfaceName":"getAssets",
+        "interfaceType":"method",
+        "invokeInstance":"",
+        "methodDefinition":"public func getAssets(options: FetchOptions): PhotoAssetResult",
+        "packageName":"ohos.file.photo_access_helper",
+        "version":"22"
+      }
+    ],
+    "interfaceChanges":{
+      "apiEffectiveVersion":"NOT_ISOLATED",
+      "apiVersion":"26.0.0",
+      "changeReasonCategory":"SOLUTION_DESIGN_ISSUES",
+      "id":"CH2026042864213",
+      "sdkVersion":"7.0.0(26) Beta1",
+      "changeTitle": "ohos.permission.READ_IMAGEVIDEO权限变更",
+      "changeType": "接口行为变更"
+    },
+    "isPresent":false
+  }
+]

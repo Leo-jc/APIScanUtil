@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "viewpagerdots",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

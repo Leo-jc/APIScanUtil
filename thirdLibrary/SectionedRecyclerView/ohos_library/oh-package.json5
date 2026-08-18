@@ -1,0 +1,9 @@
+{
+  "name": "sectionedrecyclerview",
+  "version": "1.2.0",
+  "description": "HarmonyOS sectioned list/grid library with per-section headers and footers.",
+  "main": "Index.ets",
+  "author": "Tomás Ruiz-López",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}

@@ -1,0 +1,963 @@
+{
+  "document": "HarmonyOS 5.1.0(18)_Release 行为变更清单",
+  "apiVersion": 18,
+  "versionName": "5.1.0(18)",
+  "baseVersion": "5.1.0(18)",
+  "subVersion": "Release",
+  "releaseDate": null,
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-roadmap/all-changelogs-510",
+  "sourceUrl": null,
+  "totalKits": null,
+  "totalChanges": 23,
+  "kits": [],
+  "interfaceBehaviorChanges": [
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CommonMethod",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "onDisAppear",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "onDisAppear(event: () => void): T",
+          "packageName": "common",
+          "version": "7"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "API_SPECIFICATION_ISSUES",
+        "changeTitle": "页面退出场景自定义组件删除前移",
+        "changeType": "接口行为变更",
+        "id": "337",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "ComponentOptions",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "freezeWhenInactive",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "freezeWhenInactive : boolean",
+          "packageName": "common",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "V1和V2组件冻结能力增强",
+        "changeType": "接口行为变更",
+        "id": "208",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "ScrollableCommonMethod",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "backToTop",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "backToTop(backToTop: boolean): T",
+          "packageName": "common",
+          "version": "15"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "滚动组件通用接口backToTop属性默认值变更",
+        "changeType": "UX交互行为变更",
+        "id": "CH2025041542754",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "audio.AudioRoutingManager",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.audio.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getAvailableDevices",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getAvailableDevices(deviceUsage: DeviceUsage): AudioDeviceDescriptors",
+          "packageName": "ohos.multimedia.audio",
+          "version": "12"
+        },
+        {
+          "className": "NATIVE_AUDIO_ROUTING_MANAGER_H",
+          "completePath": "/interface/sdk_c/multimedia/audio_framework/audio_manager/native_audio_routing_manager.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_AudioRoutingManager_GetAvailableDevices",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "OH_AudioCommon_Result OH_AudioRoutingManager_GetAvailableDevices(    OH_AudioRoutingManager *audioRoutingManager,    OH_AudioDevice_Usage deviceUsage, OH_AudioDeviceDescriptorArray **audioDeviceDescriptorArray)",
+          "packageName": null,
+          "version": "12"
+        },
+        {
+          "className": "NATIVE_AUDIO_ROUTING_MANAGER_H",
+          "completePath": "/interface/sdk_c/multimedia/audio_framework/audio_manager/native_audio_routing_manager.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_AudioRoutingManager_GetDevices",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "OH_AudioCommon_Result OH_AudioRoutingManager_GetDevices(    OH_AudioRoutingManager *audioRoutingManager,    OH_AudioDevice_Flag deviceFlag,    OH_AudioDeviceDescriptorArray **audioDeviceDescriptorArray)",
+          "packageName": null,
+          "version": "12"
+        },
+        {
+          "className": "audio.AudioRoutingManager",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.audio.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getDevicesSync",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getDevicesSync(deviceFlag: DeviceFlag): AudioDeviceDescriptors",
+          "packageName": "ohos.multimedia.audio",
+          "version": "10"
+        },
+        {
+          "className": "audio.AudioRoutingManager",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.audio.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getDevices",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getDevices(deviceFlag: DeviceFlag): Promise<AudioDeviceDescriptors>",
+          "packageName": "ohos.multimedia.audio",
+          "version": "9"
+        },
+        {
+          "className": "audio.AudioRoutingManager",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.audio.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getDevices",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getDevices(deviceFlag: DeviceFlag, callback: AsyncCallback<AudioDeviceDescriptors>): void",
+          "packageName": "ohos.multimedia.audio",
+          "version": "9"
+        },
+        {
+          "className": "audio.AudioRoutingManager",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.audio.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "on",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "on(type: 'availableDeviceChange', deviceUsage: DeviceUsage, callback: Callback<DeviceChangeAction>): void",
+          "packageName": "ohos.multimedia.audio",
+          "version": "12"
+        },
+        {
+          "className": "audio.AudioRoutingManager",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.audio.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "off",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "off(type: 'availableDeviceChange', callback?: Callback<DeviceChangeAction>): void",
+          "packageName": "ohos.multimedia.audio",
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "音频框架识别USB音频设备类型行为变更",
+        "changeType": "接口行为变更",
+        "id": "CH2025041189292",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "UIContext",
+          "completePath": "/interface/sdk-js/api/@ohos.arkui.UIContext.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getKeyboardAvoidMode",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getKeyboardAvoidMode(): KeyboardAvoidMode",
+          "packageName": "ohos.arkui.UIContext",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "getKeyboardAvoidMode接口返回值变更",
+        "changeType": "接口行为变更",
+        "id": "CH2025040743551",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CanvasRenderer",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "drawImage",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "drawImage(    image: ImageBitmap | PixelMap,    sx: number,    sy: number,    sw: number,    sh: number,    dx: number,    dy: number,    dw: number,    dh: number,  ): void",
+          "packageName": "canvas",
+          "version": "8"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "CanvasRenderingContext2D的drawImage接口默认单位变更",
+        "changeType": "接口行为变更",
+        "id": "155",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "ARK_RUNTIME_JSVM_JSVM_H",
+          "completePath": "/interface/sdk_c/ark_runtime/jsvm/jsvm.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_JSVM_CreateWasmCache",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "JSVM_EXTERN JSVM_Status OH_JSVM_CreateWasmCache(JSVM_Env env,                                                JSVM_Value wasmModule,                                                const uint8_t** data,                                                size_t* length)",
+          "packageName": null,
+          "version": "12"
+        },
+        {
+          "className": "ARK_RUNTIME_JSVM_JSVM_H",
+          "completePath": "/interface/sdk_c/ark_runtime/jsvm/jsvm.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_JSVM_CompileWasmFunction",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "JSVM_EXTERN JSVM_Status OH_JSVM_CompileWasmFunction(JSVM_Env env,                                                    JSVM_Value wasmModule,                                                    uint32_t functionIndex,                                                    JSVM_WasmOptLevel optLevel)",
+          "packageName": null,
+          "version": "12"
+        },
+        {
+          "className": "ARK_RUNTIME_JSVM_JSVM_H",
+          "completePath": "/interface/sdk_c/ark_runtime/jsvm/jsvm.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_JSVM_CompileWasmModule",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "JSVM_EXTERN JSVM_Status OH_JSVM_CompileWasmModule(JSVM_Env env,                                                  const uint8_t *wasmBytecode,                                                  size_t wasmBytecodeLength,                                                  const uint8_t *cacheData,                                                  size_t cacheDataLength,                                                  bool *cacheRejected,                                                  JSVM_Value *wasmModule)",
+          "packageName": null,
+          "version": "12"
+        },
+        {
+          "className": "ARK_RUNTIME_JSVM_JSVM_H",
+          "completePath": "/interface/sdk_c/ark_runtime/jsvm/jsvm.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_JSVM_RunScript",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "JSVM_EXTERN JSVM_Status OH_JSVM_RunScript(JSVM_Env env,                                          JSVM_Script script,                                          JSVM_Value* result)",
+          "packageName": null,
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "JIT功能默认关闭，需申请权限证书并通过审核后启用",
+        "changeType": "接口行为变更",
+        "id": "398",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "hiperf命令行调试工具使用权限缩小",
+        "changeType": "None",
+        "id": "410",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "LANGUAGE_RULE_CHANGE",
+        "changeTitle": "默认不合并依赖混淆规则变更说明",
+        "changeType": "None",
+        "id": "339",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CommonMethod",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "blendMode",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "blendMode(value: BlendMode, type?: BlendApplyType): T",
+          "packageName": "common",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "XComponent设置为Texture模式使用blendMode接口的行为由不生效变更为正常生效",
+        "changeType": "接口行为变更",
+        "id": "372",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CommonMethod",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "blendMode",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "blendMode(value: BlendMode, type?: BlendApplyType): T",
+          "packageName": "common",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "修复blendMode接口离屏模式会影响组件设置的不透明度的问题",
+        "changeType": "UX视觉布局变更",
+        "id": "373",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "safetyDetect",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.security.safetyDetect.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "checkSysIntegrity",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function checkSysIntegrity(req: SysIntegrityRequest): Promise<SysIntegrityResponse>",
+          "packageName": "hms.security.safetyDetect",
+          "version": "5.0.0(12)"
+        },
+        {
+          "className": "safetyDetect",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.security.safetyDetect.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "checkUrlThreat",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function checkUrlThreat(req: UrlCheckRequest): Promise<UrlCheckResponse>",
+          "packageName": "hms.security.safetyDetect",
+          "version": "5.0.0(12)"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "5.1.0(18)",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "Device Security Kit优化错误码上报",
+        "changeType": "接口行为变更",
+        "id": "355",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "rcp.Session",
+          "completePath": "/vendor/huawei/interface/hmscore_sdk_js/api/@hms.collaboration.rcp.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "fetch",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "fetch(request: Request): Promise<Response>",
+          "packageName": "hms.collaboration.rcp",
+          "version": "4.1.0(11)"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "5.1.0(18)",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "fetch接口新增错误码返回",
+        "changeType": "接口行为变更",
+        "id": "258",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CommonMethod",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "renderFit",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "renderFit(fitMode: RenderFit): T",
+          "packageName": "common",
+          "version": "10"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "XComponent组件上使用renderFit接口显示效果变更",
+        "changeType": "接口行为变更",
+        "id": "392",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "window.Window",
+          "completePath": "/interface/sdk-js/api/@ohos.window.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "setSpecificSystemBarEnabled",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "setSpecificSystemBarEnabled(name: SpecificSystemBar, enable: boolean, enableAnimation?: boolean): Promise<void>",
+          "packageName": "ohos.window",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "setSpecificSystemBarEnabled接口在横屏的行为变更",
+        "changeType": "接口行为变更",
+        "id": "150",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "media",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.media.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "createSoundPool",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function createSoundPool(    maxStreams: number,    audioRenderInfo: audio.AudioRendererInfo,    callback: AsyncCallback<SoundPool>  ): void",
+          "packageName": "ohos.multimedia.media",
+          "version": "10"
+        },
+        {
+          "className": "media",
+          "completePath": "/interface/sdk-js/api/@ohos.multimedia.media.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "createSoundPool",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function createSoundPool(maxStreams: number, audioRenderInfo: audio.AudioRendererInfo): Promise<SoundPool>",
+          "packageName": "ohos.multimedia.media",
+          "version": "10"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "应用创建SoundPool时调用media.createSoundPool接口变更",
+        "changeType": "接口行为变更",
+        "id": "CH2025041671497",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "unnamed",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/button.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "Button",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "declare const Button: ButtonInterface",
+          "packageName": "button",
+          "version": "7"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "按钮默认值变更为新增圆角矩形类型",
+        "changeType": "UX视觉布局变更",
+        "id": "174",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "unnamed",
+          "completePath": "/interface/sdk-js/api/@ohos.arkui.advanced.Popup.d.ets",
+          "implementLanguage": "typeScript",
+          "interfaceName": "Popup",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "export declare function Popup(options: PopupOptions): void",
+          "packageName": "ohos.arkui.advanced.Popup",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "修复Popup高级组件宽度限制计算错误的问题",
+        "changeType": "UX视觉布局变更",
+        "id": "173",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "distributedAccount.DistributedAccountAbility",
+          "completePath": "/interface/sdk-js/api/@ohos.account.distributedAccount.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getOsAccountDistributedInfo",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getOsAccountDistributedInfo(): Promise<DistributedInfo>",
+          "packageName": "ohos.account.distributedAccount",
+          "version": "9"
+        },
+        {
+          "className": "distributedAccount.DistributedAccountAbility",
+          "completePath": "/interface/sdk-js/api/@ohos.account.distributedAccount.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "getOsAccountDistributedInfo",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "getOsAccountDistributedInfo(callback: AsyncCallback<DistributedInfo>): void",
+          "packageName": "ohos.account.distributedAccount",
+          "version": "9"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "PRIVACY_AND_SECURITY_ISSUES",
+        "changeTitle": "osAccount.distributedAccount.DistributedAccountAbility.getOsAccountDistributedInfo接口返回值生成规则变更",
+        "changeType": "接口行为变更",
+        "id": "419",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "CanvasPath",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "bezierCurveTo",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "bezierCurveTo(cp1x: number, cp1y: number, cp2x: number, cp2y: number, x: number, y: number): void",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "CanvasPath",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "arc",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "arc(x: number, y: number, radius: number, startAngle: number, endAngle: number, counterclockwise?: boolean): void",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "CanvasPath",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "rect",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "rect(x: number, y: number, w: number, h: number): void",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "CanvasPath",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "lineTo",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "lineTo(x: number, y: number): void",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "CanvasPath",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "quadraticCurveTo",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "quadraticCurveTo(cpx: number, cpy: number, x: number, y: number): void",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "CanvasPath",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "arcTo",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "arcTo(x1: number, y1: number, x2: number, y2: number, radius: number): void",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "CanvasPath",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "moveTo",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "moveTo(x: number, y: number): void",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "CanvasPath",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "ellipse",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "ellipse(    x: number,    y: number,    radiusX: number,    radiusY: number,    rotation: number,    startAngle: number,    endAngle: number,    counterclockwise?: boolean,  ): void",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "CanvasRenderer",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "globalAlpha",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "globalAlpha: number",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "CanvasRenderer",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "rotate",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "rotate(angle: number): void",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "CanvasRenderer",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "scale",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "scale(x: number, y: number): void",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "CanvasRenderer",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "transform",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "transform(a: number, b: number, c: number, d: number, e: number, f: number): void",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "CanvasRenderer",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "setTransform",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "setTransform(transform?: Matrix2D): void",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "CanvasRenderer",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "translate",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "translate(x: number, y: number): void",
+          "packageName": "canvas",
+          "version": "8"
+        },
+        {
+          "className": "CanvasRenderer",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "lineDashOffset",
+          "interfaceType": "field",
+          "invokeInstance": null,
+          "methodDefinition": "lineDashOffset: number",
+          "packageName": "canvas",
+          "version": "8"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "CanvasRenderingContext2D方法传NaN和Infinity值后执行的其他绘制方法由不绘制变更为正常绘制",
+        "changeType": "接口行为变更",
+        "id": "159",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "hiTraceMeter",
+          "completePath": "/interface/sdk-js/api/@ohos.hiTraceMeter.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "traceByValue",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function traceByValue(name: string, count: number): void",
+          "packageName": "ohos.hiTraceMeter",
+          "version": "8"
+        },
+        {
+          "className": "hiTraceMeter",
+          "completePath": "/interface/sdk-js/api/@ohos.hiTraceMeter.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "finishTrace",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function finishTrace(name: string, taskId: number): void",
+          "packageName": "ohos.hiTraceMeter",
+          "version": "8"
+        },
+        {
+          "className": "hiTraceMeter",
+          "completePath": "/interface/sdk-js/api/@ohos.hiTraceMeter.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "startTrace",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "function startTrace(name: string, taskId: number): void",
+          "packageName": "ohos.hiTraceMeter",
+          "version": "8"
+        },
+        {
+          "className": "HIVIEWDFX_HITRACE_H",
+          "completePath": "/interface/sdk_c/hiviewdfx/hitrace/include/hitrace/trace.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_HiTrace_CountTrace",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "void OH_HiTrace_CountTrace(const char *name, int64_t count)",
+          "packageName": null,
+          "version": "10"
+        },
+        {
+          "className": "HIVIEWDFX_HITRACE_H",
+          "completePath": "/interface/sdk_c/hiviewdfx/hitrace/include/hitrace/trace.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_HiTrace_StartAsyncTrace",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "void OH_HiTrace_StartAsyncTrace(const char *name, int32_t taskId)",
+          "packageName": null,
+          "version": "10"
+        },
+        {
+          "className": "HIVIEWDFX_HITRACE_H",
+          "completePath": "/interface/sdk_c/hiviewdfx/hitrace/include/hitrace/trace.h",
+          "implementLanguage": "c",
+          "interfaceName": "OH_HiTrace_FinishAsyncTrace",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "void OH_HiTrace_FinishAsyncTrace(const char *name, int32_t taskId)",
+          "packageName": null,
+          "version": "10"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "用户态trace打点格式变更",
+        "changeType": "接口行为变更",
+        "id": "403",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "LongPressGestureInterface",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/gesture.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LongPressGestureInterface",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "(options?: LongPressGestureHandlerOptions): LongPressGestureInterface",
+          "packageName": "gesture",
+          "version": "15"
+        },
+        {
+          "className": "LongPressGestureInterface",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/gesture.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LongPressGestureInterface",
+          "interfaceType": "interface",
+          "invokeInstance": null,
+          "methodDefinition": "interface LongPressGestureInterface extends GestureInterface<LongPressGestureInterface>",
+          "packageName": "gesture",
+          "version": "7"
+        },
+        {
+          "className": "LongPressGestureInterface",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/gesture.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LongPressGestureInterface",
+          "interfaceType": "method",
+          "invokeInstance": null,
+          "methodDefinition": "(value?: { fingers?: number; repeat?: boolean; duration?: number }): LongPressGestureInterface",
+          "packageName": "gesture",
+          "version": "7"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "ArkUI双指长按行为变更",
+        "changeType": "接口行为变更",
+        "id": "CH2025042447120",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "SheetSize",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "LARGE",
+          "interfaceType": "enum_instance",
+          "invokeInstance": null,
+          "methodDefinition": "LARGE = 1",
+          "packageName": "common",
+          "version": "10"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "18",
+        "changeReasonCategory": "UX_SPECIFICATION_CHANGE",
+        "changeTitle": "半模态底部样式最大高度默认避让状态栏安全区",
+        "changeType": "UX视觉布局变更",
+        "id": "394",
+        "sdkVersion": "5.1.0(18) Release",
+        "url": null
+      }
+    }
+  ]
+}

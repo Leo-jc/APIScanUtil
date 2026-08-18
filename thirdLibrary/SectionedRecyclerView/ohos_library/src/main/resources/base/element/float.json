@@ -1,0 +1,12 @@
+{
+  "float": [
+    {
+      "name": "sectioned_header_height",
+      "value": "48vp"
+    },
+    {
+      "name": "sectioned_header_padding_horizontal",
+      "value": "16vp"
+    }
+  ]
+}

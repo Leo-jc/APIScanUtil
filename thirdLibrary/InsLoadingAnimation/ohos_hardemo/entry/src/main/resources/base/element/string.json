@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "InsLoadingAnimation demo entry module"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "InsLoadingAnimation demo ability"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "InsLoadingAnimation"
+    }
+  ]
+}

@@ -1,0 +1,943 @@
+{
+  "title": "HarmonyOS API 调用图谱",
+  "summary": {
+    "filesAnalyzed": 4,
+    "systemApis": 12,
+    "systemApiCallSites": 46
+  },
+  "files": [
+    {
+      "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "AbilityConstant",
+            "ConfigurationConstant",
+            "UIAbility",
+            "Want"
+          ],
+          "source": "@kit.AbilityKit",
+          "kit": "AbilityKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 3,
+          "names": [
+            "window"
+          ],
+          "source": "@kit.ArkUI",
+          "kit": "ArkUI",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onCreate",
+        "onDestroy",
+        "onWindowStageCreate",
+        "onWindowStageDestroy",
+        "onForeground",
+        "onBackground"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 10,
+          "qualified": "this.context.getApplicationContext",
+          "base": "this",
+          "name": "getApplicationContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 12,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 14,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 18,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onDestroy"
+        },
+        {
+          "line": 23,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 27,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 30,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 36,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageDestroy"
+        },
+        {
+          "line": 41,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onForeground"
+        },
+        {
+          "line": 46,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackground"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "BackupExtensionAbility",
+            "BundleVersion"
+          ],
+          "source": "@kit.CoreFileKit",
+          "kit": "CoreFileKit",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onBackup",
+        "onRestore"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 8,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackup"
+        },
+        {
+          "line": 13,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onRestore"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+      "imports": [
+        {
+          "line": 10,
+          "names": [
+            "DotsIndicator",
+            "DotsIndicatorController",
+            "DotsOrientation",
+            "DotsGravity"
+          ],
+          "source": "viewpagerdots",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "constructor",
+        "constructor",
+        "onPageSelected",
+        "isColorLight",
+        "hexToComponent",
+        "appendLog",
+        "aboutToAppear",
+        "build",
+        "Swiper"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 108,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 110,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 111,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 125,
+          "qualified": "Stack",
+          "base": "Stack",
+          "name": "Stack",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 127,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "Swiper"
+        },
+        {
+          "line": 128,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "Swiper"
+        },
+        {
+          "line": 129,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "Swiper"
+        },
+        {
+          "line": 166,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 167,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 168,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 178,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 188,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 202,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 203,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 213,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 224,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 246,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 247,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 265,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 274,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 299,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 300,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 301,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 302,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\components\\DotsIndicator.ets",
+      "imports": [],
+      "functions": [
+        "setDotTint",
+        "setDotTintRes",
+        "setDotDrawable",
+        "build",
+        "getDotIndices",
+        "getMainAxisAlign",
+        "getCrossAxisAlignHorizontal",
+        "getCrossAxisAlignVertical",
+        "onSelectedChange",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 175,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 176,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 196,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 197,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 319,
+          "qualified": "Stack",
+          "base": "Stack",
+          "name": "Stack",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 320,
+          "qualified": "Image",
+          "base": "Image",
+          "name": "Image",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 336,
+          "qualified": "Stack",
+          "base": "Stack",
+          "name": "Stack",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 337,
+          "qualified": "Image",
+          "base": "Image",
+          "name": "Image",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 353,
+          "qualified": "Stack",
+          "base": "Stack",
+          "name": "Stack",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 354,
+          "qualified": "Circle",
+          "base": "Circle",
+          "name": "Circle",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    }
+  ],
+  "apiGraph": [
+    {
+      "api": "Button",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 168,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 178,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 188,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 203,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 213,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 224,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 247,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 265,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 274,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Circle",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\DotsIndicator.ets",
+          "line": 354,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Column",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 108,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 128,
+          "caller": "Swiper",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 166,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 300,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\DotsIndicator.ets",
+          "line": 175,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "ForEach",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 127,
+          "caller": "Swiper",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 301,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\DotsIndicator.ets",
+          "line": 176,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\DotsIndicator.ets",
+          "line": 197,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Image",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\DotsIndicator.ets",
+          "line": 320,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\DotsIndicator.ets",
+          "line": 337,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Row",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 110,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 167,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 202,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 246,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\DotsIndicator.ets",
+          "line": 196,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Scroll",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 299,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Stack",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 125,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\DotsIndicator.ets",
+          "line": 319,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\DotsIndicator.ets",
+          "line": 336,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\components\\DotsIndicator.ets",
+          "line": 353,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Text",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 111,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 129,
+          "caller": "Swiper",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 302,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "hilog.error",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 12,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 27,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 14,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 18,
+          "caller": "onDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 23,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 30,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 36,
+          "caller": "onWindowStageDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 41,
+          "caller": "onForeground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 46,
+          "caller": "onBackground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 8,
+          "caller": "onBackup",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 13,
+          "caller": "onRestore",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "this.context.getApplicationContext",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 10,
+          "caller": "onCreate",
+          "kit": null
+        }
+      ]
+    }
+  ]
+}

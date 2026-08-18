@@ -1,0 +1,166 @@
+{
+  "document": "HarmonyOS 26.0.0_Beta2 行为变更清单",
+  "apiVersion": 26,
+  "versionName": "26.0.0",
+  "baseVersion": "26.0.0",
+  "subVersion": "Beta2",
+  "releaseDate": null,
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-roadmap/changelogs-overview-pre",
+  "sourceUrl": null,
+  "totalKits": null,
+  "totalChanges": 2,
+  "kits": [],
+  "interfaceBehaviorChanges": [
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "webview.WebCookieManager",
+          "completePath": "/interface/sdk-js/api/@ohos.web.webview.static.d.ets",
+          "implementLanguage": "typeScript",
+          "interfaceName": "clearAllCookies",
+          "interfaceType": "method",
+          "invokeInstance": "",
+          "methodDefinition": "static clearAllCookies(callback: AsyncCallback<void>): void",
+          "packageName": "ohos.web.webview.static",
+          "version": "23"
+        },
+        {
+          "className": "webview.WebCookieManager",
+          "completePath": "/interface/sdk-js/api/@ohos.web.webview.static.d.ets",
+          "implementLanguage": "typeScript",
+          "interfaceName": "clearAllCookiesSync",
+          "interfaceType": "method",
+          "invokeInstance": "",
+          "methodDefinition": "static clearAllCookiesSync(incognito?: boolean): void",
+          "packageName": "ohos.web.webview.static",
+          "version": "23"
+        },
+        {
+          "className": "webview.WebCookieManager",
+          "completePath": "/interface/sdk-js/api/@ohos.web.webview.static.d.ets",
+          "implementLanguage": "typeScript",
+          "interfaceName": "clearAllCookies",
+          "interfaceType": "method",
+          "invokeInstance": "",
+          "methodDefinition": "static clearAllCookies(): Promise<void>",
+          "packageName": "ohos.web.webview.static",
+          "version": "23"
+        },
+        {
+          "className": "webview.WebCookieManager",
+          "completePath": "/interface/sdk-js/api/@ohos.web.webview.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "clearAllCookies",
+          "interfaceType": "method",
+          "invokeInstance": "",
+          "methodDefinition": "static clearAllCookies(callback: AsyncCallback<void>): void",
+          "packageName": "ohos.web.webview",
+          "version": "11"
+        },
+        {
+          "className": "webview.WebCookieManager",
+          "completePath": "/interface/sdk-js/api/@ohos.web.webview.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "clearAllCookies",
+          "interfaceType": "method",
+          "invokeInstance": "",
+          "methodDefinition": "static clearAllCookies(): Promise<void>",
+          "packageName": "ohos.web.webview",
+          "version": "11"
+        },
+        {
+          "className": "webview.WebCookieManager",
+          "completePath": "/interface/sdk-js/api/@ohos.web.webview.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "clearAllCookiesSync",
+          "interfaceType": "method",
+          "invokeInstance": "",
+          "methodDefinition": "static clearAllCookiesSync(incognito?: boolean): void",
+          "packageName": "ohos.web.webview",
+          "version": "11"
+        },
+        {
+          "className": "WebCookieManager",
+          "completePath": "/interface/sdk_cangjie/api/ArkWeb/ohos.web.webview.cj.d",
+          "implementLanguage": "cj",
+          "interfaceName": "clearAllCookies",
+          "interfaceType": "method",
+          "invokeInstance": "",
+          "methodDefinition": "public static func clearAllCookies(incognito!: Bool = false): Unit",
+          "packageName": "ohos.web.webview",
+          "version": "22"
+        },
+        {
+          "className": "webview.WebCookieManager",
+          "completePath": "/interface/sdk-js/api/@ohos.web.webview.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "clearAllCookiesSync",
+          "interfaceType": "method",
+          "invokeInstance": "",
+          "methodDefinition": "static clearAllCookiesSync(): void",
+          "packageName": "ohos.web.webview",
+          "version": "11"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "NOT_ISOLATED",
+        "apiVersion": "26.0.0",
+        "changeReasonCategory": "SOLUTION_DESIGN_ISSUES",
+        "changeTitle": "Cookie存储目录变更变",
+        "changeType": "接口行为变更",
+        "id": "CH2026051550855",
+        "sdkVersion": "7.0.0(26) Beta2",
+        "url": null
+      }
+    },
+    {
+      "isPresent": true,
+      "affectedApis": [
+        {
+          "className": "ListAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/list.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "onScrollVisibleContentChange",
+          "interfaceType": "method",
+          "invokeInstance": "",
+          "methodDefinition": "onScrollVisibleContentChange(handler: OnScrollVisibleContentChangeCallback): ListAttribute",
+          "packageName": "list",
+          "version": "12"
+        },
+        {
+          "className": "ScrollAttribute",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/scroll.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "onWillScroll",
+          "interfaceType": "method",
+          "invokeInstance": "",
+          "methodDefinition": "onWillScroll(handler: ScrollOnWillScrollCallback): ScrollAttribute",
+          "packageName": "scroll",
+          "version": "12"
+        },
+        {
+          "className": "ScrollableCommonMethod",
+          "completePath": "/interface/sdk-js/api/@internal/component/ets/common.d.ts",
+          "implementLanguage": "typeScript",
+          "interfaceName": "onWillScroll",
+          "interfaceType": "method",
+          "invokeInstance": "",
+          "methodDefinition": "onWillScroll(handler: Optional<OnWillScrollCallback>): T",
+          "packageName": "common",
+          "version": "12"
+        }
+      ],
+      "interfaceChanges": {
+        "apiEffectiveVersion": "ISOLATED",
+        "apiVersion": "26.0.0",
+        "changeReasonCategory": "IMPLEMENTATION_BUG",
+        "changeTitle": "List组件onScrollVisibleContentChange事件行为变更",
+        "changeType": "接口行为变更",
+        "id": "CH2026032364747",
+        "sdkVersion": "7.0.0(26) Beta2",
+        "url": null
+      }
+    }
+  ]
+}

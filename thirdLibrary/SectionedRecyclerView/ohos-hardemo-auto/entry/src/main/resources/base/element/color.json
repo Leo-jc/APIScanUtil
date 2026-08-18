@@ -1,0 +1,68 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "page_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "toolbar_background",
+      "value": "#3F51B5"
+    },
+    {
+      "name": "toolbar_text",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "log_background",
+      "value": "#F5F5F5"
+    },
+    {
+      "name": "log_text",
+      "value": "#212121"
+    },
+    {
+      "name": "card_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "card_border",
+      "value": "#E0E0E0"
+    },
+    {
+      "name": "card_title",
+      "value": "#212121"
+    },
+    {
+      "name": "card_desc",
+      "value": "#616161"
+    },
+    {
+      "name": "count_header_text",
+      "value": "#000000"
+    },
+    {
+      "name": "count_footer_text",
+      "value": "#000000"
+    },
+    {
+      "name": "count_item_text",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "agenda_item_text",
+      "value": "#000000"
+    },
+    {
+      "name": "agenda_item_placeholder",
+      "value": "#9E9E9E"
+    },
+    {
+      "name": "sectioned_header_text_color",
+      "value": "#9E9E9E"
+    }
+  ]
+}

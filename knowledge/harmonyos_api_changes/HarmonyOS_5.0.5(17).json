@@ -1,0 +1,1923 @@
+{
+  "document": "HarmonyOS 5.0.5(17) API变更清单",
+  "apiVersion": 17,
+  "versionName": "5.0.5(17)",
+  "baseVersion": "5.0.5(17)",
+  "subVersion": "5.0.5(17)",
+  "releaseDate": "2025/05/14",
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-505-release",
+  "sourceUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/apidiff-505-beta1",
+  "totalKits": 13,
+  "totalChanges": 101,
+  "kits": [
+    {
+      "name": "Ability Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-abilitykit-5051",
+      "changeCount": 5,
+      "changes": [
+        {
+          "operation": "类新增可选成员",
+          "className": "StartOptions",
+          "apiDeclaration": "minWindowWidth?: number;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "StartOptions",
+            "apiDeclaration": "minWindowWidth?: number;",
+            "diffContent": "minWindowWidth?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.app.ability.StartOptions.d.ts"
+        },
+        {
+          "operation": "类新增可选成员",
+          "className": "StartOptions",
+          "apiDeclaration": "minWindowHeight?: number;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "StartOptions",
+            "apiDeclaration": "minWindowHeight?: number;",
+            "diffContent": "minWindowHeight?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.app.ability.StartOptions.d.ts"
+        },
+        {
+          "operation": "类新增可选成员",
+          "className": "StartOptions",
+          "apiDeclaration": "maxWindowWidth?: number;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "StartOptions",
+            "apiDeclaration": "maxWindowWidth?: number;",
+            "diffContent": "maxWindowWidth?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.app.ability.StartOptions.d.ts"
+        },
+        {
+          "operation": "类新增可选成员",
+          "className": "StartOptions",
+          "apiDeclaration": "maxWindowHeight?: number;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "StartOptions",
+            "apiDeclaration": "maxWindowHeight?: number;",
+            "diffContent": "maxWindowHeight?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.app.ability.StartOptions.d.ts"
+        },
+        {
+          "operation": "类新增必选属性或非同名方法",
+          "className": "UIAbilityContext",
+          "apiDeclaration": "revokeDelegator(): Promise<void>;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "UIAbilityContext",
+            "apiDeclaration": "revokeDelegator(): Promise<void>;",
+            "diffContent": "revokeDelegator(): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/application/UIAbilityContext.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "ArkData",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkdata-5051",
+      "changeCount": 5,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "relationalStore",
+          "apiDeclaration": "enum Tokenizer",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "relationalStore",
+            "apiDeclaration": "enum Tokenizer",
+            "diffContent": "enum Tokenizer",
+            "raw": null
+          },
+          "file": "api/@ohos.data.relationalStore.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Tokenizer",
+          "apiDeclaration": "NONE_TOKENIZER = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Tokenizer",
+            "apiDeclaration": "NONE_TOKENIZER = 0",
+            "diffContent": "NONE_TOKENIZER = 0",
+            "raw": null
+          },
+          "file": "api/@ohos.data.relationalStore.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Tokenizer",
+          "apiDeclaration": "ICU_TOKENIZER",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Tokenizer",
+            "apiDeclaration": "ICU_TOKENIZER",
+            "diffContent": "ICU_TOKENIZER",
+            "raw": null
+          },
+          "file": "api/@ohos.data.relationalStore.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "unifiedDataChannel",
+          "apiDeclaration": "function convertRecordsToEntries(data: UnifiedData): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "unifiedDataChannel",
+            "apiDeclaration": "function convertRecordsToEntries(data: UnifiedData): void;",
+            "diffContent": "function convertRecordsToEntries(data: UnifiedData): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.unifiedDataChannel.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "StoreConfig",
+          "apiDeclaration": "tokenizer?: Tokenizer;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "StoreConfig",
+            "apiDeclaration": "tokenizer?: Tokenizer;",
+            "diffContent": "tokenizer?: Tokenizer;",
+            "raw": null
+          },
+          "file": "api/@ohos.data.relationalStore.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "ArkUI",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkui-5051",
+      "changeCount": 46,
+      "changes": [
+        {
+          "operation": "删除错误码",
+          "className": "window",
+          "apiDeclaration": "function createWindow(config: Configuration, callback: AsyncCallback<Window>): void;",
+          "old": {
+            "className": "window",
+            "apiDeclaration": "function createWindow(config: Configuration, callback: AsyncCallback<Window>): void;",
+            "diffContent": "1300008",
+            "raw": null
+          },
+          "new": {
+            "className": "window",
+            "apiDeclaration": "function createWindow(config: Configuration, callback: AsyncCallback<Window>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "window",
+          "apiDeclaration": "function createWindow(config: Configuration): Promise<Window>;",
+          "old": {
+            "className": "window",
+            "apiDeclaration": "function createWindow(config: Configuration): Promise<Window>;",
+            "diffContent": "1300008",
+            "raw": null
+          },
+          "new": {
+            "className": "window",
+            "apiDeclaration": "function createWindow(config: Configuration): Promise<Window>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "函数变更",
+          "className": "SwiperController",
+          "apiDeclaration": "changeIndex(index: number, animationMode?: SwiperAnimationMode | boolean);",
+          "old": {
+            "className": "SwiperController",
+            "apiDeclaration": "changeIndex(index: number, animationMode: SwiperAnimationMode | boolean);",
+            "diffContent": "animationMode: SwiperAnimationMode | boolean",
+            "raw": null
+          },
+          "new": {
+            "className": "SwiperController",
+            "apiDeclaration": "changeIndex(index: number, animationMode?: SwiperAnimationMode | boolean);",
+            "diffContent": "animationMode?: SwiperAnimationMode | boolean",
+            "raw": null
+          },
+          "file": "component/swiper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "NavDestinationState",
+          "apiDeclaration": "ON_ACTIVE = 8",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "NavDestinationState",
+            "apiDeclaration": "ON_ACTIVE = 8",
+            "diffContent": "ON_ACTIVE = 8",
+            "raw": null
+          },
+          "file": "api/@ohos.arkui.observer.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "NavDestinationState",
+          "apiDeclaration": "ON_INACTIVE = 9",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "NavDestinationState",
+            "apiDeclaration": "ON_INACTIVE = 9",
+            "diffContent": "ON_INACTIVE = 9",
+            "raw": null
+          },
+          "file": "api/@ohos.arkui.observer.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare interface AxisEvent",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare interface AxisEvent",
+            "diffContent": "declare interface AxisEvent",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisEvent",
+          "apiDeclaration": "action: AxisAction;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisEvent",
+            "apiDeclaration": "action: AxisAction;",
+            "diffContent": "action: AxisAction;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisEvent",
+          "apiDeclaration": "displayX: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisEvent",
+            "apiDeclaration": "displayX: number;",
+            "diffContent": "displayX: number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisEvent",
+          "apiDeclaration": "displayY: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisEvent",
+            "apiDeclaration": "displayY: number;",
+            "diffContent": "displayY: number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisEvent",
+          "apiDeclaration": "windowX: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisEvent",
+            "apiDeclaration": "windowX: number;",
+            "diffContent": "windowX: number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisEvent",
+          "apiDeclaration": "windowY: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisEvent",
+            "apiDeclaration": "windowY: number;",
+            "diffContent": "windowY: number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisEvent",
+          "apiDeclaration": "x: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisEvent",
+            "apiDeclaration": "x: number;",
+            "diffContent": "x: number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisEvent",
+          "apiDeclaration": "y: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisEvent",
+            "apiDeclaration": "y: number;",
+            "diffContent": "y: number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisEvent",
+          "apiDeclaration": "scrollStep?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisEvent",
+            "apiDeclaration": "scrollStep?: number;",
+            "diffContent": "scrollStep?: number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisEvent",
+          "apiDeclaration": "propagation: Callback<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisEvent",
+            "apiDeclaration": "propagation: Callback<void>;",
+            "diffContent": "propagation: Callback<void>;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisEvent",
+          "apiDeclaration": "getHorizontalAxisValue(): number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisEvent",
+            "apiDeclaration": "getHorizontalAxisValue(): number;",
+            "diffContent": "getHorizontalAxisValue(): number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisEvent",
+          "apiDeclaration": "getVerticalAxisValue(): number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisEvent",
+            "apiDeclaration": "getVerticalAxisValue(): number;",
+            "diffContent": "getVerticalAxisValue(): number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare enum AxisAction",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare enum AxisAction",
+            "diffContent": "declare enum AxisAction",
+            "raw": null
+          },
+          "file": "component/enums.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisAction",
+          "apiDeclaration": "NONE = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisAction",
+            "apiDeclaration": "NONE = 0",
+            "diffContent": "NONE = 0",
+            "raw": null
+          },
+          "file": "component/enums.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisAction",
+          "apiDeclaration": "BEGIN = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisAction",
+            "apiDeclaration": "BEGIN = 1",
+            "diffContent": "BEGIN = 1",
+            "raw": null
+          },
+          "file": "component/enums.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisAction",
+          "apiDeclaration": "UPDATE = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisAction",
+            "apiDeclaration": "UPDATE = 2",
+            "diffContent": "UPDATE = 2",
+            "raw": null
+          },
+          "file": "component/enums.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisAction",
+          "apiDeclaration": "END = 3",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisAction",
+            "apiDeclaration": "END = 3",
+            "diffContent": "END = 3",
+            "raw": null
+          },
+          "file": "component/enums.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AxisAction",
+          "apiDeclaration": "CANCEL = 4",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AxisAction",
+            "apiDeclaration": "CANCEL = 4",
+            "diffContent": "CANCEL = 4",
+            "raw": null
+          },
+          "file": "component/enums.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare enum NavDestinationActiveReason",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare enum NavDestinationActiveReason",
+            "diffContent": "declare enum NavDestinationActiveReason",
+            "raw": null
+          },
+          "file": "component/nav_destination.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "NavDestinationActiveReason",
+          "apiDeclaration": "TRANSITION = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "NavDestinationActiveReason",
+            "apiDeclaration": "TRANSITION = 0",
+            "diffContent": "TRANSITION = 0",
+            "raw": null
+          },
+          "file": "component/nav_destination.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "NavDestinationActiveReason",
+          "apiDeclaration": "CONTENT_COVER = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "NavDestinationActiveReason",
+            "apiDeclaration": "CONTENT_COVER = 1",
+            "diffContent": "CONTENT_COVER = 1",
+            "raw": null
+          },
+          "file": "component/nav_destination.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "NavDestinationActiveReason",
+          "apiDeclaration": "SHEET = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "NavDestinationActiveReason",
+            "apiDeclaration": "SHEET = 2",
+            "diffContent": "SHEET = 2",
+            "raw": null
+          },
+          "file": "component/nav_destination.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "NavDestinationActiveReason",
+          "apiDeclaration": "DIALOG = 3",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "NavDestinationActiveReason",
+            "apiDeclaration": "DIALOG = 3",
+            "diffContent": "DIALOG = 3",
+            "raw": null
+          },
+          "file": "component/nav_destination.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "NavDestinationActiveReason",
+          "apiDeclaration": "OVERLAY = 4",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "NavDestinationActiveReason",
+            "apiDeclaration": "OVERLAY = 4",
+            "diffContent": "OVERLAY = 4",
+            "raw": null
+          },
+          "file": "component/nav_destination.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "NavDestinationActiveReason",
+          "apiDeclaration": "APP_STATE = 5",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "NavDestinationActiveReason",
+            "apiDeclaration": "APP_STATE = 5",
+            "diffContent": "APP_STATE = 5",
+            "raw": null
+          },
+          "file": "component/nav_destination.d.ts"
+        },
+        {
+          "operation": "类新增必选属性或非同名方法",
+          "className": "UIContext",
+          "apiDeclaration": "static createUIContextWithoutWindow(context: common.UIAbilityContext | common.ExtensionContext): UIContext | undefined;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "UIContext",
+            "apiDeclaration": "static createUIContextWithoutWindow(context: common.UIAbilityContext | common.ExtensionContext): UIContext | undefined;",
+            "diffContent": "static createUIContextWithoutWindow(context: common.UIAbilityContext | common.ExtensionContext): UIContext | undefined;",
+            "raw": null
+          },
+          "file": "api/@ohos.arkui.UIContext.d.ts"
+        },
+        {
+          "operation": "类新增必选属性或非同名方法",
+          "className": "UIContext",
+          "apiDeclaration": "static destroyUIContextWithoutWindow(): void;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "UIContext",
+            "apiDeclaration": "static destroyUIContextWithoutWindow(): void;",
+            "diffContent": "static destroyUIContextWithoutWindow(): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.arkui.UIContext.d.ts"
+        },
+        {
+          "operation": "类新增必选属性或非同名方法",
+          "className": "CommonMethod",
+          "apiDeclaration": "onAxisEvent(event: Callback<AxisEvent>): T;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "CommonMethod",
+            "apiDeclaration": "onAxisEvent(event: Callback<AxisEvent>): T;",
+            "diffContent": "onAxisEvent(event: Callback<AxisEvent>): T;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "类新增必选属性或非同名方法",
+          "className": "CommonMethod",
+          "apiDeclaration": "onVisibleAreaApproximateChange(options: VisibleAreaEventOptions, event: VisibleAreaChangeCallback | undefined): void;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "CommonMethod",
+            "apiDeclaration": "onVisibleAreaApproximateChange(options: VisibleAreaEventOptions, event: VisibleAreaChangeCallback | undefined): void;",
+            "diffContent": "onVisibleAreaApproximateChange(options: VisibleAreaEventOptions, event: VisibleAreaChangeCallback | undefined): void;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "类新增必选属性或非同名方法",
+          "className": "TextContentControllerBase",
+          "apiDeclaration": "clearPreviewText(): void;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "TextContentControllerBase",
+            "apiDeclaration": "clearPreviewText(): void;",
+            "diffContent": "clearPreviewText(): void;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "类新增必选属性或非同名方法",
+          "className": "ImageAnimatorAttribute",
+          "apiDeclaration": "monitorInvisibleArea(monitorInvisibleArea: boolean): ImageAnimatorAttribute;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "ImageAnimatorAttribute",
+            "apiDeclaration": "monitorInvisibleArea(monitorInvisibleArea: boolean): ImageAnimatorAttribute;",
+            "diffContent": "monitorInvisibleArea(monitorInvisibleArea: boolean): ImageAnimatorAttribute;",
+            "raw": null
+          },
+          "file": "component/image_animator.d.ts"
+        },
+        {
+          "operation": "类新增必选属性或非同名方法",
+          "className": "NavDestinationAttribute",
+          "apiDeclaration": "onActive(callback: Optional<Callback<NavDestinationActiveReason>>): NavDestinationAttribute;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "NavDestinationAttribute",
+            "apiDeclaration": "onActive(callback: Optional<Callback<NavDestinationActiveReason>>): NavDestinationAttribute;",
+            "diffContent": "onActive(callback: Optional<Callback<NavDestinationActiveReason>>): NavDestinationAttribute;",
+            "raw": null
+          },
+          "file": "component/nav_destination.d.ts"
+        },
+        {
+          "operation": "类新增必选属性或非同名方法",
+          "className": "NavDestinationAttribute",
+          "apiDeclaration": "onInactive(callback: Optional<Callback<NavDestinationActiveReason>>): NavDestinationAttribute;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "NavDestinationAttribute",
+            "apiDeclaration": "onInactive(callback: Optional<Callback<NavDestinationActiveReason>>): NavDestinationAttribute;",
+            "diffContent": "onInactive(callback: Optional<Callback<NavDestinationActiveReason>>): NavDestinationAttribute;",
+            "raw": null
+          },
+          "file": "component/nav_destination.d.ts"
+        },
+        {
+          "operation": "接口新增可选或必选方法",
+          "className": "Window",
+          "apiDeclaration": "setFollowParentWindowLayoutEnabled(enabled: boolean): Promise<void>;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "setFollowParentWindowLayoutEnabled(enabled: boolean): Promise<void>;",
+            "diffContent": "setFollowParentWindowLayoutEnabled(enabled: boolean): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "接口新增可选或必选方法",
+          "className": "Window",
+          "apiDeclaration": "setWindowShadowRadius(radius: number): void;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "setWindowShadowRadius(radius: number): void;",
+            "diffContent": "setWindowShadowRadius(radius: number): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "接口新增可选或必选方法",
+          "className": "Window",
+          "apiDeclaration": "setWindowCornerRadius(cornerRadius: number): Promise<void>;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "setWindowCornerRadius(cornerRadius: number): Promise<void>;",
+            "diffContent": "setWindowCornerRadius(cornerRadius: number): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "接口新增可选或必选方法",
+          "className": "Window",
+          "apiDeclaration": "getWindowCornerRadius(): number;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "getWindowCornerRadius(): number;",
+            "diffContent": "getWindowCornerRadius(): number;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "接口新增可选或必选方法",
+          "className": "Window",
+          "apiDeclaration": "setFollowParentMultiScreenPolicy(enabled: boolean): Promise<void>;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "Window",
+            "apiDeclaration": "setFollowParentMultiScreenPolicy(enabled: boolean): Promise<void>;",
+            "diffContent": "setFollowParentMultiScreenPolicy(enabled: boolean): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "PiPConfiguration",
+          "apiDeclaration": "localStorage?: LocalStorage;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "PiPConfiguration",
+            "apiDeclaration": "localStorage?: LocalStorage;",
+            "diffContent": "localStorage?: LocalStorage;",
+            "raw": null
+          },
+          "file": "api/@ohos.PiPWindow.d.ts"
+        },
+        {
+          "operation": "接口新增可选属性",
+          "className": "BaseEvent",
+          "apiDeclaration": "rollAngle?: number;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "BaseEvent",
+            "apiDeclaration": "rollAngle?: number;",
+            "diffContent": "rollAngle?: number;",
+            "raw": null
+          },
+          "file": "component/common.d.ts"
+        },
+        {
+          "operation": "接口新增同名方法且参数类型与已有的参数类型范围是包含关系",
+          "className": "WindowStage",
+          "apiDeclaration": "setWindowRectAutoSave(enabled: boolean, isSaveBySpecifiedFlag: boolean): Promise<void>;",
+          "old": {
+            "className": "WindowStage",
+            "apiDeclaration": "setWindowRectAutoSave(enabled: boolean): Promise<void>;",
+            "diffContent": "setWindowRectAutoSave(enabled: boolean): Promise<void>;",
+            "raw": null
+          },
+          "new": {
+            "className": "WindowStage",
+            "apiDeclaration": "setWindowRectAutoSave(enabled: boolean, isSaveBySpecifiedFlag: boolean): Promise<void>;",
+            "diffContent": "setWindowRectAutoSave(enabled: boolean, isSaveBySpecifiedFlag: boolean): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.window.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "AVSession Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-avsessionkit-5051",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "接口新增可选属性",
+          "className": "AVMetadata",
+          "apiDeclaration": "singleLyricText?: string;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "AVMetadata",
+            "apiDeclaration": "singleLyricText?: string;",
+            "diffContent": "singleLyricText?: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.avsession.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Background Tasks Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-backgroundtaskskit-5051",
+      "changeCount": 7,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare namespace backgroundProcessManager",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare namespace backgroundProcessManager",
+            "diffContent": "declare namespace backgroundProcessManager",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundProcessManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "backgroundProcessManager",
+          "apiDeclaration": "export enum ProcessPriority",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "backgroundProcessManager",
+            "apiDeclaration": "export enum ProcessPriority",
+            "diffContent": "export enum ProcessPriority",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundProcessManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ProcessPriority",
+          "apiDeclaration": "PROCESS_BACKGROUND = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ProcessPriority",
+            "apiDeclaration": "PROCESS_BACKGROUND = 1",
+            "diffContent": "PROCESS_BACKGROUND = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundProcessManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ProcessPriority",
+          "apiDeclaration": "PROCESS_INACTIVE = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ProcessPriority",
+            "apiDeclaration": "PROCESS_INACTIVE = 2",
+            "diffContent": "PROCESS_INACTIVE = 2",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundProcessManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "backgroundProcessManager",
+          "apiDeclaration": "function setProcessPriority(pid: number, priority: ProcessPriority): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "backgroundProcessManager",
+            "apiDeclaration": "function setProcessPriority(pid: number, priority: ProcessPriority): Promise<void>;",
+            "diffContent": "function setProcessPriority(pid: number, priority: ProcessPriority): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundProcessManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "backgroundProcessManager",
+          "apiDeclaration": "function resetProcessPriority(pid: number): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "backgroundProcessManager",
+            "apiDeclaration": "function resetProcessPriority(pid: number): Promise<void>;",
+            "diffContent": "function resetProcessPriority(pid: number): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundProcessManager.d.ts"
+        },
+        {
+          "operation": "新增kit",
+          "className": "global",
+          "apiDeclaration": "api@ohos.resourceschedule.backgroundProcessManager.d.ts",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "api@ohos.resourceschedule.backgroundProcessManager.d.ts",
+            "diffContent": "BackgroundTasksKit",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundProcessManager.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Connectivity Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-connectivitykit-5051",
+      "changeCount": 4,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "socket",
+          "apiDeclaration": "function getDeviceId(clientSocket: number): string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "socket",
+            "apiDeclaration": "function getDeviceId(clientSocket: number): string;",
+            "diffContent": "function getDeviceId(clientSocket: number): string;",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.socket.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "opp",
+          "apiDeclaration": "function createOppServerProfile(): OppServerProfile;",
+          "old": {
+            "className": "opp",
+            "apiDeclaration": "function createOppServerProfile(): OppServerProfile;",
+            "diffContent": "function createOppServerProfile(): OppServerProfile;",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.opp.d.ts"
+        },
+        {
+          "operation": "起始版本有变化",
+          "className": "global",
+          "apiDeclaration": "declare namespace opp",
+          "old": {
+            "className": "global",
+            "apiDeclaration": "declare namespace opp",
+            "diffContent": "15",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare namespace opp",
+            "diffContent": "16",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.opp.d.ts"
+        },
+        {
+          "operation": "起始版本有变化",
+          "className": "opp",
+          "apiDeclaration": "interface OppServerProfile",
+          "old": {
+            "className": "opp",
+            "apiDeclaration": "interface OppServerProfile",
+            "diffContent": "15",
+            "raw": null
+          },
+          "new": {
+            "className": "opp",
+            "apiDeclaration": "interface OppServerProfile",
+            "diffContent": "16",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.opp.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "File Manager Service Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-filemanagerservicekit-5051",
+      "changeCount": 6,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare namespace fileManagerService",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare namespace fileManagerService",
+            "diffContent": "declare namespace fileManagerService",
+            "raw": null
+          },
+          "file": "api/@hms.filemanagement.fileManagerService.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "fileManagerService",
+          "apiDeclaration": "function deleteToTrash(uri: string): Promise<string>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "fileManagerService",
+            "apiDeclaration": "function deleteToTrash(uri: string): Promise<string>;",
+            "diffContent": "function deleteToTrash(uri: string): Promise<string>;",
+            "raw": null
+          },
+          "file": "api/@hms.filemanagement.fileManagerService.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "fileManagerService",
+          "apiDeclaration": "function getFileIconSync(fileType: string): string | Resource;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "fileManagerService",
+            "apiDeclaration": "function getFileIconSync(fileType: string): string | Resource;",
+            "diffContent": "function getFileIconSync(fileType: string): string | Resource;",
+            "raw": null
+          },
+          "file": "api/@hms.filemanagement.fileManagerService.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "fileManagerService",
+          "apiDeclaration": "function getFileIcon(fileType: string): Promise<string | Resource>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "fileManagerService",
+            "apiDeclaration": "function getFileIcon(fileType: string): Promise<string | Resource>;",
+            "diffContent": "function getFileIcon(fileType: string): Promise<string | Resource>;",
+            "raw": null
+          },
+          "file": "api/@hms.filemanagement.fileManagerService.d.ts"
+        },
+        {
+          "operation": "新增kit",
+          "className": "global",
+          "apiDeclaration": "api@hms.filemanagement.fileManagerService.d.ts",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "api@hms.filemanagement.fileManagerService.d.ts",
+            "diffContent": "FileManagerServiceKit",
+            "raw": null
+          },
+          "file": "api/@hms.filemanagement.fileManagerService.d.ts"
+        },
+        {
+          "operation": "新增kit",
+          "className": "global",
+          "apiDeclaration": "kits@kit.FileManagerServiceKit.d.ts",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "kits@kit.FileManagerServiceKit.d.ts",
+            "diffContent": "FileManagerServiceKit",
+            "raw": null
+          },
+          "file": "kits/@kit.FileManagerServiceKit.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "IAP Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-iapkit-5051",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "OfferPaymentMode",
+          "apiDeclaration": "SINGLE_PROMOTION = 5",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "OfferPaymentMode",
+            "apiDeclaration": "SINGLE_PROMOTION = 5",
+            "diffContent": "SINGLE_PROMOTION = 5",
+            "raw": null
+          },
+          "file": "api/@hms.core.iap.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "IME Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-imekit-5051",
+      "changeCount": 5,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "inputMethod",
+          "apiDeclaration": "export type SetPreviewTextCallback = (text: string, range: Range) => void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "inputMethod",
+            "apiDeclaration": "export type SetPreviewTextCallback = (text: string, range: Range) => void;",
+            "diffContent": "export type SetPreviewTextCallback = (text: string, range: Range) => void;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        },
+        {
+          "operation": "接口新增可选或必选方法",
+          "className": "InputMethodController",
+          "apiDeclaration": "on(type: 'setPreviewText', callback: SetPreviewTextCallback): void;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "InputMethodController",
+            "apiDeclaration": "on(type: 'setPreviewText', callback: SetPreviewTextCallback): void;",
+            "diffContent": "on(type: 'setPreviewText', callback: SetPreviewTextCallback): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        },
+        {
+          "operation": "接口新增可选或必选方法",
+          "className": "InputMethodController",
+          "apiDeclaration": "off(type: 'setPreviewText', callback?: SetPreviewTextCallback): void;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "InputMethodController",
+            "apiDeclaration": "off(type: 'setPreviewText', callback?: SetPreviewTextCallback): void;",
+            "diffContent": "off(type: 'setPreviewText', callback?: SetPreviewTextCallback): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        },
+        {
+          "operation": "接口新增可选或必选方法",
+          "className": "InputMethodController",
+          "apiDeclaration": "on(type: 'finishTextPreview', callback: Callback<void>): void;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "InputMethodController",
+            "apiDeclaration": "on(type: 'finishTextPreview', callback: Callback<void>): void;",
+            "diffContent": "on(type: 'finishTextPreview', callback: Callback<void>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        },
+        {
+          "operation": "接口新增可选或必选方法",
+          "className": "InputMethodController",
+          "apiDeclaration": "off(type: 'finishTextPreview', callback?: Callback<void>): void;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "InputMethodController",
+            "apiDeclaration": "off(type: 'finishTextPreview', callback?: Callback<void>): void;",
+            "diffContent": "off(type: 'finishTextPreview', callback?: Callback<void>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.inputMethod.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Media Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-mediakit-5051",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "接口新增可选属性",
+          "className": "PlaybackStrategy",
+          "apiDeclaration": "showFirstFrameOnPrepare?: boolean;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "PlaybackStrategy",
+            "apiDeclaration": "showFirstFrameOnPrepare?: boolean;",
+            "diffContent": "showFirstFrameOnPrepare?: boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.media.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Payment Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-paymentkit-5051",
+      "changeCount": 4,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "paymentService",
+          "apiDeclaration": "interface BindCardResult",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "paymentService",
+            "apiDeclaration": "interface BindCardResult",
+            "diffContent": "interface BindCardResult",
+            "raw": null
+          },
+          "file": "api/@hms.core.payment.paymentService.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BindCardResult",
+          "apiDeclaration": "hasBankCard: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BindCardResult",
+            "apiDeclaration": "hasBankCard: boolean;",
+            "diffContent": "hasBankCard: boolean;",
+            "raw": null
+          },
+          "file": "api/@hms.core.payment.paymentService.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BindCardResult",
+          "apiDeclaration": "hasJustBoundCard?: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BindCardResult",
+            "apiDeclaration": "hasJustBoundCard?: boolean;",
+            "diffContent": "hasJustBoundCard?: boolean;",
+            "raw": null
+          },
+          "file": "api/@hms.core.payment.paymentService.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "paymentService",
+          "apiDeclaration": "function requestBindCard(context: common.UIAbilityContext | common.UIExtensionContext): Promise<BindCardResult>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "paymentService",
+            "apiDeclaration": "function requestBindCard(context: common.UIAbilityContext | common.UIExtensionContext): Promise<BindCardResult>;",
+            "diffContent": "function requestBindCard(context: common.UIAbilityContext | common.UIExtensionContext): Promise<BindCardResult>;",
+            "raw": null
+          },
+          "file": "api/@hms.core.payment.paymentService.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "PDF Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-pdfkit-5051",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "类新增必选属性或非同名方法",
+          "className": "PdfDocument",
+          "apiDeclaration": "setPdfPassword(password: string): boolean;",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "PdfDocument",
+            "apiDeclaration": "setPdfPassword(password: string): boolean;",
+            "diffContent": "setPdfPassword(password: string): boolean;",
+            "raw": null
+          },
+          "file": "api/@hms.officeservice.pdfservice.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Preview Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-previewkit-5051",
+      "changeCount": 15,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare namespace openFileBoost",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare namespace openFileBoost",
+            "diffContent": "declare namespace openFileBoost",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "openFileBoost",
+          "apiDeclaration": "export enum FilePreloadState",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "openFileBoost",
+            "apiDeclaration": "export enum FilePreloadState",
+            "diffContent": "export enum FilePreloadState",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FilePreloadState",
+          "apiDeclaration": "NOT_PRELOADED = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FilePreloadState",
+            "apiDeclaration": "NOT_PRELOADED = 0",
+            "diffContent": "NOT_PRELOADED = 0",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FilePreloadState",
+          "apiDeclaration": "PRELOADING = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FilePreloadState",
+            "apiDeclaration": "PRELOADING = 1",
+            "diffContent": "PRELOADING = 1",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FilePreloadState",
+          "apiDeclaration": "PRELOADED = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FilePreloadState",
+            "apiDeclaration": "PRELOADED = 2",
+            "diffContent": "PRELOADED = 2",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "openFileBoost",
+          "apiDeclaration": "export interface FilePreloadStatusInfo",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "openFileBoost",
+            "apiDeclaration": "export interface FilePreloadStatusInfo",
+            "diffContent": "export interface FilePreloadStatusInfo",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FilePreloadStatusInfo",
+          "apiDeclaration": "sandboxPath: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FilePreloadStatusInfo",
+            "apiDeclaration": "sandboxPath: string;",
+            "diffContent": "sandboxPath: string;",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FilePreloadStatusInfo",
+          "apiDeclaration": "progress: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FilePreloadStatusInfo",
+            "apiDeclaration": "progress: number;",
+            "diffContent": "progress: number;",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FilePreloadStatusInfo",
+          "apiDeclaration": "state: FilePreloadState;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FilePreloadStatusInfo",
+            "apiDeclaration": "state: FilePreloadState;",
+            "diffContent": "state: FilePreloadState;",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "openFileBoost",
+          "apiDeclaration": "function on(type: 'filePreloadStateChanged', callback: Callback<FilePreloadStatusInfo>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "openFileBoost",
+            "apiDeclaration": "function on(type: 'filePreloadStateChanged', callback: Callback<FilePreloadStatusInfo>): void;",
+            "diffContent": "function on(type: 'filePreloadStateChanged', callback: Callback<FilePreloadStatusInfo>): void;",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "openFileBoost",
+          "apiDeclaration": "function off(type: 'filePreloadStateChanged', callback?: Callback<FilePreloadStatusInfo>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "openFileBoost",
+            "apiDeclaration": "function off(type: 'filePreloadStateChanged', callback?: Callback<FilePreloadStatusInfo>): void;",
+            "diffContent": "function off(type: 'filePreloadStateChanged', callback?: Callback<FilePreloadStatusInfo>): void;",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "openFileBoost",
+          "apiDeclaration": "function addFile(file: string): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "openFileBoost",
+            "apiDeclaration": "function addFile(file: string): void;",
+            "diffContent": "function addFile(file: string): void;",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "openFileBoost",
+          "apiDeclaration": "function removeFile(file: string): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "openFileBoost",
+            "apiDeclaration": "function removeFile(file: string): void;",
+            "diffContent": "function removeFile(file: string): void;",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "openFileBoost",
+          "apiDeclaration": "function queryFilePreloadStatusInfo(file: string): FilePreloadStatusInfo;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "openFileBoost",
+            "apiDeclaration": "function queryFilePreloadStatusInfo(file: string): FilePreloadStatusInfo;",
+            "diffContent": "function queryFilePreloadStatusInfo(file: string): FilePreloadStatusInfo;",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        },
+        {
+          "operation": "新增kit",
+          "className": "global",
+          "apiDeclaration": "api@hms.pcService.openFileBoost.d.ts",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "api@hms.pcService.openFileBoost.d.ts",
+            "diffContent": "PreviewKit",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.openFileBoost.d.ts"
+        }
+      ]
+    }
+  ]
+}

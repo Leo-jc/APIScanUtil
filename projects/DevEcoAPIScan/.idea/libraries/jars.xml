@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="jars">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jars/CodeChat.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/ohos-resource-26.0.0.621.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/project-api-change-assistant-26.0.0.621.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

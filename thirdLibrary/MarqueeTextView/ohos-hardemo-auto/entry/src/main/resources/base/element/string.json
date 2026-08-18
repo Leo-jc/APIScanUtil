@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "MarqueeTextView 演示模块"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "走马灯横向滚动文本演示"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "MarqueeTextView"
+    }
+  ]
+}

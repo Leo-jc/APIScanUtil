@@ -1,0 +1,11 @@
+{
+  "modelVersion": "6.0.2",
+  "description": "FluidLayout HarmonyOS Demo.",
+  "dependencies": {
+    "fluidlayout": "file:../ohos_library"
+  },
+  "devDependencies": {
+    "@ohos/hypium": "1.0.25",
+    "@ohos/hamock": "1.0.0"
+  }
+}

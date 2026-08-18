@@ -1,0 +1,1002 @@
+{
+  "title": "HarmonyOS API 调用图谱",
+  "summary": {
+    "filesAnalyzed": 5,
+    "systemApis": 11,
+    "systemApiCallSites": 48
+  },
+  "files": [
+    {
+      "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "AbilityConstant",
+            "ConfigurationConstant",
+            "UIAbility",
+            "Want"
+          ],
+          "source": "@kit.AbilityKit",
+          "kit": "AbilityKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 3,
+          "names": [
+            "window"
+          ],
+          "source": "@kit.ArkUI",
+          "kit": "ArkUI",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onCreate",
+        "onDestroy",
+        "onWindowStageCreate",
+        "onWindowStageDestroy",
+        "onForeground",
+        "onBackground"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 10,
+          "qualified": "this.context.getApplicationContext",
+          "base": "this",
+          "name": "getApplicationContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 12,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 14,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 18,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onDestroy"
+        },
+        {
+          "line": 23,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 27,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 30,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 36,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageDestroy"
+        },
+        {
+          "line": 41,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onForeground"
+        },
+        {
+          "line": 46,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackground"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "BackupExtensionAbility",
+            "BundleVersion"
+          ],
+          "source": "@kit.CoreFileKit",
+          "kit": "CoreFileKit",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onBackup",
+        "onRestore"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 8,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackup"
+        },
+        {
+          "line": 13,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onRestore"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "CheckerboardDrawable",
+            "argbToHex",
+            "SimpleColorFilter",
+            "ColorFilter",
+            "CheckerboardBackground"
+          ],
+          "source": "checkerboarddrawable",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "onConfigChanged",
+        "buildDrawable",
+        "redraw",
+        "appendLog",
+        "applyDefaults",
+        "applyDemoConfig",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 146,
+          "qualified": "Stack",
+          "base": "Stack",
+          "name": "Stack",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 157,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 159,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 160,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 171,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 172,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 174,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 179,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 185,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 186,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 189,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 197,
+          "qualified": "Slider",
+          "base": "Slider",
+          "name": "Slider",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 204,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 205,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 208,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 216,
+          "qualified": "Slider",
+          "base": "Slider",
+          "name": "Slider",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 223,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 228,
+          "qualified": "Flex",
+          "base": "Flex",
+          "name": "Flex",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 229,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 230,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 231,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 250,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 255,
+          "qualified": "Flex",
+          "base": "Flex",
+          "name": "Flex",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 256,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 257,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 258,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 277,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 282,
+          "qualified": "Flex",
+          "base": "Flex",
+          "name": "Flex",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 283,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 284,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 306,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 324,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 325,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 337,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 354,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 359,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\CheckerboardDrawable.ets",
+      "imports": [],
+      "functions": [
+        "toHex2",
+        "argbToHex",
+        "constructor",
+        "toFilterString",
+        "size",
+        "colorOdd",
+        "colorEven",
+        "getSize",
+        "getColorOdd",
+        "getColorEven",
+        "build",
+        "constructor",
+        "create",
+        "Builder",
+        "getSize",
+        "getColorOdd",
+        "getColorEven",
+        "getAlpha",
+        "getOpacity",
+        "setAlpha",
+        "setColorFilter",
+        "getColorFilter",
+        "draw"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\components\\CheckerboardBackground.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "CheckerboardDrawable",
+            "CheckerboardDrawableBuilder",
+            "SimpleColorFilter"
+          ],
+          "source": "../CheckerboardDrawable",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "onConfigChanged",
+        "build",
+        "redraw"
+      ],
+      "systemApiCalls": []
+    }
+  ],
+  "apiGraph": [
+    {
+      "api": "Column",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 157,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 159,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 172,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 230,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 257,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Flex",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 228,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 255,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 282,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "ForEach",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 229,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 256,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 283,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Row",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 185,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 204,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 324,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Scroll",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 171,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Slider",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 197,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 216,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Stack",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 146,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Text",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 160,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 174,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 179,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 186,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 189,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 205,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 208,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 223,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 231,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 250,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 258,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 277,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 284,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 306,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 325,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 337,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 354,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 359,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "hilog.error",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 12,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 27,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 14,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 18,
+          "caller": "onDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 23,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 30,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 36,
+          "caller": "onWindowStageDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 41,
+          "caller": "onForeground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 46,
+          "caller": "onBackground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 8,
+          "caller": "onBackup",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 13,
+          "caller": "onRestore",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "this.context.getApplicationContext",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 10,
+          "caller": "onCreate",
+          "kit": null
+        }
+      ]
+    }
+  ]
+}

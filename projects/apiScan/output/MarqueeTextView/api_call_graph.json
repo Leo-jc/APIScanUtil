@@ -1,0 +1,1485 @@
+{
+  "title": "HarmonyOS API 调用图谱",
+  "summary": {
+    "filesAnalyzed": 5,
+    "systemApis": 16,
+    "systemApiCallSites": 73
+  },
+  "files": [
+    {
+      "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "AbilityConstant",
+            "ConfigurationConstant",
+            "UIAbility",
+            "Want"
+          ],
+          "source": "@kit.AbilityKit",
+          "kit": "AbilityKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 3,
+          "names": [
+            "window"
+          ],
+          "source": "@kit.ArkUI",
+          "kit": "ArkUI",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onCreate",
+        "onDestroy",
+        "onWindowStageCreate",
+        "onWindowStageDestroy",
+        "onForeground",
+        "onBackground"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 10,
+          "qualified": "this.context.getApplicationContext",
+          "base": "this",
+          "name": "getApplicationContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 12,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 14,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 18,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onDestroy"
+        },
+        {
+          "line": 23,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 27,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 30,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 36,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageDestroy"
+        },
+        {
+          "line": 41,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onForeground"
+        },
+        {
+          "line": 46,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackground"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "BackupExtensionAbility",
+            "BundleVersion"
+          ],
+          "source": "@kit.CoreFileKit",
+          "kit": "CoreFileKit",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onBackup",
+        "onRestore"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 8,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackup"
+        },
+        {
+          "line": 13,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onRestore"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "MarqueeTextView",
+            "MarqueeTextViewController"
+          ],
+          "source": "marquee_text_view",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 2,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 3,
+          "names": [
+            "common"
+          ],
+          "source": "@kit.AbilityKit",
+          "kit": "AbilityKit",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "aboutToAppear",
+        "resolveThemedColor",
+        "argbToRgba",
+        "now",
+        "log",
+        "clearLog",
+        "onStart",
+        "onPause",
+        "onStop",
+        "onRestart",
+        "onTextChanged",
+        "onFontSizeChange",
+        "onSpaceChange",
+        "onSpeedChange",
+        "onToggleLongText",
+        "onToggleBold",
+        "onToggleItalic",
+        "onPickFontFamily",
+        "onToggleAutoStart",
+        "onPickColor",
+        "onSliderChange",
+        "build",
+        "buildControlsCard",
+        "buildConfigCard",
+        "buildSliderRow",
+        "colorSwatch",
+        "familyButton",
+        "buildLogCard"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 51,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "resolveThemedColor"
+        },
+        {
+          "line": 80,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "log"
+        },
+        {
+          "line": 187,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 188,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 190,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 191,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 203,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 204,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 254,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildControlsCard"
+        },
+        {
+          "line": 255,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildControlsCard"
+        },
+        {
+          "line": 260,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildControlsCard"
+        },
+        {
+          "line": 261,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildControlsCard"
+        },
+        {
+          "line": 268,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildControlsCard"
+        },
+        {
+          "line": 278,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildControlsCard"
+        },
+        {
+          "line": 279,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildControlsCard"
+        },
+        {
+          "line": 286,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildControlsCard"
+        },
+        {
+          "line": 307,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 308,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 314,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 317,
+          "qualified": "TextArea",
+          "base": "TextArea",
+          "name": "TextArea",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 326,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 327,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 331,
+          "qualified": "Toggle",
+          "base": "Toggle",
+          "name": "Toggle",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 331,
+          "qualified": "Switch",
+          "base": "Switch",
+          "name": "Switch",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 340,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 341,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 345,
+          "qualified": "Toggle",
+          "base": "Toggle",
+          "name": "Toggle",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 345,
+          "qualified": "Switch",
+          "base": "Switch",
+          "name": "Switch",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 354,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 355,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 359,
+          "qualified": "Toggle",
+          "base": "Toggle",
+          "name": "Toggle",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 359,
+          "qualified": "Switch",
+          "base": "Switch",
+          "name": "Switch",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 368,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 372,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 389,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 393,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 405,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 406,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 410,
+          "qualified": "Toggle",
+          "base": "Toggle",
+          "name": "Toggle",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 410,
+          "qualified": "Switch",
+          "base": "Switch",
+          "name": "Switch",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigCard"
+        },
+        {
+          "line": 428,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildSliderRow"
+        },
+        {
+          "line": 429,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildSliderRow"
+        },
+        {
+          "line": 430,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildSliderRow"
+        },
+        {
+          "line": 434,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildSliderRow"
+        },
+        {
+          "line": 441,
+          "qualified": "Slider",
+          "base": "Slider",
+          "name": "Slider",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildSliderRow"
+        },
+        {
+          "line": 459,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "colorSwatch"
+        },
+        {
+          "line": 460,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "colorSwatch"
+        },
+        {
+          "line": 466,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "colorSwatch"
+        },
+        {
+          "line": 477,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "familyButton"
+        },
+        {
+          "line": 490,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogCard"
+        },
+        {
+          "line": 491,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogCard"
+        },
+        {
+          "line": 492,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogCard"
+        },
+        {
+          "line": 496,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogCard"
+        },
+        {
+          "line": 510,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogCard"
+        },
+        {
+          "line": 515,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogCard"
+        },
+        {
+          "line": 516,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogCard"
+        },
+        {
+          "line": 517,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogCard"
+        },
+        {
+          "line": 518,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogCard"
+        }
+      ]
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\marquee\\MarqueeTextView.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "displaySync"
+          ],
+          "source": "@kit.ArkGraphics2D",
+          "kit": "@kit.ArkGraphics2D",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "display",
+            "UIContext"
+          ],
+          "source": "@kit.ArkUI",
+          "kit": "ArkUI",
+          "isKit": true
+        },
+        {
+          "line": 3,
+          "names": [
+            "MarqueeTextViewController"
+          ],
+          "source": "./MarqueeTextViewController",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "aboutToAppear",
+        "aboutToDisappear",
+        "onStyleChange",
+        "onConfigChange",
+        "onAutoStartChange",
+        "fontString",
+        "remeasure",
+        "buildBitmap",
+        "drawFrame",
+        "updateFps",
+        "advanceFrame",
+        "startScroll",
+        "pauseScroll",
+        "stopScroll",
+        "restartScroll",
+        "build",
+        "isNaN"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 72,
+          "qualified": "displaySync.create",
+          "base": "displaySync",
+          "name": "create",
+          "kind": "system",
+          "kit": "@kit.ArkGraphics2D",
+          "isConstructor": false,
+          "caller": "<top-level>"
+        },
+        {
+          "line": 304,
+          "qualified": "display.getDefaultDisplaySync",
+          "base": "display",
+          "name": "getDefaultDisplaySync",
+          "kind": "system",
+          "kit": "ArkUI",
+          "isConstructor": false,
+          "caller": "updateFps"
+        },
+        {
+          "line": 338,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "startScroll"
+        }
+      ]
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\marquee\\MarqueeTextViewController.ets",
+      "imports": [],
+      "functions": [
+        "bind",
+        "unbind",
+        "startScroll",
+        "pauseScroll",
+        "stopScroll",
+        "restartScroll",
+        "getLeftX",
+        "notifyReleased"
+      ],
+      "systemApiCalls": []
+    }
+  ],
+  "apiGraph": [
+    {
+      "api": "Button",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 261,
+          "caller": "buildControlsCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 268,
+          "caller": "buildControlsCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 279,
+          "caller": "buildControlsCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 286,
+          "caller": "buildControlsCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 477,
+          "caller": "familyButton",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 496,
+          "caller": "buildLogCard",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Column",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 188,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 203,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 254,
+          "caller": "buildControlsCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 307,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 428,
+          "caller": "buildSliderRow",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 459,
+          "caller": "colorSwatch",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 490,
+          "caller": "buildLogCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 516,
+          "caller": "buildLogCard",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "ForEach",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 517,
+          "caller": "buildLogCard",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Row",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 190,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 260,
+          "caller": "buildControlsCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 278,
+          "caller": "buildControlsCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 326,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 340,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 354,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 372,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 393,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 405,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 429,
+          "caller": "buildSliderRow",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 491,
+          "caller": "buildLogCard",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Scroll",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 187,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 515,
+          "caller": "buildLogCard",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Slider",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 441,
+          "caller": "buildSliderRow",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Switch",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 331,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 345,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 359,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 410,
+          "caller": "buildConfigCard",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Text",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 191,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 204,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 255,
+          "caller": "buildControlsCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 308,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 314,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 327,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 341,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 355,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 368,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 389,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 406,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 430,
+          "caller": "buildSliderRow",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 434,
+          "caller": "buildSliderRow",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 460,
+          "caller": "colorSwatch",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 466,
+          "caller": "colorSwatch",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 492,
+          "caller": "buildLogCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 510,
+          "caller": "buildLogCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 518,
+          "caller": "buildLogCard",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "TextArea",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 317,
+          "caller": "buildConfigCard",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Toggle",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 331,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 345,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 359,
+          "caller": "buildConfigCard",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 410,
+          "caller": "buildConfigCard",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "display.getDefaultDisplaySync",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "ohos_library\\src\\main\\ets\\marquee\\MarqueeTextView.ets",
+          "line": 304,
+          "caller": "updateFps",
+          "kit": "ArkUI"
+        }
+      ]
+    },
+    {
+      "api": "displaySync.create",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "ohos_library\\src\\main\\ets\\marquee\\MarqueeTextView.ets",
+          "line": 72,
+          "caller": "<top-level>",
+          "kit": "@kit.ArkGraphics2D"
+        }
+      ]
+    },
+    {
+      "api": "hilog.error",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 12,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 27,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 14,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 18,
+          "caller": "onDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 23,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 30,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 36,
+          "caller": "onWindowStageDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 41,
+          "caller": "onForeground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 46,
+          "caller": "onBackground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 8,
+          "caller": "onBackup",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 13,
+          "caller": "onRestore",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 80,
+          "caller": "log",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "this.context.getApplicationContext",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 10,
+          "caller": "onCreate",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "this.getUIContext",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 51,
+          "caller": "resolveThemedColor",
+          "kit": null
+        },
+        {
+          "file": "ohos_library\\src\\main\\ets\\marquee\\MarqueeTextView.ets",
+          "line": 338,
+          "caller": "startScroll",
+          "kit": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2997 @@
+{
+  "document": "HarmonyOS 5.0.4(16) API变更清单",
+  "apiVersion": 16,
+  "versionName": "5.0.4(16)",
+  "baseVersion": "5.0.4(16)",
+  "subVersion": "5.0.4(16)",
+  "releaseDate": "2025/03/29",
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-504",
+  "sourceUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/apidiff-504",
+  "totalKits": 12,
+  "totalChanges": 161,
+  "kits": [
+    {
+      "name": "Ads Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-adskit-504",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "advertising",
+          "apiDeclaration": "function registerWebAdInterface(controller: web_webview.WebviewController, context: common.UIAbilityContext, needRefresh: boolean): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "advertising",
+            "apiDeclaration": "function registerWebAdInterface(controller: web_webview.WebviewController, context: common.UIAbilityContext, needRefresh: boolean): void;",
+            "diffContent": "function registerWebAdInterface(controller: web_webview.WebviewController, context: common.UIAbilityContext, needRefresh: boolean): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.advertising.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "advertising",
+          "apiDeclaration": "function deleteWebAdInterface(controller: web_webview.WebviewController, needRefresh: boolean): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "advertising",
+            "apiDeclaration": "function deleteWebAdInterface(controller: web_webview.WebviewController, needRefresh: boolean): void;",
+            "diffContent": "function deleteWebAdInterface(controller: web_webview.WebviewController, needRefresh: boolean): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.advertising.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "ArkUI",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkui-504",
+      "changeCount": 18,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "UIContext",
+          "apiDeclaration": "getTextMenuController(): TextMenuController;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "UIContext",
+            "apiDeclaration": "getTextMenuController(): TextMenuController;",
+            "diffContent": "getTextMenuController(): TextMenuController;",
+            "raw": null
+          },
+          "file": "api/@ohos.arkui.UIContext.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "export class TextMenuController",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "export class TextMenuController",
+            "diffContent": "export class TextMenuController",
+            "raw": null
+          },
+          "file": "api/@ohos.arkui.UIContext.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "TextMenuController",
+          "apiDeclaration": "setMenuOptions(options: TextMenuOptions): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "TextMenuController",
+            "apiDeclaration": "setMenuOptions(options: TextMenuOptions): void;",
+            "diffContent": "setMenuOptions(options: TextMenuOptions): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.arkui.UIContext.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "display",
+          "apiDeclaration": "function createVirtualScreen(config: VirtualScreenConfig): Promise<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "display",
+            "apiDeclaration": "function createVirtualScreen(config: VirtualScreenConfig): Promise<number>;",
+            "diffContent": "function createVirtualScreen(config: VirtualScreenConfig): Promise<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.display.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "display",
+          "apiDeclaration": "function destroyVirtualScreen(screenId: number): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "display",
+            "apiDeclaration": "function destroyVirtualScreen(screenId: number): Promise<void>;",
+            "diffContent": "function destroyVirtualScreen(screenId: number): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.display.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "display",
+          "apiDeclaration": "function setVirtualScreenSurface(screenId: number, surfaceId: string): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "display",
+            "apiDeclaration": "function setVirtualScreenSurface(screenId: number, surfaceId: string): Promise<void>;",
+            "diffContent": "function setVirtualScreenSurface(screenId: number, surfaceId: string): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.display.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "display",
+          "apiDeclaration": "function makeUnique(screenId: number): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "display",
+            "apiDeclaration": "function makeUnique(screenId: number): Promise<void>;",
+            "diffContent": "function makeUnique(screenId: number): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.display.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "display",
+          "apiDeclaration": "interface VirtualScreenConfig",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "display",
+            "apiDeclaration": "interface VirtualScreenConfig",
+            "diffContent": "interface VirtualScreenConfig",
+            "raw": null
+          },
+          "file": "api/@ohos.display.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VirtualScreenConfig",
+          "apiDeclaration": "name: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VirtualScreenConfig",
+            "apiDeclaration": "name: string;",
+            "diffContent": "name: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.display.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VirtualScreenConfig",
+          "apiDeclaration": "width: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VirtualScreenConfig",
+            "apiDeclaration": "width: number;",
+            "diffContent": "width: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.display.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VirtualScreenConfig",
+          "apiDeclaration": "height: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VirtualScreenConfig",
+            "apiDeclaration": "height: number;",
+            "diffContent": "height: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.display.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VirtualScreenConfig",
+          "apiDeclaration": "density: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VirtualScreenConfig",
+            "apiDeclaration": "density: number;",
+            "diffContent": "density: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.display.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "VirtualScreenConfig",
+          "apiDeclaration": "surfaceId: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "VirtualScreenConfig",
+            "apiDeclaration": "surfaceId: string;",
+            "diffContent": "surfaceId: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.display.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare enum TextMenuShowMode",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare enum TextMenuShowMode",
+            "diffContent": "declare enum TextMenuShowMode",
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "TextMenuShowMode",
+          "apiDeclaration": "DEFAULT = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "TextMenuShowMode",
+            "apiDeclaration": "DEFAULT = 0",
+            "diffContent": "DEFAULT = 0",
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "TextMenuShowMode",
+          "apiDeclaration": "PREFER_WINDOW = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "TextMenuShowMode",
+            "apiDeclaration": "PREFER_WINDOW = 1",
+            "diffContent": "PREFER_WINDOW = 1",
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare interface TextMenuOptions",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare interface TextMenuOptions",
+            "diffContent": "declare interface TextMenuOptions",
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "TextMenuOptions",
+          "apiDeclaration": "showMode?: TextMenuShowMode;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "TextMenuOptions",
+            "apiDeclaration": "showMode?: TextMenuShowMode;",
+            "diffContent": "showMode?: TextMenuShowMode;",
+            "raw": null
+          },
+          "file": "component/text_common.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "ArkWeb",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkweb-504",
+      "changeCount": 3,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "WebAttribute",
+          "apiDeclaration": "nativeEmbedOptions(options?: EmbedOptions): WebAttribute;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "WebAttribute",
+            "apiDeclaration": "nativeEmbedOptions(options?: EmbedOptions): WebAttribute;",
+            "diffContent": "nativeEmbedOptions(options?: EmbedOptions): WebAttribute;",
+            "raw": null
+          },
+          "file": "component/web.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare interface EmbedOptions",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare interface EmbedOptions",
+            "diffContent": "declare interface EmbedOptions",
+            "raw": null
+          },
+          "file": "component/web.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "EmbedOptions",
+          "apiDeclaration": "supportDefaultIntrinsicSize?: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "EmbedOptions",
+            "apiDeclaration": "supportDefaultIntrinsicSize?: boolean;",
+            "diffContent": "supportDefaultIntrinsicSize?: boolean;",
+            "raw": null
+          },
+          "file": "component/web.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "AVSession Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-avsessionkit-504",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "错误码变更",
+          "className": "AVCastPickerHelper",
+          "apiDeclaration": "on(type: 'pickerStateChange', callback: Callback<AVCastPickerState>): void;",
+          "old": {
+            "className": "AVCastPickerHelper",
+            "apiDeclaration": "on(type: 'pickerStateChange', callback: Callback<AVCastPickerState>): void;",
+            "diffContent": "401",
+            "raw": null
+          },
+          "new": {
+            "className": "AVCastPickerHelper",
+            "apiDeclaration": "on(type: 'pickerStateChange', callback: Callback<AVCastPickerState>): void;",
+            "diffContent": "401,6600101",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.avsession.d.ts"
+        },
+        {
+          "operation": "错误码变更",
+          "className": "AVCastPickerHelper",
+          "apiDeclaration": "off(type: 'pickerStateChange', callback?: Callback<AVCastPickerState>): void;",
+          "old": {
+            "className": "AVCastPickerHelper",
+            "apiDeclaration": "off(type: 'pickerStateChange', callback?: Callback<AVCastPickerState>): void;",
+            "diffContent": "401",
+            "raw": null
+          },
+          "new": {
+            "className": "AVCastPickerHelper",
+            "apiDeclaration": "off(type: 'pickerStateChange', callback?: Callback<AVCastPickerState>): void;",
+            "diffContent": "401,6600101",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.avsession.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Background Tasks Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-backgroundtaskskit-504",
+      "changeCount": 4,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "backgroundTaskManager",
+          "apiDeclaration": "export enum BackgroundSubMode",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "backgroundTaskManager",
+            "apiDeclaration": "export enum BackgroundSubMode",
+            "diffContent": "export enum BackgroundSubMode",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BackgroundSubMode",
+          "apiDeclaration": "CAR_KEY = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BackgroundSubMode",
+            "apiDeclaration": "CAR_KEY = 1",
+            "diffContent": "CAR_KEY = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "backgroundTaskManager",
+          "apiDeclaration": "export enum BackgroundModeType",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "backgroundTaskManager",
+            "apiDeclaration": "export enum BackgroundModeType",
+            "diffContent": "export enum BackgroundModeType",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BackgroundModeType",
+          "apiDeclaration": "SUB_MODE = 'subMode'",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BackgroundModeType",
+            "apiDeclaration": "SUB_MODE = 'subMode'",
+            "diffContent": "SUB_MODE = 'subMode'",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Connectivity Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-connectivitykit-504",
+      "changeCount": 11,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare namespace opp",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare namespace opp",
+            "diffContent": "declare namespace opp",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.opp.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "opp",
+          "apiDeclaration": "function createOppServerProfile(): OppServerProfile;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "opp",
+            "apiDeclaration": "function createOppServerProfile(): OppServerProfile;",
+            "diffContent": "function createOppServerProfile(): OppServerProfile;",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.opp.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "opp",
+          "apiDeclaration": "interface OppServerProfile",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "opp",
+            "apiDeclaration": "interface OppServerProfile",
+            "diffContent": "interface OppServerProfile",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.opp.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "connection",
+          "apiDeclaration": "function getRemoteDeviceName(deviceId: string, alias?: boolean): string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "connection",
+            "apiDeclaration": "function getRemoteDeviceName(deviceId: string, alias?: boolean): string;",
+            "diffContent": "function getRemoteDeviceName(deviceId: string, alias?: boolean): string;",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.connection.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "connection",
+          "apiDeclaration": "function connectAllowedProfiles(deviceId: string, callback: AsyncCallback<void>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "connection",
+            "apiDeclaration": "function connectAllowedProfiles(deviceId: string, callback: AsyncCallback<void>): void;",
+            "diffContent": "function connectAllowedProfiles(deviceId: string, callback: AsyncCallback<void>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.connection.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "connection",
+          "apiDeclaration": "function connectAllowedProfiles(deviceId: string): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "connection",
+            "apiDeclaration": "function connectAllowedProfiles(deviceId: string): Promise<void>;",
+            "diffContent": "function connectAllowedProfiles(deviceId: string): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.connection.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "access",
+          "apiDeclaration": "function addPersistentDeviceId(deviceId: string): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "access",
+            "apiDeclaration": "function addPersistentDeviceId(deviceId: string): Promise<void>;",
+            "diffContent": "function addPersistentDeviceId(deviceId: string): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.access.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "access",
+          "apiDeclaration": "function deletePersistentDeviceId(deviceId: string): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "access",
+            "apiDeclaration": "function deletePersistentDeviceId(deviceId: string): Promise<void>;",
+            "diffContent": "function deletePersistentDeviceId(deviceId: string): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.access.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "access",
+          "apiDeclaration": "function getPersistentDeviceIds(): string\\[\\];",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "access",
+            "apiDeclaration": "function getPersistentDeviceIds(): string\\[\\];",
+            "diffContent": "function getPersistentDeviceIds(): string\\[\\];",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.access.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "access",
+          "apiDeclaration": "function isValidRandomDeviceId(deviceId: string): boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "access",
+            "apiDeclaration": "function isValidRandomDeviceId(deviceId: string): boolean;",
+            "diffContent": "function isValidRandomDeviceId(deviceId: string): boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.bluetooth.access.d.ts"
+        },
+        {
+          "operation": "kit变更",
+          "className": null,
+          "apiDeclaration": null,
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "ConnectivityKit"
+          },
+          "file": "api/@ohos.bluetooth.opp.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Input Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-inputkit-504",
+      "changeCount": 6,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "inputConsumer",
+          "apiDeclaration": "interface KeyPressedConfig",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "inputConsumer",
+            "apiDeclaration": "interface KeyPressedConfig",
+            "diffContent": "interface KeyPressedConfig",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalInput.inputConsumer.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "KeyPressedConfig",
+          "apiDeclaration": "key: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "KeyPressedConfig",
+            "apiDeclaration": "key: number;",
+            "diffContent": "key: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalInput.inputConsumer.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "KeyPressedConfig",
+          "apiDeclaration": "action: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "KeyPressedConfig",
+            "apiDeclaration": "action: number;",
+            "diffContent": "action: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalInput.inputConsumer.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "KeyPressedConfig",
+          "apiDeclaration": "isRepeat: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "KeyPressedConfig",
+            "apiDeclaration": "isRepeat: boolean;",
+            "diffContent": "isRepeat: boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalInput.inputConsumer.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "inputConsumer",
+          "apiDeclaration": "function on(type: 'keyPressed', options: KeyPressedConfig, callback: Callback<KeyEvent>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "inputConsumer",
+            "apiDeclaration": "function on(type: 'keyPressed', options: KeyPressedConfig, callback: Callback<KeyEvent>): void;",
+            "diffContent": "function on(type: 'keyPressed', options: KeyPressedConfig, callback: Callback<KeyEvent>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalInput.inputConsumer.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "inputConsumer",
+          "apiDeclaration": "function off(type: 'keyPressed', callback?: Callback<KeyEvent>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "inputConsumer",
+            "apiDeclaration": "function off(type: 'keyPressed', callback?: Callback<KeyEvent>): void;",
+            "diffContent": "function off(type: 'keyPressed', callback?: Callback<KeyEvent>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimodalInput.inputConsumer.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Location Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-locationkit-504",
+      "changeCount": 8,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "geoLocationManager",
+          "apiDeclaration": "function on(type: 'bluetoothScanResultChange', callback: Callback<BluetoothScanResult>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "geoLocationManager",
+            "apiDeclaration": "function on(type: 'bluetoothScanResultChange', callback: Callback<BluetoothScanResult>): void;",
+            "diffContent": "function on(type: 'bluetoothScanResultChange', callback: Callback<BluetoothScanResult>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.geoLocationManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "geoLocationManager",
+          "apiDeclaration": "function off(type: 'bluetoothScanResultChange', callback?: Callback<BluetoothScanResult>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "geoLocationManager",
+            "apiDeclaration": "function off(type: 'bluetoothScanResultChange', callback?: Callback<BluetoothScanResult>): void;",
+            "diffContent": "function off(type: 'bluetoothScanResultChange', callback?: Callback<BluetoothScanResult>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.geoLocationManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "geoLocationManager",
+          "apiDeclaration": "export interface BluetoothScanResult",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "geoLocationManager",
+            "apiDeclaration": "export interface BluetoothScanResult",
+            "diffContent": "export interface BluetoothScanResult",
+            "raw": null
+          },
+          "file": "api/@ohos.geoLocationManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BluetoothScanResult",
+          "apiDeclaration": "deviceId: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BluetoothScanResult",
+            "apiDeclaration": "deviceId: string;",
+            "diffContent": "deviceId: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.geoLocationManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BluetoothScanResult",
+          "apiDeclaration": "rssi: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BluetoothScanResult",
+            "apiDeclaration": "rssi: number;",
+            "diffContent": "rssi: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.geoLocationManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BluetoothScanResult",
+          "apiDeclaration": "data?: ArrayBuffer;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BluetoothScanResult",
+            "apiDeclaration": "data?: ArrayBuffer;",
+            "diffContent": "data?: ArrayBuffer;",
+            "raw": null
+          },
+          "file": "api/@ohos.geoLocationManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BluetoothScanResult",
+          "apiDeclaration": "deviceName: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BluetoothScanResult",
+            "apiDeclaration": "deviceName: string;",
+            "diffContent": "deviceName: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.geoLocationManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BluetoothScanResult",
+          "apiDeclaration": "connectable: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BluetoothScanResult",
+            "apiDeclaration": "connectable: boolean;",
+            "diffContent": "connectable: boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.geoLocationManager.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Media Library Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-medialibrarykit-504",
+      "changeCount": 5,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "photoAccessHelper",
+          "apiDeclaration": "enum PositionType",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "photoAccessHelper",
+            "apiDeclaration": "enum PositionType",
+            "diffContent": "enum PositionType",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PositionType",
+          "apiDeclaration": "LOCAL = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PositionType",
+            "apiDeclaration": "LOCAL = 1",
+            "diffContent": "LOCAL = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PositionType",
+          "apiDeclaration": "CLOUD = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PositionType",
+            "apiDeclaration": "CLOUD = 2",
+            "diffContent": "CLOUD = 2",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PositionType",
+          "apiDeclaration": "LOCAL_AND_CLOUD = 3",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PositionType",
+            "apiDeclaration": "LOCAL_AND_CLOUD = 3",
+            "diffContent": "LOCAL_AND_CLOUD = 3",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PhotoKeys",
+          "apiDeclaration": "POSITION = 'position'",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PhotoKeys",
+            "apiDeclaration": "POSITION = 'position'",
+            "diffContent": "POSITION = 'position'",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Network Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-networkkit-504",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "TLSSocket",
+          "apiDeclaration": "getSocketFd(): Promise<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "TLSSocket",
+            "apiDeclaration": "getSocketFd(): Promise<number>;",
+            "diffContent": "getSocketFd(): Promise<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.net.socket.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Reader Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-readerkit-504",
+      "changeCount": 85,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "export declare namespace bookParser",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "export declare namespace bookParser",
+            "diffContent": "export declare namespace bookParser",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "bookParser",
+          "apiDeclaration": "class BookParserHandler",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "bookParser",
+            "apiDeclaration": "class BookParserHandler",
+            "diffContent": "class BookParserHandler",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookParserHandler",
+          "apiDeclaration": "public getBookInfo(): BookInfo;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookParserHandler",
+            "apiDeclaration": "public getBookInfo(): BookInfo;",
+            "diffContent": "public getBookInfo(): BookInfo;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookParserHandler",
+          "apiDeclaration": "public getCatalogList(): CatalogItem\\[\\];",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookParserHandler",
+            "apiDeclaration": "public getCatalogList(): CatalogItem\\[\\];",
+            "diffContent": "public getCatalogList(): CatalogItem\\[\\];",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookParserHandler",
+          "apiDeclaration": "public getSpineList(): SpineItem\\[\\];",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookParserHandler",
+            "apiDeclaration": "public getSpineList(): SpineItem\\[\\];",
+            "diffContent": "public getSpineList(): SpineItem\\[\\];",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookParserHandler",
+          "apiDeclaration": "public getSpineItemContent(spineIndex: number): Promise<string>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookParserHandler",
+            "apiDeclaration": "public getSpineItemContent(spineIndex: number): Promise<string>;",
+            "diffContent": "public getSpineItemContent(spineIndex: number): Promise<string>;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookParserHandler",
+          "apiDeclaration": "public getResourceContent(spineIndex: number, filePath: string): ArrayBuffer;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookParserHandler",
+            "apiDeclaration": "public getResourceContent(spineIndex: number, filePath: string): ArrayBuffer;",
+            "diffContent": "public getResourceContent(spineIndex: number, filePath: string): ArrayBuffer;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookParserHandler",
+          "apiDeclaration": "public getDomPosByCatalogHref(href: string): string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookParserHandler",
+            "apiDeclaration": "public getDomPosByCatalogHref(href: string): string;",
+            "diffContent": "public getDomPosByCatalogHref(href: string): string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookParserHandler",
+          "apiDeclaration": "public getAbsoluteResourcePath(spineIndex: number): string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookParserHandler",
+            "apiDeclaration": "public getAbsoluteResourcePath(spineIndex: number): string;",
+            "diffContent": "public getAbsoluteResourcePath(spineIndex: number): string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "bookParser",
+          "apiDeclaration": "interface SpineItem",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "bookParser",
+            "apiDeclaration": "interface SpineItem",
+            "diffContent": "interface SpineItem",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SpineItem",
+          "apiDeclaration": "idRef: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SpineItem",
+            "apiDeclaration": "idRef: string;",
+            "diffContent": "idRef: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SpineItem",
+          "apiDeclaration": "index: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SpineItem",
+            "apiDeclaration": "index: number;",
+            "diffContent": "index: number;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SpineItem",
+          "apiDeclaration": "href: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SpineItem",
+            "apiDeclaration": "href: string;",
+            "diffContent": "href: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SpineItem",
+          "apiDeclaration": "properties: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SpineItem",
+            "apiDeclaration": "properties: string;",
+            "diffContent": "properties: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "bookParser",
+          "apiDeclaration": "interface CatalogItem",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "bookParser",
+            "apiDeclaration": "interface CatalogItem",
+            "diffContent": "interface CatalogItem",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CatalogItem",
+          "apiDeclaration": "catalogId: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CatalogItem",
+            "apiDeclaration": "catalogId: number;",
+            "diffContent": "catalogId: number;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CatalogItem",
+          "apiDeclaration": "catalogName: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CatalogItem",
+            "apiDeclaration": "catalogName: string;",
+            "diffContent": "catalogName: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CatalogItem",
+          "apiDeclaration": "catalogLevel?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CatalogItem",
+            "apiDeclaration": "catalogLevel?: number;",
+            "diffContent": "catalogLevel?: number;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CatalogItem",
+          "apiDeclaration": "playOrder?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CatalogItem",
+            "apiDeclaration": "playOrder?: number;",
+            "diffContent": "playOrder?: number;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CatalogItem",
+          "apiDeclaration": "idRef?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CatalogItem",
+            "apiDeclaration": "idRef?: string;",
+            "diffContent": "idRef?: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CatalogItem",
+          "apiDeclaration": "href?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CatalogItem",
+            "apiDeclaration": "href?: string;",
+            "diffContent": "href?: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CatalogItem",
+          "apiDeclaration": "resourceFile?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CatalogItem",
+            "apiDeclaration": "resourceFile?: string;",
+            "diffContent": "resourceFile?: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "bookParser",
+          "apiDeclaration": "interface BookInfo",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "bookParser",
+            "apiDeclaration": "interface BookInfo",
+            "diffContent": "interface BookInfo",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookInfo",
+          "apiDeclaration": "bookTitle: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookInfo",
+            "apiDeclaration": "bookTitle: string;",
+            "diffContent": "bookTitle: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookInfo",
+          "apiDeclaration": "bookCreator?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookInfo",
+            "apiDeclaration": "bookCreator?: string;",
+            "diffContent": "bookCreator?: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookInfo",
+          "apiDeclaration": "bookPublishDate?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookInfo",
+            "apiDeclaration": "bookPublishDate?: string;",
+            "diffContent": "bookPublishDate?: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookInfo",
+          "apiDeclaration": "bookLanguage?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookInfo",
+            "apiDeclaration": "bookLanguage?: string;",
+            "diffContent": "bookLanguage?: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookInfo",
+          "apiDeclaration": "bookCoverImage?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookInfo",
+            "apiDeclaration": "bookCoverImage?: string;",
+            "diffContent": "bookCoverImage?: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookInfo",
+          "apiDeclaration": "bookCharset?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookInfo",
+            "apiDeclaration": "bookCharset?: string;",
+            "diffContent": "bookCharset?: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookInfo",
+          "apiDeclaration": "bookType?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookInfo",
+            "apiDeclaration": "bookType?: string;",
+            "diffContent": "bookType?: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookInfo",
+          "apiDeclaration": "isRtl?: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookInfo",
+            "apiDeclaration": "isRtl?: boolean;",
+            "diffContent": "isRtl?: boolean;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookInfo",
+          "apiDeclaration": "renditionLayout?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookInfo",
+            "apiDeclaration": "renditionLayout?: string;",
+            "diffContent": "renditionLayout?: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookInfo",
+          "apiDeclaration": "renditionOrientation?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookInfo",
+            "apiDeclaration": "renditionOrientation?: string;",
+            "diffContent": "renditionOrientation?: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BookInfo",
+          "apiDeclaration": "renditionSpread?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BookInfo",
+            "apiDeclaration": "renditionSpread?: string;",
+            "diffContent": "renditionSpread?: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "bookParser",
+          "apiDeclaration": "type CallbackRes<T, V> = (data: T) => V;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "bookParser",
+            "apiDeclaration": "type CallbackRes<T, V> = (data: T) => V;",
+            "diffContent": "type CallbackRes<T, V> = (data: T) => V;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "bookParser",
+          "apiDeclaration": "function getDefaultHandler(path: string): Promise<BookParserHandler>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "bookParser",
+            "apiDeclaration": "function getDefaultHandler(path: string): Promise<BookParserHandler>;",
+            "diffContent": "function getDefaultHandler(path: string): Promise<BookParserHandler>;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare struct ReadPageComponent",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare struct ReadPageComponent",
+            "diffContent": "declare struct ReadPageComponent",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReadPageComponent",
+          "apiDeclaration": "controller: readerCore.ReaderComponentController;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReadPageComponent",
+            "apiDeclaration": "controller: readerCore.ReaderComponentController;",
+            "diffContent": "controller: readerCore.ReaderComponentController;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReadPageComponent",
+          "apiDeclaration": "readerCallback: AsyncCallback<readerCore.ReaderComponentController>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReadPageComponent",
+            "apiDeclaration": "readerCallback: AsyncCallback<readerCore.ReaderComponentController>;",
+            "diffContent": "readerCallback: AsyncCallback<readerCore.ReaderComponentController>;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReadPageComponent",
+          "apiDeclaration": "build(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReadPageComponent",
+            "apiDeclaration": "build(): void;",
+            "diffContent": "build(): void;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare namespace readerCore",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare namespace readerCore",
+            "diffContent": "declare namespace readerCore",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "readerCore",
+          "apiDeclaration": "interface ReaderSetting",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "readerCore",
+            "apiDeclaration": "interface ReaderSetting",
+            "diffContent": "interface ReaderSetting",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderSetting",
+          "apiDeclaration": "fontName: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderSetting",
+            "apiDeclaration": "fontName: string;",
+            "diffContent": "fontName: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderSetting",
+          "apiDeclaration": "fontSize: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderSetting",
+            "apiDeclaration": "fontSize: number;",
+            "diffContent": "fontSize: number;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderSetting",
+          "apiDeclaration": "fontWeight: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderSetting",
+            "apiDeclaration": "fontWeight: number;",
+            "diffContent": "fontWeight: number;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderSetting",
+          "apiDeclaration": "fontColor: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderSetting",
+            "apiDeclaration": "fontColor: string;",
+            "diffContent": "fontColor: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderSetting",
+          "apiDeclaration": "fontPath: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderSetting",
+            "apiDeclaration": "fontPath: string;",
+            "diffContent": "fontPath: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderSetting",
+          "apiDeclaration": "lineHeight: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderSetting",
+            "apiDeclaration": "lineHeight: number;",
+            "diffContent": "lineHeight: number;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderSetting",
+          "apiDeclaration": "nightMode: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderSetting",
+            "apiDeclaration": "nightMode: boolean;",
+            "diffContent": "nightMode: boolean;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderSetting",
+          "apiDeclaration": "themeColor: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderSetting",
+            "apiDeclaration": "themeColor: string;",
+            "diffContent": "themeColor: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderSetting",
+          "apiDeclaration": "themeBgImg: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderSetting",
+            "apiDeclaration": "themeBgImg: string;",
+            "diffContent": "themeBgImg: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderSetting",
+          "apiDeclaration": "flipMode: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderSetting",
+            "apiDeclaration": "flipMode: string;",
+            "diffContent": "flipMode: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderSetting",
+          "apiDeclaration": "scaledDensity: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderSetting",
+            "apiDeclaration": "scaledDensity: number;",
+            "diffContent": "scaledDensity: number;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderSetting",
+          "apiDeclaration": "viewPortWidth: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderSetting",
+            "apiDeclaration": "viewPortWidth: number;",
+            "diffContent": "viewPortWidth: number;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderSetting",
+          "apiDeclaration": "viewPortHeight: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderSetting",
+            "apiDeclaration": "viewPortHeight: number;",
+            "diffContent": "viewPortHeight: number;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "readerCore",
+          "apiDeclaration": "class ReaderComponentController",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "readerCore",
+            "apiDeclaration": "class ReaderComponentController",
+            "diffContent": "class ReaderComponentController",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderComponentController",
+          "apiDeclaration": "public init(context: common.UIAbilityContext): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderComponentController",
+            "apiDeclaration": "public init(context: common.UIAbilityContext): Promise<void>;",
+            "diffContent": "public init(context: common.UIAbilityContext): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderComponentController",
+          "apiDeclaration": "public startPlay(spineIndex: number, domPos: string): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderComponentController",
+            "apiDeclaration": "public startPlay(spineIndex: number, domPos: string): Promise<void>;",
+            "diffContent": "public startPlay(spineIndex: number, domPos: string): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderComponentController",
+          "apiDeclaration": "public flipPage(isNext: boolean): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderComponentController",
+            "apiDeclaration": "public flipPage(isNext: boolean): void;",
+            "diffContent": "public flipPage(isNext: boolean): void;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderComponentController",
+          "apiDeclaration": "public setPageConfig(pageConfig: ReaderSetting): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderComponentController",
+            "apiDeclaration": "public setPageConfig(pageConfig: ReaderSetting): void;",
+            "diffContent": "public setPageConfig(pageConfig: ReaderSetting): void;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderComponentController",
+          "apiDeclaration": "public releaseBook(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderComponentController",
+            "apiDeclaration": "public releaseBook(): void;",
+            "diffContent": "public releaseBook(): void;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderComponentController",
+          "apiDeclaration": "public registerBookParser(bookParserHandler: bookParser.BookParserHandler): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderComponentController",
+            "apiDeclaration": "public registerBookParser(bookParserHandler: bookParser.BookParserHandler): void;",
+            "diffContent": "public registerBookParser(bookParserHandler: bookParser.BookParserHandler): void;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderComponentController",
+          "apiDeclaration": "public on(type: 'pageShow', callback: Callback<PageDataInfo>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderComponentController",
+            "apiDeclaration": "public on(type: 'pageShow', callback: Callback<PageDataInfo>): void;",
+            "diffContent": "public on(type: 'pageShow', callback: Callback<PageDataInfo>): void;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderComponentController",
+          "apiDeclaration": "public off(type: 'pageShow', callback?: Callback<PageDataInfo>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderComponentController",
+            "apiDeclaration": "public off(type: 'pageShow', callback?: Callback<PageDataInfo>): void;",
+            "diffContent": "public off(type: 'pageShow', callback?: Callback<PageDataInfo>): void;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderComponentController",
+          "apiDeclaration": "public on(type: 'resourceRequest', callback: bookParser.CallbackRes<string, ArrayBuffer>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderComponentController",
+            "apiDeclaration": "public on(type: 'resourceRequest', callback: bookParser.CallbackRes<string, ArrayBuffer>): void;",
+            "diffContent": "public on(type: 'resourceRequest', callback: bookParser.CallbackRes<string, ArrayBuffer>): void;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "ReaderComponentController",
+          "apiDeclaration": "public off(type: 'resourceRequest', callback?: bookParser.CallbackRes<string, ArrayBuffer>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ReaderComponentController",
+            "apiDeclaration": "public off(type: 'resourceRequest', callback?: bookParser.CallbackRes<string, ArrayBuffer>): void;",
+            "diffContent": "public off(type: 'resourceRequest', callback?: bookParser.CallbackRes<string, ArrayBuffer>): void;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "readerCore",
+          "apiDeclaration": "class PageDatabaseBean",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "readerCore",
+            "apiDeclaration": "class PageDatabaseBean",
+            "diffContent": "class PageDatabaseBean",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "PageDatabaseBean",
+          "apiDeclaration": "public nodeType: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PageDatabaseBean",
+            "apiDeclaration": "public nodeType: string;",
+            "diffContent": "public nodeType: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "PageDatabaseBean",
+          "apiDeclaration": "public dataId: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PageDatabaseBean",
+            "apiDeclaration": "public dataId: string;",
+            "diffContent": "public dataId: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "readerCore",
+          "apiDeclaration": "class PageDataInfo",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "readerCore",
+            "apiDeclaration": "class PageDataInfo",
+            "diffContent": "class PageDataInfo",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "PageDataInfo",
+          "apiDeclaration": "public pageHeaderContent: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PageDataInfo",
+            "apiDeclaration": "public pageHeaderContent: string;",
+            "diffContent": "public pageHeaderContent: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "PageDataInfo",
+          "apiDeclaration": "public pageFooterContent: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PageDataInfo",
+            "apiDeclaration": "public pageFooterContent: string;",
+            "diffContent": "public pageFooterContent: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "PageDataInfo",
+          "apiDeclaration": "public startDomPos: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PageDataInfo",
+            "apiDeclaration": "public startDomPos: string;",
+            "diffContent": "public startDomPos: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "PageDataInfo",
+          "apiDeclaration": "public endDomPos: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PageDataInfo",
+            "apiDeclaration": "public endDomPos: string;",
+            "diffContent": "public endDomPos: string;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "PageDataInfo",
+          "apiDeclaration": "public state: PageState;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PageDataInfo",
+            "apiDeclaration": "public state: PageState;",
+            "diffContent": "public state: PageState;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "PageDataInfo",
+          "apiDeclaration": "public resourceIndex: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PageDataInfo",
+            "apiDeclaration": "public resourceIndex: number;",
+            "diffContent": "public resourceIndex: number;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "PageDataInfo",
+          "apiDeclaration": "public pageOffset: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PageDataInfo",
+            "apiDeclaration": "public pageOffset: number;",
+            "diffContent": "public pageOffset: number;",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "readerCore",
+          "apiDeclaration": "enum PageState",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "readerCore",
+            "apiDeclaration": "enum PageState",
+            "diffContent": "enum PageState",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "PageState",
+          "apiDeclaration": "PAGE_WAITING = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PageState",
+            "apiDeclaration": "PAGE_WAITING = 1",
+            "diffContent": "PAGE_WAITING = 1",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "PageState",
+          "apiDeclaration": "PAGE_LOADING = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PageState",
+            "apiDeclaration": "PAGE_LOADING = 2",
+            "diffContent": "PAGE_LOADING = 2",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "PageState",
+          "apiDeclaration": "PAGE_ON_SHOW = 3",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PageState",
+            "apiDeclaration": "PAGE_ON_SHOW = 3",
+            "diffContent": "PAGE_ON_SHOW = 3",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "PageState",
+          "apiDeclaration": "OPEN_BOOK_FAIL = 4",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PageState",
+            "apiDeclaration": "OPEN_BOOK_FAIL = 4",
+            "diffContent": "OPEN_BOOK_FAIL = 4",
+            "raw": null
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "kit变更",
+          "className": null,
+          "apiDeclaration": null,
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "ReaderKit"
+          },
+          "file": "api/@hms.core.readerservice.bookParser.d.ts"
+        },
+        {
+          "operation": "kit变更",
+          "className": null,
+          "apiDeclaration": null,
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "ReaderKit"
+          },
+          "file": "api/@hms.core.readerservice.readerComponent.d.ets"
+        },
+        {
+          "operation": "kit变更",
+          "className": null,
+          "apiDeclaration": null,
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "ReaderKit"
+          },
+          "file": "kits/@kit.ReaderKit.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Telephony Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-telephonykit-504",
+      "changeCount": 16,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "data",
+          "apiDeclaration": "function queryAllApns(): Promise<Array<ApnInfo>>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "data",
+            "apiDeclaration": "function queryAllApns(): Promise<Array<ApnInfo>>;",
+            "diffContent": "function queryAllApns(): Promise<Array<ApnInfo>>;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.data.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "data",
+          "apiDeclaration": "function queryApnIds(apnInfo: ApnInfo): Promise<Array<number>>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "data",
+            "apiDeclaration": "function queryApnIds(apnInfo: ApnInfo): Promise<Array<number>>;",
+            "diffContent": "function queryApnIds(apnInfo: ApnInfo): Promise<Array<number>>;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.data.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "data",
+          "apiDeclaration": "function setPreferredApn(apnId: number): Promise<boolean>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "data",
+            "apiDeclaration": "function setPreferredApn(apnId: number): Promise<boolean>;",
+            "diffContent": "function setPreferredApn(apnId: number): Promise<boolean>;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.data.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "data",
+          "apiDeclaration": "interface ApnInfo",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "data",
+            "apiDeclaration": "interface ApnInfo",
+            "diffContent": "interface ApnInfo",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.data.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ApnInfo",
+          "apiDeclaration": "apnName: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ApnInfo",
+            "apiDeclaration": "apnName: string;",
+            "diffContent": "apnName: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.data.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ApnInfo",
+          "apiDeclaration": "apn: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ApnInfo",
+            "apiDeclaration": "apn: string;",
+            "diffContent": "apn: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.data.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ApnInfo",
+          "apiDeclaration": "mcc: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ApnInfo",
+            "apiDeclaration": "mcc: string;",
+            "diffContent": "mcc: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.data.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ApnInfo",
+          "apiDeclaration": "mnc: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ApnInfo",
+            "apiDeclaration": "mnc: string;",
+            "diffContent": "mnc: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.data.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ApnInfo",
+          "apiDeclaration": "user?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ApnInfo",
+            "apiDeclaration": "user?: string;",
+            "diffContent": "user?: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.data.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ApnInfo",
+          "apiDeclaration": "type?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ApnInfo",
+            "apiDeclaration": "type?: string;",
+            "diffContent": "type?: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.data.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ApnInfo",
+          "apiDeclaration": "proxy?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ApnInfo",
+            "apiDeclaration": "proxy?: string;",
+            "diffContent": "proxy?: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.data.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ApnInfo",
+          "apiDeclaration": "mmsproxy?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ApnInfo",
+            "apiDeclaration": "mmsproxy?: string;",
+            "diffContent": "mmsproxy?: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.data.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "global",
+          "apiDeclaration": "declare namespace eSIM",
+          "old": {
+            "className": "global",
+            "apiDeclaration": "declare namespace eSIM",
+            "diffContent": "declare namespace eSIM",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.esim.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "eSIM",
+          "apiDeclaration": "function isSupported(slotId: number): boolean;",
+          "old": {
+            "className": "eSIM",
+            "apiDeclaration": "function isSupported(slotId: number): boolean;",
+            "diffContent": "function isSupported(slotId: number): boolean;",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.esim.d.ts"
+        },
+        {
+          "operation": "删除API",
+          "className": "eSIM",
+          "apiDeclaration": "function addProfile(profile: DownloadableProfile): Promise<boolean>;",
+          "old": {
+            "className": "eSIM",
+            "apiDeclaration": "function addProfile(profile: DownloadableProfile): Promise<boolean>;",
+            "diffContent": "function addProfile(profile: DownloadableProfile): Promise<boolean>;",
+            "raw": null
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.esim.d.ts"
+        },
+        {
+          "operation": "kit变更",
+          "className": null,
+          "apiDeclaration": null,
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": "TelephonyKit"
+          },
+          "new": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "file": "api/@ohos.telephony.esim.d.ts"
+        }
+      ]
+    }
+  ],
+  "interfaceBehaviorChanges": []
+}

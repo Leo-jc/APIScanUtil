@@ -1,0 +1,1106 @@
+{
+  "title": "HarmonyOS API 调用图谱",
+  "summary": {
+    "filesAnalyzed": 13,
+    "systemApis": 12,
+    "systemApiCallSites": 38
+  },
+  "files": [
+    {
+      "file": "entry\\src\\main\\ets\\components\\CharacterCard.ets",
+      "imports": [
+        {
+          "line": 16,
+          "names": [
+            "DragonBallCharacter"
+          ],
+          "source": "../model/DragonBallCharacter",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "aboutToReuse",
+        "as",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 52,
+          "qualified": "Stack",
+          "base": "Stack",
+          "name": "Stack",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 54,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 60,
+          "qualified": "Image",
+          "base": "Image",
+          "name": "Image",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 66,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 76,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 77,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 83,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\components\\FooterLoading.ets",
+      "imports": [
+        {
+          "line": 16,
+          "names": [
+            "DragonBallFooter"
+          ],
+          "source": "../model/DragonBallFooter",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "aboutToReuse",
+        "as",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 48,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 49,
+          "qualified": "LoadingProgress",
+          "base": "LoadingProgress",
+          "name": "LoadingProgress",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 54,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\components\\HeaderBanner.ets",
+      "imports": [
+        {
+          "line": 16,
+          "names": [
+            "DragonBallHeader"
+          ],
+          "source": "../model/DragonBallHeader",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 17,
+          "names": [
+            "DragonBallCharacter"
+          ],
+          "source": "../model/DragonBallCharacter",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "aboutToReuse",
+        "as",
+        "build",
+        "computeOffset"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 60,
+          "qualified": "Stack",
+          "base": "Stack",
+          "name": "Stack",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 61,
+          "qualified": "Image",
+          "base": "Image",
+          "name": "Image",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 66,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 67,
+          "qualified": "Image",
+          "base": "Image",
+          "name": "Image",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\data\\DragonBallDataSource.ets",
+      "imports": [
+        {
+          "line": 16,
+          "names": [
+            "HeaderRecyclerViewDataSource"
+          ],
+          "source": "header_recycler_view",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 17,
+          "names": [
+            "DragonBallHeader"
+          ],
+          "source": "../model/DragonBallHeader",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 18,
+          "names": [
+            "DragonBallCharacter"
+          ],
+          "source": "../model/DragonBallCharacter",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 19,
+          "names": [
+            "DragonBallFooter"
+          ],
+          "source": "../model/DragonBallFooter",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 20,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onHeaderViewRecycled",
+        "onItemViewRecycled",
+        "onFooterViewRecycled"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 36,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onHeaderViewRecycled"
+        },
+        {
+          "line": 40,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onItemViewRecycled"
+        },
+        {
+          "line": 44,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onFooterViewRecycled"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "AbilityConstant",
+            "ConfigurationConstant",
+            "UIAbility",
+            "Want"
+          ],
+          "source": "@kit.AbilityKit",
+          "kit": "AbilityKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 3,
+          "names": [
+            "window"
+          ],
+          "source": "@kit.ArkUI",
+          "kit": "ArkUI",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onCreate",
+        "onDestroy",
+        "onWindowStageCreate",
+        "onWindowStageDestroy",
+        "onForeground",
+        "onBackground"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 10,
+          "qualified": "this.context.getApplicationContext",
+          "base": "this",
+          "name": "getApplicationContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 12,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 14,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 18,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onDestroy"
+        },
+        {
+          "line": 23,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 27,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 30,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 36,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageDestroy"
+        },
+        {
+          "line": 41,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onForeground"
+        },
+        {
+          "line": 46,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackground"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "BackupExtensionAbility",
+            "BundleVersion"
+          ],
+          "source": "@kit.CoreFileKit",
+          "kit": "CoreFileKit",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onBackup",
+        "onRestore"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 8,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackup"
+        },
+        {
+          "line": 13,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onRestore"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\model\\DragonBallCharacter.ets",
+      "imports": [],
+      "functions": [
+        "constructor"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "entry\\src\\main\\ets\\model\\DragonBallFooter.ets",
+      "imports": [],
+      "functions": [
+        "constructor",
+        "getLoadMoreMessage"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "entry\\src\\main\\ets\\model\\DragonBallHeader.ets",
+      "imports": [
+        {
+          "line": 16,
+          "names": [
+            "DragonBallCharacter"
+          ],
+          "source": "./DragonBallCharacter",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "constructor",
+        "getCharacters"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+      "imports": [
+        {
+          "line": 16,
+          "names": [
+            "HeaderRecyclerViewEntry",
+            "HeaderSpanSizeLookup",
+            "ItemCategory"
+          ],
+          "source": "header_recycler_view",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 17,
+          "names": [
+            "DragonBallDataSource"
+          ],
+          "source": "../data/DragonBallDataSource",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 18,
+          "names": [
+            "DragonBallHeader"
+          ],
+          "source": "../model/DragonBallHeader",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 19,
+          "names": [
+            "DragonBallCharacter"
+          ],
+          "source": "../model/DragonBallCharacter",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 20,
+          "names": [
+            "DragonBallFooter"
+          ],
+          "source": "../model/DragonBallFooter",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 21,
+          "names": [
+            "HeaderBanner"
+          ],
+          "source": "../components/HeaderBanner",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 22,
+          "names": [
+            "CharacterCard"
+          ],
+          "source": "../components/CharacterCard",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 23,
+          "names": [
+            "FooterLoading"
+          ],
+          "source": "../components/FooterLoading",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "aboutToAppear",
+        "fillRecyclerView",
+        "loadMore",
+        "onGridScrollIndex",
+        "refreshStatus",
+        "getHeader",
+        "getFooter",
+        "getDragonBallCharacters",
+        "colorFor",
+        "recycleAt",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 42,
+          "qualified": "Scroller",
+          "base": "Scroller",
+          "name": "Scroller",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": true,
+          "caller": "<top-level>"
+        },
+        {
+          "line": 177,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 179,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 180,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 186,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 199,
+          "qualified": "Grid",
+          "base": "Grid",
+          "name": "Grid",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 203,
+          "qualified": "GridItem",
+          "base": "GridItem",
+          "name": "GridItem",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 213,
+          "qualified": "GridItem",
+          "base": "GridItem",
+          "name": "GridItem",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 223,
+          "qualified": "GridItem",
+          "base": "GridItem",
+          "name": "GridItem",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\HeaderRecyclerViewDataSource.ets",
+      "imports": [
+        {
+          "line": 16,
+          "names": [
+            "ItemCategory"
+          ],
+          "source": "./ItemCategory",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "totalCount",
+        "getData",
+        "registerDataChangeListener",
+        "unregisterDataChangeListener",
+        "notifyDataReloaded",
+        "notifyDataAdd",
+        "notifyDataDelete",
+        "notifyDataChange",
+        "notifyDataMove",
+        "getHeader",
+        "getFooter",
+        "getItem",
+        "setHeader",
+        "setFooter",
+        "setItems",
+        "getItems",
+        "showFooter",
+        "hideFooter",
+        "isHeaderPosition",
+        "isFooterPosition",
+        "getItemCategory",
+        "hasHeader",
+        "hasFooter",
+        "isFooterShowing",
+        "getItemCount",
+        "hasItems",
+        "notifyViewRecycled",
+        "onHeaderViewRecycled",
+        "onItemViewRecycled",
+        "onFooterViewRecycled"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\HeaderSpanSizeLookup.ets",
+      "imports": [
+        {
+          "line": 16,
+          "names": [
+            "HeaderRecyclerViewDataSource"
+          ],
+          "source": "./HeaderRecyclerViewDataSource",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "constructor",
+        "getSpanCount",
+        "getSpanSize",
+        "getIrregularIndexes",
+        "getIrregularSizeByIndex",
+        "buildGridLayoutOptions",
+        "columnStartOf",
+        "columnEndOf",
+        "isFullSpan"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "ohos_library\\src\\main\\ets\\ItemCategory.ets",
+      "imports": [],
+      "functions": [],
+      "systemApiCalls": []
+    }
+  ],
+  "apiGraph": [
+    {
+      "api": "Column",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\components\\CharacterCard.ets",
+          "line": 54,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\components\\CharacterCard.ets",
+          "line": 66,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\components\\CharacterCard.ets",
+          "line": 76,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\components\\FooterLoading.ets",
+          "line": 48,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 177,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 179,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "ForEach",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\components\\HeaderBanner.ets",
+          "line": 66,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Grid",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 199,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "GridItem",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 203,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 213,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 223,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Image",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\components\\CharacterCard.ets",
+          "line": 60,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\components\\HeaderBanner.ets",
+          "line": 61,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\components\\HeaderBanner.ets",
+          "line": 67,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "LoadingProgress",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\components\\FooterLoading.ets",
+          "line": 49,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Scroller",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 42,
+          "caller": "<top-level>",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Stack",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\components\\CharacterCard.ets",
+          "line": 52,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\components\\HeaderBanner.ets",
+          "line": 60,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Text",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\components\\CharacterCard.ets",
+          "line": 77,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\components\\CharacterCard.ets",
+          "line": 83,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\components\\FooterLoading.ets",
+          "line": 54,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 180,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 186,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "hilog.error",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 12,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 27,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\data\\DragonBallDataSource.ets",
+          "line": 36,
+          "caller": "onHeaderViewRecycled",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\data\\DragonBallDataSource.ets",
+          "line": 40,
+          "caller": "onItemViewRecycled",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\data\\DragonBallDataSource.ets",
+          "line": 44,
+          "caller": "onFooterViewRecycled",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 14,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 18,
+          "caller": "onDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 23,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 30,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 36,
+          "caller": "onWindowStageDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 41,
+          "caller": "onForeground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 46,
+          "caller": "onBackground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 8,
+          "caller": "onBackup",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 13,
+          "caller": "onRestore",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "this.context.getApplicationContext",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 10,
+          "caller": "onCreate",
+          "kit": null
+        }
+      ]
+    }
+  ]
+}

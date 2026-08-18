@@ -1,0 +1,16 @@
+{
+  "float": [
+    {
+      "name": "marquee_default_font_size",
+      "value": "16vp"
+    },
+    {
+      "name": "marquee_default_space",
+      "value": "100vp"
+    },
+    {
+      "name": "marquee_default_speed",
+      "value": "0.5"
+    }
+  ]
+}

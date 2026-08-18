@@ -1,0 +1,14 @@
+{
+  "projectPath": "D:\\Gitee\\HarmonyOS\\xts_acts-master\\applications",
+  "sdks": [
+    {
+      "name": "ohos",
+      "path": "D:/Gitee/OpenHarmony/interface_sdk-js-master/"
+    },
+    {
+      "name": "hms",
+      "path": "D:\\sdk\\5.0.0.36(SP5)\\harmonyos-next-dp1-linux-x64\\hms\\ets"
+    }
+  ],
+  "outPath": "D:\\out"
+}

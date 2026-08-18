@@ -1,0 +1,30 @@
+# Define project specific obfuscation rules here.
+# You can include the obfuscation configuration files in the current module's build-profile.json5.
+#
+# For more details, see
+#   https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation
+
+# Keep options: preserve public API names
+-keep-property-name
+  tag
+  text
+  isSelected
+  onClickCallback
+  onDeleteCallback
+  onToggleCallback
+  tags
+  onTagClick
+  onTagToggle
+  onDeleteTag
+  adapter
+  controller
+  options
+  direction
+  wrap
+  justifyContent
+  alignItems
+  alignContent
+  items
+  refreshCounter
+  currentAdapter
+  itemBuilder

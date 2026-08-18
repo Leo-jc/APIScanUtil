@@ -1,0 +1,3949 @@
+{
+  "document": "HarmonyOS 6.1.1(24)_Release API变更清单",
+  "apiVersion": 24,
+  "versionName": "6.1.1(24)",
+  "baseVersion": "6.1.1(24)",
+  "subVersion": "Release",
+  "releaseDate": "2026/05/26",
+  "overviewUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-611",
+  "sourceUrl": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/apidiff-6112",
+  "totalKits": 17,
+  "totalChanges": 212,
+  "kits": [
+    {
+      "name": "Ability Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-abilitykit-6112",
+      "changeCount": 8,
+      "changes": [
+        {
+          "operation": "新增错误码",
+          "className": "UIAbilityContext",
+          "apiDeclaration": "connectServiceExtensionAbility(want: Want, options: ConnectOptions): number;",
+          "old": {
+            "className": "UIAbilityContext",
+            "apiDeclaration": "connectServiceExtensionAbility(want: Want, options: ConnectOptions): number;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "UIAbilityContext",
+            "apiDeclaration": "connectServiceExtensionAbility(want: Want, options: ConnectOptions): number;",
+            "diffContent": "16000012,16000013",
+            "raw": null
+          },
+          "file": "api/application/UIAbilityContext.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "UIExtensionContext",
+          "apiDeclaration": "connectServiceExtensionAbility(want: Want, options: ConnectOptions): number;",
+          "old": {
+            "className": "UIExtensionContext",
+            "apiDeclaration": "connectServiceExtensionAbility(want: Want, options: ConnectOptions): number;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "UIExtensionContext",
+            "apiDeclaration": "connectServiceExtensionAbility(want: Want, options: ConnectOptions): number;",
+            "diffContent": "16000012,16000013",
+            "raw": null
+          },
+          "file": "api/application/UIExtensionContext.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare namespace hyperSnapManager",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare namespace hyperSnapManager",
+            "diffContent": "declare namespace hyperSnapManager",
+            "raw": null
+          },
+          "file": "api/@ohos.app.ability.hyperSnapManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "hyperSnapManager",
+          "apiDeclaration": "function setHyperSnapEnabled(enableFlag: boolean): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "hyperSnapManager",
+            "apiDeclaration": "function setHyperSnapEnabled(enableFlag: boolean): void;",
+            "diffContent": "function setHyperSnapEnabled(enableFlag: boolean): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.app.ability.hyperSnapManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "hyperSnapManager",
+          "apiDeclaration": "function requestRebuildHyperSnap(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "hyperSnapManager",
+            "apiDeclaration": "function requestRebuildHyperSnap(): void;",
+            "diffContent": "function requestRebuildHyperSnap(): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.app.ability.hyperSnapManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AbilityStage",
+          "apiDeclaration": "onLaunchFromHyperSnap(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AbilityStage",
+            "apiDeclaration": "onLaunchFromHyperSnap(): void;",
+            "diffContent": "onLaunchFromHyperSnap(): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.app.ability.AbilityStage.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AbilityStage",
+          "apiDeclaration": "onAboutToCreateAbility(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AbilityStage",
+            "apiDeclaration": "onAboutToCreateAbility(): void;",
+            "diffContent": "onAboutToCreateAbility(): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.app.ability.AbilityStage.d.ts"
+        },
+        {
+          "operation": "新增kit",
+          "className": "global",
+          "apiDeclaration": "api@ohos.app.ability.hyperSnapManager.d.ts",
+          "old": {
+            "className": "global",
+            "apiDeclaration": null,
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "api@ohos.app.ability.hyperSnapManager.d.ts",
+            "diffContent": "AbilityKit",
+            "raw": null
+          },
+          "file": "api/@ohos.app.ability.hyperSnapManager.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "ArkGraphics 2D",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkgraphics2d-6112",
+      "changeCount": 5,
+      "changes": [
+        {
+          "operation": "API卡片权限变更",
+          "className": "uiEffect",
+          "apiDeclaration": "function createEffect(): VisualEffect;",
+          "old": {
+            "className": "uiEffect",
+            "apiDeclaration": "function createEffect(): VisualEffect;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "uiEffect",
+            "apiDeclaration": "function createEffect(): VisualEffect;",
+            "diffContent": "form",
+            "raw": null
+          },
+          "file": "api/@ohos.graphics.uiEffect.d.ts"
+        },
+        {
+          "operation": "函数变更",
+          "className": "Matrix",
+          "apiDeclaration": "isEqual(matrix: Matrix): boolean;",
+          "old": {
+            "className": "Matrix",
+            "apiDeclaration": "isEqual(matrix: Matrix): Boolean;",
+            "diffContent": "Boolean",
+            "raw": null
+          },
+          "new": {
+            "className": "Matrix",
+            "apiDeclaration": "isEqual(matrix: Matrix): boolean;",
+            "diffContent": "boolean",
+            "raw": null
+          },
+          "file": "api/@ohos.graphics.drawing.d.ts"
+        },
+        {
+          "operation": "函数变更",
+          "className": "Matrix",
+          "apiDeclaration": "invert(matrix: Matrix): boolean;",
+          "old": {
+            "className": "Matrix",
+            "apiDeclaration": "invert(matrix: Matrix): Boolean;",
+            "diffContent": "Boolean",
+            "raw": null
+          },
+          "new": {
+            "className": "Matrix",
+            "apiDeclaration": "invert(matrix: Matrix): boolean;",
+            "diffContent": "boolean",
+            "raw": null
+          },
+          "file": "api/@ohos.graphics.drawing.d.ts"
+        },
+        {
+          "operation": "函数变更",
+          "className": "Matrix",
+          "apiDeclaration": "isIdentity(): boolean;",
+          "old": {
+            "className": "Matrix",
+            "apiDeclaration": "isIdentity(): Boolean;",
+            "diffContent": "Boolean",
+            "raw": null
+          },
+          "new": {
+            "className": "Matrix",
+            "apiDeclaration": "isIdentity(): boolean;",
+            "diffContent": "boolean",
+            "raw": null
+          },
+          "file": "api/@ohos.graphics.drawing.d.ts"
+        },
+        {
+          "operation": "函数变更",
+          "className": "Canvas",
+          "apiDeclaration": "drawPixelMapMesh(pixelmap: image.PixelMap, meshWidth: number, meshHeight: number, vertices: Array<number>, vertOffset: number, colors: Array<number> | null, colorOffset: number): void;",
+          "old": {
+            "className": "Canvas",
+            "apiDeclaration": "drawPixelMapMesh(pixelmap: image.PixelMap, meshWidth: number, meshHeight: number, vertices: Array<number>, vertOffset: number, colors: Array<number>, colorOffset: number): void;",
+            "diffContent": "colors: Array<number>",
+            "raw": null
+          },
+          "new": {
+            "className": "Canvas",
+            "apiDeclaration": "drawPixelMapMesh(pixelmap: image.PixelMap, meshWidth: number, meshHeight: number, vertices: Array<number>, vertOffset: number, colors: Array<number> | null, colorOffset: number): void;",
+            "diffContent": "colors: Array<number> | null",
+            "raw": null
+          },
+          "file": "api/@ohos.graphics.drawing.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "ArkTS",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkts-6112",
+      "changeCount": 12,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "ArkTSVM",
+          "apiDeclaration": "static enableLocalHandleDetection(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ArkTSVM",
+            "apiDeclaration": "static enableLocalHandleDetection(): void;",
+            "diffContent": "static enableLocalHandleDetection(): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.util.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "xml",
+          "apiDeclaration": "class XmlSAXParser",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "xml",
+            "apiDeclaration": "class XmlSAXParser",
+            "diffContent": "class XmlSAXParser",
+            "raw": null
+          },
+          "file": "api/@ohos.xml.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "XmlSAXParser",
+          "apiDeclaration": "parse(xmlSAXHandler: XmlSAXHandler): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "XmlSAXParser",
+            "apiDeclaration": "parse(xmlSAXHandler: XmlSAXHandler): void;",
+            "diffContent": "parse(xmlSAXHandler: XmlSAXHandler): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.xml.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "xml",
+          "apiDeclaration": "interface XmlSAXHandler",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "xml",
+            "apiDeclaration": "interface XmlSAXHandler",
+            "diffContent": "interface XmlSAXHandler",
+            "raw": null
+          },
+          "file": "api/@ohos.xml.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "XmlSAXHandler",
+          "apiDeclaration": "startDocument(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "XmlSAXHandler",
+            "apiDeclaration": "startDocument(): void;",
+            "diffContent": "startDocument(): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.xml.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "XmlSAXHandler",
+          "apiDeclaration": "endDocument(): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "XmlSAXHandler",
+            "apiDeclaration": "endDocument(): void;",
+            "diffContent": "endDocument(): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.xml.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "XmlSAXHandler",
+          "apiDeclaration": "startElement(elementName: string, namespaceURI: string | undefined, qName: string | undefined, attributes: Map<string, string>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "XmlSAXHandler",
+            "apiDeclaration": "startElement(elementName: string, namespaceURI: string | undefined, qName: string | undefined, attributes: Map<string, string>): void;",
+            "diffContent": "startElement(elementName: string, namespaceURI: string | undefined, qName: string | undefined, attributes: Map<string, string>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.xml.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "XmlSAXHandler",
+          "apiDeclaration": "endElement(elementName: string, namespaceURI: string | undefined, qName: string | undefined): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "XmlSAXHandler",
+            "apiDeclaration": "endElement(elementName: string, namespaceURI: string | undefined, qName: string | undefined): void;",
+            "diffContent": "endElement(elementName: string, namespaceURI: string | undefined, qName: string | undefined): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.xml.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "XmlSAXHandler",
+          "apiDeclaration": "characters(content: string): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "XmlSAXHandler",
+            "apiDeclaration": "characters(content: string): void;",
+            "diffContent": "characters(content: string): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.xml.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "export const enum RetentionPolicy",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "export const enum RetentionPolicy",
+            "diffContent": "export const enum RetentionPolicy",
+            "raw": null
+          },
+          "file": "arkts/@arkts.lang.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "RetentionPolicy",
+          "apiDeclaration": "SOURCE = 'source'",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "RetentionPolicy",
+            "apiDeclaration": "SOURCE = 'source'",
+            "diffContent": "SOURCE = 'source'",
+            "raw": null
+          },
+          "file": "arkts/@arkts.lang.d.ets"
+        },
+        {
+          "operation": "新增API",
+          "className": "RetentionPolicy",
+          "apiDeclaration": "BYTECODE = 'bytecode'",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "RetentionPolicy",
+            "apiDeclaration": "BYTECODE = 'bytecode'",
+            "diffContent": "BYTECODE = 'bytecode'",
+            "raw": null
+          },
+          "file": "arkts/@arkts.lang.d.ets"
+        }
+      ]
+    },
+    {
+      "name": "ArkUI",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkui-6112",
+      "changeCount": 5,
+      "changes": [
+        {
+          "operation": "API废弃版本变更",
+          "className": "CrownAction",
+          "apiDeclaration": "BEGIN = 0",
+          "old": {
+            "className": "CrownAction",
+            "apiDeclaration": "BEGIN = 0",
+            "diffContent": "24 dynamic",
+            "raw": null
+          },
+          "new": {
+            "className": "CrownAction",
+            "apiDeclaration": "BEGIN = 0",
+            "diffContent": "24",
+            "raw": null
+          },
+          "file": "component/enums.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "global",
+          "apiDeclaration": "declare interface CachedCountOptions",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare interface CachedCountOptions",
+            "diffContent": "declare interface CachedCountOptions",
+            "raw": null
+          },
+          "file": "component/swiper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CachedCountOptions",
+          "apiDeclaration": "isShown?: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CachedCountOptions",
+            "apiDeclaration": "isShown?: boolean;",
+            "diffContent": "isShown?: boolean;",
+            "raw": null
+          },
+          "file": "component/swiper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CachedCountOptions",
+          "apiDeclaration": "independent?: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CachedCountOptions",
+            "apiDeclaration": "independent?: boolean;",
+            "diffContent": "independent?: boolean;",
+            "raw": null
+          },
+          "file": "component/swiper.d.ts"
+        },
+        {
+          "operation": "类新增同名方法且参数类型与已有的参数类型范围不是包含关系",
+          "className": "SwiperAttribute",
+          "apiDeclaration": "cachedCount(count: number, options: CachedCountOptions): SwiperAttribute;",
+          "old": {
+            "className": "SwiperAttribute",
+            "apiDeclaration": "cachedCount(count: number, isShown: boolean): SwiperAttribute;",
+            "diffContent": "cachedCount(count: number, isShown: boolean): SwiperAttribute;",
+            "raw": null
+          },
+          "new": {
+            "className": "SwiperAttribute",
+            "apiDeclaration": "cachedCount(count: number, options: CachedCountOptions): SwiperAttribute;",
+            "diffContent": "cachedCount(count: number, options: CachedCountOptions): SwiperAttribute;",
+            "raw": null
+          },
+          "file": "component/swiper.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "ArkWeb",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-arkweb-6112",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "WebDownloadItem",
+          "apiDeclaration": "getOriginalUrl(): string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "WebDownloadItem",
+            "apiDeclaration": "getOriginalUrl(): string;",
+            "diffContent": "getOriginalUrl(): string;",
+            "raw": null
+          },
+          "file": "api/@ohos.web.webview.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "WebDownloadItem",
+          "apiDeclaration": "getReferrerUrl(): string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "WebDownloadItem",
+            "apiDeclaration": "getReferrerUrl(): string;",
+            "diffContent": "getReferrerUrl(): string;",
+            "raw": null
+          },
+          "file": "api/@ohos.web.webview.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Audio Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-audiokit-6112",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "AudioSessionManager",
+          "apiDeclaration": "setCapturerMuteHint(mute: boolean): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AudioSessionManager",
+            "apiDeclaration": "setCapturerMuteHint(mute: boolean): Promise<void>;",
+            "diffContent": "setCapturerMuteHint(mute: boolean): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.audio.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AudioCapturer",
+          "apiDeclaration": "setMuteHint(mute: boolean): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AudioCapturer",
+            "apiDeclaration": "setMuteHint(mute: boolean): Promise<void>;",
+            "diffContent": "setMuteHint(mute: boolean): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.audio.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Background Tasks Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-backgroundtaskskit-6112",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "syscap变更",
+          "className": "global",
+          "apiDeclaration": "declare namespace backgroundTaskManager",
+          "old": {
+            "className": "global",
+            "apiDeclaration": "declare namespace backgroundTaskManager",
+            "diffContent": "SystemCapability.ResourceSchedule.BackgroundTaskManager.Core",
+            "raw": null
+          },
+          "new": {
+            "className": "global",
+            "apiDeclaration": "declare namespace backgroundTaskManager",
+            "diffContent": "SystemCapability.ResourceSchedule.BackgroundTaskManager.ContinuousTask",
+            "raw": null
+          },
+          "file": "api/@ohos.resourceschedule.backgroundTaskManager.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Call Service Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-callservicekit-6112",
+      "changeCount": 18,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "CallerInfoQueryExtensionAbility",
+          "apiDeclaration": "onQueryBusinessServiceData(phoneNumber: string): Promise<Array<BusinessServiceData>>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CallerInfoQueryExtensionAbility",
+            "apiDeclaration": "onQueryBusinessServiceData(phoneNumber: string): Promise<Array<BusinessServiceData>>;",
+            "diffContent": "onQueryBusinessServiceData(phoneNumber: string): Promise<Array<BusinessServiceData>>;",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.CallerInfoQueryExtensionAbility.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SwitchState",
+          "apiDeclaration": "isBusinessServiceDataEnabled: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SwitchState",
+            "apiDeclaration": "isBusinessServiceDataEnabled: boolean;",
+            "diffContent": "isBusinessServiceDataEnabled: boolean;",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "numberIdentify",
+          "apiDeclaration": "export interface BusinessServiceData",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "numberIdentify",
+            "apiDeclaration": "export interface BusinessServiceData",
+            "diffContent": "export interface BusinessServiceData",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BusinessServiceData",
+          "apiDeclaration": "type: BusinessServiceType;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BusinessServiceData",
+            "apiDeclaration": "type: BusinessServiceType;",
+            "diffContent": "type: BusinessServiceType;",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BusinessServiceData",
+          "apiDeclaration": "delivery?: DeliveryData;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BusinessServiceData",
+            "apiDeclaration": "delivery?: DeliveryData;",
+            "diffContent": "delivery?: DeliveryData;",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "numberIdentify",
+          "apiDeclaration": "export enum BusinessServiceType",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "numberIdentify",
+            "apiDeclaration": "export enum BusinessServiceType",
+            "diffContent": "export enum BusinessServiceType",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BusinessServiceType",
+          "apiDeclaration": "DELIVERY = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BusinessServiceType",
+            "apiDeclaration": "DELIVERY = 0",
+            "diffContent": "DELIVERY = 0",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "numberIdentify",
+          "apiDeclaration": "export interface DeliveryData",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "numberIdentify",
+            "apiDeclaration": "export interface DeliveryData",
+            "diffContent": "export interface DeliveryData",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "DeliveryData",
+          "apiDeclaration": "customerName: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "DeliveryData",
+            "apiDeclaration": "customerName: string;",
+            "diffContent": "customerName: string;",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "DeliveryData",
+          "apiDeclaration": "deliveryNumber: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "DeliveryData",
+            "apiDeclaration": "deliveryNumber: string;",
+            "diffContent": "deliveryNumber: string;",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "DeliveryData",
+          "apiDeclaration": "deliveryStatus: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "DeliveryData",
+            "apiDeclaration": "deliveryStatus: string;",
+            "diffContent": "deliveryStatus: string;",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "DeliveryData",
+          "apiDeclaration": "deliveryStatusColor: DeliveryStatusColor;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "DeliveryData",
+            "apiDeclaration": "deliveryStatusColor: DeliveryStatusColor;",
+            "diffContent": "deliveryStatusColor: DeliveryStatusColor;",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "DeliveryData",
+          "apiDeclaration": "deliveryAddress: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "DeliveryData",
+            "apiDeclaration": "deliveryAddress: string;",
+            "diffContent": "deliveryAddress: string;",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "DeliveryData",
+          "apiDeclaration": "deliveryTimeout: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "DeliveryData",
+            "apiDeclaration": "deliveryTimeout: string;",
+            "diffContent": "deliveryTimeout: string;",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "numberIdentify",
+          "apiDeclaration": "export enum DeliveryStatusColor",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "numberIdentify",
+            "apiDeclaration": "export enum DeliveryStatusColor",
+            "diffContent": "export enum DeliveryStatusColor",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "DeliveryStatusColor",
+          "apiDeclaration": "BLUE = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "DeliveryStatusColor",
+            "apiDeclaration": "BLUE = 0",
+            "diffContent": "BLUE = 0",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "DeliveryStatusColor",
+          "apiDeclaration": "GREEN = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "DeliveryStatusColor",
+            "apiDeclaration": "GREEN = 1",
+            "diffContent": "GREEN = 1",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "DeliveryStatusColor",
+          "apiDeclaration": "RED = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "DeliveryStatusColor",
+            "apiDeclaration": "RED = 2",
+            "diffContent": "RED = 2",
+            "raw": null
+          },
+          "file": "api/@hms.telephony.numberIdentify.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Camera Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-camerakit-6112",
+      "changeCount": 81,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "enum SensorColorFilterArrangement",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "enum SensorColorFilterArrangement",
+            "diffContent": "enum SensorColorFilterArrangement",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SensorColorFilterArrangement",
+          "apiDeclaration": "BGGR = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SensorColorFilterArrangement",
+            "apiDeclaration": "BGGR = 0",
+            "diffContent": "BGGR = 0",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SensorColorFilterArrangement",
+          "apiDeclaration": "GBRG = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SensorColorFilterArrangement",
+            "apiDeclaration": "GBRG = 1",
+            "diffContent": "GBRG = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SensorColorFilterArrangement",
+          "apiDeclaration": "GRBG = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SensorColorFilterArrangement",
+            "apiDeclaration": "GRBG = 2",
+            "diffContent": "GRBG = 2",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SensorColorFilterArrangement",
+          "apiDeclaration": "RGGB = 3",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SensorColorFilterArrangement",
+            "apiDeclaration": "RGGB = 3",
+            "diffContent": "RGGB = 3",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CameraDevice",
+          "apiDeclaration": "readonly lensEquivalentFocalLength?: Array<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CameraDevice",
+            "apiDeclaration": "readonly lensEquivalentFocalLength?: Array<number>;",
+            "diffContent": "readonly lensEquivalentFocalLength?: Array<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CameraDevice",
+          "apiDeclaration": "readonly isLogicalCamera?: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CameraDevice",
+            "apiDeclaration": "readonly isLogicalCamera?: boolean;",
+            "diffContent": "readonly isLogicalCamera?: boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CameraDevice",
+          "apiDeclaration": "readonly constituentCameraDevices?: Array<CameraDevice>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CameraDevice",
+            "apiDeclaration": "readonly constituentCameraDevices?: Array<CameraDevice>;",
+            "diffContent": "readonly constituentCameraDevices?: Array<CameraDevice>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CameraDevice",
+          "apiDeclaration": "readonly lensFocalLength?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CameraDevice",
+            "apiDeclaration": "readonly lensFocalLength?: number;",
+            "diffContent": "readonly lensFocalLength?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CameraDevice",
+          "apiDeclaration": "readonly minimumFocusDistance?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CameraDevice",
+            "apiDeclaration": "readonly minimumFocusDistance?: number;",
+            "diffContent": "readonly minimumFocusDistance?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CameraDevice",
+          "apiDeclaration": "readonly lensDistortion?: Array<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CameraDevice",
+            "apiDeclaration": "readonly lensDistortion?: Array<number>;",
+            "diffContent": "readonly lensDistortion?: Array<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CameraDevice",
+          "apiDeclaration": "readonly lensIntrinsicCalibration?: Array<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CameraDevice",
+            "apiDeclaration": "readonly lensIntrinsicCalibration?: Array<number>;",
+            "diffContent": "readonly lensIntrinsicCalibration?: Array<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CameraDevice",
+          "apiDeclaration": "readonly sensorPhysicalSize?: Array<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CameraDevice",
+            "apiDeclaration": "readonly sensorPhysicalSize?: Array<number>;",
+            "diffContent": "readonly sensorPhysicalSize?: Array<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CameraDevice",
+          "apiDeclaration": "readonly sensorPixelArraySize?: Array<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CameraDevice",
+            "apiDeclaration": "readonly sensorPixelArraySize?: Array<number>;",
+            "diffContent": "readonly sensorPixelArraySize?: Array<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CameraDevice",
+          "apiDeclaration": "readonly sensorColorFilterArrangement?: SensorColorFilterArrangement;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CameraDevice",
+            "apiDeclaration": "readonly sensorColorFilterArrangement?: SensorColorFilterArrangement;",
+            "diffContent": "readonly sensorColorFilterArrangement?: SensorColorFilterArrangement;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "CameraFormat",
+          "apiDeclaration": "CAMERA_FORMAT_DNG = 4",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "CameraFormat",
+            "apiDeclaration": "CAMERA_FORMAT_DNG = 4",
+            "diffContent": "CAMERA_FORMAT_DNG = 4",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Flash",
+          "apiDeclaration": "onFlashStateChange(callback: Callback<FlashState>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Flash",
+            "apiDeclaration": "onFlashStateChange(callback: Callback<FlashState>): void;",
+            "diffContent": "onFlashStateChange(callback: Callback<FlashState>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Flash",
+          "apiDeclaration": "offFlashStateChange(callback?: Callback<FlashState>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Flash",
+            "apiDeclaration": "offFlashStateChange(callback?: Callback<FlashState>): void;",
+            "diffContent": "offFlashStateChange(callback?: Callback<FlashState>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "enum FlashState",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "enum FlashState",
+            "diffContent": "enum FlashState",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FlashState",
+          "apiDeclaration": "FLASH_STATE_UNAVAILABLE = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FlashState",
+            "apiDeclaration": "FLASH_STATE_UNAVAILABLE = 0",
+            "diffContent": "FLASH_STATE_UNAVAILABLE = 0",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FlashState",
+          "apiDeclaration": "FLASH_STATE_READY = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FlashState",
+            "apiDeclaration": "FLASH_STATE_READY = 1",
+            "diffContent": "FLASH_STATE_READY = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FlashState",
+          "apiDeclaration": "FLASH_STATE_FLASHING = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FlashState",
+            "apiDeclaration": "FLASH_STATE_FLASHING = 2",
+            "diffContent": "FLASH_STATE_FLASHING = 2",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ExposureMode",
+          "apiDeclaration": "EXPOSURE_MODE_MANUAL = 3",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ExposureMode",
+            "apiDeclaration": "EXPOSURE_MODE_MANUAL = 3",
+            "diffContent": "EXPOSURE_MODE_MANUAL = 3",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "enum ExposureMeteringMode",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "enum ExposureMeteringMode",
+            "diffContent": "enum ExposureMeteringMode",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ExposureMeteringMode",
+          "apiDeclaration": "MATRIX = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ExposureMeteringMode",
+            "apiDeclaration": "MATRIX = 0",
+            "diffContent": "MATRIX = 0",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ExposureMeteringMode",
+          "apiDeclaration": "CENTER = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ExposureMeteringMode",
+            "apiDeclaration": "CENTER = 1",
+            "diffContent": "CENTER = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ExposureMeteringMode",
+          "apiDeclaration": "SPOT = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ExposureMeteringMode",
+            "apiDeclaration": "SPOT = 2",
+            "diffContent": "SPOT = 2",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AutoExposureQuery",
+          "apiDeclaration": "isExposureMeteringModeSupported(aeMeteringMode: ExposureMeteringMode): boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AutoExposureQuery",
+            "apiDeclaration": "isExposureMeteringModeSupported(aeMeteringMode: ExposureMeteringMode): boolean;",
+            "diffContent": "isExposureMeteringModeSupported(aeMeteringMode: ExposureMeteringMode): boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AutoExposure",
+          "apiDeclaration": "getExposureMeteringMode(): ExposureMeteringMode;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AutoExposure",
+            "apiDeclaration": "getExposureMeteringMode(): ExposureMeteringMode;",
+            "diffContent": "getExposureMeteringMode(): ExposureMeteringMode;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "AutoExposure",
+          "apiDeclaration": "setExposureMeteringMode(aeMeteringMode: ExposureMeteringMode): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "AutoExposure",
+            "apiDeclaration": "setExposureMeteringMode(aeMeteringMode: ExposureMeteringMode): void;",
+            "diffContent": "setExposureMeteringMode(aeMeteringMode: ExposureMeteringMode): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "interface ManualFocusQuery",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "interface ManualFocusQuery",
+            "diffContent": "interface ManualFocusQuery",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ManualFocusQuery",
+          "apiDeclaration": "isFocusDistanceSupported(): boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ManualFocusQuery",
+            "apiDeclaration": "isFocusDistanceSupported(): boolean;",
+            "diffContent": "isFocusDistanceSupported(): boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "interface ManualFocus",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "interface ManualFocus",
+            "diffContent": "interface ManualFocus",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ManualFocus",
+          "apiDeclaration": "getFocusDistance(): number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ManualFocus",
+            "apiDeclaration": "getFocusDistance(): number;",
+            "diffContent": "getFocusDistance(): number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ManualFocus",
+          "apiDeclaration": "setFocusDistance(distance: number): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ManualFocus",
+            "apiDeclaration": "setFocusDistance(distance: number): void;",
+            "diffContent": "setFocusDistance(distance: number): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "interface ManualIsoQuery",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "interface ManualIsoQuery",
+            "diffContent": "interface ManualIsoQuery",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ManualIsoQuery",
+          "apiDeclaration": "getSupportedIsoRange(): number\\[\\];",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ManualIsoQuery",
+            "apiDeclaration": "getSupportedIsoRange(): number\\[\\];",
+            "diffContent": "getSupportedIsoRange(): number\\[\\];",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "interface ManualIso",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "interface ManualIso",
+            "diffContent": "interface ManualIso",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ManualIso",
+          "apiDeclaration": "getIso(): number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ManualIso",
+            "apiDeclaration": "getIso(): number;",
+            "diffContent": "getIso(): number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ManualIso",
+          "apiDeclaration": "setIso(iso: number): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ManualIso",
+            "apiDeclaration": "setIso(iso: number): void;",
+            "diffContent": "setIso(iso: number): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ZoomQuery",
+          "apiDeclaration": "getRAWCaptureZoomRatioRange(): Array<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ZoomQuery",
+            "apiDeclaration": "getRAWCaptureZoomRatioRange(): Array<number>;",
+            "diffContent": "getRAWCaptureZoomRatioRange(): Array<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ControlCenterEffectType",
+          "apiDeclaration": "AUTO_FRAMING = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ControlCenterEffectType",
+            "apiDeclaration": "AUTO_FRAMING = 2",
+            "diffContent": "AUTO_FRAMING = 2",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PhotoSession",
+          "apiDeclaration": "onIsoInfoChange(callback: Callback<IsoInfo>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PhotoSession",
+            "apiDeclaration": "onIsoInfoChange(callback: Callback<IsoInfo>): void;",
+            "diffContent": "onIsoInfoChange(callback: Callback<IsoInfo>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PhotoSession",
+          "apiDeclaration": "offIsoInfoChange(callback?: Callback<IsoInfo>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PhotoSession",
+            "apiDeclaration": "offIsoInfoChange(callback?: Callback<IsoInfo>): void;",
+            "diffContent": "offIsoInfoChange(callback?: Callback<IsoInfo>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PhotoSession",
+          "apiDeclaration": "onExposureInfoChange(callback: Callback<ExposureInfo>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PhotoSession",
+            "apiDeclaration": "onExposureInfoChange(callback: Callback<ExposureInfo>): void;",
+            "diffContent": "onExposureInfoChange(callback: Callback<ExposureInfo>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PhotoSession",
+          "apiDeclaration": "offExposureInfoChange(callback?: Callback<ExposureInfo>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PhotoSession",
+            "apiDeclaration": "offExposureInfoChange(callback?: Callback<ExposureInfo>): void;",
+            "diffContent": "offExposureInfoChange(callback?: Callback<ExposureInfo>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "interface ZoomRange",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "interface ZoomRange",
+            "diffContent": "interface ZoomRange",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ZoomRange",
+          "apiDeclaration": "readonly min: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ZoomRange",
+            "apiDeclaration": "readonly min: number;",
+            "diffContent": "readonly min: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ZoomRange",
+          "apiDeclaration": "readonly max: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ZoomRange",
+            "apiDeclaration": "readonly max: number;",
+            "diffContent": "readonly max: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "interface PhysicalAperture",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "interface PhysicalAperture",
+            "diffContent": "interface PhysicalAperture",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PhysicalAperture",
+          "apiDeclaration": "zoomRange: ZoomRange;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PhysicalAperture",
+            "apiDeclaration": "zoomRange: ZoomRange;",
+            "diffContent": "zoomRange: ZoomRange;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "PhysicalAperture",
+          "apiDeclaration": "apertures: Array<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "PhysicalAperture",
+            "apiDeclaration": "apertures: Array<number>;",
+            "diffContent": "apertures: Array<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "interface ApertureQuery",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "interface ApertureQuery",
+            "diffContent": "interface ApertureQuery",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ApertureQuery",
+          "apiDeclaration": "getSupportedPhysicalApertures(): Array<PhysicalAperture>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ApertureQuery",
+            "apiDeclaration": "getSupportedPhysicalApertures(): Array<PhysicalAperture>;",
+            "diffContent": "getSupportedPhysicalApertures(): Array<PhysicalAperture>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "interface Aperture",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "interface Aperture",
+            "diffContent": "interface Aperture",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Aperture",
+          "apiDeclaration": "getPhysicalAperture(): number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Aperture",
+            "apiDeclaration": "getPhysicalAperture(): number;",
+            "diffContent": "getPhysicalAperture(): number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "Aperture",
+          "apiDeclaration": "setPhysicalAperture(aperture: number): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "Aperture",
+            "apiDeclaration": "setPhysicalAperture(aperture: number): void;",
+            "diffContent": "setPhysicalAperture(aperture: number): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "interface ManualExposureQuery",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "interface ManualExposureQuery",
+            "diffContent": "interface ManualExposureQuery",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ManualExposureQuery",
+          "apiDeclaration": "getSupportedExposureDurationRange(): Array<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ManualExposureQuery",
+            "apiDeclaration": "getSupportedExposureDurationRange(): Array<number>;",
+            "diffContent": "getSupportedExposureDurationRange(): Array<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ManualExposureQuery",
+          "apiDeclaration": "getExposureBiasStep(): number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ManualExposureQuery",
+            "apiDeclaration": "getExposureBiasStep(): number;",
+            "diffContent": "getExposureBiasStep(): number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "interface ManualExposure",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "interface ManualExposure",
+            "diffContent": "interface ManualExposure",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ManualExposure",
+          "apiDeclaration": "getExposureDuration(): number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ManualExposure",
+            "apiDeclaration": "getExposureDuration(): number;",
+            "diffContent": "getExposureDuration(): number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ManualExposure",
+          "apiDeclaration": "setExposureDuration(exposureDuration: number): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ManualExposure",
+            "apiDeclaration": "setExposureDuration(exposureDuration: number): void;",
+            "diffContent": "setExposureDuration(exposureDuration: number): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "interface ExposureInfo",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "interface ExposureInfo",
+            "diffContent": "interface ExposureInfo",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ExposureInfo",
+          "apiDeclaration": "readonly exposureTime?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ExposureInfo",
+            "apiDeclaration": "readonly exposureTime?: number;",
+            "diffContent": "readonly exposureTime?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "enum OISMode",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "enum OISMode",
+            "diffContent": "enum OISMode",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "OISMode",
+          "apiDeclaration": "OFF = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "OISMode",
+            "apiDeclaration": "OFF = 0",
+            "diffContent": "OFF = 0",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "OISMode",
+          "apiDeclaration": "AUTO = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "OISMode",
+            "apiDeclaration": "AUTO = 1",
+            "diffContent": "AUTO = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "OISMode",
+          "apiDeclaration": "CUSTOM = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "OISMode",
+            "apiDeclaration": "CUSTOM = 2",
+            "diffContent": "CUSTOM = 2",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "enum OISAxes",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "enum OISAxes",
+            "diffContent": "enum OISAxes",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "OISAxes",
+          "apiDeclaration": "PITCH = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "OISAxes",
+            "apiDeclaration": "PITCH = 0",
+            "diffContent": "PITCH = 0",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "OISAxes",
+          "apiDeclaration": "YAW = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "OISAxes",
+            "apiDeclaration": "YAW = 1",
+            "diffContent": "YAW = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "interface OISQuery",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "interface OISQuery",
+            "diffContent": "interface OISQuery",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "OISQuery",
+          "apiDeclaration": "isOISModeSupported(mode: OISMode): boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "OISQuery",
+            "apiDeclaration": "isOISModeSupported(mode: OISMode): boolean;",
+            "diffContent": "isOISModeSupported(mode: OISMode): boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "OISQuery",
+          "apiDeclaration": "getSupportedOISBiasRange(oisAxis: OISAxes): Array<number>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "OISQuery",
+            "apiDeclaration": "getSupportedOISBiasRange(oisAxis: OISAxes): Array<number>;",
+            "diffContent": "getSupportedOISBiasRange(oisAxis: OISAxes): Array<number>;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "OISQuery",
+          "apiDeclaration": "getSupportedOISBiasStep(oisAxis: OISAxes): number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "OISQuery",
+            "apiDeclaration": "getSupportedOISBiasStep(oisAxis: OISAxes): number;",
+            "diffContent": "getSupportedOISBiasStep(oisAxis: OISAxes): number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "OISQuery",
+          "apiDeclaration": "getCurrentOISMode(): OISMode;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "OISQuery",
+            "apiDeclaration": "getCurrentOISMode(): OISMode;",
+            "diffContent": "getCurrentOISMode(): OISMode;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "OISQuery",
+          "apiDeclaration": "getCurrentCustomOISBias(oisAxis: OISAxes): number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "OISQuery",
+            "apiDeclaration": "getCurrentCustomOISBias(oisAxis: OISAxes): number;",
+            "diffContent": "getCurrentCustomOISBias(oisAxis: OISAxes): number;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "camera",
+          "apiDeclaration": "interface OIS",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "camera",
+            "apiDeclaration": "interface OIS",
+            "diffContent": "interface OIS",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "OIS",
+          "apiDeclaration": "setOISMode(mode: OISMode): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "OIS",
+            "apiDeclaration": "setOISMode(mode: OISMode): void;",
+            "diffContent": "setOISMode(mode: OISMode): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "OIS",
+          "apiDeclaration": "setOISModeCustom(pitch: number, yaw: number): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "OIS",
+            "apiDeclaration": "setOISModeCustom(pitch: number, yaw: number): void;",
+            "diffContent": "setOISModeCustom(pitch: number, yaw: number): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.multimedia.camera.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Contacts Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-contactskit-6112",
+      "changeCount": 2,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "contact",
+          "apiDeclaration": "function hasMatchedCallLog(context: Context, phoneNumber: string, minDuration: number): Promise<boolean>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "contact",
+            "apiDeclaration": "function hasMatchedCallLog(context: Context, phoneNumber: string, minDuration: number): Promise<boolean>;",
+            "diffContent": "function hasMatchedCallLog(context: Context, phoneNumber: string, minDuration: number): Promise<boolean>;",
+            "raw": null
+          },
+          "file": "api/@ohos.contact.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "contact",
+          "apiDeclaration": "function hasMatchedCallLog(context: Context, phoneNumber: string, minDuration: number, withinTime: number): Promise<boolean>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "contact",
+            "apiDeclaration": "function hasMatchedCallLog(context: Context, phoneNumber: string, minDuration: number, withinTime: number): Promise<boolean>;",
+            "diffContent": "function hasMatchedCallLog(context: Context, phoneNumber: string, minDuration: number, withinTime: number): Promise<boolean>;",
+            "raw": null
+          },
+          "file": "api/@ohos.contact.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Core File Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-corefilekit-6112",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "API废弃版本变更",
+          "className": "TaskSignal",
+          "apiDeclaration": "onCancel(): Promise<string>;",
+          "old": {
+            "className": "TaskSignal",
+            "apiDeclaration": "onCancel(): Promise<string>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "TaskSignal",
+            "apiDeclaration": "onCancel(): Promise<string>;",
+            "diffContent": "24",
+            "raw": null
+          },
+          "file": "api/@ohos.file.fs.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Distributed Service Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-distributedservicekit-6112",
+      "changeCount": 7,
+      "changes": [
+        {
+          "operation": "删除错误码",
+          "className": "proxyChannelManager",
+          "apiDeclaration": "function openProxyChannel(channelInfo: ChannelInfo): Promise<number>;",
+          "old": {
+            "className": "proxyChannelManager",
+            "apiDeclaration": "function openProxyChannel(channelInfo: ChannelInfo): Promise<number>;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "new": {
+            "className": "proxyChannelManager",
+            "apiDeclaration": "function openProxyChannel(channelInfo: ChannelInfo): Promise<number>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.distributedsched.proxyChannelManager.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "proxyChannelManager",
+          "apiDeclaration": "function closeProxyChannel(channelId: number): void;",
+          "old": {
+            "className": "proxyChannelManager",
+            "apiDeclaration": "function closeProxyChannel(channelId: number): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "new": {
+            "className": "proxyChannelManager",
+            "apiDeclaration": "function closeProxyChannel(channelId: number): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.distributedsched.proxyChannelManager.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "proxyChannelManager",
+          "apiDeclaration": "function sendData(channelId: number, data: ArrayBuffer): Promise<void>;",
+          "old": {
+            "className": "proxyChannelManager",
+            "apiDeclaration": "function sendData(channelId: number, data: ArrayBuffer): Promise<void>;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "new": {
+            "className": "proxyChannelManager",
+            "apiDeclaration": "function sendData(channelId: number, data: ArrayBuffer): Promise<void>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.distributedsched.proxyChannelManager.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "proxyChannelManager",
+          "apiDeclaration": "function on(type: 'receiveData', channelId: number, callback: Callback<DataInfo>): void;",
+          "old": {
+            "className": "proxyChannelManager",
+            "apiDeclaration": "function on(type: 'receiveData', channelId: number, callback: Callback<DataInfo>): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "new": {
+            "className": "proxyChannelManager",
+            "apiDeclaration": "function on(type: 'receiveData', channelId: number, callback: Callback<DataInfo>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.distributedsched.proxyChannelManager.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "proxyChannelManager",
+          "apiDeclaration": "function off(type: 'receiveData', channelId: number, callback?: Callback<DataInfo>): void;",
+          "old": {
+            "className": "proxyChannelManager",
+            "apiDeclaration": "function off(type: 'receiveData', channelId: number, callback?: Callback<DataInfo>): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "new": {
+            "className": "proxyChannelManager",
+            "apiDeclaration": "function off(type: 'receiveData', channelId: number, callback?: Callback<DataInfo>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.distributedsched.proxyChannelManager.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "proxyChannelManager",
+          "apiDeclaration": "function on(type: 'channelStateChange', channelId: number, callback: Callback<ChannelStateInfo>): void;",
+          "old": {
+            "className": "proxyChannelManager",
+            "apiDeclaration": "function on(type: 'channelStateChange', channelId: number, callback: Callback<ChannelStateInfo>): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "new": {
+            "className": "proxyChannelManager",
+            "apiDeclaration": "function on(type: 'channelStateChange', channelId: number, callback: Callback<ChannelStateInfo>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.distributedsched.proxyChannelManager.d.ts"
+        },
+        {
+          "operation": "删除错误码",
+          "className": "proxyChannelManager",
+          "apiDeclaration": "function off(type: 'channelStateChange', channelId: number, callback?: Callback<ChannelStateInfo>): void;",
+          "old": {
+            "className": "proxyChannelManager",
+            "apiDeclaration": "function off(type: 'channelStateChange', channelId: number, callback?: Callback<ChannelStateInfo>): void;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "new": {
+            "className": "proxyChannelManager",
+            "apiDeclaration": "function off(type: 'channelStateChange', channelId: number, callback?: Callback<ChannelStateInfo>): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "file": "api/@ohos.distributedsched.proxyChannelManager.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Enterprise Threat Protection Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-enterprisethreatprotectionkit-6112",
+      "changeCount": 6,
+      "changes": [
+        {
+          "operation": "新增错误码",
+          "className": "virusRemediation",
+          "apiDeclaration": "function isolateThreatFile(path: string): Promise<string>;",
+          "old": {
+            "className": "virusRemediation",
+            "apiDeclaration": "function isolateThreatFile(path: string): Promise<string>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "virusRemediation",
+            "apiDeclaration": "function isolateThreatFile(path: string): Promise<string>;",
+            "diffContent": "1023801001",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.virusRemediation.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "virusRemediation",
+          "apiDeclaration": "function restoreIsolatedFile(id: string): Promise<string>;",
+          "old": {
+            "className": "virusRemediation",
+            "apiDeclaration": "function restoreIsolatedFile(id: string): Promise<string>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "virusRemediation",
+            "apiDeclaration": "function restoreIsolatedFile(id: string): Promise<string>;",
+            "diffContent": "1023801001,1023802003,1023803001",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.virusRemediation.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "virusRemediation",
+          "apiDeclaration": "function removeIsolatedFile(id: string): Promise<void>;",
+          "old": {
+            "className": "virusRemediation",
+            "apiDeclaration": "function removeIsolatedFile(id: string): Promise<void>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "virusRemediation",
+            "apiDeclaration": "function removeIsolatedFile(id: string): Promise<void>;",
+            "diffContent": "1023801001,1023803001",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.virusRemediation.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "virusRemediation",
+          "apiDeclaration": "function queryIsolatedFiles(callback: QueryCallback, batchNum?: number): void;",
+          "old": {
+            "className": "virusRemediation",
+            "apiDeclaration": "function queryIsolatedFiles(callback: QueryCallback, batchNum?: number): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "virusRemediation",
+            "apiDeclaration": "function queryIsolatedFiles(callback: QueryCallback, batchNum?: number): void;",
+            "diffContent": "1023801001",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.virusRemediation.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "virusRemediation",
+          "apiDeclaration": "function openFile(path: string): Promise<number>;",
+          "old": {
+            "className": "virusRemediation",
+            "apiDeclaration": "function openFile(path: string): Promise<number>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "virusRemediation",
+            "apiDeclaration": "function openFile(path: string): Promise<number>;",
+            "diffContent": "1023801001,1023803001,1023804001",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.virusRemediation.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "virusRemediation",
+          "apiDeclaration": "function scanBundleFiles(type: ScanTargetType, callback: ScanCallback, bundleName?: string, batchNum?: number): void;",
+          "old": {
+            "className": "virusRemediation",
+            "apiDeclaration": "function scanBundleFiles(type: ScanTargetType, callback: ScanCallback, bundleName?: string, batchNum?: number): void;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "virusRemediation",
+            "apiDeclaration": "function scanBundleFiles(type: ScanTargetType, callback: ScanCallback, bundleName?: string, batchNum?: number): void;",
+            "diffContent": "1023801001",
+            "raw": null
+          },
+          "file": "api/@hms.pcService.virusRemediation.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "MDM Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-mdmkit-6112",
+      "changeCount": 55,
+      "changes": [
+        {
+          "operation": "函数变更",
+          "className": "systemManager",
+          "apiDeclaration": "function getInstallLocalEnterpriseAppEnabled(admin: Want | null): boolean;",
+          "old": {
+            "className": "systemManager",
+            "apiDeclaration": "function getInstallLocalEnterpriseAppEnabled(admin: Want): boolean;",
+            "diffContent": "admin: Want",
+            "raw": null
+          },
+          "new": {
+            "className": "systemManager",
+            "apiDeclaration": "function getInstallLocalEnterpriseAppEnabled(admin: Want | null): boolean;",
+            "diffContent": "admin: Want | null",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.systemManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "systemManager",
+          "apiDeclaration": "function setInstallLocalEnterpriseAppEnabledForAccount(admin: Want, isEnable: boolean, accountId: number): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "systemManager",
+            "apiDeclaration": "function setInstallLocalEnterpriseAppEnabledForAccount(admin: Want, isEnable: boolean, accountId: number): void;",
+            "diffContent": "function setInstallLocalEnterpriseAppEnabledForAccount(admin: Want, isEnable: boolean, accountId: number): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.systemManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "systemManager",
+          "apiDeclaration": "function getInstallLocalEnterpriseAppEnabledForAccount(admin: Want | null, accountId: number): boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "systemManager",
+            "apiDeclaration": "function getInstallLocalEnterpriseAppEnabledForAccount(admin: Want | null, accountId: number): boolean;",
+            "diffContent": "function getInstallLocalEnterpriseAppEnabledForAccount(admin: Want | null, accountId: number): boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.systemManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "systemManager",
+          "apiDeclaration": "function setActivationLockDisabled(admin: Want, isDisabled: boolean, credential?: string): Promise<void>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "systemManager",
+            "apiDeclaration": "function setActivationLockDisabled(admin: Want, isDisabled: boolean, credential?: string): Promise<void>;",
+            "diffContent": "function setActivationLockDisabled(admin: Want, isDisabled: boolean, credential?: string): Promise<void>;",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.systemManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "systemManager",
+          "apiDeclaration": "function isActivationLockDisabled(admin: Want): Promise<boolean>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "systemManager",
+            "apiDeclaration": "function isActivationLockDisabled(admin: Want): Promise<boolean>;",
+            "diffContent": "function isActivationLockDisabled(admin: Want): Promise<boolean>;",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.systemManager.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsItem",
+          "apiDeclaration": "DEVICE_NAME = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsItem",
+            "apiDeclaration": "DEVICE_NAME = 0",
+            "diffContent": "DEVICE_NAME = 0",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "deviceSettings",
+          "apiDeclaration": "enum SettingsMenu",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "deviceSettings",
+            "apiDeclaration": "enum SettingsMenu",
+            "diffContent": "enum SettingsMenu",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "ACCOUNT_ID = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "ACCOUNT_ID = 0",
+            "diffContent": "ACCOUNT_ID = 0",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "WIFI = 1",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "WIFI = 1",
+            "diffContent": "WIFI = 1",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "WIFI_PROXY_SETTINGS = 2",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "WIFI_PROXY_SETTINGS = 2",
+            "diffContent": "WIFI_PROXY_SETTINGS = 2",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "WIFI_IP_SETTINGS = 3",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "WIFI_IP_SETTINGS = 3",
+            "diffContent": "WIFI_IP_SETTINGS = 3",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "BLUETOOTH = 4",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "BLUETOOTH = 4",
+            "diffContent": "BLUETOOTH = 4",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "NETWORK = 5",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "NETWORK = 5",
+            "diffContent": "NETWORK = 5",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "MOBILE_NETWORK = 6",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "MOBILE_NETWORK = 6",
+            "diffContent": "MOBILE_NETWORK = 6",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "SUPER_DEVICE = 7",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "SUPER_DEVICE = 7",
+            "diffContent": "SUPER_DEVICE = 7",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "MORE_CONNECTIVITY_OPTIONS = 8",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "MORE_CONNECTIVITY_OPTIONS = 8",
+            "diffContent": "MORE_CONNECTIVITY_OPTIONS = 8",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "HOME_SCREEN_STYLE = 9",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "HOME_SCREEN_STYLE = 9",
+            "diffContent": "HOME_SCREEN_STYLE = 9",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "DISPLAY_BRIGHTNESS = 10",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "DISPLAY_BRIGHTNESS = 10",
+            "diffContent": "DISPLAY_BRIGHTNESS = 10",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "SOUND_VIBRATION = 11",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "SOUND_VIBRATION = 11",
+            "diffContent": "SOUND_VIBRATION = 11",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "NOTIFICATIONS = 12",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "NOTIFICATIONS = 12",
+            "diffContent": "NOTIFICATIONS = 12",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "BIOMETRICS_PASSWORD = 13",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "BIOMETRICS_PASSWORD = 13",
+            "diffContent": "BIOMETRICS_PASSWORD = 13",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "APPS_AND_SERVICES = 14",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "APPS_AND_SERVICES = 14",
+            "diffContent": "APPS_AND_SERVICES = 14",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "BATTERY = 15",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "BATTERY = 15",
+            "diffContent": "BATTERY = 15",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "STORAGE = 16",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "STORAGE = 16",
+            "diffContent": "STORAGE = 16",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "PRIVACY_AND_SECURITY = 17",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "PRIVACY_AND_SECURITY = 17",
+            "diffContent": "PRIVACY_AND_SECURITY = 17",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "DIGITAL_BALANCE = 18",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "DIGITAL_BALANCE = 18",
+            "diffContent": "DIGITAL_BALANCE = 18",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "SMART_ASSISTANT = 19",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "SMART_ASSISTANT = 19",
+            "diffContent": "SMART_ASSISTANT = 19",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "ACCESSIBILITY = 20",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "ACCESSIBILITY = 20",
+            "diffContent": "ACCESSIBILITY = 20",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "SYSTEM = 21",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "SYSTEM = 21",
+            "diffContent": "SYSTEM = 21",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "ABOUT_DEVICE = 22",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "ABOUT_DEVICE = 22",
+            "diffContent": "ABOUT_DEVICE = 22",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "SYSTEM_NAVIGATION = 23",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "SYSTEM_NAVIGATION = 23",
+            "diffContent": "SYSTEM_NAVIGATION = 23",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "LANGUAGE_REGION = 24",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "LANGUAGE_REGION = 24",
+            "diffContent": "LANGUAGE_REGION = 24",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "INPUT_METHODS = 25",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "INPUT_METHODS = 25",
+            "diffContent": "INPUT_METHODS = 25",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "DATE_TIME = 26",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "DATE_TIME = 26",
+            "diffContent": "DATE_TIME = 26",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "DATA_CLONE = 27",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "DATA_CLONE = 27",
+            "diffContent": "DATA_CLONE = 27",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "BACKUP_SETTINGS = 28",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "BACKUP_SETTINGS = 28",
+            "diffContent": "BACKUP_SETTINGS = 28",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "RESET = 29",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "RESET = 29",
+            "diffContent": "RESET = 29",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "SUPERHUB = 30",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "SUPERHUB = 30",
+            "diffContent": "SUPERHUB = 30",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "USER_EXPERIENCE = 31",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "USER_EXPERIENCE = 31",
+            "diffContent": "USER_EXPERIENCE = 31",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "SCREEN_CAST = 32",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "SCREEN_CAST = 32",
+            "diffContent": "SCREEN_CAST = 32",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "PRINTERS_SCANNERS = 33",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "PRINTERS_SCANNERS = 33",
+            "diffContent": "PRINTERS_SCANNERS = 33",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "MOBILE_DATA = 34",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "MOBILE_DATA = 34",
+            "diffContent": "MOBILE_DATA = 34",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "PERSONAL_HOTSPOT = 35",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "PERSONAL_HOTSPOT = 35",
+            "diffContent": "PERSONAL_HOTSPOT = 35",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "SIM_MANAGEMENT = 36",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "SIM_MANAGEMENT = 36",
+            "diffContent": "SIM_MANAGEMENT = 36",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "AIRPLANE_MODE = 37",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "AIRPLANE_MODE = 37",
+            "diffContent": "AIRPLANE_MODE = 37",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "MANAGE_DATA_USAGE = 38",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "MANAGE_DATA_USAGE = 38",
+            "diffContent": "MANAGE_DATA_USAGE = 38",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "VPN_SETTINGS = 39",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "VPN_SETTINGS = 39",
+            "diffContent": "VPN_SETTINGS = 39",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "TEXT_DISPLAY_SIZE = 40",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "TEXT_DISPLAY_SIZE = 40",
+            "diffContent": "TEXT_DISPLAY_SIZE = 40",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "APP_DUPLICATOR = 41",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "APP_DUPLICATOR = 41",
+            "diffContent": "APP_DUPLICATOR = 41",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "SettingsMenu",
+          "apiDeclaration": "SEARCH = 42",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "SettingsMenu",
+            "apiDeclaration": "SEARCH = 42",
+            "diffContent": "SEARCH = 42",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "deviceSettings",
+          "apiDeclaration": "function addHiddenSettingsMenu(admin: Want, menusToHidden: Array<SettingsMenu>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "deviceSettings",
+            "apiDeclaration": "function addHiddenSettingsMenu(admin: Want, menusToHidden: Array<SettingsMenu>): void;",
+            "diffContent": "function addHiddenSettingsMenu(admin: Want, menusToHidden: Array<SettingsMenu>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "deviceSettings",
+          "apiDeclaration": "function removeHiddenSettingsMenu(admin: Want, menusToHidden: Array<SettingsMenu>): void;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "deviceSettings",
+            "apiDeclaration": "function removeHiddenSettingsMenu(admin: Want, menusToHidden: Array<SettingsMenu>): void;",
+            "diffContent": "function removeHiddenSettingsMenu(admin: Want, menusToHidden: Array<SettingsMenu>): void;",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "deviceSettings",
+          "apiDeclaration": "function getHiddenSettingsMenu(admin: Want): Array<SettingsMenu>;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "deviceSettings",
+            "apiDeclaration": "function getHiddenSettingsMenu(admin: Want): Array<SettingsMenu>;",
+            "diffContent": "function getHiddenSettingsMenu(admin: Want): Array<SettingsMenu>;",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.deviceSettings.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "restrictions",
+          "apiDeclaration": "enum FeatureForDevice",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "restrictions",
+            "apiDeclaration": "enum FeatureForDevice",
+            "diffContent": "enum FeatureForDevice",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.restrictions.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "FeatureForDevice",
+          "apiDeclaration": "WIFI_P2P = 0",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "FeatureForDevice",
+            "apiDeclaration": "WIFI_P2P = 0",
+            "diffContent": "WIFI_P2P = 0",
+            "raw": null
+          },
+          "file": "api/@ohos.enterprise.restrictions.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Media Library Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-medialibrarykit-6112",
+      "changeCount": 3,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "ContextRecoveryInfo",
+          "apiDeclaration": "sortRule?: string;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContextRecoveryInfo",
+            "apiDeclaration": "sortRule?: string;",
+            "diffContent": "sortRule?: string;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "ContextRecoveryInfo",
+          "apiDeclaration": "fileSize?: number;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "ContextRecoveryInfo",
+            "apiDeclaration": "fileSize?: number;",
+            "diffContent": "fileSize?: number;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        },
+        {
+          "operation": "新增API",
+          "className": "BaseSelectOptions",
+          "apiDeclaration": "assetCompatibleCapability?: AssetCompatibleCapability;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "BaseSelectOptions",
+            "apiDeclaration": "assetCompatibleCapability?: AssetCompatibleCapability;",
+            "diffContent": "assetCompatibleCapability?: AssetCompatibleCapability;",
+            "raw": null
+          },
+          "file": "api/@ohos.file.photoAccessHelper.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Performance Analysis Kit",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-performanceanalysiskit-6112",
+      "changeCount": 1,
+      "changes": [
+        {
+          "operation": "新增API",
+          "className": "GwpAsanOptions",
+          "apiDeclaration": "isRecover?: boolean;",
+          "old": {
+            "className": null,
+            "apiDeclaration": null,
+            "diffContent": null,
+            "raw": null
+          },
+          "new": {
+            "className": "GwpAsanOptions",
+            "apiDeclaration": "isRecover?: boolean;",
+            "diffContent": "isRecover?: boolean;",
+            "raw": null
+          },
+          "file": "api/@ohos.hidebug.d.ts"
+        }
+      ]
+    },
+    {
+      "name": "Wear Engine",
+      "url": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/js-apidiff-wearengine-6112",
+      "changeCount": 3,
+      "changes": [
+        {
+          "operation": "新增错误码",
+          "className": "MonitorClient",
+          "apiDeclaration": "queryStatus(deviceRandomId: string, item: MonitorItem): Promise<MonitorData>;",
+          "old": {
+            "className": "MonitorClient",
+            "apiDeclaration": "queryStatus(deviceRandomId: string, item: MonitorItem): Promise<MonitorData>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "MonitorClient",
+            "apiDeclaration": "queryStatus(deviceRandomId: string, item: MonitorItem): Promise<MonitorData>;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@hms.health.wearEngine.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "MonitorClient",
+          "apiDeclaration": "subscribeEvent(deviceRandomId: string, type: MonitorEvent, callback: Callback<MonitorEventData>): Promise<void>;",
+          "old": {
+            "className": "MonitorClient",
+            "apiDeclaration": "subscribeEvent(deviceRandomId: string, type: MonitorEvent, callback: Callback<MonitorEventData>): Promise<void>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "MonitorClient",
+            "apiDeclaration": "subscribeEvent(deviceRandomId: string, type: MonitorEvent, callback: Callback<MonitorEventData>): Promise<void>;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@hms.health.wearEngine.d.ts"
+        },
+        {
+          "operation": "新增错误码",
+          "className": "MonitorClient",
+          "apiDeclaration": "unsubscribeEvent(deviceRandomId: string, type: MonitorEvent, callback: Callback<MonitorEventData>): Promise<void>;",
+          "old": {
+            "className": "MonitorClient",
+            "apiDeclaration": "unsubscribeEvent(deviceRandomId: string, type: MonitorEvent, callback: Callback<MonitorEventData>): Promise<void>;",
+            "diffContent": "NA",
+            "raw": null
+          },
+          "new": {
+            "className": "MonitorClient",
+            "apiDeclaration": "unsubscribeEvent(deviceRandomId: string, type: MonitorEvent, callback: Callback<MonitorEventData>): Promise<void>;",
+            "diffContent": "801",
+            "raw": null
+          },
+          "file": "api/@hms.health.wearEngine.d.ts"
+        }
+      ]
+    }
+  ]
+}

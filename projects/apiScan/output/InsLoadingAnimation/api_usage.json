@@ -1,0 +1,1647 @@
+{
+  "title": "HarmonyOS API 变更中心 — API 使用记录",
+  "summary": {
+    "totalApiUsages": 89,
+    "uniqueApis": 18,
+    "filesScanned": 11,
+    "kbCoverage": {
+      "totalKbFiles": 53,
+      "directApiMatch": 31,
+      "dataLayerOnly": 22,
+      "note": "知识文件总数 = API 直接匹配的文件 + 未被代码直接引用的文件。未被直接引用的文件仍可通过同知识库其它记录间接关联。"
+    },
+    "allInvolvedFiles": [
+      "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+      "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+      "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+      "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Release.json",
+      "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+      "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+      "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+      "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+      "harmonyos_api_changes/HarmonyOS_5.0.4(16).json",
+      "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+      "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+      "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+      "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Release.json",
+      "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+      "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+      "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+      "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta5.json",
+      "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+      "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Release.json",
+      "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+      "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+      "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta2.json",
+      "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+      "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Release.json",
+      "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+      "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta2.json",
+      "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+      "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+      "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json",
+      "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Release.json",
+      "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+      "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+      "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Release.json",
+      "harmonyos_behavior_changes/HarmonyOS_5.0.4(16)_Release.json",
+      "harmonyos_behavior_changes/HarmonyOS_5.0.5(17)_Beta1.json",
+      "harmonyos_behavior_changes/HarmonyOS_5.0.5(17)_Release.json",
+      "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json",
+      "harmonyos_behavior_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+      "harmonyos_behavior_changes/HarmonyOS_5.1.1(19)_Release.json",
+      "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+      "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+      "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+      "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta5.json",
+      "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Release.json",
+      "harmonyos_behavior_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+      "harmonyos_behavior_changes/HarmonyOS_6.0.1(21)_Release.json",
+      "harmonyos_behavior_changes/HarmonyOS_6.0.2(22)_Beta1.json",
+      "harmonyos_behavior_changes/HarmonyOS_6.0.2(22)_Release.json",
+      "harmonyos_behavior_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+      "harmonyos_behavior_changes/HarmonyOS_6.1.0(23)_Beta2.json",
+      "harmonyos_behavior_changes/HarmonyOS_6.1.0(23)_Release.json",
+      "harmonyos_behavior_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+      "harmonyos_behavior_changes/HarmonyOS_6.1.1(24)_Release.json"
+    ]
+  },
+  "apiUsage": [
+    {
+      "api": "getUIContext()",
+      "codeLocation": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets:7",
+      "snippet": "this.getUIContext().animateTo({",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.4(16).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "TextInput",
+      "codeLocation": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets:24",
+      "snippet": "TextInput({ placeholder: 'show counter input' })",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "Tabs/TabContent",
+      "codeLocation": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets:27",
+      "snippet": "Tabs({ barPosition: BarPosition.Start }) {",
+      "kbSources": [
+        "(未在知识库中找到对应文件，可能为 ArkUI 内置 API)"
+      ]
+    },
+    {
+      "api": "Tabs/TabContent",
+      "codeLocation": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets:28",
+      "snippet": "TabContent() {",
+      "kbSources": [
+        "(未在知识库中找到对应文件，可能为 ArkUI 内置 API)"
+      ]
+    },
+    {
+      "api": "Tabs/TabContent",
+      "codeLocation": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets:31",
+      "snippet": "TabContent() {",
+      "kbSources": [
+        "(未在知识库中找到对应文件，可能为 ArkUI 内置 API)"
+      ]
+    },
+    {
+      "api": "CommonMethod.borderRadius",
+      "codeLocation": "entry\\src\\main\\ets\\apiChangeTest\\FZnL3ih.ets:41",
+      "snippet": ".borderRadius(8)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta2.json"
+      ]
+    },
+    {
+      "api": "getUIContext()",
+      "codeLocation": "entry\\src\\main\\ets\\apiChangeTest\\QTvIRc5.ets:11",
+      "snippet": "const uiContext: UIContext = this.getUIContext();",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.4(16).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "getUIContext()",
+      "codeLocation": "entry\\src\\main\\ets\\apiChangeTest\\RYTcSm3.ets:7",
+      "snippet": "const mode: KeyboardAvoidMode = this.getUIContext().getKeyboardAvoidMode();",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.4(16).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "ScrollableCommonMethod (Scroll)",
+      "codeLocation": "entry\\src\\main\\ets\\apiChangeTest\\RYTcSm3.ets:19",
+      "snippet": "Scroll(this.scroller) {",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\apiChangeTest\\kaAnVvU.ets:27",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "import intl",
+      "codeLocation": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets:1",
+      "snippet": "import intl from '@ohos.intl';",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json"
+      ]
+    },
+    {
+      "api": "import i18n",
+      "codeLocation": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets:2",
+      "snippet": "import i18n from '@ohos.i18n';",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.1.0(23)_Beta1.json"
+      ]
+    },
+    {
+      "api": "intl.RelativeTimeFormat",
+      "codeLocation": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets:14",
+      "snippet": "const relative: intl.RelativeTimeFormat = new intl.RelativeTimeFormat('zh-CN');",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json"
+      ]
+    },
+    {
+      "api": "getUIContext()",
+      "codeLocation": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets:11",
+      "snippet": "this.getUIContext().getPromptAction().showToast({",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.4(16).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "ConfigurationConstant.ColorMode",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:1",
+      "snippet": "import { AbilityConstant, ConfigurationConstant, UIAbility, Want } from '@kit.AbilityKit';",
+      "kbSources": [
+        "(未在知识库中找到对应文件，可能为 ArkUI 内置 API)"
+      ]
+    },
+    {
+      "api": "import hilog",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:2",
+      "snippet": "import { hilog } from '@kit.PerformanceAnalysisKit';",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json"
+      ]
+    },
+    {
+      "api": "import window",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:3",
+      "snippet": "import { window } from '@kit.ArkUI';",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json"
+      ]
+    },
+    {
+      "api": "getContext().getApplicationContext",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:10",
+      "snippet": "this.context.getApplicationContext().setColorMode(ConfigurationConstant.ColorMode.COLOR_MODE_NOT_SET);",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json"
+      ]
+    },
+    {
+      "api": "setColorMode",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:10",
+      "snippet": "this.context.getApplicationContext().setColorMode(ConfigurationConstant.ColorMode.COLOR_MODE_NOT_SET);",
+      "kbSources": [
+        "(未在知识库中找到对应文件，可能为 ArkUI 内置 API)"
+      ]
+    },
+    {
+      "api": "ConfigurationConstant.ColorMode",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:10",
+      "snippet": "this.context.getApplicationContext().setColorMode(ConfigurationConstant.ColorMode.COLOR_MODE_NOT_SET);",
+      "kbSources": [
+        "(未在知识库中找到对应文件，可能为 ArkUI 内置 API)"
+      ]
+    },
+    {
+      "api": "hilog.error",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:12",
+      "snippet": "hilog.error(DOMAIN, 'testTag', 'Failed to set colorMode. Cause: %{public}s', JSON.stringify(err));",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json"
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:14",
+      "snippet": "hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onCreate');",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json"
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:18",
+      "snippet": "hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onDestroy');",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json"
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:22",
+      "snippet": "hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onWindowStageCreate');",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json"
+      ]
+    },
+    {
+      "api": "hilog.error",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:26",
+      "snippet": "hilog.error(DOMAIN, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err));",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json"
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:29",
+      "snippet": "hilog.info(DOMAIN, 'testTag', 'Succeeded in loading the content.');",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json"
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:34",
+      "snippet": "hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onWindowStageDestroy');",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json"
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:38",
+      "snippet": "hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onForeground');",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json"
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "codeLocation": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets:42",
+      "snippet": "hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onBackground');",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json"
+      ]
+    },
+    {
+      "api": "import hilog",
+      "codeLocation": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets:1",
+      "snippet": "import { hilog } from '@kit.PerformanceAnalysisKit';",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json"
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "codeLocation": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets:8",
+      "snippet": "hilog.info(DOMAIN, 'testTag', 'onBackup ok');",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json"
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "codeLocation": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets:13",
+      "snippet": "hilog.info(DOMAIN, 'testTag', 'onRestore ok %{public}s', JSON.stringify(bundleVersion));",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json"
+      ]
+    },
+    {
+      "api": "CommonMethod.borderRadius",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:44",
+      "snippet": ".borderRadius(12)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta2.json"
+      ]
+    },
+    {
+      "api": "getUIContext()",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:80",
+      "snippet": "this.getUIContext().getPromptAction().showToast({ message: msg, duration: 1500 });",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.4(16).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "Tabs/TabContent",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:95",
+      "snippet": "Tabs({ barPosition: BarPosition.End, controller: this.tabsController }) {",
+      "kbSources": [
+        "(未在知识库中找到对应文件，可能为 ArkUI 内置 API)"
+      ]
+    },
+    {
+      "api": "Tabs/TabContent",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:96",
+      "snippet": "TabContent() {",
+      "kbSources": [
+        "(未在知识库中找到对应文件，可能为 ArkUI 内置 API)"
+      ]
+    },
+    {
+      "api": "Tabs/TabContent",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:101",
+      "snippet": "TabContent() {",
+      "kbSources": [
+        "(未在知识库中找到对应文件，可能为 ArkUI 内置 API)"
+      ]
+    },
+    {
+      "api": "Tabs/TabContent",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:106",
+      "snippet": "TabContent() {",
+      "kbSources": [
+        "(未在知识库中找到对应文件，可能为 ArkUI 内置 API)"
+      ]
+    },
+    {
+      "api": "Tabs/TabContent",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:111",
+      "snippet": "TabContent() {",
+      "kbSources": [
+        "(未在知识库中找到对应文件，可能为 ArkUI 内置 API)"
+      ]
+    },
+    {
+      "api": "Tabs/TabContent",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:116",
+      "snippet": "TabContent() {",
+      "kbSources": [
+        "(未在知识库中找到对应文件，可能为 ArkUI 内置 API)"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:152",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "ScrollableCommonMethod (Scroll)",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:197",
+      "snippet": "Scroll() {",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "TextInput",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:199",
+      "snippet": "Text('TextInput showCounter')",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:201",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "TextInput",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:205",
+      "snippet": "TextInput({ text: this.inputText, placeholder: '输入字符观察计数' })",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:216",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:232",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "ScrollableCommonMethod (Scroll)",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:253",
+      "snippet": "Scroll() {",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "List/ForEach/ListItem",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:255",
+      "snippet": "Text('List initialIndex 与 Scroller 优先级')",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:257",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "List/ForEach/ListItem",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:261",
+      "snippet": "List({ initialIndex: 3, scroller: this.listScroller }) {",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json"
+      ]
+    },
+    {
+      "api": "List/ForEach/ListItem",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:262",
+      "snippet": "ForEach(this.listItems, (item: string) => {",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json"
+      ]
+    },
+    {
+      "api": "List/ForEach/ListItem",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:263",
+      "snippet": "ListItem() {",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json"
+      ]
+    },
+    {
+      "api": "CommonMethod.borderRadius",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:270",
+      "snippet": ".borderRadius(6)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta2.json"
+      ]
+    },
+    {
+      "api": "CommonMethod.borderRadius",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:277",
+      "snippet": ".borderRadius(8)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta2.json"
+      ]
+    },
+    {
+      "api": "Scroller.scrollToIndex (backToTop)",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:284",
+      "snippet": "this.listScroller.scrollToIndex(10, true);",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "Scroller.scrollToIndex (backToTop)",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:292",
+      "snippet": "this.listScroller.scrollToIndex(0, true);",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:300",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "List/ForEach/ListItem",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:305",
+      "snippet": "ForEach(GRID_ITEMS, (item: GridCellItem) => {",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json"
+      ]
+    },
+    {
+      "api": "CommonMethod.borderRadius",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:313",
+      "snippet": ".borderRadius(6)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta2.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:321",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "CommonMethod.borderRadius",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:340",
+      "snippet": ".borderRadius(8)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta2.json"
+      ]
+    },
+    {
+      "api": "ScrollableCommonMethod (Scroll)",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:361",
+      "snippet": "Scroll() {",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:365",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:388",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:410",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:429",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "ScrollableCommonMethod (Scroll)",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:455",
+      "snippet": "Scroll() {",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:459",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "CommonMethod.borderRadius",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:467",
+      "snippet": ".borderRadius(this.circleRadius)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta2.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:485",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "CommonMethod.borderRadius",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:498",
+      "snippet": ".borderRadius(12)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta2.json"
+      ]
+    },
+    {
+      "api": "CommonMethod.borderRadius",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:509",
+      "snippet": ".borderRadius(12)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta2.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:526",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:537",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "ScrollableCommonMethod (Scroll)",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:566",
+      "snippet": "Scroll() {",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:570",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:580",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "CommonMethod.borderRadius",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:589",
+      "snippet": ".borderRadius(8)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta2.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:599",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "CommonMethod.borderRadius",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:616",
+      "snippet": ".borderRadius(8)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta2.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:620",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "CommonMethod.borderRadius",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:630",
+      "snippet": ".borderRadius(8)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.1(19)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Release.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.2(14)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta2.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:646",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "TextAttribute.fontWeight",
+      "codeLocation": "entry\\src\\main\\ets\\pages\\Index.ets:669",
+      "snippet": ".fontWeight(FontWeight.Bold)",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.2(14).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_6.0.0(20)_Beta1.json"
+      ]
+    },
+    {
+      "api": "getUIContext()",
+      "codeLocation": "library\\src\\main\\ets\\components\\InsLoadingView.ets:220",
+      "snippet": "this.mRotateAnimator = this.getUIContext().createAnimator(rotateOpts);",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.4(16).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "getUIContext()",
+      "codeLocation": "library\\src\\main\\ets\\components\\InsLoadingView.ets:241",
+      "snippet": "this.mCircleAnimator = this.getUIContext().createAnimator(circleOpts);",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.4(16).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "getUIContext()",
+      "codeLocation": "library\\src\\main\\ets\\components\\InsLoadingView.ets:356",
+      "snippet": "this.getUIContext().animateTo(",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.4(16).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    },
+    {
+      "api": "getUIContext()",
+      "codeLocation": "library\\src\\main\\ets\\components\\InsLoadingView.ets:364",
+      "snippet": "this.getUIContext().animateTo(",
+      "kbSources": [
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_26.0.0_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.1(13)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_5.0.4(16).json",
+        "harmonyos_api_changes/HarmonyOS_5.0.5(17).json",
+        "harmonyos_api_changes/HarmonyOS_5.1.0(18).json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.0(20)_Beta3.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.1(21)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.0.2(22).json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta1.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.0(23)_Beta2.json",
+        "harmonyos_api_changes/HarmonyOS_6.1.1(24)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_26.0.0(26)_Beta1.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.1(13)_Release.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.0.3(15)_Beta2.json",
+        "harmonyos_behavior_changes/HarmonyOS_5.1.0(18)_Release.json"
+      ]
+    }
+  ]
+}

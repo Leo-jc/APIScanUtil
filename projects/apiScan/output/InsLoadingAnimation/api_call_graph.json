@@ -1,0 +1,4520 @@
+{
+  "title": "HarmonyOS API 调用图谱",
+  "summary": {
+    "filesAnalyzed": 17,
+    "systemApis": 56,
+    "systemApiCallSites": 231
+  },
+  "files": [
+    {
+      "file": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets",
+      "imports": [],
+      "functions": [
+        "runAnimate",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 7,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "runAnimate"
+        },
+        {
+          "line": 19,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 20,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 24,
+          "qualified": "TextInput",
+          "base": "TextInput",
+          "name": "TextInput",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 27,
+          "qualified": "Tabs",
+          "base": "Tabs",
+          "name": "Tabs",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 28,
+          "qualified": "TabContent",
+          "base": "TabContent",
+          "name": "TabContent",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 29,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 31,
+          "qualified": "TabContent",
+          "base": "TabContent",
+          "name": "TabContent",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 32,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 38,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\apiChangeTest\\FZnL3ih.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "image"
+          ],
+          "source": "@ohos.multimedia.image",
+          "kit": "@ohos.multimedia.image",
+          "isKit": false
+        },
+        {
+          "line": 2,
+          "names": [
+            "util"
+          ],
+          "source": "@ohos.util",
+          "kit": "@ohos.util",
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "loadImageInfo",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 13,
+          "qualified": "util.Base64Helper",
+          "base": "util",
+          "name": "Base64Helper",
+          "kind": "system",
+          "kit": "@ohos.util",
+          "isConstructor": true,
+          "caller": "loadImageInfo"
+        },
+        {
+          "line": 16,
+          "qualified": "image.createImageSource",
+          "base": "image",
+          "name": "createImageSource",
+          "kind": "system",
+          "kit": "@ohos.multimedia.image",
+          "isConstructor": false,
+          "caller": "loadImageInfo"
+        },
+        {
+          "line": 26,
+          "qualified": "image.createImagePacker",
+          "base": "image",
+          "name": "createImagePacker",
+          "kind": "system",
+          "kit": "@ohos.multimedia.image",
+          "isConstructor": false,
+          "caller": "loadImageInfo"
+        },
+        {
+          "line": 32,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 33,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 37,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 38,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 39,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 40,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\apiChangeTest\\QTvIRc5.ets",
+      "imports": [],
+      "functions": [
+        "aboutToAppear",
+        "sheetContent",
+        "dragContent",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 5,
+          "qualified": "TabsController",
+          "base": "TabsController",
+          "name": "TabsController",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": true,
+          "caller": "<top-level>"
+        },
+        {
+          "line": 6,
+          "qualified": "Scroller",
+          "base": "Scroller",
+          "name": "Scroller",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": true,
+          "caller": "<top-level>"
+        },
+        {
+          "line": 7,
+          "qualified": "Scroller",
+          "base": "Scroller",
+          "name": "Scroller",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": true,
+          "caller": "<top-level>"
+        },
+        {
+          "line": 8,
+          "qualified": "Scroller",
+          "base": "Scroller",
+          "name": "Scroller",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": true,
+          "caller": "<top-level>"
+        },
+        {
+          "line": 11,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "aboutToAppear"
+        },
+        {
+          "line": 20,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "sheetContent"
+        },
+        {
+          "line": 21,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "sheetContent"
+        },
+        {
+          "line": 29,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "dragContent"
+        },
+        {
+          "line": 33,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 34,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 38,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 42,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\apiChangeTest\\RYTcSm3.ets",
+      "imports": [],
+      "functions": [
+        "aboutToAppear",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 4,
+          "qualified": "Scroller",
+          "base": "Scroller",
+          "name": "Scroller",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": true,
+          "caller": "<top-level>"
+        },
+        {
+          "line": 7,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "aboutToAppear"
+        },
+        {
+          "line": 12,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 13,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 19,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 20,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 21,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 22,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 28,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\apiChangeTest\\kaAnVvU.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "TreeMap"
+          ],
+          "source": "@ohos.util.TreeMap",
+          "kit": "@ohos.util.TreeMap",
+          "isKit": false
+        },
+        {
+          "line": 2,
+          "names": [
+            "TreeSet"
+          ],
+          "source": "@ohos.util.TreeSet",
+          "kit": "@ohos.util.TreeSet",
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "initCollections",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 9,
+          "qualified": "TreeMap",
+          "base": "TreeMap",
+          "name": "TreeMap",
+          "kind": "system",
+          "kit": "@ohos.util.TreeMap",
+          "isConstructor": true,
+          "caller": "initCollections"
+        },
+        {
+          "line": 14,
+          "qualified": "TreeSet",
+          "base": "TreeSet",
+          "name": "TreeSet",
+          "kind": "system",
+          "kit": "@ohos.util.TreeSet",
+          "isConstructor": true,
+          "caller": "initCollections"
+        },
+        {
+          "line": 21,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 22,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 26,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 30,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\apiChangeTest\\mH4bYq5.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "xml"
+          ],
+          "source": "@ohos.xml",
+          "kit": "@ohos.xml",
+          "isKit": false
+        },
+        {
+          "line": 2,
+          "names": [
+            "stream"
+          ],
+          "source": "@ohos.util.stream",
+          "kit": "@ohos.util.stream",
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "constructor",
+        "doRead",
+        "startDocument",
+        "endDocument",
+        "startElement",
+        "endElement",
+        "characters",
+        "getEvents",
+        "parseSax",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 52,
+          "qualified": "xml.XmlSAXParser",
+          "base": "xml",
+          "name": "XmlSAXParser",
+          "kind": "system",
+          "kit": "@ohos.xml",
+          "isConstructor": true,
+          "caller": "parseSax"
+        },
+        {
+          "line": 59,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 60,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 64,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\apiChangeTest\\pJqS7uH.ets",
+      "imports": [],
+      "functions": [
+        "build",
+        "Swiper"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 11,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 13,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "Swiper"
+        },
+        {
+          "line": 14,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "Swiper"
+        },
+        {
+          "line": 15,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "Swiper"
+        },
+        {
+          "line": 23,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 28,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 33,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 34,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "intl"
+          ],
+          "source": "@ohos.intl",
+          "kit": "@ohos.intl",
+          "isKit": false
+        },
+        {
+          "line": 2,
+          "names": [
+            "i18n"
+          ],
+          "source": "@ohos.i18n",
+          "kit": "@ohos.i18n",
+          "isKit": false
+        },
+        {
+          "line": 3,
+          "names": [
+            "VisualEffect"
+          ],
+          "source": "@ohos.graphics.uiEffect",
+          "kit": "@ohos.graphics.uiEffect",
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "formatIntl",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 14,
+          "qualified": "intl.RelativeTimeFormat",
+          "base": "intl",
+          "name": "RelativeTimeFormat",
+          "kind": "system",
+          "kit": "@ohos.intl",
+          "isConstructor": true,
+          "caller": "formatIntl"
+        },
+        {
+          "line": 16,
+          "qualified": "intl.Locale",
+          "base": "intl",
+          "name": "Locale",
+          "kind": "system",
+          "kit": "@ohos.intl",
+          "isConstructor": true,
+          "caller": "formatIntl"
+        },
+        {
+          "line": 17,
+          "qualified": "locale.maximize",
+          "base": "locale",
+          "name": "maximize",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "formatIntl"
+        },
+        {
+          "line": 19,
+          "qualified": "i18n.Transliterator.getInstance",
+          "base": "i18n",
+          "name": "getInstance",
+          "kind": "system",
+          "kit": "@ohos.i18n",
+          "isConstructor": false,
+          "caller": "formatIntl"
+        },
+        {
+          "line": 21,
+          "qualified": "i18n.getDisplayCountry",
+          "base": "i18n",
+          "name": "getDisplayCountry",
+          "kind": "system",
+          "kit": "@ohos.i18n",
+          "isConstructor": false,
+          "caller": "formatIntl"
+        },
+        {
+          "line": 22,
+          "qualified": "i18n.getDisplayLanguage",
+          "base": "i18n",
+          "name": "getDisplayLanguage",
+          "kind": "system",
+          "kit": "@ohos.i18n",
+          "isConstructor": false,
+          "caller": "formatIntl"
+        },
+        {
+          "line": 27,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 28,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 32,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 33,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 34,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 35,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 36,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\apiChangeTest\\rNvEk2Y.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "drawing"
+          ],
+          "source": "@ohos.graphics.drawing",
+          "kit": "@ohos.graphics.drawing",
+          "isKit": false
+        },
+        {
+          "line": 2,
+          "names": [
+            "uiEffect"
+          ],
+          "source": "@ohos.graphics.uiEffect",
+          "kit": "@ohos.graphics.uiEffect",
+          "isKit": false
+        },
+        {
+          "line": 3,
+          "names": [
+            "image"
+          ],
+          "source": "@ohos.multimedia.image",
+          "kit": "@ohos.multimedia.image",
+          "isKit": false
+        },
+        {
+          "line": 4,
+          "names": [
+            "NodeController",
+            "FrameNode",
+            "RenderNode",
+            "DrawContext",
+            "UIContext"
+          ],
+          "source": "@kit.ArkUI",
+          "kit": "ArkUI",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "setPixelMap",
+        "draw",
+        "makeNode",
+        "getMeshNode",
+        "runDrawing",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 51,
+          "qualified": "uiEffect.createEffect",
+          "base": "uiEffect",
+          "name": "createEffect",
+          "kind": "system",
+          "kit": "@ohos.graphics.uiEffect",
+          "isConstructor": false,
+          "caller": "<top-level>"
+        },
+        {
+          "line": 55,
+          "qualified": "drawing.Matrix",
+          "base": "drawing",
+          "name": "Matrix",
+          "kind": "system",
+          "kit": "@ohos.graphics.drawing",
+          "isConstructor": true,
+          "caller": "runDrawing"
+        },
+        {
+          "line": 56,
+          "qualified": "drawing.Matrix",
+          "base": "drawing",
+          "name": "Matrix",
+          "kind": "system",
+          "kit": "@ohos.graphics.drawing",
+          "isConstructor": true,
+          "caller": "runDrawing"
+        },
+        {
+          "line": 59,
+          "qualified": "drawing.Matrix",
+          "base": "drawing",
+          "name": "Matrix",
+          "kind": "system",
+          "kit": "@ohos.graphics.drawing",
+          "isConstructor": true,
+          "caller": "runDrawing"
+        },
+        {
+          "line": 72,
+          "qualified": "image.createPixelMapSync",
+          "base": "image",
+          "name": "createPixelMapSync",
+          "kind": "system",
+          "kit": "@ohos.multimedia.image",
+          "isConstructor": false,
+          "caller": "runDrawing"
+        },
+        {
+          "line": 81,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 82,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 86,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 87,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 88,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 89,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\apiChangeTest\\tW9gKp3.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "util"
+          ],
+          "source": "@ohos.util",
+          "kit": "@ohos.util",
+          "isKit": false
+        },
+        {
+          "line": 2,
+          "names": [
+            "webview"
+          ],
+          "source": "@ohos.web.webview",
+          "kit": "@ohos.web.webview",
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "runVm",
+        "setupDownload",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 13,
+          "qualified": "util.ArkTSVM.enableLocalHandleDetection",
+          "base": "util",
+          "name": "enableLocalHandleDetection",
+          "kind": "system",
+          "kit": "@ohos.util",
+          "isConstructor": false,
+          "caller": "runVm"
+        },
+        {
+          "line": 21,
+          "qualified": "webview.WebDownloadDelegate",
+          "base": "webview",
+          "name": "WebDownloadDelegate",
+          "kind": "system",
+          "kit": "@ohos.web.webview",
+          "isConstructor": true,
+          "caller": "setupDownload"
+        },
+        {
+          "line": 26,
+          "qualified": "webview.WebDownloadManager.setDownloadDelegate",
+          "base": "webview",
+          "name": "setDownloadDelegate",
+          "kind": "system",
+          "kit": "@ohos.web.webview",
+          "isConstructor": false,
+          "caller": "setupDownload"
+        },
+        {
+          "line": 31,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 32,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 36,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 40,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 41,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 42,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 43,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 44,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "convertxml"
+          ],
+          "source": "@ohos.convertxml",
+          "kit": "@ohos.convertxml",
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "showToast",
+        "parseXml",
+        "sheetContent",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 11,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "showToast"
+        },
+        {
+          "line": 11,
+          "qualified": "getPromptAction",
+          "base": "getPromptAction",
+          "name": "getPromptAction",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "showToast"
+        },
+        {
+          "line": 11,
+          "qualified": "showToast",
+          "base": "showToast",
+          "name": "showToast",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "showToast"
+        },
+        {
+          "line": 19,
+          "qualified": "convertxml.ConvertXML",
+          "base": "convertxml",
+          "name": "ConvertXML",
+          "kind": "system",
+          "kit": "@ohos.convertxml",
+          "isConstructor": true,
+          "caller": "parseXml"
+        },
+        {
+          "line": 20,
+          "qualified": "converter.fastConvertToJSObject",
+          "base": "converter",
+          "name": "fastConvertToJSObject",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "parseXml"
+        },
+        {
+          "line": 26,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "sheetContent"
+        },
+        {
+          "line": 27,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "sheetContent"
+        },
+        {
+          "line": 34,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 35,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 37,
+          "qualified": "this.showToast",
+          "base": "this",
+          "name": "showToast",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 39,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 43,
+          "qualified": "Search",
+          "base": "Search",
+          "name": "Search",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 46,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 47,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "AbilityConstant",
+            "ConfigurationConstant",
+            "UIAbility",
+            "Want"
+          ],
+          "source": "@kit.AbilityKit",
+          "kit": "AbilityKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 3,
+          "names": [
+            "window"
+          ],
+          "source": "@kit.ArkUI",
+          "kit": "ArkUI",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onCreate",
+        "onDestroy",
+        "onWindowStageCreate",
+        "onWindowStageDestroy",
+        "onForeground",
+        "onBackground"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 10,
+          "qualified": "this.context.getApplicationContext",
+          "base": "this",
+          "name": "getApplicationContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 12,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 14,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 18,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onDestroy"
+        },
+        {
+          "line": 22,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 26,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 29,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 34,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageDestroy"
+        },
+        {
+          "line": 38,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onForeground"
+        },
+        {
+          "line": 42,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackground"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "BackupExtensionAbility",
+            "BundleVersion"
+          ],
+          "source": "@kit.CoreFileKit",
+          "kit": "CoreFileKit",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onBackup",
+        "onRestore"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 8,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackup"
+        },
+        {
+          "line": 13,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onRestore"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+      "imports": [],
+      "functions": [
+        "build",
+        "aboutToAppear",
+        "showToast",
+        "matchParentWidth",
+        "build",
+        "PageMap",
+        "buildInputTab",
+        "buildLayoutTab",
+        "buildDialogTab",
+        "buildStyleTab",
+        "buildGestureTab",
+        "EmbeddedSheetBuilder",
+        "LargeSheetBuilder"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 21,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 22,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 28,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 53,
+          "qualified": "TabsController",
+          "base": "TabsController",
+          "name": "TabsController",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": true,
+          "caller": "<top-level>"
+        },
+        {
+          "line": 54,
+          "qualified": "VideoController",
+          "base": "VideoController",
+          "name": "VideoController",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": true,
+          "caller": "<top-level>"
+        },
+        {
+          "line": 55,
+          "qualified": "Scroller",
+          "base": "Scroller",
+          "name": "Scroller",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": true,
+          "caller": "<top-level>"
+        },
+        {
+          "line": 80,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "showToast"
+        },
+        {
+          "line": 80,
+          "qualified": "getPromptAction",
+          "base": "getPromptAction",
+          "name": "getPromptAction",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "showToast"
+        },
+        {
+          "line": 80,
+          "qualified": "showToast",
+          "base": "showToast",
+          "name": "showToast",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "showToast"
+        },
+        {
+          "line": 94,
+          "qualified": "Navigation",
+          "base": "Navigation",
+          "name": "Navigation",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 95,
+          "qualified": "Tabs",
+          "base": "Tabs",
+          "name": "Tabs",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 96,
+          "qualified": "TabContent",
+          "base": "TabContent",
+          "name": "TabContent",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 101,
+          "qualified": "TabContent",
+          "base": "TabContent",
+          "name": "TabContent",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 106,
+          "qualified": "TabContent",
+          "base": "TabContent",
+          "name": "TabContent",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 111,
+          "qualified": "TabContent",
+          "base": "TabContent",
+          "name": "TabContent",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 116,
+          "qualified": "TabContent",
+          "base": "TabContent",
+          "name": "TabContent",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 130,
+          "qualified": "this.showToast",
+          "base": "this",
+          "name": "showToast",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 141,
+          "qualified": "Stack",
+          "base": "Stack",
+          "name": "Stack",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 148,
+          "qualified": "NavDestination",
+          "base": "NavDestination",
+          "name": "NavDestination",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "PageMap"
+        },
+        {
+          "line": 149,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "PageMap"
+        },
+        {
+          "line": 150,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "PageMap"
+        },
+        {
+          "line": 156,
+          "qualified": "TextClock",
+          "base": "TextClock",
+          "name": "TextClock",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "PageMap"
+        },
+        {
+          "line": 160,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "PageMap"
+        },
+        {
+          "line": 167,
+          "qualified": "this.showToast",
+          "base": "this",
+          "name": "showToast",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "PageMap"
+        },
+        {
+          "line": 169,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "PageMap"
+        },
+        {
+          "line": 189,
+          "qualified": "this.showToast",
+          "base": "this",
+          "name": "showToast",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "PageMap"
+        },
+        {
+          "line": 197,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildInputTab"
+        },
+        {
+          "line": 198,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildInputTab"
+        },
+        {
+          "line": 199,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildInputTab"
+        },
+        {
+          "line": 205,
+          "qualified": "TextInput",
+          "base": "TextInput",
+          "name": "TextInput",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildInputTab"
+        },
+        {
+          "line": 214,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildInputTab"
+        },
+        {
+          "line": 220,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildInputTab"
+        },
+        {
+          "line": 221,
+          "qualified": "QRCode",
+          "base": "QRCode",
+          "name": "QRCode",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildInputTab"
+        },
+        {
+          "line": 230,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildInputTab"
+        },
+        {
+          "line": 236,
+          "qualified": "Video",
+          "base": "Video",
+          "name": "Video",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildInputTab"
+        },
+        {
+          "line": 253,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 254,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 255,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 261,
+          "qualified": "List",
+          "base": "List",
+          "name": "List",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 262,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 263,
+          "qualified": "ListItem",
+          "base": "ListItem",
+          "name": "ListItem",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 264,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 278,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 279,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 286,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 298,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 304,
+          "qualified": "GridRow",
+          "base": "GridRow",
+          "name": "GridRow",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 305,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 306,
+          "qualified": "GridCol",
+          "base": "GridCol",
+          "name": "GridCol",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 307,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 319,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 325,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 326,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 327,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 341,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLayoutTab"
+        },
+        {
+          "line": 361,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildDialogTab"
+        },
+        {
+          "line": 362,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildDialogTab"
+        },
+        {
+          "line": 363,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildDialogTab"
+        },
+        {
+          "line": 369,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildDialogTab"
+        },
+        {
+          "line": 386,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildDialogTab"
+        },
+        {
+          "line": 392,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildDialogTab"
+        },
+        {
+          "line": 408,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildDialogTab"
+        },
+        {
+          "line": 414,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildDialogTab"
+        },
+        {
+          "line": 427,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildDialogTab"
+        },
+        {
+          "line": 433,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildDialogTab"
+        },
+        {
+          "line": 441,
+          "qualified": "this.showToast",
+          "base": "this",
+          "name": "showToast",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildDialogTab"
+        },
+        {
+          "line": 455,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 456,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 457,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 463,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 464,
+          "qualified": "Image",
+          "base": "Image",
+          "name": "Image",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 472,
+          "qualified": "Slider",
+          "base": "Slider",
+          "name": "Slider",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 477,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 483,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 489,
+          "qualified": "Stack",
+          "base": "Stack",
+          "name": "Stack",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 490,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 491,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 501,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 502,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 516,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 524,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 530,
+          "qualified": "TextClock",
+          "base": "TextClock",
+          "name": "TextClock",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 535,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 541,
+          "qualified": "Progress",
+          "base": "Progress",
+          "name": "Progress",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 544,
+          "qualified": "Slider",
+          "base": "Slider",
+          "name": "Slider",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 549,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStyleTab"
+        },
+        {
+          "line": 566,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildGestureTab"
+        },
+        {
+          "line": 567,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildGestureTab"
+        },
+        {
+          "line": 568,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildGestureTab"
+        },
+        {
+          "line": 574,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildGestureTab"
+        },
+        {
+          "line": 578,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildGestureTab"
+        },
+        {
+          "line": 584,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildGestureTab"
+        },
+        {
+          "line": 597,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildGestureTab"
+        },
+        {
+          "line": 603,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildGestureTab"
+        },
+        {
+          "line": 604,
+          "qualified": "Toggle",
+          "base": "Toggle",
+          "name": "Toggle",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildGestureTab"
+        },
+        {
+          "line": 604,
+          "qualified": "Switch",
+          "base": "Switch",
+          "name": "Switch",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildGestureTab"
+        },
+        {
+          "line": 608,
+          "qualified": "Select",
+          "base": "Select",
+          "name": "Select",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildGestureTab"
+        },
+        {
+          "line": 618,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildGestureTab"
+        },
+        {
+          "line": 624,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildGestureTab"
+        },
+        {
+          "line": 643,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "EmbeddedSheetBuilder"
+        },
+        {
+          "line": 644,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "EmbeddedSheetBuilder"
+        },
+        {
+          "line": 648,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "EmbeddedSheetBuilder"
+        },
+        {
+          "line": 652,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "EmbeddedSheetBuilder"
+        },
+        {
+          "line": 666,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "LargeSheetBuilder"
+        },
+        {
+          "line": 667,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "LargeSheetBuilder"
+        },
+        {
+          "line": 671,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "LargeSheetBuilder"
+        },
+        {
+          "line": 675,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "LargeSheetBuilder"
+        }
+      ]
+    },
+    {
+      "file": "library\\src\\main\\ets\\components\\InsLoadingController.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "InsStatus",
+            "InsStatusChangeListener"
+          ],
+          "source": "./InsLoadingTypes",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "bind",
+        "unbind",
+        "onStatusChange",
+        "notifyStatusChange",
+        "setStatus",
+        "getStatus",
+        "setStartColor",
+        "setEndColor",
+        "setCircleDuration",
+        "setRotateDuration",
+        "setImageSrc"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "library\\src\\main\\ets\\components\\InsLoadingTypes.ets",
+      "imports": [],
+      "functions": [],
+      "systemApiCalls": []
+    },
+    {
+      "file": "library\\src\\main\\ets\\components\\InsLoadingView.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "AnimatorOptions",
+            "AnimatorResult"
+          ],
+          "source": "@kit.ArkUI",
+          "kit": "ArkUI",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "InsConstants",
+            "InsStatus"
+          ],
+          "source": "./InsLoadingTypes",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 3,
+          "names": [
+            "InsLoadingController"
+          ],
+          "source": "./InsLoadingController",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [
+        "aboutToAppear",
+        "aboutToDisappear",
+        "onStatusChange",
+        "onColorChange",
+        "onDurationChange",
+        "build",
+        "onCanvasReady",
+        "createAnimators",
+        "resetRotateAnimator",
+        "resetCircleAnimator",
+        "startAnim",
+        "stopAnim",
+        "handleVisibleAreaChange",
+        "onTouchEvent",
+        "startDownAnim",
+        "startUpAnim",
+        "applyImageSrc",
+        "startImageLoadPoll",
+        "buildGradient",
+        "redraw",
+        "drawBitmap",
+        "drawTrack",
+        "appendTrackArcs",
+        "arcSegment",
+        "drawFullCircle"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 160,
+          "qualified": "Stack",
+          "base": "Stack",
+          "name": "Stack",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 220,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "createAnimators"
+        },
+        {
+          "line": 241,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "createAnimators"
+        },
+        {
+          "line": 356,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "startDownAnim"
+        },
+        {
+          "line": 364,
+          "qualified": "this.getUIContext",
+          "base": "this",
+          "name": "getUIContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "startUpAnim"
+        }
+      ]
+    }
+  ],
+  "apiGraph": [
+    {
+      "api": "Button",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets",
+          "line": 20,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\FZnL3ih.ets",
+          "line": 33,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\QTvIRc5.ets",
+          "line": 34,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\QTvIRc5.ets",
+          "line": 38,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\kaAnVvU.ets",
+          "line": 22,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\mH4bYq5.ets",
+          "line": 60,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pJqS7uH.ets",
+          "line": 23,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pJqS7uH.ets",
+          "line": 28,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets",
+          "line": 28,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\rNvEk2Y.ets",
+          "line": 82,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\tW9gKp3.ets",
+          "line": 32,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\tW9gKp3.ets",
+          "line": 36,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+          "line": 35,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+          "line": 39,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 28,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 160,
+          "caller": "PageMap",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 169,
+          "caller": "PageMap",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 279,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 286,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 341,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 369,
+          "caller": "buildDialogTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 392,
+          "caller": "buildDialogTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 414,
+          "caller": "buildDialogTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 433,
+          "caller": "buildDialogTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 516,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 574,
+          "caller": "buildGestureTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 652,
+          "caller": "EmbeddedSheetBuilder",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 675,
+          "caller": "LargeSheetBuilder",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Column",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets",
+          "line": 19,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\FZnL3ih.ets",
+          "line": 32,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\QTvIRc5.ets",
+          "line": 20,
+          "caller": "sheetContent",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\QTvIRc5.ets",
+          "line": 33,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\RYTcSm3.ets",
+          "line": 12,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\RYTcSm3.ets",
+          "line": 20,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\kaAnVvU.ets",
+          "line": 21,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\mH4bYq5.ets",
+          "line": 59,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pJqS7uH.ets",
+          "line": 11,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets",
+          "line": 27,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\rNvEk2Y.ets",
+          "line": 81,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\tW9gKp3.ets",
+          "line": 31,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+          "line": 26,
+          "caller": "sheetContent",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+          "line": 34,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 21,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 149,
+          "caller": "PageMap",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 198,
+          "caller": "buildInputTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 254,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 325,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 362,
+          "caller": "buildDialogTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 456,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 490,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 501,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 567,
+          "caller": "buildGestureTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 643,
+          "caller": "EmbeddedSheetBuilder",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 666,
+          "caller": "LargeSheetBuilder",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "ForEach",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 262,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 305,
+          "caller": "buildLayoutTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "GridCol",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 306,
+          "caller": "buildLayoutTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "GridRow",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 304,
+          "caller": "buildLayoutTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Image",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 464,
+          "caller": "buildStyleTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "List",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 261,
+          "caller": "buildLayoutTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "ListItem",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 263,
+          "caller": "buildLayoutTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "NavDestination",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 148,
+          "caller": "PageMap",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Navigation",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 94,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Progress",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 541,
+          "caller": "buildStyleTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "QRCode",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 221,
+          "caller": "buildInputTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Row",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 220,
+          "caller": "buildInputTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 278,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 326,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 463,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 603,
+          "caller": "buildGestureTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Scroll",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\RYTcSm3.ets",
+          "line": 19,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 197,
+          "caller": "buildInputTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 253,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 361,
+          "caller": "buildDialogTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 455,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 566,
+          "caller": "buildGestureTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Scroller",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\QTvIRc5.ets",
+          "line": 6,
+          "caller": "<top-level>",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\QTvIRc5.ets",
+          "line": 7,
+          "caller": "<top-level>",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\QTvIRc5.ets",
+          "line": 8,
+          "caller": "<top-level>",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\RYTcSm3.ets",
+          "line": 4,
+          "caller": "<top-level>",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 55,
+          "caller": "<top-level>",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Search",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+          "line": 43,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Select",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 608,
+          "caller": "buildGestureTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Slider",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 472,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 544,
+          "caller": "buildStyleTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Stack",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 141,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 489,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\InsLoadingView.ets",
+          "line": 160,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Switch",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 604,
+          "caller": "buildGestureTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "TabContent",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets",
+          "line": 28,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets",
+          "line": 31,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 96,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 101,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 106,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 111,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 116,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Tabs",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets",
+          "line": 27,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 95,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "TabsController",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\QTvIRc5.ets",
+          "line": 5,
+          "caller": "<top-level>",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 53,
+          "caller": "<top-level>",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Text",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets",
+          "line": 29,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets",
+          "line": 32,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets",
+          "line": 38,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\FZnL3ih.ets",
+          "line": 37,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\FZnL3ih.ets",
+          "line": 38,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\FZnL3ih.ets",
+          "line": 39,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\FZnL3ih.ets",
+          "line": 40,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\QTvIRc5.ets",
+          "line": 21,
+          "caller": "sheetContent",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\QTvIRc5.ets",
+          "line": 29,
+          "caller": "dragContent",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\QTvIRc5.ets",
+          "line": 42,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\RYTcSm3.ets",
+          "line": 13,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\RYTcSm3.ets",
+          "line": 21,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\RYTcSm3.ets",
+          "line": 22,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\RYTcSm3.ets",
+          "line": 28,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\kaAnVvU.ets",
+          "line": 26,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\kaAnVvU.ets",
+          "line": 30,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\mH4bYq5.ets",
+          "line": 64,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pJqS7uH.ets",
+          "line": 13,
+          "caller": "Swiper",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pJqS7uH.ets",
+          "line": 14,
+          "caller": "Swiper",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pJqS7uH.ets",
+          "line": 15,
+          "caller": "Swiper",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pJqS7uH.ets",
+          "line": 33,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pJqS7uH.ets",
+          "line": 34,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets",
+          "line": 32,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets",
+          "line": 33,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets",
+          "line": 34,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets",
+          "line": 35,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets",
+          "line": 36,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\rNvEk2Y.ets",
+          "line": 86,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\rNvEk2Y.ets",
+          "line": 87,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\rNvEk2Y.ets",
+          "line": 88,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\rNvEk2Y.ets",
+          "line": 89,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\tW9gKp3.ets",
+          "line": 40,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\tW9gKp3.ets",
+          "line": 41,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\tW9gKp3.ets",
+          "line": 42,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\tW9gKp3.ets",
+          "line": 43,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\tW9gKp3.ets",
+          "line": 44,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+          "line": 27,
+          "caller": "sheetContent",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+          "line": 46,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+          "line": 47,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 22,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 150,
+          "caller": "PageMap",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 199,
+          "caller": "buildInputTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 214,
+          "caller": "buildInputTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 230,
+          "caller": "buildInputTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 255,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 264,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 298,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 307,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 319,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 327,
+          "caller": "buildLayoutTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 363,
+          "caller": "buildDialogTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 386,
+          "caller": "buildDialogTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 408,
+          "caller": "buildDialogTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 427,
+          "caller": "buildDialogTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 457,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 477,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 483,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 491,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 502,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 524,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 535,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 549,
+          "caller": "buildStyleTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 568,
+          "caller": "buildGestureTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 578,
+          "caller": "buildGestureTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 584,
+          "caller": "buildGestureTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 597,
+          "caller": "buildGestureTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 618,
+          "caller": "buildGestureTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 624,
+          "caller": "buildGestureTab",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 644,
+          "caller": "EmbeddedSheetBuilder",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 648,
+          "caller": "EmbeddedSheetBuilder",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 667,
+          "caller": "LargeSheetBuilder",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 671,
+          "caller": "LargeSheetBuilder",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "TextClock",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 156,
+          "caller": "PageMap",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 530,
+          "caller": "buildStyleTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "TextInput",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets",
+          "line": 24,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 205,
+          "caller": "buildInputTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Toggle",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 604,
+          "caller": "buildGestureTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "TreeMap",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\kaAnVvU.ets",
+          "line": 9,
+          "caller": "initCollections",
+          "kit": "@ohos.util.TreeMap"
+        }
+      ]
+    },
+    {
+      "api": "TreeSet",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\kaAnVvU.ets",
+          "line": 14,
+          "caller": "initCollections",
+          "kit": "@ohos.util.TreeSet"
+        }
+      ]
+    },
+    {
+      "api": "Video",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 236,
+          "caller": "buildInputTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "VideoController",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 54,
+          "caller": "<top-level>",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "converter.fastConvertToJSObject",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+          "line": 20,
+          "caller": "parseXml",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "convertxml.ConvertXML",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+          "line": 19,
+          "caller": "parseXml",
+          "kit": "@ohos.convertxml"
+        }
+      ]
+    },
+    {
+      "api": "drawing.Matrix",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\rNvEk2Y.ets",
+          "line": 55,
+          "caller": "runDrawing",
+          "kit": "@ohos.graphics.drawing"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\rNvEk2Y.ets",
+          "line": 56,
+          "caller": "runDrawing",
+          "kit": "@ohos.graphics.drawing"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\rNvEk2Y.ets",
+          "line": 59,
+          "caller": "runDrawing",
+          "kit": "@ohos.graphics.drawing"
+        }
+      ]
+    },
+    {
+      "api": "getPromptAction",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+          "line": 11,
+          "caller": "showToast",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 80,
+          "caller": "showToast",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "hilog.error",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 12,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 26,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 14,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 18,
+          "caller": "onDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 22,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 29,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 34,
+          "caller": "onWindowStageDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 38,
+          "caller": "onForeground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 42,
+          "caller": "onBackground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 8,
+          "caller": "onBackup",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 13,
+          "caller": "onRestore",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "i18n.Transliterator.getInstance",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets",
+          "line": 19,
+          "caller": "formatIntl",
+          "kit": "@ohos.i18n"
+        }
+      ]
+    },
+    {
+      "api": "i18n.getDisplayCountry",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets",
+          "line": 21,
+          "caller": "formatIntl",
+          "kit": "@ohos.i18n"
+        }
+      ]
+    },
+    {
+      "api": "i18n.getDisplayLanguage",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets",
+          "line": 22,
+          "caller": "formatIntl",
+          "kit": "@ohos.i18n"
+        }
+      ]
+    },
+    {
+      "api": "image.createImagePacker",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\FZnL3ih.ets",
+          "line": 26,
+          "caller": "loadImageInfo",
+          "kit": "@ohos.multimedia.image"
+        }
+      ]
+    },
+    {
+      "api": "image.createImageSource",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\FZnL3ih.ets",
+          "line": 16,
+          "caller": "loadImageInfo",
+          "kit": "@ohos.multimedia.image"
+        }
+      ]
+    },
+    {
+      "api": "image.createPixelMapSync",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\rNvEk2Y.ets",
+          "line": 72,
+          "caller": "runDrawing",
+          "kit": "@ohos.multimedia.image"
+        }
+      ]
+    },
+    {
+      "api": "intl.Locale",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets",
+          "line": 16,
+          "caller": "formatIntl",
+          "kit": "@ohos.intl"
+        }
+      ]
+    },
+    {
+      "api": "intl.RelativeTimeFormat",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets",
+          "line": 14,
+          "caller": "formatIntl",
+          "kit": "@ohos.intl"
+        }
+      ]
+    },
+    {
+      "api": "locale.maximize",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\pTuos8o.ets",
+          "line": 17,
+          "caller": "formatIntl",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "showToast",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+          "line": 11,
+          "caller": "showToast",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 80,
+          "caller": "showToast",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "this.context.getApplicationContext",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 10,
+          "caller": "onCreate",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "this.getUIContext",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\AGdimU0.ets",
+          "line": 7,
+          "caller": "runAnimate",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\QTvIRc5.ets",
+          "line": 11,
+          "caller": "aboutToAppear",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\RYTcSm3.ets",
+          "line": 7,
+          "caller": "aboutToAppear",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+          "line": 11,
+          "caller": "showToast",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 80,
+          "caller": "showToast",
+          "kit": null
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\InsLoadingView.ets",
+          "line": 220,
+          "caller": "createAnimators",
+          "kit": null
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\InsLoadingView.ets",
+          "line": 241,
+          "caller": "createAnimators",
+          "kit": null
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\InsLoadingView.ets",
+          "line": 356,
+          "caller": "startDownAnim",
+          "kit": null
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\InsLoadingView.ets",
+          "line": 364,
+          "caller": "startUpAnim",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "this.showToast",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\vZuHw9m.ets",
+          "line": 37,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 130,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 167,
+          "caller": "PageMap",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 189,
+          "caller": "PageMap",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 441,
+          "caller": "buildDialogTab",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "uiEffect.createEffect",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\rNvEk2Y.ets",
+          "line": 51,
+          "caller": "<top-level>",
+          "kit": "@ohos.graphics.uiEffect"
+        }
+      ]
+    },
+    {
+      "api": "util.ArkTSVM.enableLocalHandleDetection",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\tW9gKp3.ets",
+          "line": 13,
+          "caller": "runVm",
+          "kit": "@ohos.util"
+        }
+      ]
+    },
+    {
+      "api": "util.Base64Helper",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\FZnL3ih.ets",
+          "line": 13,
+          "caller": "loadImageInfo",
+          "kit": "@ohos.util"
+        }
+      ]
+    },
+    {
+      "api": "webview.WebDownloadDelegate",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\tW9gKp3.ets",
+          "line": 21,
+          "caller": "setupDownload",
+          "kit": "@ohos.web.webview"
+        }
+      ]
+    },
+    {
+      "api": "webview.WebDownloadManager.setDownloadDelegate",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\tW9gKp3.ets",
+          "line": 26,
+          "caller": "setupDownload",
+          "kit": "@ohos.web.webview"
+        }
+      ]
+    },
+    {
+      "api": "xml.XmlSAXParser",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\apiChangeTest\\mH4bYq5.ets",
+          "line": 52,
+          "caller": "parseSax",
+          "kit": "@ohos.xml"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "sidebar",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

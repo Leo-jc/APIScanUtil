@@ -1,0 +1,30 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/ModuleF01Page",
+    "pages/TestCaseF0101Page",
+    "pages/TestCaseF0102Page",
+    "pages/TestCaseF0103Page",
+    "pages/ModuleF02Page",
+    "pages/TestCaseF0201Page",
+    "pages/TestCaseF0202Page",
+    "pages/TestCaseF0203Page",
+    "pages/TestCaseF0204Page",
+    "pages/ModuleF03Page",
+    "pages/TestCaseF0301Page",
+    "pages/TestCaseF0302Page",
+    "pages/TestCaseF0303Page",
+    "pages/TestCaseF0304Page",
+    "pages/TestCaseF0305Page",
+    "pages/ModuleF04Page",
+    "pages/TestCaseF0401Page",
+    "pages/TestCaseF0402Page",
+    "pages/TestCaseF0403Page",
+    "pages/ModuleF05Page",
+    "pages/TestCaseF0501Page",
+    "pages/TestCaseF0502Page",
+    "pages/TestCaseF0503Page",
+    "pages/TestCaseF0504Page",
+    "pages/TestCaseF0505Page"
+  ]
+}

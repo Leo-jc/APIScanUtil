@@ -1,0 +1,2109 @@
+{
+  "title": "HarmonyOS API 调用图谱",
+  "summary": {
+    "filesAnalyzed": 12,
+    "systemApis": 16,
+    "systemApiCallSites": 103
+  },
+  "files": [
+    {
+      "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "AbilityConstant",
+            "ConfigurationConstant",
+            "UIAbility",
+            "Want"
+          ],
+          "source": "@kit.AbilityKit",
+          "kit": "AbilityKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 3,
+          "names": [
+            "window"
+          ],
+          "source": "@kit.ArkUI",
+          "kit": "ArkUI",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onCreate",
+        "onDestroy",
+        "onWindowStageCreate",
+        "onWindowStageDestroy",
+        "onForeground",
+        "onBackground"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 10,
+          "qualified": "this.context.getApplicationContext",
+          "base": "this",
+          "name": "getApplicationContext",
+          "kind": "system",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 12,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 14,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onCreate"
+        },
+        {
+          "line": 18,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onDestroy"
+        },
+        {
+          "line": 23,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 27,
+          "qualified": "hilog.error",
+          "base": "hilog",
+          "name": "error",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 30,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageCreate"
+        },
+        {
+          "line": 36,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onWindowStageDestroy"
+        },
+        {
+          "line": 41,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onForeground"
+        },
+        {
+          "line": 46,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackground"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+      "imports": [
+        {
+          "line": 1,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        },
+        {
+          "line": 2,
+          "names": [
+            "BackupExtensionAbility",
+            "BundleVersion"
+          ],
+          "source": "@kit.CoreFileKit",
+          "kit": "CoreFileKit",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "onBackup",
+        "onRestore"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 8,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onBackup"
+        },
+        {
+          "line": 13,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onRestore"
+        }
+      ]
+    },
+    {
+      "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+      "imports": [
+        {
+          "line": 10,
+          "names": [
+            "DayPickerView",
+            "DatePickerController",
+            "CalendarDay",
+            "SelectedDays",
+            "DayPickerStyleConfig"
+          ],
+          "source": "library",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 17,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "constructor",
+        "getMaxYear",
+        "onDayOfMonthSelected",
+        "onDateRangeSelected",
+        "makeStyleConfig",
+        "constructor",
+        "addLog",
+        "toggleStylePanel",
+        "toggleLogPanel",
+        "clearLogs",
+        "resetSelection",
+        "getStyleSummary",
+        "build",
+        "buildStatusBar",
+        "buildCalendarSection",
+        "buildConfigPanel",
+        "buildColorButton",
+        "buildLogPanel"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 170,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "addLog"
+        },
+        {
+          "line": 215,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 229,
+          "qualified": "Scroll",
+          "base": "Scroll",
+          "name": "Scroll",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 230,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 235,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 241,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 264,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStatusBar"
+        },
+        {
+          "line": 266,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStatusBar"
+        },
+        {
+          "line": 272,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStatusBar"
+        },
+        {
+          "line": 275,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStatusBar"
+        },
+        {
+          "line": 276,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStatusBar"
+        },
+        {
+          "line": 277,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStatusBar"
+        },
+        {
+          "line": 280,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStatusBar"
+        },
+        {
+          "line": 287,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStatusBar"
+        },
+        {
+          "line": 289,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStatusBar"
+        },
+        {
+          "line": 290,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStatusBar"
+        },
+        {
+          "line": 293,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildStatusBar"
+        },
+        {
+          "line": 315,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildCalendarSection"
+        },
+        {
+          "line": 340,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 342,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 343,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 348,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 350,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 361,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 363,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 364,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 367,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 368,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 377,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 388,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 391,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 392,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 395,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 396,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 399,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 400,
+          "qualified": "Toggle",
+          "base": "Toggle",
+          "name": "Toggle",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 400,
+          "qualified": "Switch",
+          "base": "Switch",
+          "name": "Switch",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 411,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 412,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 415,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 416,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 424,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 433,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 436,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 437,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 440,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 441,
+          "qualified": "Toggle",
+          "base": "Toggle",
+          "name": "Toggle",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 441,
+          "qualified": "Switch",
+          "base": "Switch",
+          "name": "Switch",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 453,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 454,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 457,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 458,
+          "qualified": "Toggle",
+          "base": "Toggle",
+          "name": "Toggle",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 458,
+          "qualified": "Switch",
+          "base": "Switch",
+          "name": "Switch",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 469,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 471,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildConfigPanel"
+        },
+        {
+          "line": 491,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildColorButton"
+        },
+        {
+          "line": 492,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildColorButton"
+        },
+        {
+          "line": 498,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildColorButton"
+        },
+        {
+          "line": 518,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        },
+        {
+          "line": 520,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        },
+        {
+          "line": 521,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        },
+        {
+          "line": 526,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        },
+        {
+          "line": 528,
+          "qualified": "Button",
+          "base": "Button",
+          "name": "Button",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        },
+        {
+          "line": 534,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        },
+        {
+          "line": 536,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        },
+        {
+          "line": 548,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        },
+        {
+          "line": 550,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        },
+        {
+          "line": 551,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        },
+        {
+          "line": 556,
+          "qualified": "Blank",
+          "base": "Blank",
+          "name": "Blank",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        },
+        {
+          "line": 558,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        },
+        {
+          "line": 559,
+          "qualified": "Row",
+          "base": "Row",
+          "name": "Row",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        },
+        {
+          "line": 560,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        },
+        {
+          "line": 565,
+          "qualified": "Text",
+          "base": "Text",
+          "name": "Text",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "buildLogPanel"
+        }
+      ]
+    },
+    {
+      "file": "library\\src\\main\\ets\\components\\DayPickerStyleConfig.ets",
+      "imports": [],
+      "functions": [],
+      "systemApiCalls": []
+    },
+    {
+      "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+      "imports": [
+        {
+          "line": 19,
+          "names": [
+            "CalendarDay"
+          ],
+          "source": "../model/CalendarDay",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 20,
+          "names": [
+            "SelectedDays"
+          ],
+          "source": "../model/SelectedDays",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 21,
+          "names": [
+            "DatePickerController"
+          ],
+          "source": "../model/DatePickerController",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 22,
+          "names": [
+            "MonthConfig"
+          ],
+          "source": "../model/MonthConfig",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 23,
+          "names": [
+            "SimpleMonthView"
+          ],
+          "source": "./SimpleMonthView",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 24,
+          "names": [
+            "DayPickerStyleConfig"
+          ],
+          "source": "./DayPickerStyleConfig",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 25,
+          "names": [
+            "MonthItem"
+          ],
+          "source": "./MonthItem",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 26,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "aboutToAppear",
+        "onStyleConfigChanged",
+        "onRegenKeyChanged",
+        "buildMonthConfig",
+        "generateMonths",
+        "newMonthItem",
+        "refreshMonthItems",
+        "handleCurrentDaySelected",
+        "onDayTapped",
+        "getSelectedDays",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 80,
+          "qualified": "hilog.debug",
+          "base": "hilog",
+          "name": "debug",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "aboutToAppear"
+        },
+        {
+          "line": 91,
+          "qualified": "hilog.debug",
+          "base": "hilog",
+          "name": "debug",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "aboutToAppear"
+        },
+        {
+          "line": 174,
+          "qualified": "hilog.warn",
+          "base": "hilog",
+          "name": "warn",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "generateMonths"
+        },
+        {
+          "line": 192,
+          "qualified": "hilog.warn",
+          "base": "hilog",
+          "name": "warn",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "generateMonths"
+        },
+        {
+          "line": 214,
+          "qualified": "hilog.debug",
+          "base": "hilog",
+          "name": "debug",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "generateMonths"
+        },
+        {
+          "line": 309,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "handleCurrentDaySelected"
+        },
+        {
+          "line": 336,
+          "qualified": "hilog.debug",
+          "base": "hilog",
+          "name": "debug",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onDayTapped"
+        },
+        {
+          "line": 349,
+          "qualified": "hilog.debug",
+          "base": "hilog",
+          "name": "debug",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onDayTapped"
+        },
+        {
+          "line": 361,
+          "qualified": "hilog.info",
+          "base": "hilog",
+          "name": "info",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onDayTapped"
+        },
+        {
+          "line": 371,
+          "qualified": "hilog.debug",
+          "base": "hilog",
+          "name": "debug",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "onDayTapped"
+        },
+        {
+          "line": 402,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 404,
+          "qualified": "List",
+          "base": "List",
+          "name": "List",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 405,
+          "qualified": "ForEach",
+          "base": "ForEach",
+          "name": "ForEach",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 406,
+          "qualified": "ListItem",
+          "base": "ListItem",
+          "name": "ListItem",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "library\\src\\main\\ets\\components\\MonthItem.ets",
+      "imports": [],
+      "functions": [],
+      "systemApiCalls": []
+    },
+    {
+      "file": "library\\src\\main\\ets\\components\\SimpleMonthView.ets",
+      "imports": [
+        {
+          "line": 16,
+          "names": [
+            "CalendarDay"
+          ],
+          "source": "../model/CalendarDay",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 17,
+          "names": [
+            "CalendarUtils"
+          ],
+          "source": "../utils/CalendarUtils",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 18,
+          "names": [
+            "MonthConfig"
+          ],
+          "source": "../model/MonthConfig",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 19,
+          "names": [
+            "hilog"
+          ],
+          "source": "@kit.PerformanceAnalysisKit",
+          "kit": "PerformanceAnalysisKit",
+          "isKit": true
+        }
+      ],
+      "functions": [
+        "findDayOffset",
+        "calculateNumRows",
+        "onPropChanged",
+        "updateDerivedState",
+        "isSelectedBegin",
+        "isSelectedLast",
+        "isToday",
+        "isPreviousDay",
+        "drawAll",
+        "drawMonthTitle",
+        "drawMonthDayLabels",
+        "drawMonthNums",
+        "getDayFromLocation",
+        "handleTouch",
+        "aboutToAppear",
+        "build"
+      ],
+      "systemApiCalls": [
+        {
+          "line": 253,
+          "qualified": "hilog.debug",
+          "base": "hilog",
+          "name": "debug",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "drawAll"
+        },
+        {
+          "line": 483,
+          "qualified": "hilog.debug",
+          "base": "hilog",
+          "name": "debug",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "handleTouch"
+        },
+        {
+          "line": 506,
+          "qualified": "Column",
+          "base": "Column",
+          "name": "Column",
+          "kind": "arkui_component",
+          "kit": null,
+          "isConstructor": false,
+          "caller": "build"
+        },
+        {
+          "line": 511,
+          "qualified": "hilog.debug",
+          "base": "hilog",
+          "name": "debug",
+          "kind": "system",
+          "kit": "PerformanceAnalysisKit",
+          "isConstructor": false,
+          "caller": "build"
+        }
+      ]
+    },
+    {
+      "file": "library\\src\\main\\ets\\model\\CalendarDay.ets",
+      "imports": [],
+      "functions": [
+        "constructor",
+        "fromTime",
+        "fromDate",
+        "set",
+        "setDay",
+        "getDate",
+        "toString"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "library\\src\\main\\ets\\model\\DatePickerController.ets",
+      "imports": [
+        {
+          "line": 13,
+          "names": [
+            "CalendarDay"
+          ],
+          "source": "./CalendarDay",
+          "kit": null,
+          "isKit": false
+        },
+        {
+          "line": 14,
+          "names": [
+            "SelectedDays"
+          ],
+          "source": "./SelectedDays",
+          "kit": null,
+          "isKit": false
+        }
+      ],
+      "functions": [],
+      "systemApiCalls": []
+    },
+    {
+      "file": "library\\src\\main\\ets\\model\\MonthConfig.ets",
+      "imports": [],
+      "functions": [],
+      "systemApiCalls": []
+    },
+    {
+      "file": "library\\src\\main\\ets\\model\\SelectedDays.ets",
+      "imports": [],
+      "functions": [
+        "getFirst",
+        "setFirst",
+        "getLast",
+        "setLast"
+      ],
+      "systemApiCalls": []
+    },
+    {
+      "file": "library\\src\\main\\ets\\utils\\CalendarUtils.ets",
+      "imports": [],
+      "functions": [
+        "getDaysInMonth"
+      ],
+      "systemApiCalls": []
+    }
+  ],
+  "apiGraph": [
+    {
+      "api": "Blank",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 235,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 241,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 272,
+          "caller": "buildStatusBar",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 287,
+          "caller": "buildStatusBar",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 348,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 367,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 388,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 395,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 399,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 415,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 433,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 440,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 457,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 469,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 526,
+          "caller": "buildLogPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 534,
+          "caller": "buildLogPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 550,
+          "caller": "buildLogPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 556,
+          "caller": "buildLogPanel",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Button",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 528,
+          "caller": "buildLogPanel",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Column",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 215,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 230,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 264,
+          "caller": "buildStatusBar",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 276,
+          "caller": "buildStatusBar",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 289,
+          "caller": "buildStatusBar",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 315,
+          "caller": "buildCalendarSection",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 340,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 361,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 491,
+          "caller": "buildColorButton",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 518,
+          "caller": "buildLogPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 548,
+          "caller": "buildLogPanel",
+          "kit": null
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+          "line": 402,
+          "caller": "build",
+          "kit": null
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\SimpleMonthView.ets",
+          "line": 506,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "ForEach",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 558,
+          "caller": "buildLogPanel",
+          "kit": null
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+          "line": 405,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "List",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+          "line": 404,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "ListItem",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+          "line": 406,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Row",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 275,
+          "caller": "buildStatusBar",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 342,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 363,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 377,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 391,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 411,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 424,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 436,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 453,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 492,
+          "caller": "buildColorButton",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 520,
+          "caller": "buildLogPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 559,
+          "caller": "buildLogPanel",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Scroll",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 229,
+          "caller": "build",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Switch",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 400,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 441,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 458,
+          "caller": "buildConfigPanel",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Text",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 266,
+          "caller": "buildStatusBar",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 277,
+          "caller": "buildStatusBar",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 280,
+          "caller": "buildStatusBar",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 290,
+          "caller": "buildStatusBar",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 293,
+          "caller": "buildStatusBar",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 343,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 350,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 364,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 368,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 392,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 396,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 412,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 416,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 437,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 454,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 471,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 498,
+          "caller": "buildColorButton",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 521,
+          "caller": "buildLogPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 536,
+          "caller": "buildLogPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 551,
+          "caller": "buildLogPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 560,
+          "caller": "buildLogPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 565,
+          "caller": "buildLogPanel",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "Toggle",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 400,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 441,
+          "caller": "buildConfigPanel",
+          "kit": null
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 458,
+          "caller": "buildConfigPanel",
+          "kit": null
+        }
+      ]
+    },
+    {
+      "api": "hilog.debug",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+          "line": 80,
+          "caller": "aboutToAppear",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+          "line": 91,
+          "caller": "aboutToAppear",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+          "line": 214,
+          "caller": "generateMonths",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+          "line": 336,
+          "caller": "onDayTapped",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+          "line": 349,
+          "caller": "onDayTapped",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+          "line": 371,
+          "caller": "onDayTapped",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\SimpleMonthView.ets",
+          "line": 253,
+          "caller": "drawAll",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\SimpleMonthView.ets",
+          "line": 483,
+          "caller": "handleTouch",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\SimpleMonthView.ets",
+          "line": 511,
+          "caller": "build",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "hilog.error",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 12,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 27,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "hilog.info",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 14,
+          "caller": "onCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 18,
+          "caller": "onDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 23,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 30,
+          "caller": "onWindowStageCreate",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 36,
+          "caller": "onWindowStageDestroy",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 41,
+          "caller": "onForeground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 46,
+          "caller": "onBackground",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 8,
+          "caller": "onBackup",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\entrybackupability\\EntryBackupAbility.ets",
+          "line": 13,
+          "caller": "onRestore",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "entry\\src\\main\\ets\\pages\\Index.ets",
+          "line": 170,
+          "caller": "addLog",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+          "line": 309,
+          "caller": "handleCurrentDaySelected",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+          "line": 361,
+          "caller": "onDayTapped",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "hilog.warn",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+          "line": 174,
+          "caller": "generateMonths",
+          "kit": "PerformanceAnalysisKit"
+        },
+        {
+          "file": "library\\src\\main\\ets\\components\\DayPickerView.ets",
+          "line": 192,
+          "caller": "generateMonths",
+          "kit": "PerformanceAnalysisKit"
+        }
+      ]
+    },
+    {
+      "api": "this.context.getApplicationContext",
+      "kind": "system",
+      "callSites": [
+        {
+          "file": "entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+          "line": 10,
+          "caller": "onCreate",
+          "kit": null
+        }
+      ]
+    }
+  ]
+}

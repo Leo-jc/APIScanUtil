@@ -1,0 +1,88 @@
+{
+  "float": [
+    {
+      "name": "page_text_font_size",
+      "value": "50fp"
+    },
+    {
+      "name": "toolbar_height",
+      "value": "56vp"
+    },
+    {
+      "name": "toolbar_title_size",
+      "value": "20fp"
+    },
+    {
+      "name": "card_corner",
+      "value": "12vp"
+    },
+    {
+      "name": "card_padding",
+      "value": "16vp"
+    },
+    {
+      "name": "card_title_size",
+      "value": "18fp"
+    },
+    {
+      "name": "card_desc_size",
+      "value": "14fp"
+    },
+    {
+      "name": "count_header_height",
+      "value": "48vp"
+    },
+    {
+      "name": "count_header_text_size",
+      "value": "18fp"
+    },
+    {
+      "name": "count_footer_height",
+      "value": "32vp"
+    },
+    {
+      "name": "count_footer_text_size",
+      "value": "10fp"
+    },
+    {
+      "name": "count_item_height",
+      "value": "72vp"
+    },
+    {
+      "name": "count_item_margin",
+      "value": "8vp"
+    },
+    {
+      "name": "count_item_text_size",
+      "value": "42fp"
+    },
+    {
+      "name": "agenda_image_size",
+      "value": "40vp"
+    },
+    {
+      "name": "agenda_image_margin",
+      "value": "16vp"
+    },
+    {
+      "name": "agenda_item_text_size",
+      "value": "14fp"
+    },
+    {
+      "name": "btn_height",
+      "value": "36vp"
+    },
+    {
+      "name": "btn_text_size",
+      "value": "13fp"
+    },
+    {
+      "name": "log_text_size",
+      "value": "12fp"
+    },
+    {
+      "name": "log_padding",
+      "value": "12vp"
+    }
+  ]
+}

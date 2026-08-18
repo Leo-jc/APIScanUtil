@@ -1,0 +1,18 @@
+# Python 编译产物
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE / 编辑器配置
+.idea/
+.vscode/
+
+# 测试临时输出目录（test_cpp_scan.py 的 --no-cpp 回退测试产生）
+_test_out_*/
+
+# 运行时生成的输出目录（与 assets/output/ 历史回归基线区分）
+output/
+
+# 操作系统杂项
+.DS_Store
+Thumbs.db

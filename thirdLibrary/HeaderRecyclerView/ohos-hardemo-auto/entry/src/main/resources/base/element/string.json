@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "HeaderRecyclerView demo module"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "HeaderRecyclerView demo"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "HeaderRecyclerView"
+    },
+    {
+      "name": "app_name",
+      "value": "HeaderRecyclerView"
+    },
+    {
+      "name": "load_more_message",
+      "value": "Loading..."
+    },
+    {
+      "name": "loaded_more_done",
+      "value": "Loaded more characters"
+    },
+    {
+      "name": "approaching_end",
+      "value": "Approaching end, loading more..."
+    },
+    {
+      "name": "no_more",
+      "value": "No more to load"
+    }
+  ]
+}
